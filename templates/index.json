@@ -1,0 +1,756 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "section-slideshow-nested": {
+      "type": "section-slideshow-nested",
+      "blocks": {
+        "slide-image": {
+          "type": "_slide-image",
+          "settings": {
+            "image": "shopify://shop_images/iStock-1311840964.jpg",
+            "link": "shopify://products/white-pine-medical-longevity-assessment",
+            "flex_align_desktop": "align--middle-center-desktop",
+            "flex_align_mobile": "align--middle-center-mobile",
+            "show_text_background": false,
+            "bg_color": "",
+            "color": "#ffffff",
+            "overlay_type": "text"
+          },
+          "blocks": {
+            "heading": {
+              "type": "heading",
+              "settings": {
+                "text": "Live Better Longer",
+                "heading_font_size": "heading-large",
+                "heading_tag": "automatic",
+                "padding_bottom": 8
+              },
+              "blocks": {}
+            },
+            "text": {
+              "type": "text",
+              "settings": {
+                "text": "Unlock A Revolutionary Approach to Health, Longevity, and You",
+                "text_font_size": "body-large",
+                "padding_bottom": 8
+              },
+              "blocks": {}
+            },
+            "group-buttons": {
+              "type": "_group-buttons",
+              "name": "Side by side buttons",
+              "settings": {
+                "button_text": "Shop Now",
+                "button_link": "shopify://products/white-pine-medical-longevity-assessment",
+                "button_type": "btn--white",
+                "button_size": "",
+                "button_style": "btn--solid",
+                "show_arrow": false,
+                "button_secondary_text": "",
+                "button_secondary_type": "btn--white",
+                "button_secondary_size": "",
+                "button_secondary_style": "btn--solid",
+                "show_secondary_arrow": false,
+                "padding_bottom": 8
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "heading",
+            "text",
+            "group-buttons"
+          ]
+        }
+      },
+      "block_order": [
+        "slide-image"
+      ],
+      "name": "Slideshow (Nested)",
+      "settings": {
+        "transition": "slide",
+        "show_arrows": false,
+        "autoplay": false,
+        "autoplay_speed": 5,
+        "width": "wrapper--full",
+        "height": "seven-fifty-height-hero",
+        "mobile_height": "screen-height-full--mobile",
+        "color_scheme": "scheme-2",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "section-announcement": {
+      "type": "section-announcement",
+      "blocks": {
+        "heading-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "Live Longer, Live Stronger",
+            "heading_font_size": "heading-x-small"
+          }
+        },
+        "text-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>•</p>",
+            "text_font_size": "body-x-large",
+            "color": "",
+            "target_device_enabled": false,
+            "target_device": "mobile"
+          }
+        },
+        "heading-2": {
+          "type": "heading",
+          "settings": {
+            "heading": "Health Powered by AI",
+            "heading_font_size": "heading-x-small"
+          }
+        },
+        "text-2": {
+          "type": "text",
+          "settings": {
+            "text": "<p>•</p>",
+            "text_font_size": "body-x-large",
+            "color": "",
+            "target_device_enabled": false,
+            "target_device": "mobile"
+          }
+        },
+        "heading-3": {
+          "type": "heading",
+          "settings": {
+            "heading": "Optimize Your Longevity",
+            "heading_font_size": "heading-x-small"
+          }
+        },
+        "text-3": {
+          "type": "text",
+          "settings": {
+            "text": "<p>•</p>",
+            "text_font_size": "body-x-large",
+            "color": "",
+            "target_device_enabled": false,
+            "target_device": "mobile"
+          }
+        },
+        "heading-4": {
+          "type": "heading",
+          "settings": {
+            "heading": "Science-Backed Health Plans",
+            "heading_font_size": "heading-x-small"
+          }
+        },
+        "text-4": {
+          "type": "text",
+          "settings": {
+            "text": "<p>•</p>",
+            "text_font_size": "body-x-large",
+            "color": "",
+            "target_device_enabled": false,
+            "target_device": "mobile"
+          }
+        },
+        "heading-5": {
+          "type": "heading",
+          "settings": {
+            "heading": "Data-Driven Health Insights",
+            "heading_font_size": "heading-x-small"
+          }
+        }
+      },
+      "block_order": [
+        "heading-1",
+        "text-1",
+        "heading-2",
+        "text-2",
+        "heading-3",
+        "text-3",
+        "heading-4",
+        "text-4",
+        "heading-5"
+      ],
+      "settings": {
+        "slider_speed": 7,
+        "text_alignment": "center",
+        "marquee_speed": 100,
+        "direction": "ticker-rtl",
+        "message_spacing": 10,
+        "show_border": false,
+        "layout": "marquee",
+        "color_scheme": "scheme-4",
+        "padding_top": 16,
+        "padding_bottom": 16
+      }
+    },
+    "section-rich-text-problem": {
+      "type": "section-rich-text",
+      "blocks": {
+        "subheading": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "Health, Your Way",
+            "padding_bottom": 6
+          }
+        },
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "title": "The Problem Most People Face",
+            "heading_font_size": "heading-medium",
+            "padding_bottom": 16,
+            "heading_tag": "automatic"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p>You've tried everything — generic fitness plans that don't stick, one-size-fits-all diets that leave you frustrated, and supplements that promise the world but deliver little. Yet despite all this, you still feel tired, struggle to lose or maintain weight, and constantly worry about your future health and well-being. Traditional healthcare often waits until you're already sick to take action, leaving you feeling stuck and unheard.</p><p>But what if there was a better, smarter way to take control of your health before problems arise?</p>",
+            "text_font_size": "body-medium",
+            "padding_bottom": 24
+          }
+        },
+        "buttons": {
+          "type": "buttons",
+          "settings": {
+            "button_text": "Invest in Your Future Today",
+            "button_link": "shopify://products/white-pine-medical-longevity-assessment",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "padding_bottom": 16
+          }
+        }
+      },
+      "block_order": [
+        "subheading",
+        "heading",
+        "text",
+        "buttons"
+      ],
+      "settings": {
+        "align_text": "text-center",
+        "width": "wrapper",
+        "color_scheme": "scheme-1",
+        "overlay_type": "disabled",
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    },
+    "section-text-row-features": {
+      "type": "section-text-row",
+      "blocks": {
+        "icon": {
+          "type": "icon",
+          "settings": {
+            "image": "shopify://shop_images/Built-by-Visionaries_5399c173-e778-4367-8ab0-6e9f453410ab.png",
+            "icon_name": "icon-award",
+            "icon_size": 50,
+            "icon_color": "#2563EB",
+            "title": "Built by Visionaries",
+            "heading_font_size": "heading-x-small",
+            "text": "<p>Created by leading professionals in medicine and wellness, this system is rooted in real-world experience and tailored to your unique journey.</p>",
+            "text_font_size": "body-small",
+            "heading_tag": "automatic"
+          }
+        },
+        "icon-0": {
+          "type": "icon",
+          "settings": {
+            "image": "shopify://shop_images/AI-Driven-Insight_5065db69-e6eb-4b9a-b8d4-d159da130415.png",
+            "icon_name": "icon-chat",
+            "icon_size": 50,
+            "icon_color": "#2563EB",
+            "title": "AI-Driven Insight",
+            "heading_font_size": "heading-x-small",
+            "text": "<p>Our proprietary AI delivers a powerful 2-hour assessment that adapts to your lifestyle, health history, and personal needs setting the foundation for change.</p>",
+            "text_font_size": "body-small",
+            "heading_tag": "automatic"
+          }
+        },
+        "icon-1": {
+          "type": "icon",
+          "settings": {
+            "image": "shopify://shop_images/Personalized-Support_ca1579d1-03c8-4e81-9a56-e6b3d7f302b5.png",
+            "icon_name": "icon-heart",
+            "icon_size": 50,
+            "icon_color": "#2563EB",
+            "title": "Personalized Support",
+            "heading_font_size": "heading-x-small",
+            "text": "<p>With six months of expert-led health coaching, you'll turn knowledge into daily wellness — supported by dietitians, coaches, and concierge care.</p>",
+            "text_font_size": "body-small",
+            "heading_tag": "automatic"
+          }
+        }
+      },
+      "block_order": [
+        "icon",
+        "icon-0",
+        "icon-1"
+      ],
+      "settings": {
+        "title": "Expert-Led Innovation",
+        "heading_font_size": "heading-medium",
+        "align_heading": "text-center",
+        "align_text": "text-center",
+        "icon_alignment": "icon--top",
+        "width": "wrapper",
+        "align_columns": "flex-align-top",
+        "layout": "grid",
+        "grid": 3,
+        "layout_mobile": "1",
+        "color_scheme": "scheme-3",
+        "padding_top": 60,
+        "padding_bottom": 60,
+        "heading_tag": "automatic"
+      }
+    },
+    "section-double-solution": {
+      "type": "section-double",
+      "blocks": {
+        "subheading": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "Health Tailored to You",
+            "padding_bottom": 6
+          }
+        },
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "title": "Our Solution",
+            "heading_font_size": "heading-medium",
+            "padding_bottom": 16,
+            "heading_tag": "automatic"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Imagine having a crystal-clear picture of your body's unique needs—down to your genetics, psychology, metabolism, movements, fitness and sleep patterns. Picture receiving a personalized plan that actually works because it's designed specifically for YOU.</p><p>That's exactly what White Pine Medical delivers.</p>",
+            "text_font_size": "body-medium",
+            "padding_bottom": 24
+          }
+        },
+        "buttons": {
+          "type": "buttons",
+          "settings": {
+            "button_text": "Shop Now",
+            "button_link": "shopify://products/white-pine-medical-longevity-assessment",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "padding_bottom": 16
+          }
+        }
+      },
+      "block_order": [
+        "subheading",
+        "heading",
+        "text",
+        "buttons"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/pexels-maksgelatin-4775198_1.jpg",
+        "image_width": "one-half",
+        "text_alignment": "text-left",
+        "layout": "",
+        "width": "wrapper--full-padded",
+        "height": "sixty-fifty-height-hero",
+        "mobile_height": "four-fifty-height-hero--mobile",
+        "reverse_blocks": false,
+        "color_scheme": "scheme-1",
+        "padding_top": 60,
+        "padding_bottom": 60,
+        "show_placeholder": true
+      }
+    },
+    "section-columns-phases": {
+      "type": "section-columns",
+      "blocks": {
+        "image": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/1_d206f190-2839-4fa0-bc61-1861f37b2a39.jpg",
+            "image_width": 100,
+            "image_shape": "normal",
+            "title": "Phase 1: James AI Health Analysis",
+            "heading_font_size": "heading-small",
+            "text": "<p>Our proprietary AI gathers your complete health history—medical background, lifestyle factors, psychological patterns, and risk assessments for major diseases.</p>",
+            "text_font_size": "body-small",
+            "button_text": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--text",
+            "show_arrow": false,
+            "image_aspect_ratio": 1.2,
+            "mobile_image_aspect_ratio": 1.2,
+            "heading_tag": "automatic"
+          }
+        },
+        "image-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/JR-19-6489-20-1030x687.png",
+            "image_width": 100,
+            "image_shape": "normal",
+            "title": "Phase 2: Advanced Testing",
+            "heading_font_size": "heading-small",
+            "text": "<p>Receive a comprehensive genetic testing kit at your doorstep to collect samples in the comfort of your home. We arrange bloodwork at a location convenient for you.</p>",
+            "text_font_size": "body-small",
+            "button_text": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--text",
+            "show_arrow": false,
+            "image_aspect_ratio": 1.2,
+            "mobile_image_aspect_ratio": 1.2,
+            "heading_tag": "automatic"
+          }
+        },
+        "image-1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/JR-19-6489-20-1030x687.jpg",
+            "image_width": 100,
+            "image_shape": "normal",
+            "title": "Phase 3: Your Body's Blueprint",
+            "heading_font_size": "heading-small",
+            "text": "<p>We analyze your genetics, blood work, and lifestyle data to understand exactly how your body processes nutrients, responds to exercise, and what health risks you face.</p>",
+            "text_font_size": "body-small",
+            "button_text": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--text",
+            "show_arrow": false,
+            "image_aspect_ratio": 1.2,
+            "mobile_image_aspect_ratio": 1.2,
+            "heading_tag": "automatic"
+          }
+        },
+        "image-2": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/unnamed.jpg",
+            "image_width": 100,
+            "image_shape": "normal",
+            "title": "Phase 4: Precision Assessment",
+            "heading_font_size": "heading-small",
+            "text": "<p>Visit our facility for gold-standard testing: VO2 max (your longevity predictor), basal metabolic rate, body composition analysis, and a comprehensive strength/mobility evaluation.</p>",
+            "text_font_size": "body-small",
+            "button_text": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--text",
+            "show_arrow": false,
+            "image_aspect_ratio": 1.2,
+            "mobile_image_aspect_ratio": 1.2,
+            "heading_tag": "automatic"
+          }
+        },
+        "image-3": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/portrait_photo_in_gym_less_than_5MG.jpg",
+            "image_width": 100,
+            "image_shape": "normal",
+            "title": "Phase 5: Personalized Action Plan",
+            "heading_font_size": "heading-small",
+            "text": "<p>Receive your complete health optimization roadmap with specific targets, timelines, and strategies—plus 12 months of expert coaching to ensure you succeed.</p>",
+            "text_font_size": "body-small",
+            "button_text": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--text",
+            "show_arrow": false,
+            "image_aspect_ratio": 1.2,
+            "mobile_image_aspect_ratio": 1.2,
+            "heading_tag": "automatic"
+          }
+        }
+      },
+      "block_order": [
+        "image",
+        "image-0",
+        "image-1",
+        "image-2",
+        "image-3"
+      ],
+      "settings": {
+        "title": "5-Phase Assessment Process",
+        "heading_font_size": "heading-medium",
+        "align_heading": "text-center",
+        "align_text": "text-center",
+        "width": "wrapper--full-padded",
+        "align_columns": "flex-align-top",
+        "layout": "slider",
+        "grid": 5,
+        "layout_mobile": "1",
+        "color_scheme": "scheme-3",
+        "padding_top": 60,
+        "padding_bottom": 60,
+        "heading_tag": "automatic"
+      }
+    },
+    "section-double-coaching": {
+      "type": "section-double",
+      "blocks": {
+        "subheading": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "Personalized Wellness",
+            "padding_bottom": 6
+          }
+        },
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "title": "Turn Insights Into Action",
+            "heading_font_size": "heading-medium",
+            "padding_bottom": 16,
+            "heading_tag": "automatic"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Transform your health journey with expert coaching and concierge support tailored to your lifestyle. Our team helps you take meaningful, lasting steps toward better well-being.</p>",
+            "text_font_size": "body-medium",
+            "padding_bottom": 24
+          }
+        },
+        "buttons": {
+          "type": "buttons",
+          "settings": {
+            "button_text": "Shop Now",
+            "button_link": "shopify://products/white-pine-medical-longevity-assessment",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "padding_bottom": 16
+          }
+        }
+      },
+      "block_order": [
+        "subheading",
+        "heading",
+        "text",
+        "buttons"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/Untitled_design_27.jpg",
+        "image_width": "one-half",
+        "text_alignment": "text-left",
+        "layout": "",
+        "width": "wrapper--full-padded",
+        "height": "sixty-fifty-height-hero",
+        "mobile_height": "four-fifty-height-hero--mobile",
+        "reverse_blocks": true,
+        "color_scheme": "scheme-1",
+        "padding_top": 60,
+        "padding_bottom": 60,
+        "show_placeholder": true
+      }
+    },
+    "section-double-corporate": {
+      "type": "section-double",
+      "blocks": {
+        "subheading": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "Health That Performs",
+            "padding_bottom": 6
+          }
+        },
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "title": "Optimize Team Health & Longevity",
+            "heading_font_size": "heading-medium",
+            "padding_bottom": 16,
+            "heading_tag": "automatic"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Boost team health and performance with our science-backed corporate wellness services—designed to reduce absenteeism and attract top talent.</p>",
+            "text_font_size": "body-medium",
+            "padding_bottom": 24
+          }
+        },
+        "buttons": {
+          "type": "buttons",
+          "settings": {
+            "button_text": "Learn More",
+            "button_link": "shopify://pages/about",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "padding_bottom": 16
+          }
+        }
+      },
+      "block_order": [
+        "subheading",
+        "heading",
+        "text",
+        "buttons"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/aiease_1754937972298.jpg",
+        "image_width": "one-half",
+        "text_alignment": "text-left",
+        "layout": "",
+        "width": "wrapper--full-padded",
+        "height": "sixty-fifty-height-hero",
+        "mobile_height": "four-fifty-height-hero--mobile",
+        "reverse_blocks": false,
+        "color_scheme": "scheme-1",
+        "padding_top": 60,
+        "padding_bottom": 60,
+        "show_placeholder": true
+      }
+    },
+    "section-reviews": {
+      "type": "section-reviews",
+      "blocks": {
+        "review": {
+          "type": "review",
+          "settings": {
+            "title": "J Maitland, PhD",
+            "subheading": "Fredericton, NB",
+            "review_content": "<p>I lost my brother to an early and unexpected heart attack. James listened to my fears without judgement and has been resolute in his determination to give me the data, insights, and support that I need to move on and live my best life.</p>"
+          }
+        },
+        "review-0": {
+          "type": "review",
+          "settings": {
+            "title": "Olivia H",
+            "subheading": "Los Angeles, CA",
+            "review_content": "<p>The AI system was surprisingly intuitive. I appreciated the balance between data and human support. A very modern, respectful approach to wellness.</p>"
+          }
+        },
+        "review-1": {
+          "type": "review",
+          "settings": {
+            "title": "David M",
+            "subheading": "Los Angeles, CA",
+            "review_content": "<p>White Pine's 5-phase assessment helped me finally understand the root of my fatigue. The at-home testing and wearable tracking were game changers.</p>"
+          }
+        },
+        "review-2": {
+          "type": "review",
+          "settings": {
+            "title": "Dana Bungay",
+            "subheading": "St John, Canada",
+            "review_content": "<p>In September 2024, I was fortunate to be cared for by Dr. James French. He was kind, professional, and thorough—listening carefully, ordering the right tests, and ensuring nothing was missed. His prompt, attentive care and focus on detail truly set him apart.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "review",
+        "review-0",
+        "review-1",
+        "review-2"
+      ],
+      "settings": {
+        "show_featured_image": false,
+        "show_quotation_marks": true,
+        "heading_font_size": "heading-small",
+        "text_align": "text-center",
+        "color_scheme": "scheme-3",
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    },
+    "section-accordion": {
+      "type": "section-accordion",
+      "blocks": {
+        "block": {
+          "type": "text",
+          "settings": {
+            "title": "What is included in the 5-Phase Health Assessment?",
+            "text": "<p>Our 5-Phase Health Assessment includes: an AI-powered virtual health analysis, at-home biological testing, wearable device tracking, an in-person longevity assessment, and a virtual nutrition and gut health evaluation.</p>"
+          }
+        },
+        "block-0": {
+          "type": "text",
+          "settings": {
+            "title": "Who is James AI, and how does it work?",
+            "text": "<p>James is our intelligent AI system that conducts a comprehensive 2-hour health analysis, collecting detailed data about your lifestyle, sleep, medical history, and more — creating a personalized foundation for your wellness journey.</p>"
+          }
+        },
+        "block-1": {
+          "type": "text",
+          "settings": {
+            "title": "Do I need to visit a clinic for any of the tests?",
+            "text": "<p>No clinic visits are necessary for most of the process. Our biological testing kits are designed for at-home use. Only the in-person longevity assessment takes place at our Rothesay facility.</p>"
+          }
+        },
+        "block-2": {
+          "type": "text",
+          "settings": {
+            "title": "What kind of support will I receive after the assessment?",
+            "text": "<p>You'll receive six months of personalized coaching from a Gut Health Dietitian and a certified Health Coach, covering nutrition, exercise, sleep, and emotional wellness.</p>"
+          }
+        },
+        "block-3": {
+          "type": "text",
+          "settings": {
+            "title": "Are medical services included if a health issue is detected?",
+            "text": "<p>Yes. If our team identifies a medical issue requiring physician care, New Brunswick residents can access physician services covered through Medicare. Additional fees may apply for residents outside New Brunswick.</p>"
+          }
+        },
+        "block-4": {
+          "type": "text",
+          "settings": {
+            "title": "Can I use my own wearable device for tracking?",
+            "text": "<p>Yes. You can use your existing wearable device, or we can provide one for you to help monitor and collect your daily health metrics effectively.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "block",
+        "block-0",
+        "block-1",
+        "block-2",
+        "block-3",
+        "block-4"
+      ],
+      "settings": {
+        "title": "Frequently Asked Questions",
+        "heading_font_size": "heading-medium",
+        "default_open": true,
+        "width": "wrapper",
+        "color_scheme": "scheme-1",
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    }
+  },
+  "order": [
+    "section-slideshow-nested",
+    "section-announcement",
+    "section-rich-text-problem",
+    "section-text-row-features",
+    "section-double-solution",
+    "section-columns-phases",
+    "section-double-coaching",
+    "section-double-corporate",
+    "section-reviews",
+    "section-accordion"
+  ]
+}
