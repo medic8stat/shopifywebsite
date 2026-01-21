@@ -1,5 +1,11 @@
 # Website Onboarding Implementation Guide
 
+> ⚠️ **WARNING: THIS IS SHOPIFY WEBSITE DOCUMENTATION**
+>
+> Repository: `medic8stat/shopifywebsite` | Store: whitepinemedical.myshopify.com
+>
+> **NOT** the EHR Platform (`medic8stat/clinalytix-ehr`)
+
 > **Source of Truth:** The master onboarding architecture lives in the EHR repository.
 > This document covers **website-specific implementations only**.
 

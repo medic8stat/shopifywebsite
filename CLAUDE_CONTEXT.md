@@ -1,5 +1,13 @@
 # CLAUDE_CONTEXT.md - Shopify Website Development Context
 
+> ⚠️ **WARNING: THIS IS SHOPIFY WEBSITE DOCUMENTATION**
+>
+> This documentation is for the **Shopify Website** (`medic8stat/shopifywebsite`).
+>
+> **NOT** the EHR Platform (`medic8stat/clinalytix-ehr`).
+>
+> These are completely different repositories and projects.
+
 > **For AI Assistants:** This is your comprehensive context file. Read this first for any Shopify website work.
 
 ---

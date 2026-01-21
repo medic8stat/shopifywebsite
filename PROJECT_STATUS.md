@@ -1,5 +1,11 @@
 # PROJECT_STATUS.md - White Pine Medical Shopify Website
 
+> ⚠️ **WARNING: THIS IS SHOPIFY WEBSITE DOCUMENTATION**
+>
+> Repository: `medic8stat/shopifywebsite` | Store: whitepinemedical.myshopify.com
+>
+> **NOT** the EHR Platform (`medic8stat/clinalytix-ehr`)
+
 > **Current Status:** Active Development
 > **Last Updated:** 2026-01-21
 > **Theme:** Broadcast 8.0.0

@@ -1,10 +1,22 @@
 # James Session Quick Start Guide - Shopify Website
 
+> ⚠️ **WARNING: THIS IS SHOPIFY WEBSITE DOCUMENTATION**
+>
+> This documentation is for the **Shopify Website** (`medic8stat/shopifywebsite`).
+>
+> **NOT** the EHR Platform (`medic8stat/clinalytix-ehr`).
+>
+> These are completely different repositories and projects.
+
 Copy/paste these prompts when working with Claude on the White Pine Medical Shopify website.
 
-**GitHub Repository**: `medic8stat/shopifywebsite`
-**Store**: whitepinemedical.myshopify.com
-**Theme**: Broadcast 8.0.0
+| Property | Value |
+|----------|-------|
+| **GitHub Repository** | `medic8stat/shopifywebsite` |
+| **Store** | whitepinemedical.myshopify.com |
+| **Theme** | Broadcast 8.0.0 |
+| **Dev Theme ID** | 182960718119 |
+| **Live Theme ID** | 178766348583 (NEVER PUSH DIRECTLY) |
 
 ---
 
@@ -22,6 +34,11 @@ Copy/paste these prompts when working with Claude on the White Pine Medical Shop
 Use this for general Shopify website work.
 
 ```
+⚠️ THIS IS SHOPIFY WEBSITE WORK - NOT EHR!
+Repository: medic8stat/shopifywebsite
+Store: whitepinemedical.myshopify.com
+Dev Theme ID: 182960718119
+
 Read these files from shopify-themes/broadcast:
 1. CLAUDE.md (quick overview)
 2. CLAUDE_CONTEXT.md (credentials, commands, full context)
@@ -32,9 +49,7 @@ CRITICAL RULES:
 - NEVER push to live theme (TS Media Design #178766348583)
 - ALWAYS push to Broadcast theme (#182960718119)
 - COMMIT after every unit of work
-- Test with `shopify theme dev` before pushing
-
-Store: whitepinemedical.myshopify.com
+- Test with `shopify theme dev --store whitepinemedical.myshopify.com` before pushing
 ```
 
 ---
@@ -46,6 +61,11 @@ Store: whitepinemedical.myshopify.com
 Use when updating text, copy, or page content.
 
 ```
+⚠️ THIS IS SHOPIFY WEBSITE WORK - NOT EHR!
+Repository: medic8stat/shopifywebsite
+Store: whitepinemedical.myshopify.com
+Dev Theme ID: 182960718119
+
 Read these files from shopify-themes/broadcast:
 1. CLAUDE_CONTEXT.md - Content guidelines (Section 9)
 2. templates/index.json - Homepage content
@@ -59,10 +79,11 @@ CONTENT RULES:
 - Tone: Professional, physician-led, evidence-based
 
 After changes:
-1. COMMIT: git add -A && git commit -m "content: [description]"
-2. PUSH: git push
-3. DEPLOY: shopify theme push --theme 182960718119 --store whitepinemedical.myshopify.com
-4. UPDATE: CHANGELOG.md
+1. TEST: shopify theme dev --store whitepinemedical.myshopify.com
+2. COMMIT: git add -A && git commit -m "content: [description]"
+3. PUSH: git push
+4. DEPLOY: shopify theme push --theme 182960718119 --store whitepinemedical.myshopify.com --allow-live
+5. UPDATE: CHANGELOG.md
 ```
 
 ### 2. STYLING / CSS MODE
@@ -70,6 +91,11 @@ After changes:
 Use when working on colors, fonts, or visual styling.
 
 ```
+⚠️ THIS IS SHOPIFY WEBSITE WORK - NOT EHR!
+Repository: medic8stat/shopifywebsite
+Store: whitepinemedical.myshopify.com
+Dev Theme ID: 182960718119
+
 Read these files from shopify-themes/broadcast:
 1. CLAUDE_CONTEXT.md Section 5 - Brand Assets
 2. config/settings_data.json - Theme color settings
@@ -91,7 +117,7 @@ After changes:
 1. TEST: shopify theme dev --store whitepinemedical.myshopify.com
 2. COMMIT: git add -A && git commit -m "style: [description]"
 3. PUSH: git push
-4. DEPLOY: shopify theme push --theme 182960718119 --store whitepinemedical.myshopify.com
+4. DEPLOY: shopify theme push --theme 182960718119 --store whitepinemedical.myshopify.com --allow-live
 ```
 
 ### 3. PAGE TEMPLATE MODE
@@ -99,6 +125,11 @@ After changes:
 Use when creating new page templates or modifying existing ones.
 
 ```
+⚠️ THIS IS SHOPIFY WEBSITE WORK - NOT EHR!
+Repository: medic8stat/shopifywebsite
+Store: whitepinemedical.myshopify.com
+Dev Theme ID: 182960718119
+
 Read these files from shopify-themes/broadcast:
 1. CLAUDE_CONTEXT.md Section 7 - File Structure
 2. templates/ - Existing templates for reference
@@ -117,10 +148,11 @@ EXISTING TEMPLATES:
 - page.urgent-care.json (urgent care)
 
 After creating template:
-1. CREATE page in Shopify Admin → Pages
-2. SELECT the new template
-3. COMMIT and PUSH
-4. DEPLOY to Broadcast theme
+1. TEST: shopify theme dev --store whitepinemedical.myshopify.com
+2. CREATE page in Shopify Admin → Pages
+3. SELECT the new template
+4. COMMIT and PUSH: git add -A && git commit -m "template: [description]" && git push
+5. DEPLOY: shopify theme push --theme 182960718119 --store whitepinemedical.myshopify.com --allow-live
 ```
 
 ### 4. HEADER / NAVIGATION MODE
@@ -128,6 +160,11 @@ After creating template:
 Use when modifying header, menus, or navigation.
 
 ```
+⚠️ THIS IS SHOPIFY WEBSITE WORK - NOT EHR!
+Repository: medic8stat/shopifywebsite
+Store: whitepinemedical.myshopify.com
+Dev Theme ID: 182960718119
+
 Read these files from shopify-themes/broadcast:
 1. sections/group-header.json - Header configuration
 2. CLAUDE_CONTEXT.md Section 8 - Page structure
@@ -145,9 +182,9 @@ MENUS (managed in Shopify Admin):
 - Main menu: Shopify Admin → Content → Menus
 
 After changes:
-1. TEST mobile and desktop views
-2. COMMIT and PUSH
-3. DEPLOY to Broadcast theme
+1. TEST: shopify theme dev --store whitepinemedical.myshopify.com (mobile and desktop views)
+2. COMMIT and PUSH: git add -A && git commit -m "nav: [description]" && git push
+3. DEPLOY: shopify theme push --theme 182960718119 --store whitepinemedical.myshopify.com --allow-live
 ```
 
 ---
@@ -168,7 +205,7 @@ shopify theme dev --store whitepinemedical.myshopify.com
 
 ```bash
 # Push to staging (Broadcast theme)
-shopify theme push --theme 182960718119 --store whitepinemedical.myshopify.com
+shopify theme push --theme 182960718119 --store whitepinemedical.myshopify.com --allow-live
 
 # Make live (publish Broadcast)
 shopify theme publish --theme 182960718119 --store whitepinemedical.myshopify.com
@@ -213,7 +250,7 @@ END OF SESSION - Verify:
    → git push
 
 3. Pushed to Broadcast theme?
-   → shopify theme push --theme 182960718119 --store whitepinemedical.myshopify.com
+   → shopify theme push --theme 182960718119 --store whitepinemedical.myshopify.com --allow-live
 
 4. CHANGELOG.md updated?
    → Document what changed
@@ -245,11 +282,11 @@ END OF SESSION - Verify:
 
 ## RELATED SYSTEMS
 
-| System | URL |
-|--------|-----|
-| Patient Portal | portal.whitepinemedical.ca |
-| Clinician EHR | app.whitepinemedical.ca |
-| Main Website | whitepinemedical.ca |
+| System | URL | Repository |
+|--------|-----|------------|
+| Main Website (THIS) | whitepinemedical.ca | medic8stat/shopifywebsite |
+| Patient Portal | portal.whitepinemedical.ca | medic8stat/clinalytix-ehr |
+| Clinician EHR | app.whitepinemedical.ca | medic8stat/clinalytix-ehr |
 
 ---
 
