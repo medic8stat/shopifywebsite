@@ -90,7 +90,7 @@
       "settings": {
         "header_sticky": false,
         "enable_search": true,
-        "header_style": "logo_center_menu_left",
+        "header_style": "logo_center_split",
         "show_separator_line": false,
         "header_border_color": "",
         "separator_opacity": 100,

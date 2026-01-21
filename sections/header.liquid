@@ -478,6 +478,17 @@
   </nav>
 {%- endcapture -%}
 
+{%- comment -%} Secondary menu for split navigation (right side) {%- endcomment -%}
+{%- capture secondary_menu -%}
+  {%- if secondary_menu_linklist != blank and linklists[secondary_menu_linklist].links.size > 0 -%}
+    <nav class="header__menu header__menu--secondary{% if settings.type_nav_caps %} caps{% endif %}">
+      {%- for link in linklists[secondary_menu_linklist].links -%}
+        {%- render 'nav-item', link: link, index: forloop.index, highlight_item: highlight_item -%}
+      {%- endfor -%}
+    </nav>
+  {%- endif -%}
+{%- endcapture -%}
+
 {%- if show_toolbar -%}
   <script src="{{ 'ticker.js' | asset_url }}" defer="defer"></script>
 {%- endif -%}
@@ -527,6 +538,14 @@
               <div data-child-takes-space class="header__desktop__bar__c">{{ menu }}</div>
 
               <div data-child-takes-space class="header__desktop__bar__r">{{ buttons }}</div>
+            </div>
+          {%- when 'logo_center_split' -%}
+            <div class="header__desktop__upper header__desktop__upper--split" data-takes-space-wrapper>
+              <div data-child-takes-space class="header__desktop__bar__l">{{ menu }}</div>
+
+              <div data-child-takes-space class="header__desktop__bar__c">{{ logos }}</div>
+
+              <div data-child-takes-space class="header__desktop__bar__r">{{ secondary_menu }}{{ buttons }}</div>
             </div>
           {%- when 'logo_above' -%}
             {%- comment -%} 'logo_above' is default case, this covers migrated settings {%- endcomment -%}
@@ -625,7 +644,8 @@
         {"value": "logo_above", "label": "Logo above menu"},
         {"value": "logo_beside", "label": "Logo beside menu"},
         {"value": "drawer", "label": "Mobile drawer menu"},
-        {"value": "logo_center_menu_left", "label": "Logo center menu left"}
+        {"value": "logo_center_menu_left", "label": "Logo center menu left"},
+        {"value": "logo_center_split", "label": "Logo center with split menus"}
       ]
     },
     {
