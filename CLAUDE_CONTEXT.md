@@ -364,6 +364,7 @@ Personalized Health Guidance
 | Version history | CHANGELOG.md | All changes documented |
 | Bug tracking | KNOWN_ISSUES.md | Active issues |
 | Project status | PROJECT_STATUS.md | Component completion |
+| Onboarding strategy | docs/ONBOARDING_STRATEGY.md | Customer journey & sales optimization |
 | Theme settings | config/settings_data.json | Colors, typography |
 | Header config | sections/group-header.json | Navigation, buttons |
 | Homepage | templates/index.json | All homepage sections |
