@@ -24,7 +24,7 @@
         "text": {
           "type": "text",
           "settings": {
-            "text": "<p>Physician-led longevity and preventive healthcare</p>",
+            "text": "<p>Personalized Health, Lasting Wellness</p>",
             "text_font_size": "body-large",
             "padding_bottom": 8
           }
@@ -53,34 +53,24 @@
         "show_placeholder": false
       }
     },
-    "main-page": {
-      "type": "main-page",
-      "disabled": true,
-      "settings": {
-        "subheading": "",
-        "show_title": true,
-        "heading_font_size": "heading-large",
-        "show_content": true,
-        "text_font_size": "body-medium",
-        "align_text": "text-left",
-        "width": "wrapper",
-        "padding_top": 50,
-        "padding_bottom": 50
-      }
-    },
-    "section-double": {
-      "type": "section-double",
+    "section-rich-text-intro": {
+      "type": "section-rich-text",
       "blocks": {
         "heading": {
           "type": "heading",
           "settings": {
-            "heading_font_size": "heading-x-large"
+            "title": "Science-Driven Health Solutions",
+            "heading_font_size": "heading-medium",
+            "padding_bottom": 16,
+            "heading_tag": "automatic"
           }
         },
         "text": {
           "type": "text",
           "settings": {
-            "text_font_size": "body-medium"
+            "text": "<p>We deliver science-driven, tailored health solutions that blend cutting-edge technology with expert care. Our approach empowers you to understand your unique biology and make informed, data-backed health decisions.</p>",
+            "text_font_size": "body-medium",
+            "padding_bottom": 24
           }
         }
       },
@@ -89,214 +79,260 @@
         "text"
       ],
       "settings": {
-        "image_width": "one-half",
-        "text_alignment": "text-left",
-        "layout": "is-reversed",
-        "width": "wrapper--full",
-        "height": "sixty-fifty-height-hero",
-        "mobile_height": "four-fifty-height-hero--mobile",
-        "padding_top": 0,
-        "padding_bottom": 50
+        "align_text": "text-center",
+        "width": "wrapper--narrow",
+        "color_scheme": "scheme-1",
+        "overlay_type": "disabled",
+        "padding_top": 60,
+        "padding_bottom": 60
       }
     },
-    "section-columns": {
-      "type": "section-columns",
+    "section-text-row-values": {
+      "type": "section-text-row",
       "blocks": {
-        "image": {
-          "type": "image",
+        "icon": {
+          "type": "icon",
           "settings": {
-            "button_text": "",
-            "button_url": "",
-            "button_type": "btn--primary hero__btn",
-            "button_style": "btn--solid",
-            "image_aspect_ratio": 1.2
+            "icon_name": "icon-flare",
+            "icon_size": 50,
+            "icon_color": "#1E3A5F",
+            "title": "Measure What Matters",
+            "heading_font_size": "heading-x-small",
+            "text": "<p>Only essential, predictive health assessments. Every test has purpose and meaning. We utilize public healthcare resources when available and provide rapid access to advanced diagnostics when needed.</p>",
+            "text_font_size": "body-small",
+            "heading_tag": "automatic"
           }
         },
-        "image-0": {
-          "type": "image",
+        "icon-0": {
+          "type": "icon",
           "settings": {
-            "button_text": "",
-            "button_url": "",
-            "button_type": "btn--primary hero__btn",
-            "button_style": "btn--solid",
-            "image_aspect_ratio": 1.2
+            "icon_name": "icon-heart",
+            "icon_size": 50,
+            "icon_color": "#1E3A5F",
+            "title": "Know Yourself",
+            "heading_font_size": "heading-x-small",
+            "text": "<p>Comprehensive free learning modules and complete transparency in your health data. Gain in-depth understanding of test results and empowerment through knowledge.</p>",
+            "text_font_size": "body-small",
+            "heading_tag": "automatic"
           }
         },
-        "image-1": {
-          "type": "image",
+        "icon-1": {
+          "type": "icon",
           "settings": {
-            "button_text": "",
-            "button_url": "",
-            "button_type": "btn--primary hero__btn",
-            "button_style": "btn--solid",
-            "image_aspect_ratio": 1.2
+            "icon_name": "icon-award",
+            "icon_size": 50,
+            "icon_color": "#1E3A5F",
+            "title": "Progress That Lasts",
+            "heading_font_size": "heading-x-small",
+            "text": "<p>We emphasize improvement over perfection, sustainability over quick gains. Our science-based approach delivers measurable, lasting results — not temporary solutions.</p>",
+            "text_font_size": "body-small",
+            "heading_tag": "automatic"
           }
         }
       },
       "block_order": [
-        "image",
-        "image-0",
-        "image-1"
+        "icon",
+        "icon-0",
+        "icon-1"
+      ],
+      "settings": {
+        "title": "Our Core Principles",
+        "heading_font_size": "heading-medium",
+        "align_heading": "text-center",
+        "align_text": "text-center",
+        "icon_alignment": "icon--top",
+        "width": "wrapper",
+        "align_columns": "flex-align-top",
+        "layout": "grid",
+        "grid": 3,
+        "layout_mobile": "1",
+        "color_scheme": "scheme-3",
+        "padding_top": 60,
+        "padding_bottom": 60,
+        "heading_tag": "automatic"
+      }
+    },
+    "section-rich-text-philosophy": {
+      "type": "section-rich-text",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "title": "Our Philosophy",
+            "heading_font_size": "heading-medium",
+            "padding_bottom": 16,
+            "heading_tag": "automatic"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p>At White Pine Medical, we empower you to own your health through personalized diagnostics and a focus on movement, strength, and lasting wellness.</p><ul><li>Gain deep understanding of your unique health</li><li>Access comprehensive diagnostics and insights</li><li>Focus on movement, strength, and stability</li><li>Learn to manage your health confidently</li></ul><p>\"Doctor\" means \"teacher\" — we're here to guide you on your health journey.</p>",
+            "text_font_size": "body-medium",
+            "padding_bottom": 24
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "text"
+      ],
+      "settings": {
+        "align_text": "text-left",
+        "width": "wrapper--narrow",
+        "color_scheme": "scheme-1",
+        "overlay_type": "disabled",
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    },
+    "section-text-row-technology": {
+      "type": "section-text-row",
+      "blocks": {
+        "icon": {
+          "type": "icon",
+          "settings": {
+            "icon_name": "icon-chat",
+            "icon_size": 50,
+            "icon_color": "#1E3A5F",
+            "title": "Ongoing Health Care",
+            "heading_font_size": "heading-x-small",
+            "text": "<p>Access to qualified doctors and nurses with coordinated management of ongoing issues. Seamless integration with your care plan focusing on both present and future health.</p>",
+            "text_font_size": "body-small",
+            "heading_tag": "automatic"
+          }
+        },
+        "icon-0": {
+          "type": "icon",
+          "settings": {
+            "icon_name": "icon-flare",
+            "icon_size": 50,
+            "icon_color": "#1E3A5F",
+            "title": "Advanced Technology",
+            "heading_font_size": "heading-x-small",
+            "text": "<p>We harness the power of AI as a physician assistant, processing more health data than any single doctor could manage. Research-validated, privacy-focused, and safety-certified.</p>",
+            "text_font_size": "body-small",
+            "heading_tag": "automatic"
+          }
+        },
+        "icon-1": {
+          "type": "icon",
+          "settings": {
+            "icon_name": "icon-lock",
+            "icon_size": 50,
+            "icon_color": "#1E3A5F",
+            "title": "Privacy & Security",
+            "heading_font_size": "heading-x-small",
+            "text": "<p>Your health data is protected with military-grade encryption. We comply with HIPAA, PHIPA, and PIPEDA regulations. 100% Canadian data storage.</p>",
+            "text_font_size": "body-small",
+            "heading_tag": "automatic"
+          }
+        }
+      },
+      "block_order": [
+        "icon",
+        "icon-0",
+        "icon-1"
+      ],
+      "settings": {
+        "title": "Beyond Traditional Healthcare",
+        "heading_font_size": "heading-medium",
+        "align_heading": "text-center",
+        "align_text": "text-center",
+        "icon_alignment": "icon--top",
+        "width": "wrapper",
+        "align_columns": "flex-align-top",
+        "layout": "grid",
+        "grid": 3,
+        "layout_mobile": "1",
+        "color_scheme": "scheme-1",
+        "padding_top": 60,
+        "padding_bottom": 60,
+        "heading_tag": "automatic"
+      }
+    },
+    "section-accordion-faq": {
+      "type": "section-accordion",
+      "blocks": {
+        "block": {
+          "type": "text",
+          "settings": {
+            "title": "Why is the clinic at a fitness centre?",
+            "text": "<p>ForFitness and Athletics Performance Centre offers a science-based approach with a purpose-built facility. We have multidisciplinary support including physiotherapy, chiropractic, massage therapy, psychology, and naturopathy — all aligned with our philosophy of movement, strength, and lasting wellness.</p>"
+          }
+        },
+        "block-0": {
+          "type": "text",
+          "settings": {
+            "title": "How do appointments work?",
+            "text": "<p>We operate by appointment only, offering both virtual and in-person care options. This ensures you receive dedicated, unhurried attention during every visit.</p>"
+          }
+        },
+        "block-1": {
+          "type": "text",
+          "settings": {
+            "title": "Is there accommodation for out-of-town patients?",
+            "text": "<p>Special rates with trusted accommodation partners are coming soon for patients traveling to our Rothesay facility.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "block",
+        "block-0",
+        "block-1"
+      ],
+      "settings": {
+        "default_open": false,
+        "title": "Frequently Asked Questions",
+        "heading_font_size": "heading-medium",
+        "width": "wrapper",
+        "color_scheme": "scheme-1",
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    },
+    "section-rich-text-location": {
+      "type": "section-rich-text",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "title": "Visit Us",
+            "heading_font_size": "heading-medium",
+            "padding_bottom": 16,
+            "heading_tag": "automatic"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>White Pine Medical</strong></p><p>2A Hampton Road<br>Rothesay, NB, E2E 5K9<br>(Above ForFitness and Athletics Performance Centre)</p><p><strong>Hours:</strong> By Appointment Only</p><p><a href=\"/pages/contact\">Contact Us →</a></p>",
+            "text_font_size": "body-medium",
+            "padding_bottom": 16
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "text"
       ],
       "settings": {
         "align_text": "text-center",
-        "width": "wrapper--full-padded",
-        "align_columns": "flex-align-top",
-        "layout_mobile": "slider",
-        "padding_top": 50,
-        "padding_bottom": 50
-      }
-    },
-    "section-double-0": {
-      "type": "section-double",
-      "blocks": {
-        "heading-0": {
-          "type": "heading",
-          "settings": {
-            "heading_font_size": "heading-x-large"
-          }
-        },
-        "text-0": {
-          "type": "text",
-          "settings": {
-            "text_font_size": "body-medium"
-          }
-        }
-      },
-      "block_order": [
-        "heading-0",
-        "text-0"
-      ],
-      "settings": {
-        "image_width": "one-half",
-        "text_alignment": "text-left",
-        "width": "wrapper--full",
-        "height": "sixty-fifty-height-hero",
-        "mobile_height": "four-fifty-height-hero--mobile",
-        "padding_top": 50,
-        "padding_bottom": 50
-      }
-    },
-    "section-announcement": {
-      "type": "section-announcement",
-      "blocks": {
-        "text-1": {
-          "type": "text",
-          "settings": {
-            "target_device_enabled": false,
-            "target_device": "mobile"
-          }
-        }
-      },
-      "block_order": [
-        "text-1"
-      ],
-      "settings": {
-        "slider_speed": 7,
-        "marquee_speed": 100,
-        "layout": "marquee",
-        "padding_top": 0,
-        "padding_bottom": 0
-      }
-    },
-    "section-collections-list": {
-      "type": "section-collections-list",
-      "blocks": {
-        "collection": {
-          "type": "collection",
-          "settings": {}
-        },
-        "collection-0": {
-          "type": "collection",
-          "settings": {}
-        },
-        "collection-1": {
-          "type": "collection",
-          "settings": {}
-        },
-        "collection-2": {
-          "type": "collection",
-          "settings": {}
-        }
-      },
-      "block_order": [
-        "collection",
-        "collection-0",
-        "collection-1",
-        "collection-2"
-      ],
-      "settings": {
-        "title": "",
-        "aspect_ratio": 1.2,
-        "layout": "grid",
-        "padding_top": 50,
-        "padding_bottom": 32
-      }
-    },
-    "section-press-logos": {
-      "type": "section-press-logos",
-      "blocks": {
-        "logo-item-header": {
-          "type": "logo-item-header",
-          "settings": {
-            "logo_width": 150,
-            "link": ""
-          }
-        },
-        "logo-item-header-0": {
-          "type": "logo-item-header",
-          "settings": {
-            "logo_width": 150,
-            "link": ""
-          }
-        },
-        "logo-item-header-1": {
-          "type": "logo-item-header",
-          "settings": {
-            "logo_width": 150,
-            "link": ""
-          }
-        },
-        "logo-item-header-2": {
-          "type": "logo-item-header",
-          "settings": {
-            "logo_width": 150,
-            "link": ""
-          }
-        }
-      },
-      "block_order": [
-        "logo-item-header",
-        "logo-item-header-0",
-        "logo-item-header-1",
-        "logo-item-header-2"
-      ],
-      "settings": {
-        "enable_heading_slider": false,
-        "logo_opacity": 60,
-        "padding_top": 50,
-        "padding_bottom": 50
-      }
-    },
-    "section-divider": {
-      "type": "section-divider",
-      "settings": {
-        "show_line": true,
-        "width": "wrapper--full-padded",
-        "padding_top": 31,
-        "padding_bottom": 50
+        "width": "wrapper--narrow",
+        "color_scheme": "scheme-4",
+        "overlay_type": "disabled",
+        "padding_top": 60,
+        "padding_bottom": 60
       }
     }
   },
   "order": [
     "section-hero-banner",
-    "main-page",
-    "section-double",
-    "section-columns",
-    "section-double-0",
-    "section-announcement",
-    "section-collections-list",
-    "section-press-logos",
-    "section-divider"
+    "section-rich-text-intro",
+    "section-text-row-values",
+    "section-rich-text-philosophy",
+    "section-text-row-technology",
+    "section-accordion-faq",
+    "section-rich-text-location"
   ]
 }

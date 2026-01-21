@@ -18,6 +18,16 @@ All notable changes to the White Pine Medical Shopify website will be documented
   - Privacy & Trust page: "Privacy & Trust" hero with pine forest background
   - Product/Services page: "Our Services" hero with pine forest background
 
+### Fixed
+
+- **About Page Content** - Complete rewrite replacing demo placeholder content with actual White Pine Medical content:
+  - Added "Science-Driven Health Solutions" intro section
+  - Added "Our Core Principles" with three key values (Measure What Matters, Know Yourself, Progress That Lasts)
+  - Added "Our Philosophy" section with bullet points about empowerment and guidance
+  - Added "Beyond Traditional Healthcare" section covering Ongoing Care, Advanced Technology, Privacy & Security
+  - Added location-specific FAQ (Why fitness centre?, Appointments, Accommodation)
+  - Added "Visit Us" footer with address and contact link
+
 ### Changed
 - **Privacy & Trust Page Content** - Complete rewrite with value-focused messaging:
   - "How We Protect Your Information" → "Privacy That Puts You First"
