@@ -49,11 +49,13 @@
               "name": "Side by side buttons",
               "settings": {
                 "button_text": "Explore Services",
+                "button_url": "",
                 "button_type": "btn--white",
                 "button_size": "",
                 "button_style": "btn--solid",
                 "show_arrow": false,
                 "button_secondary_text": "",
+                "button_secondary_url": "",
                 "button_secondary_type": "btn--white",
                 "button_secondary_size": "",
                 "button_secondary_style": "btn--solid",
@@ -94,9 +96,8 @@
           "type": "icon",
           "settings": {
             "icon_name": "icon-award",
-            "image": "",
             "icon_size": 50,
-            "icon_color": "#1E3A5F",
+            "icon_color": "#1e3a5f",
             "title": "Medical Oversight",
             "heading_font_size": "heading-x-small",
             "text": "<p>Every assessment guided by a physician who reviews your results, identifies priorities, and ensures clinical rigor at every step.</p>",
@@ -108,9 +109,8 @@
           "type": "icon",
           "settings": {
             "icon_name": "icon-check",
-            "image": "",
             "icon_size": 50,
-            "icon_color": "#1E3A5F",
+            "icon_color": "#1e3a5f",
             "title": "Evidence-Based",
             "heading_font_size": "heading-x-small",
             "text": "<p>Recommendations rooted in peer-reviewed clinical evidence—not trends or marketing claims.</p>",
@@ -122,9 +122,8 @@
           "type": "icon",
           "settings": {
             "icon_name": "icon-heart",
-            "image": "",
             "icon_size": 50,
-            "icon_color": "#1E3A5F",
+            "icon_color": "#1e3a5f",
             "title": "Integrated Care",
             "heading_font_size": "heading-x-small",
             "text": "<p>Works alongside your existing healthcare providers—we collaborate, not replace.</p>",
@@ -169,6 +168,7 @@
             "text": "<p>Comprehensive health evaluation combining your medical history, advanced diagnostics, and clinical testing to understand your complete health picture.</p>",
             "text_font_size": "body-small",
             "button_text": "",
+            "button_url": "",
             "button_type": "btn--primary",
             "button_size": "",
             "button_style": "btn--text",
@@ -189,6 +189,7 @@
             "text": "<p>Physician-guided identification of your most important focus areas—what matters most for your health, ranked by clinical significance.</p>",
             "text_font_size": "body-small",
             "button_text": "",
+            "button_url": "",
             "button_type": "btn--primary",
             "button_size": "",
             "button_style": "btn--text",
@@ -209,6 +210,7 @@
             "text": "<p>Personalized action plan with clear next steps, timelines, and ongoing support to turn insights into lasting health improvements.</p>",
             "text_font_size": "body-small",
             "button_text": "",
+            "button_url": "",
             "button_type": "btn--primary",
             "button_size": "",
             "button_style": "btn--text",
@@ -249,7 +251,7 @@
             "icon_name": "icon-shield",
             "image": "shopify://shop_images/Built-by-Visionaries_5399c173-e778-4367-8ab0-6e9f453410ab.png",
             "icon_size": 50,
-            "icon_color": "#1E3A5F",
+            "icon_color": "#1e3a5f",
             "title": "Physician-Led, Not Algorithm-Driven",
             "heading_font_size": "heading-x-small",
             "text": "<p>A licensed physician reviews every assessment and guides your care. Technology supports clinical judgment—it does not replace it.</p>",
@@ -263,7 +265,7 @@
             "icon_name": "icon-book",
             "image": "shopify://shop_images/AI-Driven-Insight_5065db69-e6eb-4b9a-b8d4-d159da130415.png",
             "icon_size": 50,
-            "icon_color": "#1E3A5F",
+            "icon_color": "#1e3a5f",
             "title": "Clinical Evidence Over Trends",
             "heading_font_size": "heading-x-small",
             "text": "<p>Every recommendation is grounded in peer-reviewed research and established clinical guidelines—not wellness fads or marketing claims.</p>",
@@ -277,7 +279,7 @@
             "icon_name": "icon-link",
             "image": "shopify://shop_images/Personalized-Support_ca1579d1-03c8-4e81-9a56-e6b3d7f302b5.png",
             "icon_size": 50,
-            "icon_color": "#1E3A5F",
+            "icon_color": "#1e3a5f",
             "title": "Complements Your Existing Care",
             "heading_font_size": "heading-x-small",
             "text": "<p>We work with your family doctor and specialists—sharing findings and coordinating care rather than operating in isolation.</p>",
@@ -315,7 +317,7 @@
           "type": "image",
           "settings": {
             "column_width": 33,
-            "image": "",
+            "image": "shopify://shop_images/unnamed.jpg",
             "image_width": 100,
             "image_aspect_ratio": 1,
             "mobile_image_aspect_ratio": 1,
@@ -325,8 +327,8 @@
             "text": "<p>Heart health assessment, arterial stiffness, cardiac risk profiling, and lipid optimization.</p>",
             "text_font_size": "body-small",
             "button_text": "",
+            "button_url": "",
             "button_type": "btn--primary",
-            "button_size": "",
             "button_style": "btn--text",
             "show_arrow": false,
             "heading_tag": "automatic"
@@ -336,7 +338,7 @@
           "type": "image",
           "settings": {
             "column_width": 33,
-            "image": "",
+            "image": "shopify://shop_images/fos-research-chem-bio-2.jpg",
             "image_width": 100,
             "image_aspect_ratio": 1,
             "mobile_image_aspect_ratio": 1,
@@ -346,8 +348,8 @@
             "text": "<p>Metabolic rate testing, glucose regulation, body composition analysis, and nutritional status.</p>",
             "text_font_size": "body-small",
             "button_text": "",
+            "button_url": "",
             "button_type": "btn--primary",
-            "button_size": "",
             "button_style": "btn--text",
             "show_arrow": false,
             "heading_tag": "automatic"
@@ -357,7 +359,7 @@
           "type": "image",
           "settings": {
             "column_width": 33,
-            "image": "",
+            "image": "shopify://shop_images/pexels-shvetsa-4226264.jpg",
             "image_width": 100,
             "image_aspect_ratio": 1,
             "mobile_image_aspect_ratio": 1,
@@ -367,8 +369,8 @@
             "text": "<p>Cognitive assessment, sleep quality analysis, stress response evaluation, and brain health optimization.</p>",
             "text_font_size": "body-small",
             "button_text": "",
+            "button_url": "",
             "button_type": "btn--primary",
-            "button_size": "",
             "button_style": "btn--text",
             "show_arrow": false,
             "heading_tag": "automatic"
@@ -378,7 +380,7 @@
           "type": "image",
           "settings": {
             "column_width": 33,
-            "image": "",
+            "image": "shopify://shop_images/Screenshot_2025-02-23_170926.png",
             "image_width": 100,
             "image_aspect_ratio": 1,
             "mobile_image_aspect_ratio": 1,
@@ -388,8 +390,8 @@
             "text": "<p>VO2 max testing, functional movement screening, strength assessment, and mobility evaluation.</p>",
             "text_font_size": "body-small",
             "button_text": "",
+            "button_url": "",
             "button_type": "btn--primary",
-            "button_size": "",
             "button_style": "btn--text",
             "show_arrow": false,
             "heading_tag": "automatic"
@@ -399,7 +401,7 @@
           "type": "image",
           "settings": {
             "column_width": 33,
-            "image": "",
+            "image": "shopify://shop_images/4.jpg",
             "image_width": 100,
             "image_aspect_ratio": 1,
             "mobile_image_aspect_ratio": 1,
@@ -409,8 +411,8 @@
             "text": "<p>Psychological wellness screening, resilience assessment, and mental health resource coordination.</p>",
             "text_font_size": "body-small",
             "button_text": "",
+            "button_url": "",
             "button_type": "btn--primary",
-            "button_size": "",
             "button_style": "btn--text",
             "show_arrow": false,
             "heading_tag": "automatic"
@@ -420,7 +422,7 @@
           "type": "image",
           "settings": {
             "column_width": 33,
-            "image": "",
+            "image": "shopify://shop_images/pexels-tara-winstead-8386440.jpg",
             "image_width": 100,
             "image_aspect_ratio": 1,
             "mobile_image_aspect_ratio": 1,
@@ -430,8 +432,8 @@
             "text": "<p>Genetic risk profiling, pharmacogenomics, hereditary condition screening, and personalized insights.</p>",
             "text_font_size": "body-small",
             "button_text": "",
+            "button_url": "",
             "button_type": "btn--primary",
-            "button_size": "",
             "button_style": "btn--text",
             "show_arrow": false,
             "heading_tag": "automatic"
@@ -492,6 +494,7 @@
           "type": "buttons",
           "settings": {
             "button_text": "View Services",
+            "button_url": "",
             "button_type": "btn--primary",
             "button_size": "",
             "button_style": "btn--solid",
@@ -507,6 +510,7 @@
         "physician-buttons"
       ],
       "settings": {
+        "image_1": "shopify://shop_images/portrait_photo_in_gym_less_than_5MG.jpg",
         "image_width": "one-half",
         "text_alignment": "text-left",
         "layout": "",
@@ -527,6 +531,7 @@
           "type": "text",
           "settings": {
             "title": "Is this diagnostic testing?",
+            "heading_font_size": "heading-small",
             "text": "<p>No. Our assessments are screening tools designed to identify potential health priorities and optimize wellness. If we identify findings that require medical diagnosis or treatment, we coordinate referrals to appropriate specialists through established clinical pathways. We complement—not replace—your existing healthcare relationships.</p>"
           }
         },
@@ -534,6 +539,7 @@
           "type": "text",
           "settings": {
             "title": "How is my data protected?",
+            "heading_font_size": "heading-small",
             "text": "<p>Your health information is stored securely in Canada using enterprise-grade encryption and compliant data handling practices. We follow strict privacy protocols and never share your information without explicit consent. You maintain control over your health data at all times.</p>"
           }
         },
@@ -541,6 +547,7 @@
           "type": "text",
           "settings": {
             "title": "What if something is found?",
+            "heading_font_size": "heading-small",
             "text": "<p>If our assessment identifies a finding requiring further evaluation, your physician will discuss next steps directly with you. We have established referral pathways to specialists and can coordinate with your family doctor to ensure appropriate follow-up care. New Brunswick residents may access physician services through Medicare; fees may apply for out-of-province residents.</p>"
           }
         },
@@ -548,6 +555,7 @@
           "type": "text",
           "settings": {
             "title": "Who can I talk to?",
+            "heading_font_size": "heading-small",
             "text": "<p>Our concierge team is available to answer questions before you begin. You can reach us by phone, email, or through our contact form. If you have specific clinical questions, our team can arrange a brief consultation with a physician to discuss whether our assessment is right for you.</p>"
           }
         }
@@ -562,8 +570,12 @@
         "default_open": true,
         "title": "Trust & Safety",
         "heading_font_size": "heading-medium",
+        "show_icon": false,
+        "icon_name": "icon-award",
+        "icon_size": 20,
         "width": "wrapper",
         "color_scheme": "scheme-1",
+        "icon_color": "",
         "padding_top": 60,
         "padding_bottom": 60
       }
@@ -575,9 +587,8 @@
           "type": "icon",
           "settings": {
             "icon_name": "icon-calendar",
-            "image": "",
             "icon_size": 50,
-            "icon_color": "#1E3A5F",
+            "icon_color": "#1e3a5f",
             "title": "Start with a Physician",
             "heading_font_size": "heading-x-small",
             "text": "<p>Book a consultation to discuss your health goals and determine if our assessment is right for you.</p>",
@@ -589,9 +600,8 @@
           "type": "icon",
           "settings": {
             "icon_name": "icon-clipboard",
-            "image": "",
             "icon_size": 50,
-            "icon_color": "#1E3A5F",
+            "icon_color": "#1e3a5f",
             "title": "Explore Assessments",
             "heading_font_size": "heading-x-small",
             "text": "<p>Learn more about our comprehensive evaluation and what each assessment domain includes.</p>",
@@ -603,9 +613,8 @@
           "type": "icon",
           "settings": {
             "icon_name": "icon-chat",
-            "image": "",
             "icon_size": 50,
-            "icon_color": "#1E3A5F",
+            "icon_color": "#1e3a5f",
             "title": "Have Questions?",
             "heading_font_size": "heading-x-small",
             "text": "<p>Our concierge team is here to help. Reach out with any questions about our services or process.</p>",

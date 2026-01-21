@@ -21,33 +21,33 @@
 | ISS-004 | MEDIUM | ⚠️ PENDING | Missing images in text/photo sections |
 | ISS-005 | HIGH | ✅ RESOLVED | Shopify Admin API token not accessible via Partners Dashboard |
 | ISS-006 | HIGH | ✅ RESOLVED | .shopifyignore and shopify.theme.toml blocking template pushes |
-| ISS-007 | MEDIUM | ⚠️ PENDING | Services, Privacy & Trust, Urgent Care pages need creation in Shopify Admin |
+| ISS-007 | MEDIUM | ✅ RESOLVED | Services, Privacy & Trust, Urgent Care pages need creation in Shopify Admin |
 
 ---
 
 ## Active Issues
 
-### ISS-007: Pages Need Creation in Shopify Admin
+### RESOLVED-012: Pages Created in Shopify Admin
 
 **Severity:** MEDIUM
-**Status:** ⚠️ PENDING
+**Status:** ✅ RESOLVED
 **Category:** Setup
 **Reported:** 2026-01-21
+**Resolved:** 2026-01-21
 
 **Problem:**
-The following page templates exist on the theme but the actual pages need to be created in Shopify Admin:
+The following page templates existed on the theme but the actual pages needed to be created in Shopify Admin:
+
 - Services (`page.services`)
 - Privacy & Trust (`page.privacy-trust`)
 - Urgent Care (`page.urgent-care`)
 
-**Impact:**
-Users cannot access these pages until they are created in Shopify Admin → Pages.
-
 **Resolution:**
-Create pages in Shopify Admin → Online Store → Pages:
-1. Add page "Services" → assign template `page.services`
-2. Add page "Privacy & Trust" → assign template `page.privacy-trust`
-3. Add page "Urgent Care" → assign template `page.urgent-care`
+Pages created in Shopify Admin → Online Store → Pages with templates assigned:
+
+1. Services → template `page.services`
+2. Privacy & Trust → template `page.privacy-trust`
+3. Urgent Care → template `page.urgent-care`
 
 **Note:** Broadcast theme was published to make templates available in the dropdown.
 

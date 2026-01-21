@@ -14,8 +14,6 @@
     "announcement": {
       "type": "announcement",
       "disabled": true,
-      "blocks": {},
-      "block_order": [],
       "settings": {
         "show_border": false,
         "layout": "slider",

@@ -46,8 +46,6 @@
         "color_scheme": "scheme-2",
         "show_text_background": false,
         "overlay_type": "full",
-        "bg_color": "#1E3A5F",
-        "overlay_opacity": 50,
         "padding_top": 0,
         "padding_bottom": 0,
         "show_placeholder": false
@@ -210,11 +208,7 @@
           "type": "buttons",
           "settings": {
             "button_text": "Contact Us",
-            "button_link": "/pages/contact",
             "button_type": "btn--primary",
-            "button_text_2": "",
-            "button_link_2": "",
-            "button_type_2": "btn--secondary",
             "padding_bottom": 8
           }
         }
