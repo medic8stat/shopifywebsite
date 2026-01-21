@@ -9,14 +9,48 @@
  */
 {
   "sections": {
-    "section-divider": {
-      "type": "section-divider",
+    "section-hero-banner": {
+      "type": "section-hero",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "title": "Contact Us",
+            "heading_font_size": "heading-large",
+            "heading_tag": "automatic",
+            "padding_bottom": 8
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p>We're here to help you on your health journey</p>",
+            "text_font_size": "body-large",
+            "padding_bottom": 8
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "text"
+      ],
       "settings": {
-        "show_line": true,
+        "image": "shopify://shop_images/iStock-1311840964.jpg",
+        "link": "",
         "width": "wrapper--full",
-        "color_scheme": "",
+        "height": "four-fifty-height-hero",
+        "flex_align_desktop": "align--middle-center-desktop",
+        "content_width": 60,
+        "mobile_height": "three-fifty-height-hero--mobile",
+        "flex_align_mobile": "align--middle-center-mobile",
+        "color_scheme": "scheme-2",
+        "show_text_background": false,
+        "overlay_type": "color",
+        "bg_color": "#1E3A5F",
+        "overlay_opacity": 40,
         "padding_top": 0,
-        "padding_bottom": 0
+        "padding_bottom": 0,
+        "show_placeholder": false
       }
     },
     "main-page": {
@@ -177,7 +211,7 @@
     }
   },
   "order": [
-    "section-divider",
+    "section-hero-banner",
     "main-page",
     "contact-form",
     "section-accordion-group"

@@ -11,6 +11,12 @@ All notable changes to the White Pine Medical Shopify website will be documented
 - **Urgent Care Page** (`page.urgent-care.json`) - Coming Soon page for walk-in urgent care services with Medicare coverage info
 - **CLAUDE.md Development Rules** - Added critical workflow rules: NEVER push to live theme, always use Broadcast theme for development
 - **Image Management Documentation** - Added guidance on how images added via Theme Editor persist across code pushes, and best practice to pull settings before local edits
+- **Consistent Hero Banners** - Added white pine forest hero image banner to all pages for brand consistency:
+  - Contact page: "Contact Us" hero with pine forest background
+  - About page: "About White Pine Medical" hero with pine forest background
+  - Urgent Care page: Updated existing hero with pine forest background
+  - Privacy & Trust page: "Privacy & Trust" hero with pine forest background
+  - Product/Services page: "Our Services" hero with pine forest background
 
 ### Changed
 - **Privacy & Trust Page Content** - Complete rewrite with value-focused messaging:
