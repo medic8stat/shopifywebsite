@@ -15,53 +15,43 @@
 
 ---
 
-## Admin API Setup (Pages & Navigation)
+## Content Management (via Shopify CLI)
 
-### Setup (One-Time)
-
-1. **Create Custom App in Shopify Admin:**
-   - Go to: https://whitepinemedical.myshopify.com/admin/settings/apps/development
-   - Click "Create an app" → Name: `White Pine Content API`
-   - Configure Admin API scopes (look under "Online Store" section):
-     - `read_content`, `write_content` (pages, blogs)
-     - `read_themes`, `write_themes` (theme files, settings)
-     - `read_online_store_navigation`, `write_online_store_navigation` (menus)
-   - Install app → Reveal token → Copy immediately (shown once!)
-
-2. **Configure locally:**
-   ```bash
-   cd ~/shopify-themes/broadcast
-   cp .env.example .env
-   # Edit .env and paste your token
-   ```
+**No API token needed** - uses Shopify CLI's existing authentication.
 
 ### Usage
 
 ```bash
-# List all pages
-node shopify-admin-api.mjs list-pages
+cd ~/shopify-themes/broadcast
 
-# Create a page
-node shopify-admin-api.mjs create-page "Urgent Care" "urgent-care" "<h1>Coming Soon</h1>"
+# List all themes
+node shopify-content.mjs list-themes
 
-# Create from HTML file
-node shopify-admin-api.mjs create-page "About Us" "about" @pages/about.html
+# Pull settings (colors, fonts, etc.) from Shopify
+node shopify-content.mjs pull-settings
 
-# Update a page
-node shopify-admin-api.mjs update-page 123456789 "New Title" "<p>Updated content</p>"
+# Push settings back to Shopify
+node shopify-content.mjs push-settings
 
-# Delete a page
-node shopify-admin-api.mjs delete-page 123456789
-
-# List navigation menus
-node shopify-admin-api.mjs list-navigation
+# Pull/push specific files
+node shopify-content.mjs pull templates/index.json
+node shopify-content.mjs push templates/index.json
 ```
 
-### Workflow for Claude Code
+### Workflow for Settings Changes (Colors, Fonts, Hero Text)
 
-1. Create HTML content in `pages/` directory
-2. Run `node shopify-admin-api.mjs create-page ...`
-3. Commit: `git add -A && git commit -m "feat(pages): Add urgent care page"`
+1. Pull current settings: `node shopify-content.mjs pull-settings`
+2. Edit `config/settings_data.json` locally
+3. Push changes: `node shopify-content.mjs push-settings`
+4. Verify at preview URL
+5. Commit: `git add -A && git commit -m "style: Update colors"`
+
+### Workflow for Template Changes (Section Content)
+
+1. Pull template: `node shopify-content.mjs pull templates/index.json`
+2. Edit the JSON file locally
+3. Push changes: `node shopify-content.mjs push templates/index.json`
+4. Commit changes
 
 ---
 
