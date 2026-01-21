@@ -4,6 +4,15 @@ All notable changes to the White Pine Medical Shopify website will be documented
 
 ---
 
+## [2026-01-21] - Hero Image Transparency Fix (v6.0.4)
+
+### Fixed
+
+- **Services page hero image** - Changed scheme-2 background from opaque navy (`#1E3A5F`) to transparent (`rgba(0,0,0,0)`) so woodland image now shows through with white text overlay
+- **Color scheme-2** - Now has transparent background, allowing hero images to display properly while maintaining white text for readability
+
+---
+
 ## [2026-01-21] - Transparent Headers & Hero Images (v6.0.3)
 
 ### Changed

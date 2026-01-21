@@ -99,7 +99,7 @@
         "scheme-2": {
           "settings": {
             "section_text": "#ffffff",
-            "section_bg": "#1E3A5F",
+            "section_bg": "rgba(0,0,0,0)",
             "section_bg_light": "#f0f7ff",
             "section_bg_gradient": "",
             "btn_primary_bg": "#ffffff",

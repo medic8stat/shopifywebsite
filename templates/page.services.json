@@ -130,7 +130,7 @@
           "type": "heading",
           "settings": {
             "title": "Complete Health Assessment",
-            "heading_font_size": "heading-large",
+            "heading_font_size": "heading-medium",
             "padding_bottom": 16,
             "heading_tag": "h2"
           }
@@ -163,6 +163,7 @@
         "button"
       ],
       "settings": {
+        "image_1": "shopify://shop_images/young-doctor-screen-1412150131.jpg",
         "image_width": "one-half",
         "text_alignment": "text-left",
         "layout": "",
