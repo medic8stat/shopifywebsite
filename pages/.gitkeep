@@ -1,0 +1,4 @@
+# HTML page content files go here
+# Example: urgent-care.html, about.html
+# These can be pushed to Shopify using:
+#   node shopify-admin-api.mjs create-page "Title" "handle" @pages/filename.html

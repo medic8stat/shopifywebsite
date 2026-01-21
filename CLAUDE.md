@@ -4,12 +4,62 @@
 
 ---
 
-## CRITICAL: The Two Types of Changes
+## CRITICAL: The Three Types of Changes
 
-| Type | Examples | How to Make | Who Does It |
-|------|----------|-------------|-------------|
-| **CODE** | Liquid, CSS, JS, section schemas | Edit locally → Push | Claude Code |
-| **CONTENT** | Images, text, colors, fonts, logos | Shopify Customizer | User (via Admin) |
+| Type | Examples | How to Make | Tool |
+|------|----------|-------------|------|
+| **CODE** | Liquid, CSS, JS, section schemas | Edit locally → `shopify theme push -e broadcast` | Shopify CLI |
+| **PAGES** | New pages, page content, navigation | `node shopify-admin-api.mjs` | Admin API |
+| **THEME CONTENT** | Images, colors, fonts, hero text | Shopify Customizer | User (via Admin) |
+
+---
+
+## Admin API Setup (Pages & Navigation)
+
+### Setup (One-Time)
+
+1. **Create Custom App in Shopify Admin:**
+   - Go to: https://whitepinemedical.myshopify.com/admin/settings/apps/development
+   - Click "Create an app" → Name: `White Pine Content API`
+   - Configure Admin API scopes: `write_content`, `read_content`, `write_online_store_navigation`, `read_online_store_navigation`
+   - Install app → Reveal token → Copy immediately (shown once!)
+
+2. **Configure locally:**
+   ```bash
+   cd ~/shopify-themes/broadcast
+   cp .env.example .env
+   # Edit .env and paste your token
+   ```
+
+### Usage
+
+```bash
+# List all pages
+node shopify-admin-api.mjs list-pages
+
+# Create a page
+node shopify-admin-api.mjs create-page "Urgent Care" "urgent-care" "<h1>Coming Soon</h1>"
+
+# Create from HTML file
+node shopify-admin-api.mjs create-page "About Us" "about" @pages/about.html
+
+# Update a page
+node shopify-admin-api.mjs update-page 123456789 "New Title" "<p>Updated content</p>"
+
+# Delete a page
+node shopify-admin-api.mjs delete-page 123456789
+
+# List navigation menus
+node shopify-admin-api.mjs list-navigation
+```
+
+### Workflow for Claude Code
+
+1. Create HTML content in `pages/` directory
+2. Run `node shopify-admin-api.mjs create-page ...`
+3. Commit: `git add -A && git commit -m "feat(pages): Add urgent care page"`
+
+---
 
 ### Why This Matters
 
