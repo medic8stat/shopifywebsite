@@ -102,6 +102,18 @@ git push
 - Block types must match schema definitions in section files
 - Color schemes are defined in `settings_data.json` under `color_schemes`
 
+## Image Management
+
+**Images added via Shopify Theme Editor persist across code pushes.** They're stored on Shopify's CDN and referenced by URL in `settings_data.json`.
+
+**Best Practice:** Before making local edits to `settings_data.json`, pull the latest from Shopify to preserve any images added via the editor:
+
+```bash
+shopify theme pull --theme 182960718119 --store whitepinemedical.myshopify.com
+```
+
+This ensures you don't accidentally overwrite image references when pushing code changes.
+
 ## Documentation Files
 
 | File | Purpose |
