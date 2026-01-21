@@ -49,7 +49,7 @@
               "name": "Side by side buttons",
               "settings": {
                 "button_text": "Explore Services",
-                "button_url": "",
+                "button_url": "/pages/services",
                 "button_type": "btn--white",
                 "button_size": "",
                 "button_style": "btn--solid",
@@ -58,7 +58,7 @@
                 "button_secondary_url": "",
                 "button_secondary_type": "btn--white",
                 "button_secondary_size": "",
-                "button_secondary_style": "btn--solid",
+                "button_secondary_style": "btn--text",
                 "show_secondary_arrow": false,
                 "padding_bottom": 8
               },

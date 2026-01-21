@@ -4,6 +4,21 @@ All notable changes to the White Pine Medical Shopify website will be documented
 
 ---
 
+## [2026-01-21] - Hero Button Fixes (v6.0.8)
+
+### Fixed
+
+- **Homepage hero button** - "Explore Services" now links to `/pages/services` (was missing URL)
+- **Homepage hero** - Removed empty secondary button that appeared next to "Explore Services"
+- **Corporate Wellness hero** - Removed empty secondary button that appeared next to "Contact Us"
+
+### Technical
+
+- Updated `templates/index.json`: Set `button_url` to `/pages/services`, changed secondary button style to `btn--text`
+- Updated `templates/page.corporate-wellness-longevity-services.json`: Changed secondary button style to `btn--text`
+
+---
+
 ## [2026-01-21] - Navigation Redesign & Corporate Wellness (v6.0.7)
 
 ### Changed
