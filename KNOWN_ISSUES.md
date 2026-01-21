@@ -20,12 +20,34 @@
 | ISS-003 | LOW | ✅ RESOLVED | Mobile menu still shows demo content |
 | ISS-004 | MEDIUM | ⚠️ PENDING | Missing images in text/photo sections |
 | ISS-005 | HIGH | ✅ RESOLVED | Shopify Admin API token not accessible via Partners Dashboard |
+| ISS-008 | HIGH | ✅ RESOLVED | Services nav link pointing to old product page instead of /pages/services |
 | ISS-006 | HIGH | ✅ RESOLVED | .shopifyignore and shopify.theme.toml blocking template pushes |
 | ISS-007 | MEDIUM | ✅ RESOLVED | Services, Privacy & Trust, Urgent Care pages need creation in Shopify Admin |
 
 ---
 
 ## Active Issues
+
+### RESOLVED-013: Services Navigation Link Fixed
+
+**Severity:** HIGH
+**Status:** ✅ RESOLVED
+**Category:** Navigation
+**Reported:** 2026-01-21
+**Resolved:** 2026-01-21
+
+**Problem:**
+The "Services" link in the main navigation menu was pointing to the old product page (`/products/white-pine-medical-longevity-assessment`) instead of the new Services page (`/pages/services`) that contains all the detailed assessment categories.
+
+**Root Cause:**
+Navigation menus are stored in Shopify's database (Admin → Content → Menus), not in theme files. The Shopify CLI cannot modify menus - they require either the Admin API or manual editing in Shopify Admin.
+
+**Resolution:**
+Updated the "Services" menu item in Shopify Admin → Content → Menus → "new-clean-menu" to point to `/pages/services`.
+
+**Note:** Menu changes are stored in Shopify's database, not in theme files, so no git commit is generated for menu changes.
+
+---
 
 ### RESOLVED-012: Pages Created in Shopify Admin
 
