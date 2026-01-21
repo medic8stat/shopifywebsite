@@ -128,25 +128,18 @@
 }
 
 /* ============================================
-   MAIN NAVIGATION - Two-row layout with larger font
-   Make nav items more prominent and easier to read
+   MAIN NAVIGATION - Split layout with larger font
+   Left menu | Logo | Right menu
    ============================================ */
 
-/* Allow nav to wrap onto multiple lines */
-.header__desktop__bar__l,
-.header__desktop__bar nav,
-.header__desktop nav {
-  flex-wrap: wrap !important;
-  justify-content: center !important;
-  max-width: 100% !important;
+/* Left nav - align left */
+.header__desktop__bar__l {
+  justify-content: flex-start !important;
 }
 
-/* Nav container - allow wrapping */
-.header__desktop__bar__l ul,
-.header__desktop nav ul {
-  flex-wrap: wrap !important;
-  justify-content: center !important;
-  gap: 0 !important;
+/* Right nav - align right */
+.header__desktop__bar__r {
+  justify-content: flex-end !important;
 }
 
 /* Desktop navigation links - larger font */

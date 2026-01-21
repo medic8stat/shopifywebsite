@@ -8,18 +8,23 @@ All notable changes to the White Pine Medical Shopify website will be documented
 
 ### Changed
 
-- **Navigation layout** - Converted to two-row centered layout to accommodate 9 menu items:
-  - Home, Services, About, Contact, For Business, Urgent Care, Patient Portal, Clinician EHR
-  - Items wrap naturally onto two lines for better readability
+- **Navigation layout** - Converted to split layout with logo centered:
+  - **Left menu (Quick Links):** Home, Services, About, Contact, For Business
+  - **Center:** White Pine Medical logo
+  - **Right menu (header-right):** Urgent Care, Patient Portal, Clinician EHR
   - Font increased to 17px (19px on wide screens)
 - **Patient Portal & Clinician EHR** - Converted from CTA buttons to regular nav links matching other menu items
 - **Header CTA button** - Disabled (Patient Portal now in main nav)
 
 ### Technical
 
-- Updated `assets/custom-whitepine.css` with `flex-wrap: wrap` for two-row nav
-- Updated `sections/group-header.json` to disable CTA button
-- Menu items added via Shopify Admin → Content → Menus → Quick Links
+- Updated `assets/custom-whitepine.css` with split nav alignment (left/right)
+- Updated `sections/group-header.json`:
+  - Disabled CTA button
+  - Added `secondary_menu_linklist: "header-right"` for right-side nav
+- Created two menus in Shopify Admin → Content → Menus:
+  - **Quick Links** (left): Home, Services, About, Contact, For Business
+  - **header-right** (right): Urgent Care, Patient Portal, Clinician EHR
 
 ---
 

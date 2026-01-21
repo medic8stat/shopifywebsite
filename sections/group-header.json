@@ -105,7 +105,7 @@
         "button_link": "",
         "button_type": "btn--primary",
         "show_social_icons": false,
-        "secondary_menu_linklist": "",
+        "secondary_menu_linklist": "header-right",
         "show_locale_selector": false,
         "show_globe_icon": true,
         "show_country_selector": false,
