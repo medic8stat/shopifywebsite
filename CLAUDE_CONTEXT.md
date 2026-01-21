@@ -170,6 +170,11 @@ shopify theme dev --store whitepinemedical.myshopify.com
 # Press Ctrl+C to stop
 ```
 
+**Important:** The dev server previews code changes in real-time, but **CDN images may not display** until pushed to Shopify. To see all images properly:
+
+1. Push to Broadcast theme: `shopify theme push --theme 182960718119 --store whitepinemedical.myshopify.com --allow-live`
+2. Preview at: `https://whitepinemedical.myshopify.com/?preview_theme_id=182960718119`
+
 ### Push to Staging (Broadcast Theme)
 
 ```bash
