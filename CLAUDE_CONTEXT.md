@@ -124,19 +124,37 @@ shopify theme list --store whitepinemedical.myshopify.com
 
 ## 6. Quick Commands
 
+### Standard Development Workflow
+
+```bash
+# 1. Start dev server (live preview with hot reload)
+cd ~/shopify-themes/broadcast
+shopify theme dev --store whitepinemedical.myshopify.com
+# Preview at http://127.0.0.1:9292 - changes sync automatically
+
+# 2. When ready, deploy to Broadcast theme (staging)
+shopify theme push --theme 182960718119 --store whitepinemedical.myshopify.com --allow-live
+
+# 3. Commit and push to GitHub
+git add -A && git commit -m "type(scope): description"
+git push
+```
+
 ### Development Server (Local Preview)
 
 ```bash
 cd ~/shopify-themes/broadcast
 shopify theme dev --store whitepinemedical.myshopify.com
 # Preview at http://127.0.0.1:9292
+# Changes sync automatically as you save files
+# Press Ctrl+C to stop
 ```
 
 ### Push to Staging (Broadcast Theme)
 
 ```bash
 cd ~/shopify-themes/broadcast
-shopify theme push --theme 182960718119 --store whitepinemedical.myshopify.com
+shopify theme push --theme 182960718119 --store whitepinemedical.myshopify.com --allow-live
 ```
 
 ### Publish to Production
@@ -246,15 +264,86 @@ Sections in order:
 
 ---
 
-## 10. Integration Points
+## 10. Patient Journey & System Boundaries
 
-### Related Systems
+### Entry Points (Website → EHR)
+
+Patients enter the EHR system via one of these paths:
+
+```
+PATH 1: Direct Purchase (Self-Service)
+───────────────────────────────────────
+Website → View Services → Purchase Package → Entra ID Signup (automated) → Patient Portal
+
+PATH 2: Concierge Discovery Call ($300)
+───────────────────────────────────────
+Website → Contact → Book Discovery Call → Pay $300 → Phone Consultation →
+  └─ If enrolling: Purchase Package → Entra ID Signup → Patient Portal
+  └─ If not enrolling: End
+
+PATH 3: Manual Enrollment (Clinic Staff)
+───────────────────────────────────────
+Patient contacts clinic → Staff creates account in EHR → Patient receives portal invite
+```
+
+### System Responsibilities
+
+| System | Responsibility | What Happens Here |
+|--------|----------------|-------------------|
+| **Website (Shopify)** | Marketing & Sales | Service discovery, education, payment processing |
+| **Patient Portal** | Patient Self-Service | Questionnaires, results viewing, form downloads, educational materials |
+| **EHR (Clinician App)** | Clinical Workflow | Patient records, assessments, clinical documentation |
+
+### The Needs Assessment
+
+**Purpose:** Understand the patient holistically before the consultation
+- Medical goals and health concerns
+- Life goals (6 months, 1 year, 5 years)
+- What age they're comfortable living to
+- Major life goals they want to achieve
+
+**When:** After enrollment, before clinical visit
+**How:**
+- Sent as email link, OR
+- Completed in Patient Portal after login
+- Can be done by phone for accessibility
+
+**Why:** Maximize clinician time and consultation thoroughness by gathering information upfront.
+
+### Patient Portal Features (Current & Future)
+
+| Feature | Status | Description |
+|---------|--------|-------------|
+| Online Questionnaires | ✅ Current | Needs assessment, health history forms |
+| Results Viewing | ✅ Current | View assessment results |
+| Form Downloads | ✅ Current | Lab requisitions, referral forms |
+| Educational Materials | 🔜 Planned | Health education content |
+| AI Health Assistant | 🔜 Future | Canadian-hosted LLM for health questions |
+
+### Future AI Health Assistant Architecture
+
+```
+Patient Question
+      ↓
+Canadian-Hosted LLM
+      ↓
+┌─────────────────────────────────────────┐
+│ Knowledge Sources:                       │
+│ ├─ General Health Knowledge Graph (Blob) │
+│ ├─ Patient's Structured Data (Cosmos DB) │
+│ └─ Patient's Assessment Results          │
+└─────────────────────────────────────────┘
+      ↓
+Personalized Health Guidance
+```
+
+### Integration Points
 
 | System | URL | Purpose |
 |--------|-----|---------|
-| Patient Portal | portal.whitepinemedical.ca | Patient login |
-| Clinician EHR | app.whitepinemedical.ca | Staff dashboard |
-| Main Website | whitepinemedical.ca | This Shopify site |
+| Patient Portal | portal.whitepinemedical.ca | Patient self-service (questionnaires, results, forms) |
+| Clinician EHR | app.whitepinemedical.ca | Staff dashboard, clinical workflow |
+| Main Website | whitepinemedical.ca | This Shopify site (marketing, sales) |
 
 ### Contact Information
 
