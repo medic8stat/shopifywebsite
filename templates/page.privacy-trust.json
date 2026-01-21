@@ -40,9 +40,9 @@
             "icon_name": "icon-flare",
             "icon_size": 50,
             "icon_color": "#1E3A5F",
-            "title": "Multi-Standard Compliance",
+            "title": "Built for Trust",
             "heading_font_size": "heading-x-small",
-            "text": "<p>We comply with HIPAA (US), PHIPA (Ontario), and PIPEDA (Canada) — the strictest healthcare privacy laws in North America.</p>",
+            "text": "<p>We're physicians first. We built our platform the way we'd want our own health data protected — exceeding HIPAA, PHIPA, and PIPEDA standards because it's the right thing to do.</p>",
             "text_font_size": "body-small",
             "heading_tag": "automatic"
           }
@@ -53,9 +53,9 @@
             "icon_name": "icon-lock",
             "icon_size": 50,
             "icon_color": "#1E3A5F",
-            "title": "Military-Grade Encryption",
+            "title": "Your Data Stays Yours",
             "heading_font_size": "heading-x-small",
-            "text": "<p>All sensitive patient information is protected with AES-256-GCM encryption, the same standard used by governments and financial institutions.</p>",
+            "text": "<p>Unlike big tech health apps, we never sell your data. Period. Your health information exists solely to help you live better — not to fuel advertising algorithms.</p>",
             "text_font_size": "body-small",
             "heading_tag": "automatic"
           }
@@ -66,9 +66,9 @@
             "icon_name": "icon-award",
             "icon_size": 50,
             "icon_color": "#1E3A5F",
-            "title": "Canadian Data Storage",
+            "title": "100% Canadian",
             "heading_font_size": "heading-x-small",
-            "text": "<p>Your data is stored exclusively in Microsoft Azure data centers located in Canada, with 24/7 monitoring and redundancy.</p>",
+            "text": "<p>Your data never leaves Canada. We chose Canadian-only data centers because your privacy shouldn't depend on the laws of another country.</p>",
             "text_font_size": "body-small",
             "heading_tag": "automatic"
           }
@@ -80,7 +80,7 @@
         "icon-1"
       ],
       "settings": {
-        "title": "How We Protect Your Information",
+        "title": "Privacy That Puts You First",
         "heading_font_size": "heading-medium",
         "align_heading": "text-center",
         "align_text": "text-center",
@@ -102,7 +102,7 @@
         "heading": {
           "type": "heading",
           "settings": {
-            "title": "Our Data Protection Approach",
+            "title": "Why Our Approach Is Different",
             "heading_font_size": "heading-medium",
             "padding_bottom": 16,
             "heading_tag": "automatic"
@@ -111,7 +111,7 @@
         "text": {
           "type": "text",
           "settings": {
-            "text": "<p><strong>Role-Based Access Control</strong></p><p>Your information is compartmentalized. Only clinicians who need clinical information can access it. Your billing information is separate from your medical records. Administrative staff can only see what's necessary for their role.</p><p><strong>Comprehensive Audit Trail</strong></p><p>Every access to your information is logged. If you want to know who viewed your records, we can tell you. Our system tracks all data access for complete accountability.</p><p><strong>Rapid Breach Response</strong></p><p>If a security incident occurs, we notify you and regulators within 72 hours (as required by PIPEDA) and provide guidance on protecting yourself. We maintain detailed procedures for all jurisdictions.</p>",
+            "text": "<p><strong>We Built This for Ourselves First</strong></p><p>Before we asked patients to trust us with their data, we asked: \"Would I trust this with my family's health information?\" Every security decision we've made passes that test. Our founder uses this same system for his own care.</p><p><strong>Complete Transparency</strong></p><p>Ask us who's seen your records — we'll tell you. Every access is logged because you deserve to know exactly who touches your data. No surprises, no hidden access, no excuses.</p><p><strong>No Third-Party Data Sharing</strong></p><p>Your health journey is between you and your care team. We don't share data with insurers, employers, or marketers. When you leave us, your data leaves with you — we don't keep copies to monetize later.</p><p><strong>Human Accountability</strong></p><p>When you contact us about privacy, you reach a real person — often the physician who built this system. We're not hiding behind automated responses or offshore call centers.</p>",
             "text_font_size": "body-medium",
             "padding_bottom": 24
           }
@@ -136,36 +136,36 @@
         "block": {
           "type": "text",
           "settings": {
-            "title": "Right to Access Your Records",
-            "text": "<p>You have the right to request access to your personal health information. We will respond to your request within 30 days and provide copies of your records in a readable format.</p>"
+            "title": "Can I see everything you have on me?",
+            "text": "<p>Absolutely. Your records are yours. Request a complete copy anytime and we'll have it ready within days, not weeks. No fees, no hoops to jump through.</p>"
           }
         },
         "block-0": {
           "type": "text",
           "settings": {
-            "title": "Right to Correction",
-            "text": "<p>If you believe any information in your record is inaccurate or incomplete, you can request a correction. We will review your request and make appropriate updates.</p>"
+            "title": "What if something in my record is wrong?",
+            "text": "<p>Tell us and we'll fix it. Healthcare records aren't perfect, and we'd rather correct an error than defend it. Your accuracy matters more than our pride.</p>"
           }
         },
         "block-1": {
           "type": "text",
           "settings": {
-            "title": "Right to Restrict Use",
-            "text": "<p>You can request restrictions on how we use or disclose your information for treatment, payment, or healthcare operations, though we may not be able to agree to all requests.</p>"
+            "title": "Can I limit who sees my information?",
+            "text": "<p>Yes. If you want certain information restricted to specific team members, just ask. We'll accommodate you wherever clinically safe to do so.</p>"
           }
         },
         "block-2": {
           "type": "text",
           "settings": {
-            "title": "Right to Withdraw Consent",
-            "text": "<p>You may withdraw your consent for us to collect, use, or disclose your personal health information at any time, subject to legal or contractual restrictions.</p>"
+            "title": "What if I want to leave?",
+            "text": "<p>We'll transfer your complete records to your new provider and delete our copies upon request. No retention tricks, no making it difficult. Your health journey continues even if our paths diverge.</p>"
           }
         },
         "block-3": {
           "type": "text",
           "settings": {
-            "title": "Right to File a Complaint",
-            "text": "<p>If you believe your privacy rights have been violated, you may file a complaint with us, or directly with the Office of the Privacy Commissioner of Canada, or the applicable provincial privacy commissioner.</p>"
+            "title": "What if I have a concern?",
+            "text": "<p>Contact us directly — our privacy officer is a physician, not a legal department. If you're not satisfied, you can also contact the Privacy Commissioner of Canada, but we'd rather resolve it with you first.</p>"
           }
         }
       },
@@ -177,7 +177,7 @@
         "block-3"
       ],
       "settings": {
-        "title": "Your Privacy Rights",
+        "title": "Your Data, Your Control",
         "heading_font_size": "heading-medium",
         "default_open": false,
         "width": "wrapper",

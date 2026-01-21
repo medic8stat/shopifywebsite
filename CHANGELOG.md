@@ -12,6 +12,13 @@ All notable changes to the White Pine Medical Shopify website will be documented
 - **CLAUDE.md Development Rules** - Added critical workflow rules: NEVER push to live theme, always use Broadcast theme for development
 
 ### Changed
+- **Privacy & Trust Page Content** - Complete rewrite with value-focused messaging:
+  - "How We Protect Your Information" → "Privacy That Puts You First"
+  - "Multi-Standard Compliance" → "Built for Trust" (physician-first approach)
+  - "Military-Grade Encryption" → "Your Data Stays Yours" (no data selling)
+  - "Canadian Data Storage" → "100% Canadian" (data sovereignty)
+  - "Our Data Protection Approach" → "Why Our Approach Is Different" (personal, human)
+  - "Your Privacy Rights" → "Your Data, Your Control" (FAQ-style, conversational)
 - **Hero Subheadline** - Changed from "Unlock A Revolutionary Approach..." to "Transform Your Health with AI-Powered Precision Assessment"
 - **All "Shop Now" Buttons** - Changed to "View Services" across the site
 - **"Invest in Your Future" Button** - Changed to "Discover Your Health Blueprint"
