@@ -9,10 +9,10 @@
  */
 {
   "sections": {
-    "section-slideshow-nested": {
+    "section-hero": {
       "type": "section-slideshow-nested",
       "blocks": {
-        "slide-image": {
+        "slide-hero": {
           "type": "_slide-image",
           "settings": {
             "image": "shopify://shop_images/iStock-1311840964.jpg",
@@ -25,30 +25,30 @@
             "overlay_type": "text"
           },
           "blocks": {
-            "heading": {
+            "hero-heading": {
               "type": "heading",
               "settings": {
-                "text": "Live Better Longer",
+                "text": "Physician-Led Health Assessment",
                 "heading_font_size": "heading-large",
                 "heading_tag": "automatic",
                 "padding_bottom": 8
               },
               "blocks": {}
             },
-            "text": {
+            "hero-subheading": {
               "type": "text",
               "settings": {
-                "text": "Transform Your Health with Precision Assessment",
+                "text": "Comprehensive evaluations for longevity, prevention, and performance—guided by clinical expertise.",
                 "text_font_size": "body-large",
                 "padding_bottom": 8
               },
               "blocks": {}
             },
-            "group-buttons": {
+            "hero-buttons": {
               "type": "_group-buttons",
               "name": "Side by side buttons",
               "settings": {
-                "button_text": "View Services",
+                "button_text": "Explore Services",
                 "button_type": "btn--white",
                 "button_size": "",
                 "button_style": "btn--solid",
@@ -64,14 +64,14 @@
             }
           },
           "block_order": [
-            "heading",
-            "text",
-            "group-buttons"
+            "hero-heading",
+            "hero-subheading",
+            "hero-buttons"
           ]
         }
       },
       "block_order": [
-        "slide-image"
+        "slide-hero"
       ],
       "name": "Slideshow (Nested)",
       "settings": {
@@ -87,159 +87,411 @@
         "padding_bottom": 0
       }
     },
-    "section-announcement": {
-      "type": "section-announcement",
+    "section-what-we-do": {
+      "type": "section-text-row",
       "blocks": {
-        "heading-1": {
-          "type": "heading",
+        "what-we-do-1": {
+          "type": "icon",
           "settings": {
-            "heading": "Live Longer, Live Stronger",
-            "heading_font_size": "heading-x-small"
+            "icon_name": "icon-award",
+            "image": "",
+            "icon_size": 50,
+            "icon_color": "#1E3A5F",
+            "title": "Medical Oversight",
+            "heading_font_size": "heading-x-small",
+            "text": "<p>Every assessment guided by a physician who reviews your results, identifies priorities, and ensures clinical rigor at every step.</p>",
+            "text_font_size": "body-small",
+            "heading_tag": "automatic"
           }
         },
-        "text-1": {
-          "type": "text",
+        "what-we-do-2": {
+          "type": "icon",
           "settings": {
-            "text": "<p>•</p>",
-            "text_font_size": "body-x-large",
-            "color": "",
-            "target_device_enabled": false,
-            "target_device": "mobile"
+            "icon_name": "icon-check",
+            "image": "",
+            "icon_size": 50,
+            "icon_color": "#1E3A5F",
+            "title": "Evidence-Based",
+            "heading_font_size": "heading-x-small",
+            "text": "<p>Recommendations rooted in peer-reviewed clinical evidence—not trends or marketing claims.</p>",
+            "text_font_size": "body-small",
+            "heading_tag": "automatic"
           }
         },
-        "heading-2": {
-          "type": "heading",
+        "what-we-do-3": {
+          "type": "icon",
           "settings": {
-            "heading": "Health Powered by Technology",
-            "heading_font_size": "heading-x-small"
-          }
-        },
-        "text-2": {
-          "type": "text",
-          "settings": {
-            "text": "<p>•</p>",
-            "text_font_size": "body-x-large",
-            "color": "",
-            "target_device_enabled": false,
-            "target_device": "mobile"
-          }
-        },
-        "heading-3": {
-          "type": "heading",
-          "settings": {
-            "heading": "Optimize Your Longevity",
-            "heading_font_size": "heading-x-small"
-          }
-        },
-        "text-3": {
-          "type": "text",
-          "settings": {
-            "text": "<p>•</p>",
-            "text_font_size": "body-x-large",
-            "color": "",
-            "target_device_enabled": false,
-            "target_device": "mobile"
-          }
-        },
-        "heading-4": {
-          "type": "heading",
-          "settings": {
-            "heading": "Science-Backed Health Plans",
-            "heading_font_size": "heading-x-small"
-          }
-        },
-        "text-4": {
-          "type": "text",
-          "settings": {
-            "text": "<p>•</p>",
-            "text_font_size": "body-x-large",
-            "color": "",
-            "target_device_enabled": false,
-            "target_device": "mobile"
-          }
-        },
-        "heading-5": {
-          "type": "heading",
-          "settings": {
-            "heading": "Data-Driven Health Insights",
-            "heading_font_size": "heading-x-small"
-          }
-        },
-        "text-5": {
-          "type": "text",
-          "settings": {
-            "text": "<p>•</p>",
-            "text_font_size": "body-x-large",
-            "color": "",
-            "target_device_enabled": false,
-            "target_device": "mobile"
-          }
-        },
-        "heading-6": {
-          "type": "heading",
-          "settings": {
-            "heading": "Longevity Starts with You",
-            "heading_font_size": "heading-x-small"
+            "icon_name": "icon-heart",
+            "image": "",
+            "icon_size": 50,
+            "icon_color": "#1E3A5F",
+            "title": "Integrated Care",
+            "heading_font_size": "heading-x-small",
+            "text": "<p>Works alongside your existing healthcare providers—we collaborate, not replace.</p>",
+            "text_font_size": "body-small",
+            "heading_tag": "automatic"
           }
         }
       },
       "block_order": [
-        "heading-1",
-        "text-1",
-        "heading-2",
-        "text-2",
-        "heading-3",
-        "text-3",
-        "heading-4",
-        "text-4",
-        "heading-5",
-        "text-5",
-        "heading-6"
+        "what-we-do-1",
+        "what-we-do-2",
+        "what-we-do-3"
       ],
       "settings": {
-        "slider_speed": 7,
-        "text_alignment": "center",
-        "marquee_speed": 100,
-        "direction": "ticker-rtl",
-        "message_spacing": 10,
-        "show_border": false,
-        "layout": "marquee",
-        "color_scheme": "scheme-4",
-        "padding_top": 20,
-        "padding_bottom": 20
+        "title": "What We Do",
+        "heading_font_size": "heading-medium",
+        "align_heading": "text-center",
+        "align_text": "text-center",
+        "icon_alignment": "icon--top",
+        "width": "wrapper",
+        "align_columns": "flex-align-top",
+        "layout": "grid",
+        "grid": 3,
+        "layout_mobile": "1",
+        "color_scheme": "scheme-1",
+        "padding_top": 60,
+        "padding_bottom": 60,
+        "heading_tag": "automatic"
       }
     },
-    "section-rich-text-problem": {
-      "type": "section-rich-text",
+    "section-how-care-works": {
+      "type": "section-columns",
       "blocks": {
-        "subheading": {
+        "step-assess": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/1_d206f190-2839-4fa0-bc61-1861f37b2a39.jpg",
+            "image_width": 100,
+            "image_shape": "normal",
+            "title": "1. Assess",
+            "heading_font_size": "heading-small",
+            "text": "<p>Comprehensive health evaluation combining your medical history, advanced diagnostics, and clinical testing to understand your complete health picture.</p>",
+            "text_font_size": "body-small",
+            "button_text": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--text",
+            "show_arrow": false,
+            "image_aspect_ratio": 1.2,
+            "mobile_image_aspect_ratio": 1.2,
+            "heading_tag": "automatic"
+          }
+        },
+        "step-prioritize": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/JR-19-6489-20-1030x687.jpg",
+            "image_width": 100,
+            "image_shape": "normal",
+            "title": "2. Prioritize",
+            "heading_font_size": "heading-small",
+            "text": "<p>Physician-guided identification of your most important focus areas—what matters most for your health, ranked by clinical significance.</p>",
+            "text_font_size": "body-small",
+            "button_text": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--text",
+            "show_arrow": false,
+            "image_aspect_ratio": 1.2,
+            "mobile_image_aspect_ratio": 1.2,
+            "heading_tag": "automatic"
+          }
+        },
+        "step-act": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/portrait_photo_in_gym_less_than_5MG.jpg",
+            "image_width": 100,
+            "image_shape": "normal",
+            "title": "3. Act",
+            "heading_font_size": "heading-small",
+            "text": "<p>Personalized action plan with clear next steps, timelines, and ongoing support to turn insights into lasting health improvements.</p>",
+            "text_font_size": "body-small",
+            "button_text": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--text",
+            "show_arrow": false,
+            "image_aspect_ratio": 1.2,
+            "mobile_image_aspect_ratio": 1.2,
+            "heading_tag": "automatic"
+          }
+        }
+      },
+      "block_order": [
+        "step-assess",
+        "step-prioritize",
+        "step-act"
+      ],
+      "settings": {
+        "title": "How Care Works",
+        "heading_font_size": "heading-medium",
+        "align_heading": "text-center",
+        "align_text": "text-center",
+        "width": "wrapper--full-padded",
+        "align_columns": "flex-align-top",
+        "layout": "grid",
+        "grid": 3,
+        "layout_mobile": "1",
+        "color_scheme": "scheme-3",
+        "padding_top": 60,
+        "padding_bottom": 60,
+        "heading_tag": "automatic"
+      }
+    },
+    "section-why-different": {
+      "type": "section-text-row",
+      "blocks": {
+        "diff-oversight": {
+          "type": "icon",
+          "settings": {
+            "icon_name": "icon-shield",
+            "image": "shopify://shop_images/Built-by-Visionaries_5399c173-e778-4367-8ab0-6e9f453410ab.png",
+            "icon_size": 50,
+            "icon_color": "#1E3A5F",
+            "title": "Physician-Led, Not Algorithm-Driven",
+            "heading_font_size": "heading-x-small",
+            "text": "<p>A licensed physician reviews every assessment and guides your care. Technology supports clinical judgment—it does not replace it.</p>",
+            "text_font_size": "body-small",
+            "heading_tag": "automatic"
+          }
+        },
+        "diff-evidence": {
+          "type": "icon",
+          "settings": {
+            "icon_name": "icon-book",
+            "image": "shopify://shop_images/AI-Driven-Insight_5065db69-e6eb-4b9a-b8d4-d159da130415.png",
+            "icon_size": 50,
+            "icon_color": "#1E3A5F",
+            "title": "Clinical Evidence Over Trends",
+            "heading_font_size": "heading-x-small",
+            "text": "<p>Every recommendation is grounded in peer-reviewed research and established clinical guidelines—not wellness fads or marketing claims.</p>",
+            "text_font_size": "body-small",
+            "heading_tag": "automatic"
+          }
+        },
+        "diff-integrated": {
+          "type": "icon",
+          "settings": {
+            "icon_name": "icon-link",
+            "image": "shopify://shop_images/Personalized-Support_ca1579d1-03c8-4e81-9a56-e6b3d7f302b5.png",
+            "icon_size": 50,
+            "icon_color": "#1E3A5F",
+            "title": "Complements Your Existing Care",
+            "heading_font_size": "heading-x-small",
+            "text": "<p>We work with your family doctor and specialists—sharing findings and coordinating care rather than operating in isolation.</p>",
+            "text_font_size": "body-small",
+            "heading_tag": "automatic"
+          }
+        }
+      },
+      "block_order": [
+        "diff-oversight",
+        "diff-evidence",
+        "diff-integrated"
+      ],
+      "settings": {
+        "title": "Why White Pine Is Different",
+        "heading_font_size": "heading-medium",
+        "align_heading": "text-center",
+        "align_text": "text-center",
+        "icon_alignment": "icon--top",
+        "width": "wrapper",
+        "align_columns": "flex-align-top",
+        "layout": "grid",
+        "grid": 3,
+        "layout_mobile": "1",
+        "color_scheme": "scheme-1",
+        "padding_top": 60,
+        "padding_bottom": 60,
+        "heading_tag": "automatic"
+      }
+    },
+    "section-services-preview": {
+      "type": "section-multicolumn",
+      "blocks": {
+        "service-cardiovascular": {
+          "type": "image",
+          "settings": {
+            "column_width": 33,
+            "image": "",
+            "image_width": 100,
+            "image_aspect_ratio": 1,
+            "mobile_image_aspect_ratio": 1,
+            "image_shape": "rounded",
+            "title": "Cardiovascular",
+            "heading_font_size": "heading-small",
+            "text": "<p>Heart health assessment, arterial stiffness, cardiac risk profiling, and lipid optimization.</p>",
+            "text_font_size": "body-small",
+            "button_text": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--text",
+            "show_arrow": false,
+            "heading_tag": "automatic"
+          }
+        },
+        "service-metabolic": {
+          "type": "image",
+          "settings": {
+            "column_width": 33,
+            "image": "",
+            "image_width": 100,
+            "image_aspect_ratio": 1,
+            "mobile_image_aspect_ratio": 1,
+            "image_shape": "rounded",
+            "title": "Metabolic",
+            "heading_font_size": "heading-small",
+            "text": "<p>Metabolic rate testing, glucose regulation, body composition analysis, and nutritional status.</p>",
+            "text_font_size": "body-small",
+            "button_text": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--text",
+            "show_arrow": false,
+            "heading_tag": "automatic"
+          }
+        },
+        "service-brain": {
+          "type": "image",
+          "settings": {
+            "column_width": 33,
+            "image": "",
+            "image_width": 100,
+            "image_aspect_ratio": 1,
+            "mobile_image_aspect_ratio": 1,
+            "image_shape": "rounded",
+            "title": "Brain & Cognition",
+            "heading_font_size": "heading-small",
+            "text": "<p>Cognitive assessment, sleep quality analysis, stress response evaluation, and brain health optimization.</p>",
+            "text_font_size": "body-small",
+            "button_text": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--text",
+            "show_arrow": false,
+            "heading_tag": "automatic"
+          }
+        },
+        "service-movement": {
+          "type": "image",
+          "settings": {
+            "column_width": 33,
+            "image": "",
+            "image_width": 100,
+            "image_aspect_ratio": 1,
+            "mobile_image_aspect_ratio": 1,
+            "image_shape": "rounded",
+            "title": "Movement & Strength",
+            "heading_font_size": "heading-small",
+            "text": "<p>VO2 max testing, functional movement screening, strength assessment, and mobility evaluation.</p>",
+            "text_font_size": "body-small",
+            "button_text": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--text",
+            "show_arrow": false,
+            "heading_tag": "automatic"
+          }
+        },
+        "service-mental": {
+          "type": "image",
+          "settings": {
+            "column_width": 33,
+            "image": "",
+            "image_width": 100,
+            "image_aspect_ratio": 1,
+            "mobile_image_aspect_ratio": 1,
+            "image_shape": "rounded",
+            "title": "Mental Health",
+            "heading_font_size": "heading-small",
+            "text": "<p>Psychological wellness screening, resilience assessment, and mental health resource coordination.</p>",
+            "text_font_size": "body-small",
+            "button_text": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--text",
+            "show_arrow": false,
+            "heading_tag": "automatic"
+          }
+        },
+        "service-genetics": {
+          "type": "image",
+          "settings": {
+            "column_width": 33,
+            "image": "",
+            "image_width": 100,
+            "image_aspect_ratio": 1,
+            "mobile_image_aspect_ratio": 1,
+            "image_shape": "rounded",
+            "title": "Genetics",
+            "heading_font_size": "heading-small",
+            "text": "<p>Genetic risk profiling, pharmacogenomics, hereditary condition screening, and personalized insights.</p>",
+            "text_font_size": "body-small",
+            "button_text": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--text",
+            "show_arrow": false,
+            "heading_tag": "automatic"
+          }
+        }
+      },
+      "block_order": [
+        "service-cardiovascular",
+        "service-metabolic",
+        "service-brain",
+        "service-movement",
+        "service-mental",
+        "service-genetics"
+      ],
+      "settings": {
+        "title": "Assessment Domains",
+        "heading_font_size": "heading-medium",
+        "description": "<p>Our comprehensive evaluation spans six clinical domains to provide a complete picture of your health.</p>",
+        "align_heading": "text-center",
+        "align_text": "text-center",
+        "width": "wrapper--full-padded",
+        "align_columns": "flex-align-top",
+        "layout_mobile": "2",
+        "color_scheme": "scheme-3",
+        "padding_top": 60,
+        "padding_bottom": 60,
+        "heading_tag": "automatic"
+      }
+    },
+    "section-about-physician": {
+      "type": "section-double",
+      "blocks": {
+        "physician-subheading": {
           "type": "subheading",
           "settings": {
-            "subheading": "Health, Your Way",
+            "subheading": "Medical Director",
             "padding_bottom": 6
           }
         },
-        "heading": {
+        "physician-heading": {
           "type": "heading",
           "settings": {
-            "title": "The Problem Most People Face",
+            "title": "Dr. James French",
             "heading_font_size": "heading-medium",
             "padding_bottom": 16,
             "heading_tag": "automatic"
           }
         },
-        "text": {
+        "physician-text": {
           "type": "text",
           "settings": {
-            "text": "<p>You've tried everything — generic fitness plans that don't stick, one-size-fits-all diets that leave you frustrated, and supplements that promise the world but deliver little. Yet despite all this, you still feel tired, struggle to lose or maintain weight, and constantly worry about your future health and well-being. Traditional healthcare often waits until you're already sick to take action, leaving you feeling stuck and unheard.</p><p>But what if there was a better, smarter way to take control of your health before problems arise?</p>",
+            "text": "<p>Dr. French leads our physician team, bringing clinical expertise in preventive medicine and longevity assessment. Every patient receives direct physician oversight—your results are reviewed by a doctor, not an algorithm.</p><p>Our approach combines rigorous medical evaluation with advanced diagnostics, ensuring recommendations are both evidence-based and personally relevant to your health goals.</p>",
             "text_font_size": "body-medium",
             "padding_bottom": 24
           }
         },
-        "buttons": {
+        "physician-buttons": {
           "type": "buttons",
           "settings": {
-            "button_text": "Discover Your Health Blueprint",
+            "button_text": "View Services",
             "button_type": "btn--primary",
             "button_size": "",
             "button_style": "btn--solid",
@@ -249,73 +501,126 @@
         }
       },
       "block_order": [
-        "subheading",
-        "heading",
-        "text",
-        "buttons"
+        "physician-subheading",
+        "physician-heading",
+        "physician-text",
+        "physician-buttons"
       ],
       "settings": {
-        "align_text": "text-center",
+        "image_width": "one-half",
+        "text_alignment": "text-left",
+        "layout": "",
+        "width": "wrapper--full-padded",
+        "height": "sixty-fifty-height-hero",
+        "mobile_height": "four-fifty-height-hero--mobile",
+        "reverse_blocks": false,
+        "color_scheme": "scheme-1",
+        "padding_top": 60,
+        "padding_bottom": 60,
+        "show_placeholder": true
+      }
+    },
+    "section-trust-safety": {
+      "type": "section-accordion",
+      "blocks": {
+        "faq-diagnostic": {
+          "type": "text",
+          "settings": {
+            "title": "Is this diagnostic testing?",
+            "text": "<p>No. Our assessments are screening tools designed to identify potential health priorities and optimize wellness. If we identify findings that require medical diagnosis or treatment, we coordinate referrals to appropriate specialists through established clinical pathways. We complement—not replace—your existing healthcare relationships.</p>"
+          }
+        },
+        "faq-data": {
+          "type": "text",
+          "settings": {
+            "title": "How is my data protected?",
+            "text": "<p>Your health information is stored securely in Canada using enterprise-grade encryption and compliant data handling practices. We follow strict privacy protocols and never share your information without explicit consent. You maintain control over your health data at all times.</p>"
+          }
+        },
+        "faq-findings": {
+          "type": "text",
+          "settings": {
+            "title": "What if something is found?",
+            "text": "<p>If our assessment identifies a finding requiring further evaluation, your physician will discuss next steps directly with you. We have established referral pathways to specialists and can coordinate with your family doctor to ensure appropriate follow-up care. New Brunswick residents may access physician services through Medicare; fees may apply for out-of-province residents.</p>"
+          }
+        },
+        "faq-contact": {
+          "type": "text",
+          "settings": {
+            "title": "Who can I talk to?",
+            "text": "<p>Our concierge team is available to answer questions before you begin. You can reach us by phone, email, or through our contact form. If you have specific clinical questions, our team can arrange a brief consultation with a physician to discuss whether our assessment is right for you.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "faq-diagnostic",
+        "faq-data",
+        "faq-findings",
+        "faq-contact"
+      ],
+      "settings": {
+        "default_open": true,
+        "title": "Trust & Safety",
+        "heading_font_size": "heading-medium",
         "width": "wrapper",
         "color_scheme": "scheme-1",
-        "overlay_type": "disabled",
         "padding_top": 60,
         "padding_bottom": 60
       }
     },
-    "section-text-row-features": {
+    "section-cta": {
       "type": "section-text-row",
       "blocks": {
-        "icon": {
+        "cta-physician": {
           "type": "icon",
           "settings": {
-            "icon_name": "icon-award",
-            "image": "shopify://shop_images/Built-by-Visionaries_5399c173-e778-4367-8ab0-6e9f453410ab.png",
+            "icon_name": "icon-calendar",
+            "image": "",
             "icon_size": 50,
             "icon_color": "#1E3A5F",
-            "title": "Built by Physicians",
+            "title": "Start with a Physician",
             "heading_font_size": "heading-x-small",
-            "text": "<p>Created by leading professionals in medicine and wellness, this system is rooted in real-world experience and tailored to your unique journey.</p>",
+            "text": "<p>Book a consultation to discuss your health goals and determine if our assessment is right for you.</p>",
             "text_font_size": "body-small",
             "heading_tag": "automatic"
           }
         },
-        "icon-0": {
+        "cta-services": {
+          "type": "icon",
+          "settings": {
+            "icon_name": "icon-clipboard",
+            "image": "",
+            "icon_size": 50,
+            "icon_color": "#1E3A5F",
+            "title": "Explore Assessments",
+            "heading_font_size": "heading-x-small",
+            "text": "<p>Learn more about our comprehensive evaluation and what each assessment domain includes.</p>",
+            "text_font_size": "body-small",
+            "heading_tag": "automatic"
+          }
+        },
+        "cta-contact": {
           "type": "icon",
           "settings": {
             "icon_name": "icon-chat",
-            "image": "shopify://shop_images/AI-Driven-Insight_5065db69-e6eb-4b9a-b8d4-d159da130415.png",
+            "image": "",
             "icon_size": 50,
             "icon_color": "#1E3A5F",
-            "title": "Technology-Driven Insight",
+            "title": "Have Questions?",
             "heading_font_size": "heading-x-small",
-            "text": "<p>Our next-generation electronic health system delivers a powerful 2-hour assessment that adapts to your lifestyle, health history, and personal needs setting the foundation for change.</p>",
-            "text_font_size": "body-small",
-            "heading_tag": "automatic"
-          }
-        },
-        "icon-1": {
-          "type": "icon",
-          "settings": {
-            "icon_name": "icon-heart",
-            "image": "shopify://shop_images/Personalized-Support_ca1579d1-03c8-4e81-9a56-e6b3d7f302b5.png",
-            "icon_size": 50,
-            "icon_color": "#1E3A5F",
-            "title": "Personalized Support",
-            "heading_font_size": "heading-x-small",
-            "text": "<p>With up to 12 months of expert-led health coaching, you'll turn knowledge into daily wellness — supported by dietitians, coaches, and concierge care.</p>",
+            "text": "<p>Our concierge team is here to help. Reach out with any questions about our services or process.</p>",
             "text_font_size": "body-small",
             "heading_tag": "automatic"
           }
         }
       },
       "block_order": [
-        "icon",
-        "icon-0",
-        "icon-1"
+        "cta-physician",
+        "cta-services",
+        "cta-contact"
       ],
       "settings": {
-        "title": "Expert-Led Innovation",
+        "title": "Ready to Begin?",
         "heading_font_size": "heading-medium",
         "align_heading": "text-center",
         "align_text": "text-center",
@@ -330,498 +635,16 @@
         "padding_bottom": 60,
         "heading_tag": "automatic"
       }
-    },
-    "section-double-visionary": {
-      "type": "section-double",
-      "blocks": {
-        "subheading": {
-          "type": "subheading",
-          "settings": {
-            "subheading": "Insight • Innovation • Care",
-            "padding_bottom": 6
-          }
-        },
-        "heading": {
-          "type": "heading",
-          "settings": {
-            "title": "Meet the Man Behind Your Longevity & Preventative Health Assessment",
-            "heading_font_size": "heading-medium",
-            "padding_bottom": 16,
-            "heading_tag": "automatic"
-          }
-        },
-        "text": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Our holistic health assessment isn't just a process — it's the result of deep clinical insight and physician expertise. Designed by healthcare innovators and powered by our next-generation electronic health record, this unique system brings together the best of both worlds: human experience and artificial intelligence.</p><p>From in-depth virtual assessments to advanced biological testing and comprehensive in-person evaluations, every phase is crafted to deliver research-backed precision, personalization, and long-term results.</p><p>Meet the mind behind this innovation — where science, care, and technology align to guide you toward your healthiest, most capable self.</p>",
-            "text_font_size": "body-medium",
-            "padding_bottom": 24
-          }
-        },
-        "buttons": {
-          "type": "buttons",
-          "settings": {
-            "button_text": "View Services",
-            "button_type": "btn--primary",
-            "button_size": "",
-            "button_style": "btn--solid",
-            "show_arrow": false,
-            "padding_bottom": 16
-          }
-        }
-      },
-      "block_order": [
-        "subheading",
-        "heading",
-        "text",
-        "buttons"
-      ],
-      "settings": {
-        "image_width": "one-half",
-        "text_alignment": "text-left",
-        "layout": "",
-        "width": "wrapper--full-padded",
-        "height": "sixty-fifty-height-hero",
-        "mobile_height": "four-fifty-height-hero--mobile",
-        "reverse_blocks": false,
-        "color_scheme": "scheme-1",
-        "padding_top": 60,
-        "padding_bottom": 60,
-        "show_placeholder": true
-      }
-    },
-    "section-double-solution": {
-      "type": "section-double",
-      "blocks": {
-        "subheading": {
-          "type": "subheading",
-          "settings": {
-            "subheading": "Health Tailored to You",
-            "padding_bottom": 6
-          }
-        },
-        "heading": {
-          "type": "heading",
-          "settings": {
-            "title": "Our Solution",
-            "heading_font_size": "heading-medium",
-            "padding_bottom": 16,
-            "heading_tag": "automatic"
-          }
-        },
-        "text": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Imagine having a crystal-clear picture of your body's unique needs—down to your genetics, psychology, metabolism, movements, fitness and sleep patterns. Picture receiving a personalized plan that actually works because it's designed specifically for YOU.</p><p>That's exactly what White Pine Medical delivers.</p>",
-            "text_font_size": "body-medium",
-            "padding_bottom": 24
-          }
-        },
-        "buttons": {
-          "type": "buttons",
-          "settings": {
-            "button_text": "View Services",
-            "button_type": "btn--primary",
-            "button_size": "",
-            "button_style": "btn--solid",
-            "show_arrow": false,
-            "padding_bottom": 16
-          }
-        }
-      },
-      "block_order": [
-        "subheading",
-        "heading",
-        "text",
-        "buttons"
-      ],
-      "settings": {
-        "image_width": "one-half",
-        "text_alignment": "text-left",
-        "layout": "",
-        "width": "wrapper--full-padded",
-        "height": "sixty-fifty-height-hero",
-        "mobile_height": "four-fifty-height-hero--mobile",
-        "reverse_blocks": false,
-        "color_scheme": "scheme-1",
-        "padding_top": 60,
-        "padding_bottom": 60,
-        "show_placeholder": true
-      }
-    },
-    "section-columns-phases": {
-      "type": "section-columns",
-      "blocks": {
-        "image": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/1_d206f190-2839-4fa0-bc61-1861f37b2a39.jpg",
-            "image_width": 100,
-            "image_shape": "normal",
-            "title": "Phase 1: Comprehensive Health Analysis",
-            "heading_font_size": "heading-small",
-            "text": "<p>Our next-generation electronic health system gathers your complete health history—medical background, lifestyle factors, psychological patterns, and risk assessments for major diseases.</p>",
-            "text_font_size": "body-small",
-            "button_text": "",
-            "button_type": "btn--primary",
-            "button_size": "",
-            "button_style": "btn--text",
-            "show_arrow": false,
-            "image_aspect_ratio": 1.2,
-            "mobile_image_aspect_ratio": 1.2,
-            "heading_tag": "automatic"
-          }
-        },
-        "image-0": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/JR-19-6489-20-1030x687.png",
-            "image_width": 100,
-            "image_shape": "normal",
-            "title": "Phase 2: Advanced Testing",
-            "heading_font_size": "heading-small",
-            "text": "<p>Receive a comprehensive genetic testing kit at your doorstep to collect samples in the comfort of your home. We arrange bloodwork at a location convenient for you.</p>",
-            "text_font_size": "body-small",
-            "button_text": "",
-            "button_type": "btn--primary",
-            "button_size": "",
-            "button_style": "btn--text",
-            "show_arrow": false,
-            "image_aspect_ratio": 1.2,
-            "mobile_image_aspect_ratio": 1.2,
-            "heading_tag": "automatic"
-          }
-        },
-        "image-1": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/JR-19-6489-20-1030x687.jpg",
-            "image_width": 100,
-            "image_shape": "normal",
-            "title": "Phase 3: Your Body's Blueprint",
-            "heading_font_size": "heading-small",
-            "text": "<p>We analyze your genetics, blood work, and lifestyle data to understand exactly how your body processes nutrients, responds to exercise, and what health risks you face.</p>",
-            "text_font_size": "body-small",
-            "button_text": "",
-            "button_type": "btn--primary",
-            "button_size": "",
-            "button_style": "btn--text",
-            "show_arrow": false,
-            "image_aspect_ratio": 1.2,
-            "mobile_image_aspect_ratio": 1.2,
-            "heading_tag": "automatic"
-          }
-        },
-        "image-2": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/unnamed.jpg",
-            "image_width": 100,
-            "image_shape": "normal",
-            "title": "Phase 4: Precision Assessment",
-            "heading_font_size": "heading-small",
-            "text": "<p>Visit our facility for gold-standard testing: VO2 max (your longevity predictor), basal metabolic rate, body composition analysis, and a comprehensive strength/mobility evaluation.</p>",
-            "text_font_size": "body-small",
-            "button_text": "",
-            "button_type": "btn--primary",
-            "button_size": "",
-            "button_style": "btn--text",
-            "show_arrow": false,
-            "image_aspect_ratio": 1.2,
-            "mobile_image_aspect_ratio": 1.2,
-            "heading_tag": "automatic"
-          }
-        },
-        "image-3": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/portrait_photo_in_gym_less_than_5MG.jpg",
-            "image_width": 100,
-            "image_shape": "normal",
-            "title": "Phase 5: Personalized Action Plan",
-            "heading_font_size": "heading-small",
-            "text": "<p>Receive your complete health optimization roadmap with specific targets, timelines, and strategies—plus 12 months of expert coaching to ensure you succeed.</p>",
-            "text_font_size": "body-small",
-            "button_text": "",
-            "button_type": "btn--primary",
-            "button_size": "",
-            "button_style": "btn--text",
-            "show_arrow": false,
-            "image_aspect_ratio": 1.2,
-            "mobile_image_aspect_ratio": 1.2,
-            "heading_tag": "automatic"
-          }
-        }
-      },
-      "block_order": [
-        "image",
-        "image-0",
-        "image-1",
-        "image-2",
-        "image-3"
-      ],
-      "settings": {
-        "title": "5-Phase Assessment Process",
-        "heading_font_size": "heading-medium",
-        "align_heading": "text-center",
-        "align_text": "text-center",
-        "width": "wrapper--full-padded",
-        "align_columns": "flex-align-top",
-        "layout": "slider",
-        "grid": 5,
-        "layout_mobile": "1",
-        "color_scheme": "scheme-3",
-        "padding_top": 60,
-        "padding_bottom": 60,
-        "heading_tag": "automatic"
-      }
-    },
-    "section-double-coaching": {
-      "type": "section-double",
-      "blocks": {
-        "subheading": {
-          "type": "subheading",
-          "settings": {
-            "subheading": "Personalized Wellness",
-            "padding_bottom": 6
-          }
-        },
-        "heading": {
-          "type": "heading",
-          "settings": {
-            "title": "Turn Insights Into Action",
-            "heading_font_size": "heading-medium",
-            "padding_bottom": 16,
-            "heading_tag": "automatic"
-          }
-        },
-        "text": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Transform your health journey with expert coaching and concierge support tailored to your lifestyle. Our team helps you take meaningful, lasting steps toward better well-being.</p>",
-            "text_font_size": "body-medium",
-            "padding_bottom": 24
-          }
-        },
-        "buttons": {
-          "type": "buttons",
-          "settings": {
-            "button_text": "View Services",
-            "button_type": "btn--primary",
-            "button_size": "",
-            "button_style": "btn--solid",
-            "show_arrow": false,
-            "padding_bottom": 16
-          }
-        }
-      },
-      "block_order": [
-        "subheading",
-        "heading",
-        "text",
-        "buttons"
-      ],
-      "settings": {
-        "image_width": "one-half",
-        "text_alignment": "text-left",
-        "layout": "",
-        "width": "wrapper--full-padded",
-        "height": "sixty-fifty-height-hero",
-        "mobile_height": "four-fifty-height-hero--mobile",
-        "reverse_blocks": true,
-        "color_scheme": "scheme-1",
-        "padding_top": 60,
-        "padding_bottom": 60,
-        "show_placeholder": true
-      }
-    },
-    "section-double-corporate": {
-      "type": "section-double",
-      "blocks": {
-        "subheading": {
-          "type": "subheading",
-          "settings": {
-            "subheading": "Health That Performs",
-            "padding_bottom": 6
-          }
-        },
-        "heading": {
-          "type": "heading",
-          "settings": {
-            "title": "Optimize Team Health & Longevity",
-            "heading_font_size": "heading-medium",
-            "padding_bottom": 16,
-            "heading_tag": "automatic"
-          }
-        },
-        "text": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Boost team health and performance with our science-backed corporate wellness services—designed to reduce absenteeism and attract top talent.</p>",
-            "text_font_size": "body-medium",
-            "padding_bottom": 24
-          }
-        },
-        "buttons": {
-          "type": "buttons",
-          "settings": {
-            "button_text": "Learn More",
-            "button_type": "btn--primary",
-            "button_size": "",
-            "button_style": "btn--solid",
-            "show_arrow": false,
-            "padding_bottom": 16
-          }
-        }
-      },
-      "block_order": [
-        "subheading",
-        "heading",
-        "text",
-        "buttons"
-      ],
-      "settings": {
-        "image_width": "one-half",
-        "text_alignment": "text-left",
-        "layout": "",
-        "width": "wrapper--full-padded",
-        "height": "sixty-fifty-height-hero",
-        "mobile_height": "four-fifty-height-hero--mobile",
-        "reverse_blocks": false,
-        "color_scheme": "scheme-1",
-        "padding_top": 60,
-        "padding_bottom": 60,
-        "show_placeholder": true
-      }
-    },
-    "section-reviews": {
-      "type": "section-reviews",
-      "blocks": {
-        "review": {
-          "type": "review",
-          "settings": {
-            "title": "J Maitland, PhD",
-            "subheading": "Fredericton, NB",
-            "review_content": "<p>I lost my brother to an early and unexpected heart attack. James listened to my fears without judgement and has been resolute in his determination to give me the data, insights, and support that I need to move on and live my best life.</p>"
-          }
-        },
-        "review-0": {
-          "type": "review",
-          "settings": {
-            "title": "Olivia H",
-            "subheading": "Los Angeles, CA",
-            "review_content": "<p>The health system was surprisingly intuitive. I appreciated the balance between data and human support. A very modern, respectful approach to wellness.</p>"
-          }
-        },
-        "review-1": {
-          "type": "review",
-          "settings": {
-            "title": "David M",
-            "subheading": "Los Angeles, CA",
-            "review_content": "<p>White Pine's 5-phase assessment helped me finally understand the root of my fatigue. The at-home testing and wearable tracking were game changers.</p>"
-          }
-        },
-        "review-2": {
-          "type": "review",
-          "settings": {
-            "title": "Dana Bungay",
-            "subheading": "St John, Canada",
-            "review_content": "<p>In September 2024, I was fortunate to be cared for by Dr. James French. He was kind, professional, and thorough—listening carefully, ordering the right tests, and ensuring nothing was missed. His prompt, attentive care and focus on detail truly set him apart.</p>"
-          }
-        }
-      },
-      "block_order": [
-        "review",
-        "review-0",
-        "review-1",
-        "review-2"
-      ],
-      "settings": {
-        "show_featured_image": false,
-        "show_quotation_marks": true,
-        "heading_font_size": "heading-small",
-        "text_align": "text-center",
-        "color_scheme": "scheme-3",
-        "padding_top": 60,
-        "padding_bottom": 60
-      }
-    },
-    "section-accordion": {
-      "type": "section-accordion",
-      "blocks": {
-        "block": {
-          "type": "text",
-          "settings": {
-            "title": "What is included in the 5-Phase Health Assessment?",
-            "text": "<p>Our 5-Phase Health Assessment includes: a comprehensive virtual health analysis, at-home biological testing, wearable device tracking, an in-person longevity assessment, and a virtual nutrition and gut health evaluation.</p>"
-          }
-        },
-        "block-0": {
-          "type": "text",
-          "settings": {
-            "title": "How does the health analysis work?",
-            "text": "<p>Our next-generation electronic health record conducts a comprehensive 2-hour health analysis, collecting detailed data about your lifestyle, sleep, medical history, and more — creating a personalized foundation for your wellness journey.</p>"
-          }
-        },
-        "block-1": {
-          "type": "text",
-          "settings": {
-            "title": "Do I need to visit a clinic for any of the tests?",
-            "text": "<p>No clinic visits are necessary for most of the process. Our biological testing kits are designed for at-home use. Only the in-person longevity assessment takes place at our Rothesay facility.</p>"
-          }
-        },
-        "block-2": {
-          "type": "text",
-          "settings": {
-            "title": "What kind of support will I receive after the assessment?",
-            "text": "<p>You'll receive up to 12 months of personalized coaching from a Gut Health Dietitian and a certified Health Coach, covering nutrition, exercise, sleep, and emotional wellness.</p>"
-          }
-        },
-        "block-3": {
-          "type": "text",
-          "settings": {
-            "title": "Are medical services included if a health issue is detected?",
-            "text": "<p>Yes. If our team identifies a medical issue requiring physician care, New Brunswick residents can access physician services covered through Medicare. Additional fees may apply for residents outside New Brunswick.</p>"
-          }
-        },
-        "block-4": {
-          "type": "text",
-          "settings": {
-            "title": "Can I use my own wearable device for tracking?",
-            "text": "<p>Yes. You can use your existing wearable device, or we can provide one for you to help monitor and collect your daily health metrics effectively.</p>"
-          }
-        }
-      },
-      "block_order": [
-        "block",
-        "block-0",
-        "block-1",
-        "block-2",
-        "block-3",
-        "block-4"
-      ],
-      "settings": {
-        "default_open": true,
-        "title": "Frequently Asked Questions",
-        "heading_font_size": "heading-medium",
-        "width": "wrapper",
-        "color_scheme": "scheme-1",
-        "padding_top": 60,
-        "padding_bottom": 60
-      }
     }
   },
   "order": [
-    "section-slideshow-nested",
-    "section-announcement",
-    "section-rich-text-problem",
-    "section-text-row-features",
-    "section-double-visionary",
-    "section-double-solution",
-    "section-columns-phases",
-    "section-double-coaching",
-    "section-double-corporate",
-    "section-reviews",
-    "section-accordion"
+    "section-hero",
+    "section-what-we-do",
+    "section-how-care-works",
+    "section-why-different",
+    "section-services-preview",
+    "section-about-physician",
+    "section-trust-safety",
+    "section-cta"
   ]
 }

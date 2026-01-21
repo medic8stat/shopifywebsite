@@ -1,0 +1,953 @@
+{
+  "sections": {
+    "hero": {
+      "type": "section-hero",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "title": "Our Services",
+            "heading_font_size": "heading-x-large",
+            "heading_tag": "h1",
+            "padding_bottom": 12
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Physician-led assessment with optional individual testing</p>",
+            "text_font_size": "body-large",
+            "padding_bottom": 8
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "text"
+      ],
+      "settings": {
+        "link": "",
+        "width": "wrapper--full",
+        "height": "four-fifty-height-hero",
+        "flex_align_desktop": "align--middle-center-desktop",
+        "content_width": 70,
+        "mobile_height": "four-fifty-height-hero--mobile",
+        "flex_align_mobile": "align--middle-center-mobile",
+        "color_scheme": "scheme-2",
+        "show_text_background": false,
+        "overlay_type": "opacity",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "show_placeholder": true
+      }
+    },
+    "how-care-works": {
+      "type": "section-text-row",
+      "blocks": {
+        "step-assess": {
+          "type": "icon",
+          "settings": {
+            "icon_name": "icon-check-circle",
+            "icon_size": 50,
+            "icon_color": "#1E3A5F",
+            "title": "Assess",
+            "heading_font_size": "heading-small",
+            "text": "<p>Comprehensive evaluation of your current health status using advanced diagnostics and clinical assessments.</p>",
+            "text_font_size": "body-medium",
+            "heading_tag": "h3"
+          }
+        },
+        "step-prioritize": {
+          "type": "icon",
+          "settings": {
+            "icon_name": "icon-star",
+            "icon_size": 50,
+            "icon_color": "#1E3A5F",
+            "title": "Prioritize",
+            "heading_font_size": "heading-small",
+            "text": "<p>Physician-guided focus on the areas that matter most for your health goals and longevity.</p>",
+            "text_font_size": "body-medium",
+            "heading_tag": "h3"
+          }
+        },
+        "step-act": {
+          "type": "icon",
+          "settings": {
+            "icon_name": "icon-lightning",
+            "icon_size": 50,
+            "icon_color": "#1E3A5F",
+            "title": "Act",
+            "heading_font_size": "heading-small",
+            "text": "<p>Personalized action plan with measurable goals and ongoing support for lasting results.</p>",
+            "text_font_size": "body-medium",
+            "heading_tag": "h3"
+          }
+        }
+      },
+      "block_order": [
+        "step-assess",
+        "step-prioritize",
+        "step-act"
+      ],
+      "settings": {
+        "title": "How Care Works",
+        "heading_font_size": "heading-medium",
+        "align_heading": "text-center",
+        "align_text": "text-center",
+        "icon_alignment": "icon--top",
+        "width": "wrapper",
+        "align_columns": "flex-align-top",
+        "layout": "grid",
+        "grid": 3,
+        "layout_mobile": "1",
+        "color_scheme": "scheme-3",
+        "padding_top": 80,
+        "padding_bottom": 80,
+        "heading_tag": "h2"
+      }
+    },
+    "concierge-assessment": {
+      "type": "section-double",
+      "blocks": {
+        "subheading": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "Our Flagship Service",
+            "padding_bottom": 12
+          }
+        },
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "title": "Complete Health Assessment",
+            "heading_font_size": "heading-large",
+            "padding_bottom": 16,
+            "heading_tag": "h2"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Our comprehensive physician-led assessment covers cardiovascular, metabolic, cognitive, and functional health. This thorough evaluation provides a complete picture of your current health status and serves as the foundation for your personalized wellness journey.</p><p>Includes detailed review of:</p><ul><li>Cardiovascular fitness and heart health</li><li>Metabolic function and body composition</li><li>Cognitive performance and brain health</li><li>Functional movement and strength</li><li>Comprehensive blood work and biomarkers</li></ul>",
+            "text_font_size": "body-medium",
+            "padding_bottom": 20
+          }
+        },
+        "button": {
+          "type": "buttons",
+          "settings": {
+            "button_text": "Learn More",
+            "button_url": "",
+            "button_type": "btn--primary",
+            "button_size": "btn--large",
+            "button_style": "btn--solid",
+            "show_arrow": true,
+            "padding_bottom": 0
+          }
+        }
+      },
+      "block_order": [
+        "subheading",
+        "heading",
+        "text",
+        "button"
+      ],
+      "settings": {
+        "image_width": "one-half",
+        "text_alignment": "text-left",
+        "layout": "",
+        "width": "wrapper--full-padded",
+        "height": "five-fifty-height-hero",
+        "mobile_height": "image-height--mobile",
+        "reverse_blocks": false,
+        "color_scheme": "scheme-1",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "show_placeholder": true
+      }
+    },
+    "individual-assessments-intro": {
+      "type": "section-rich-text",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "title": "Individual Assessments",
+            "heading_font_size": "heading-large",
+            "padding_bottom": 16,
+            "heading_tag": "h2"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Choose from our comprehensive range of specialized assessments. Each test is designed to provide specific insights into different aspects of your health.</p>",
+            "text_font_size": "body-medium",
+            "padding_bottom": 0
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "text"
+      ],
+      "settings": {
+        "align_text": "text-center",
+        "width": "wrapper",
+        "color_scheme": "scheme-1",
+        "overlay_type": "disabled",
+        "padding_top": 80,
+        "padding_bottom": 40
+      }
+    },
+    "assessments-cardiopulmonary": {
+      "type": "section-accordion-group",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "title": "Cardiopulmonary & Cardiovascular"
+          }
+        },
+        "vo2-max": {
+          "type": "question",
+          "settings": {
+            "default_open": false,
+            "title": "VO2 Max Testing",
+            "content": "<p>Gold-standard assessment of aerobic fitness and cardiovascular capacity. This test measures your body's maximum oxygen uptake during intense exercise, providing critical insights into your cardiovascular health and endurance potential.</p>",
+            "show_icon": true,
+            "icon_name": "icon-heart",
+            "icon_size": 20,
+            "icon_color": "#1E3A5F"
+          }
+        },
+        "submaximal": {
+          "type": "question",
+          "settings": {
+            "default_open": false,
+            "title": "Submaximal Fitness Testing",
+            "content": "<p>A less intensive alternative to VO2 max testing that estimates cardiovascular fitness without pushing to maximum exertion. Ideal for those new to fitness testing or with certain health considerations.</p>",
+            "show_icon": true,
+            "icon_name": "icon-heart",
+            "icon_size": 20,
+            "icon_color": "#1E3A5F"
+          }
+        },
+        "ecg": {
+          "type": "question",
+          "settings": {
+            "default_open": false,
+            "title": "Resting ECG",
+            "content": "<p>Electrocardiogram recording of your heart's electrical activity at rest. Screens for arrhythmias, conduction abnormalities, and other cardiac conditions that may require attention.</p>",
+            "show_icon": true,
+            "icon_name": "icon-heart",
+            "icon_size": 20,
+            "icon_color": "#1E3A5F"
+          }
+        },
+        "exercise-ecg": {
+          "type": "question",
+          "settings": {
+            "default_open": false,
+            "title": "Exercise ECG (Stress Test)",
+            "content": "<p>Monitors heart rhythm and function during physical exertion. Reveals how your heart responds to stress and can identify issues not apparent at rest, including exercise-induced arrhythmias.</p>",
+            "show_icon": true,
+            "icon_name": "icon-heart",
+            "icon_size": 20,
+            "icon_color": "#1E3A5F"
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "vo2-max",
+        "submaximal",
+        "ecg",
+        "exercise-ecg"
+      ],
+      "settings": {
+        "heading_font_size": "heading-small",
+        "question_font_size": "heading-x-small",
+        "width": "wrapper",
+        "columns": "1",
+        "color_scheme": "scheme-1",
+        "padding_top": 20,
+        "padding_bottom": 20
+      }
+    },
+    "assessments-body-composition": {
+      "type": "section-accordion-group",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "title": "Body Composition & Metabolic"
+          }
+        },
+        "body-comp": {
+          "type": "question",
+          "settings": {
+            "default_open": false,
+            "title": "Body Composition Analysis",
+            "content": "<p>Detailed analysis of muscle mass, fat mass, bone density, and body water distribution using advanced scanning technology. Essential for understanding your baseline and tracking progress.</p>",
+            "show_icon": true,
+            "icon_name": "icon-ruler",
+            "icon_size": 20,
+            "icon_color": "#1E3A5F"
+          }
+        },
+        "bmr": {
+          "type": "question",
+          "settings": {
+            "default_open": false,
+            "title": "Basal Metabolic Rate (BMR)",
+            "content": "<p>Precise measurement of your resting metabolism - the calories your body burns at rest. Critical data for optimizing nutrition and achieving body composition goals.</p>",
+            "show_icon": true,
+            "icon_name": "icon-flare",
+            "icon_size": 20,
+            "icon_color": "#1E3A5F"
+          }
+        },
+        "metabolic-flex": {
+          "type": "question",
+          "settings": {
+            "default_open": false,
+            "title": "Metabolic Flexibility Testing",
+            "content": "<p>Assesses your body's ability to switch between burning carbohydrates and fats for fuel. Key indicator of metabolic health and efficiency, with implications for weight management and energy levels.</p>",
+            "show_icon": true,
+            "icon_name": "icon-flare",
+            "icon_size": 20,
+            "icon_color": "#1E3A5F"
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "body-comp",
+        "bmr",
+        "metabolic-flex"
+      ],
+      "settings": {
+        "heading_font_size": "heading-small",
+        "question_font_size": "heading-x-small",
+        "width": "wrapper",
+        "columns": "1",
+        "color_scheme": "scheme-3",
+        "padding_top": 20,
+        "padding_bottom": 20
+      }
+    },
+    "assessments-neurological": {
+      "type": "section-accordion-group",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "title": "Neurological, Cognitive & Sensory"
+          }
+        },
+        "vr-vision": {
+          "type": "question",
+          "settings": {
+            "default_open": false,
+            "title": "VR Vision Assessment",
+            "content": "<p>Advanced virtual reality-based vision testing that goes beyond standard eye exams. Evaluates visual processing, peripheral vision, depth perception, and visual-motor integration.</p>",
+            "show_icon": true,
+            "icon_name": "icon-flare",
+            "icon_size": 20,
+            "icon_color": "#1E3A5F"
+          }
+        },
+        "hearing": {
+          "type": "question",
+          "settings": {
+            "default_open": false,
+            "title": "Hearing Assessment",
+            "content": "<p>Comprehensive audiometric testing to evaluate hearing across all frequencies. Early detection of hearing changes allows for intervention before significant impact on quality of life.</p>",
+            "show_icon": true,
+            "icon_name": "icon-chat",
+            "icon_size": 20,
+            "icon_color": "#1E3A5F"
+          }
+        },
+        "reaction-time": {
+          "type": "question",
+          "settings": {
+            "default_open": false,
+            "title": "Reaction Time Testing",
+            "content": "<p>Measures cognitive processing speed and neuromuscular response time. Important indicator of brain health and nervous system function, with implications for safety and performance.</p>",
+            "show_icon": true,
+            "icon_name": "icon-lightning",
+            "icon_size": 20,
+            "icon_color": "#1E3A5F"
+          }
+        },
+        "balance": {
+          "type": "question",
+          "settings": {
+            "default_open": false,
+            "title": "Balance Assessment",
+            "content": "<p>Evaluates vestibular function, proprioception, and postural stability. Critical for fall prevention and maintaining independence, especially as we age.</p>",
+            "show_icon": true,
+            "icon_name": "icon-check-circle",
+            "icon_size": 20,
+            "icon_color": "#1E3A5F"
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "vr-vision",
+        "hearing",
+        "reaction-time",
+        "balance"
+      ],
+      "settings": {
+        "heading_font_size": "heading-small",
+        "question_font_size": "heading-x-small",
+        "width": "wrapper",
+        "columns": "1",
+        "color_scheme": "scheme-1",
+        "padding_top": 20,
+        "padding_bottom": 20
+      }
+    },
+    "assessments-strength": {
+      "type": "section-accordion-group",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "title": "Strength, Power & Functional"
+          }
+        },
+        "grip": {
+          "type": "question",
+          "settings": {
+            "default_open": false,
+            "title": "Grip Strength Testing",
+            "content": "<p>Simple yet powerful biomarker of overall health and longevity. Grip strength correlates strongly with cardiovascular health, cognitive function, and mortality risk.</p>",
+            "show_icon": true,
+            "icon_name": "icon-award",
+            "icon_size": 20,
+            "icon_color": "#1E3A5F"
+          }
+        },
+        "lower-limb": {
+          "type": "question",
+          "settings": {
+            "default_open": false,
+            "title": "Lower-Limb Power Assessment",
+            "content": "<p>Measures explosive strength and power generation in the legs. Critical for mobility, fall prevention, and maintaining functional independence throughout life.</p>",
+            "show_icon": true,
+            "icon_name": "icon-lightning",
+            "icon_size": 20,
+            "icon_color": "#1E3A5F"
+          }
+        },
+        "fms": {
+          "type": "question",
+          "settings": {
+            "default_open": false,
+            "title": "Functional Movement Screen (FMS)",
+            "content": "<p>Systematic evaluation of movement patterns to identify asymmetries, limitations, and injury risk. Foundation for developing safe, effective exercise programming.</p>",
+            "show_icon": true,
+            "icon_name": "icon-check",
+            "icon_size": 20,
+            "icon_color": "#1E3A5F"
+          }
+        },
+        "gait": {
+          "type": "question",
+          "settings": {
+            "default_open": false,
+            "title": "RunEasi Gait Analysis",
+            "content": "<p>Advanced biomechanical analysis of walking and running patterns. Identifies inefficiencies and injury risk factors, with personalized recommendations for improvement.</p>",
+            "show_icon": true,
+            "icon_name": "icon-fast-shipment",
+            "icon_size": 20,
+            "icon_color": "#1E3A5F"
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "grip",
+        "lower-limb",
+        "fms",
+        "gait"
+      ],
+      "settings": {
+        "heading_font_size": "heading-small",
+        "question_font_size": "heading-x-small",
+        "width": "wrapper",
+        "columns": "1",
+        "color_scheme": "scheme-3",
+        "padding_top": 20,
+        "padding_bottom": 20
+      }
+    },
+    "assessments-vascular": {
+      "type": "section-accordion-group",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "title": "Vascular & Autonomic"
+          }
+        },
+        "bp-screening": {
+          "type": "question",
+          "settings": {
+            "default_open": false,
+            "title": "Blood Pressure Screening",
+            "content": "<p>Comprehensive blood pressure evaluation including resting, orthostatic, and ambulatory monitoring options. Identifies hypertension patterns that standard office readings may miss.</p>",
+            "show_icon": true,
+            "icon_name": "icon-heart",
+            "icon_size": 20,
+            "icon_color": "#1E3A5F"
+          }
+        },
+        "hrv": {
+          "type": "question",
+          "settings": {
+            "default_open": false,
+            "title": "Heart Rate Variability (HRV)",
+            "content": "<p>Analysis of beat-to-beat heart rate variations to assess autonomic nervous system function. Key indicator of stress resilience, recovery capacity, and overall health.</p>",
+            "show_icon": true,
+            "icon_name": "icon-heart",
+            "icon_size": 20,
+            "icon_color": "#1E3A5F"
+          }
+        },
+        "abpi": {
+          "type": "question",
+          "settings": {
+            "default_open": false,
+            "title": "Ankle-Brachial Pressure Index (ABPI)",
+            "content": "<p>Non-invasive screening for peripheral arterial disease by comparing blood pressure in arms and ankles. Early indicator of cardiovascular risk and arterial health.</p>",
+            "show_icon": true,
+            "icon_name": "icon-heart",
+            "icon_size": 20,
+            "icon_color": "#1E3A5F"
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "bp-screening",
+        "hrv",
+        "abpi"
+      ],
+      "settings": {
+        "heading_font_size": "heading-small",
+        "question_font_size": "heading-x-small",
+        "width": "wrapper",
+        "columns": "1",
+        "color_scheme": "scheme-1",
+        "padding_top": 20,
+        "padding_bottom": 20
+      }
+    },
+    "assessments-respiratory": {
+      "type": "section-accordion-group",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "title": "Respiratory"
+          }
+        },
+        "spirometry": {
+          "type": "question",
+          "settings": {
+            "default_open": false,
+            "title": "Spirometry & Lung Age",
+            "content": "<p>Comprehensive pulmonary function testing measuring lung capacity, airflow, and respiratory efficiency. Calculates your 'lung age' compared to healthy populations, identifying early changes in respiratory health.</p>",
+            "show_icon": true,
+            "icon_name": "icon-cloud",
+            "icon_size": 20,
+            "icon_color": "#1E3A5F"
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "spirometry"
+      ],
+      "settings": {
+        "heading_font_size": "heading-small",
+        "question_font_size": "heading-x-small",
+        "width": "wrapper",
+        "columns": "1",
+        "color_scheme": "scheme-3",
+        "padding_top": 20,
+        "padding_bottom": 20
+      }
+    },
+    "assessments-digital": {
+      "type": "section-accordion-group",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "title": "Digital & Algorithmic"
+          }
+        },
+        "longevity-snapshots": {
+          "type": "question",
+          "settings": {
+            "default_open": false,
+            "title": "Longevity Snapshots",
+            "content": "<p>AI-powered analysis combining multiple biomarkers and health data to estimate biological age and predict healthspan. Provides actionable insights for longevity optimization.</p>",
+            "show_icon": true,
+            "icon_name": "icon-flare",
+            "icon_size": 20,
+            "icon_color": "#1E3A5F"
+          }
+        },
+        "digital-cognitive": {
+          "type": "question",
+          "settings": {
+            "default_open": false,
+            "title": "Digital Cognitive Assessment",
+            "content": "<p>Validated digital tools measuring memory, attention, processing speed, and executive function. Establishes baseline cognitive performance and tracks changes over time.</p>",
+            "show_icon": true,
+            "icon_name": "icon-smile",
+            "icon_size": 20,
+            "icon_color": "#1E3A5F"
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "longevity-snapshots",
+        "digital-cognitive"
+      ],
+      "settings": {
+        "heading_font_size": "heading-small",
+        "question_font_size": "heading-x-small",
+        "width": "wrapper",
+        "columns": "1",
+        "color_scheme": "scheme-1",
+        "padding_top": 20,
+        "padding_bottom": 20
+      }
+    },
+    "assessments-mental-health": {
+      "type": "section-accordion-group",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "title": "Mental Health & Psychiatric"
+          }
+        },
+        "online-physician": {
+          "type": "question",
+          "settings": {
+            "default_open": false,
+            "title": "Online Assessment + Physician Review",
+            "content": "<p>Validated mental health screening tools with comprehensive physician interpretation. Covers anxiety, depression, stress, and other common mental health concerns with evidence-based recommendations.</p>",
+            "show_icon": true,
+            "icon_name": "icon-chat",
+            "icon_size": 20,
+            "icon_color": "#1E3A5F"
+          }
+        },
+        "in-person-therapist": {
+          "type": "question",
+          "settings": {
+            "default_open": false,
+            "title": "In-Person Assessment + Therapist",
+            "content": "<p>Face-to-face mental health evaluation with a licensed therapist. Comprehensive assessment of psychological wellbeing with personalized treatment planning and ongoing support options.</p>",
+            "show_icon": true,
+            "icon_name": "icon-heart",
+            "icon_size": 20,
+            "icon_color": "#1E3A5F"
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "online-physician",
+        "in-person-therapist"
+      ],
+      "settings": {
+        "heading_font_size": "heading-small",
+        "question_font_size": "heading-x-small",
+        "width": "wrapper",
+        "columns": "1",
+        "color_scheme": "scheme-3",
+        "padding_top": 20,
+        "padding_bottom": 20
+      }
+    },
+    "assessments-genetic": {
+      "type": "section-accordion-group",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "title": "Genetic Testing"
+          }
+        },
+        "nutrigenetics": {
+          "type": "question",
+          "settings": {
+            "default_open": false,
+            "title": "Nutrigenetics Panel",
+            "content": "<p>DNA analysis revealing how your genetics influence nutrient metabolism, food sensitivities, and dietary responses. Enables truly personalized nutrition recommendations based on your unique genetic profile.</p>",
+            "show_icon": true,
+            "icon_name": "icon-leaf",
+            "icon_size": 20,
+            "icon_color": "#1E3A5F"
+          }
+        },
+        "cancer-genetic": {
+          "type": "question",
+          "settings": {
+            "default_open": false,
+            "title": "Cancer Predisposition Screening",
+            "content": "<p>Genetic testing for hereditary cancer syndromes including BRCA and other high-risk variants. Includes genetic counseling to understand results and appropriate screening recommendations.</p>",
+            "show_icon": true,
+            "icon_name": "icon-shield",
+            "icon_size": 20,
+            "icon_color": "#1E3A5F"
+          }
+        },
+        "longevity-genetic": {
+          "type": "question",
+          "settings": {
+            "default_open": false,
+            "title": "Longevity Genetics Panel",
+            "content": "<p>Analysis of genetic variants associated with aging, disease risk, and lifespan. Provides insights into your genetic predispositions with actionable interventions to optimize healthspan.</p>",
+            "show_icon": true,
+            "icon_name": "icon-flare",
+            "icon_size": 20,
+            "icon_color": "#1E3A5F"
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "nutrigenetics",
+        "cancer-genetic",
+        "longevity-genetic"
+      ],
+      "settings": {
+        "heading_font_size": "heading-small",
+        "question_font_size": "heading-x-small",
+        "width": "wrapper",
+        "columns": "1",
+        "color_scheme": "scheme-1",
+        "padding_top": 20,
+        "padding_bottom": 20
+      }
+    },
+    "assessments-ultrasound": {
+      "type": "section-accordion-group",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "title": "Ultrasound-Based"
+          }
+        },
+        "screening-ultrasound": {
+          "type": "question",
+          "settings": {
+            "default_open": false,
+            "title": "Limited Screening Ultrasound",
+            "content": "<p>Targeted ultrasound examinations for specific screening purposes including carotid artery imaging, abdominal aorta screening, and thyroid evaluation. Non-invasive imaging to detect early changes.</p>",
+            "show_icon": true,
+            "icon_name": "icon-flare",
+            "icon_size": 20,
+            "icon_color": "#1E3A5F"
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "screening-ultrasound"
+      ],
+      "settings": {
+        "heading_font_size": "heading-small",
+        "question_font_size": "heading-x-small",
+        "width": "wrapper",
+        "columns": "1",
+        "color_scheme": "scheme-3",
+        "padding_top": 20,
+        "padding_bottom": 40
+      }
+    },
+    "bundled-assessments": {
+      "type": "section-rich-text",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "title": "Custom Assessment Bundles",
+            "heading_font_size": "heading-medium",
+            "padding_bottom": 16,
+            "heading_tag": "h2"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Coming soon:</strong> Build your own assessment package combining tests from multiple categories. Work with our physician to design a customized testing protocol tailored to your specific health goals and concerns.</p>",
+            "text_font_size": "body-medium",
+            "padding_bottom": 0
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "text"
+      ],
+      "settings": {
+        "align_text": "text-center",
+        "width": "wrapper--narrow",
+        "color_scheme": "scheme-1",
+        "overlay_type": "disabled",
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    },
+    "referral-partners": {
+      "type": "section-multicolumn",
+      "blocks": {
+        "specialists": {
+          "type": "icon",
+          "settings": {
+            "column_width": 33,
+            "icon_name": "icon-award",
+            "icon_size": 50,
+            "icon_alignment": "icon--top",
+            "icon_color": "#1E3A5F",
+            "title": "Specialist Referrals",
+            "heading_font_size": "heading-small",
+            "text": "<p>Direct access to a network of trusted specialists including cardiologists, endocrinologists, neurologists, and other medical experts when advanced care is needed.</p>",
+            "text_font_size": "body-medium",
+            "heading_tag": "h3"
+          }
+        },
+        "lab-partners": {
+          "type": "icon",
+          "settings": {
+            "column_width": 33,
+            "icon_name": "icon-droplet",
+            "icon_size": 50,
+            "icon_alignment": "icon--top",
+            "icon_color": "#1E3A5F",
+            "title": "Lab Partners",
+            "heading_font_size": "heading-small",
+            "text": "<p>Partnerships with leading diagnostic laboratories for comprehensive blood work, genetic testing, and specialized biomarker analysis with expedited results.</p>",
+            "text_font_size": "body-medium",
+            "heading_tag": "h3"
+          }
+        },
+        "imaging": {
+          "type": "icon",
+          "settings": {
+            "column_width": 33,
+            "icon_name": "icon-flare",
+            "icon_size": 50,
+            "icon_alignment": "icon--top",
+            "icon_color": "#1E3A5F",
+            "title": "Imaging Services",
+            "heading_font_size": "heading-small",
+            "text": "<p>Coordinated access to advanced imaging including MRI, CT, DEXA scans, and cardiac imaging when detailed visualization is required for your care.</p>",
+            "text_font_size": "body-medium",
+            "heading_tag": "h3"
+          }
+        }
+      },
+      "block_order": [
+        "specialists",
+        "lab-partners",
+        "imaging"
+      ],
+      "settings": {
+        "title": "Referral Partners",
+        "heading_font_size": "heading-medium",
+        "align_heading": "text-center",
+        "align_text": "text-center",
+        "width": "wrapper",
+        "align_columns": "flex-align-top",
+        "layout_mobile": "1",
+        "color_scheme": "scheme-3",
+        "padding_top": 60,
+        "padding_bottom": 60,
+        "heading_tag": "h2"
+      }
+    },
+    "not-sure-cta": {
+      "type": "section-rich-text",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "title": "Not Sure Where to Start?",
+            "heading_font_size": "heading-large",
+            "padding_bottom": 16,
+            "heading_tag": "h2"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Book a consultation with our physician to discuss your health goals, concerns, and determine which assessments are right for you. We'll help you design a personalized health evaluation plan.</p>",
+            "text_font_size": "body-large",
+            "padding_bottom": 24
+          }
+        },
+        "button": {
+          "type": "buttons",
+          "settings": {
+            "button_text": "Book Consultation",
+            "button_url": "/pages/contact",
+            "button_type": "btn--primary",
+            "button_size": "btn--large",
+            "button_style": "btn--solid",
+            "show_arrow": true,
+            "padding_bottom": 0
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "text",
+        "button"
+      ],
+      "settings": {
+        "align_text": "text-center",
+        "width": "wrapper--narrow",
+        "color_scheme": "scheme-2",
+        "overlay_type": "disabled",
+        "padding_top": 80,
+        "padding_bottom": 80
+      }
+    }
+  },
+  "order": [
+    "hero",
+    "how-care-works",
+    "concierge-assessment",
+    "individual-assessments-intro",
+    "assessments-cardiopulmonary",
+    "assessments-body-composition",
+    "assessments-neurological",
+    "assessments-strength",
+    "assessments-vascular",
+    "assessments-respiratory",
+    "assessments-digital",
+    "assessments-mental-health",
+    "assessments-genetic",
+    "assessments-ultrasound",
+    "bundled-assessments",
+    "referral-partners",
+    "not-sure-cta"
+  ]
+}
