@@ -1,7 +1,7 @@
 # White Pine Medical - Shopify Broadcast Theme
 
 ## Project Overview
-This is the Shopify storefront for **White Pine Medical**, a health and longevity company offering AI-powered health assessments and personalized wellness coaching.
+This is the Shopify storefront for **White Pine Medical**, a health and longevity company offering comprehensive health assessments and personalized wellness coaching powered by our next-generation electronic health system.
 
 ## Store Details
 - **Store URL**: whitepinemedical.myshopify.com
@@ -32,7 +32,7 @@ This is the Shopify storefront for **White Pine Medical**, a health and longevit
 1. **Hero Slideshow** - "Live Better Longer" main banner
 2. **Marquee Announcement** - Scrolling taglines
 3. **Problem Statement** - "The Problem Most People Face"
-4. **Feature Icons** - Built by Physicians, AI-Driven Insight, Personalized Support
+4. **Feature Icons** - Built by Physicians, Technology-Driven Insight, Personalized Support
 5. **Our Solution** - Image + text with product link
 6. **5-Phase Assessment** - All 5 phases with images
 7. **Turn Insights Into Action** - Coaching section

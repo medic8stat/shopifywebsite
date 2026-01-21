@@ -19,13 +19,18 @@ All notable changes to the White Pine Medical Shopify website will be documented
   - "Canadian Data Storage" → "100% Canadian" (data sovereignty)
   - "Our Data Protection Approach" → "Why Our Approach Is Different" (personal, human)
   - "Your Privacy Rights" → "Your Data, Your Control" (FAQ-style, conversational)
-- **Hero Subheadline** - Changed from "Unlock A Revolutionary Approach..." to "Transform Your Health with AI-Powered Precision Assessment"
+- **Hero Subheadline** - Changed from "Unlock A Revolutionary Approach..." to "Transform Your Health with Precision Assessment"
 - **All "Shop Now" Buttons** - Changed to "View Services" across the site
 - **"Invest in Your Future" Button** - Changed to "Discover Your Health Blueprint"
 - **Coaching Duration** - Updated from "six months" to "up to 12 months" (variable)
-- **James AI References** - Changed to "next-generation electronic health record" throughout
-- **Phase 1 Title** - Changed from "James AI Health Analysis" to "AI Health Analysis"
-- **FAQ About AI** - Rewritten to explain AI health analysis without "James AI" branding
+- **Removed All AI/Artificial Intelligence References** - Replaced with "next-generation electronic health system" throughout:
+  - "Health Powered by AI" → "Health Powered by Technology"
+  - "AI-Driven Insight" → "Technology-Driven Insight"
+  - "Phase 1: AI Health Analysis" → "Phase 1: Comprehensive Health Analysis"
+  - "AI-powered health analysis" → "Comprehensive health analysis"
+  - Updated all FAQ questions and product descriptions
+- **Phase 1 Title** - Changed from "James AI Health Analysis" to "Comprehensive Health Analysis"
+- **FAQ About AI** - Rewritten to explain health analysis without AI branding
 - **Visionary Section Text** - Removed cringy phrases ("visionary thinking", "elite", "unmatched", "most vibrant life")
 - **Feature Icons** - Changed "Built by Visionaries" to "Built by Physicians"
 

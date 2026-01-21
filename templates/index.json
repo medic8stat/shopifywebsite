@@ -38,7 +38,7 @@
             "text": {
               "type": "text",
               "settings": {
-                "text": "Transform Your Health with AI-Powered Precision Assessment",
+                "text": "Transform Your Health with Precision Assessment",
                 "text_font_size": "body-large",
                 "padding_bottom": 8
               },
@@ -111,7 +111,7 @@
         "heading-2": {
           "type": "heading",
           "settings": {
-            "heading": "Health Powered by AI",
+            "heading": "Health Powered by Technology",
             "heading_font_size": "heading-x-small"
           }
         },
@@ -289,9 +289,9 @@
             "icon_name": "icon-chat",
             "icon_size": 50,
             "icon_color": "#1E3A5F",
-            "title": "AI-Driven Insight",
+            "title": "Technology-Driven Insight",
             "heading_font_size": "heading-x-small",
-            "text": "<p>Our proprietary AI delivers a powerful 2-hour assessment that adapts to your lifestyle, health history, and personal needs setting the foundation for change.</p>",
+            "text": "<p>Our next-generation electronic health system delivers a powerful 2-hour assessment that adapts to your lifestyle, health history, and personal needs setting the foundation for change.</p>",
             "text_font_size": "body-small",
             "heading_tag": "automatic"
           }
@@ -464,9 +464,9 @@
             "image": "shopify://shop_images/1_d206f190-2839-4fa0-bc61-1861f37b2a39.jpg",
             "image_width": 100,
             "image_shape": "normal",
-            "title": "Phase 1: AI Health Analysis",
+            "title": "Phase 1: Comprehensive Health Analysis",
             "heading_font_size": "heading-small",
-            "text": "<p>Our proprietary AI gathers your complete health history—medical background, lifestyle factors, psychological patterns, and risk assessments for major diseases.</p>",
+            "text": "<p>Our next-generation electronic health system gathers your complete health history—medical background, lifestyle factors, psychological patterns, and risk assessments for major diseases.</p>",
             "text_font_size": "body-small",
             "button_text": "",
             "button_type": "btn--primary",
@@ -720,7 +720,7 @@
           "settings": {
             "title": "Olivia H",
             "subheading": "Los Angeles, CA",
-            "review_content": "<p>The AI system was surprisingly intuitive. I appreciated the balance between data and human support. A very modern, respectful approach to wellness.</p>"
+            "review_content": "<p>The health system was surprisingly intuitive. I appreciated the balance between data and human support. A very modern, respectful approach to wellness.</p>"
           }
         },
         "review-1": {
@@ -763,13 +763,13 @@
           "type": "text",
           "settings": {
             "title": "What is included in the 5-Phase Health Assessment?",
-            "text": "<p>Our 5-Phase Health Assessment includes: an AI-powered virtual health analysis, at-home biological testing, wearable device tracking, an in-person longevity assessment, and a virtual nutrition and gut health evaluation.</p>"
+            "text": "<p>Our 5-Phase Health Assessment includes: a comprehensive virtual health analysis, at-home biological testing, wearable device tracking, an in-person longevity assessment, and a virtual nutrition and gut health evaluation.</p>"
           }
         },
         "block-0": {
           "type": "text",
           "settings": {
-            "title": "How does the AI health analysis work?",
+            "title": "How does the health analysis work?",
             "text": "<p>Our next-generation electronic health record conducts a comprehensive 2-hour health analysis, collecting detailed data about your lifestyle, sleep, medical history, and more — creating a personalized foundation for your wellness journey.</p>"
           }
         },

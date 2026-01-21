@@ -82,7 +82,7 @@
             "default_open": false,
             "heading": "What's Included",
             "heading_font_size": "body-medium",
-            "text": "<p>Your comprehensive longevity assessment includes:</p><ul><li>AI-powered health analysis (2 hours)</li><li>At-home genetic and biological testing kits</li><li>In-person precision assessment at our Rothesay facility</li><li>Personalized health optimization roadmap</li><li>Up to 12 months of expert coaching support</li></ul>",
+            "text": "<p>Your comprehensive longevity assessment includes:</p><ul><li>Comprehensive health analysis (2 hours)</li><li>At-home genetic and biological testing kits</li><li>In-person precision assessment at our Rothesay facility</li><li>Personalized health optimization roadmap</li><li>Up to 12 months of expert coaching support</li></ul>",
             "text_font_size": "body-medium",
             "show_icon": false,
             "icon_name": "icon-award",
@@ -198,7 +198,7 @@
           "settings": {
             "title": "How long does the assessment take?",
             "heading_font_size": "heading-x-small",
-            "text": "<p>The complete 5-phase assessment typically takes 4-6 weeks from start to finish. This includes your AI health analysis, at-home testing, lab work processing, and your in-person visit at our Rothesay facility.</p>"
+            "text": "<p>The complete 5-phase assessment typically takes 4-6 weeks from start to finish. This includes your comprehensive health analysis, at-home testing, lab work processing, and your in-person visit at our Rothesay facility.</p>"
           }
         },
         "text-2": {
