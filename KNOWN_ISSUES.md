@@ -18,6 +18,7 @@
 | ISS-001 | LOW | ⚠️ PENDING | Privacy & Trust page needs Shopify page creation |
 | ISS-002 | LOW | ⚠️ PENDING | Urgent Care page needs Shopify page creation |
 | ISS-003 | LOW | ⚠️ PENDING | Mobile menu still shows demo content |
+| ISS-004 | MEDIUM | ⚠️ PENDING | Missing images in text/photo sections |
 
 ---
 
@@ -100,6 +101,36 @@ Update the mobile-menu section in `sections/group-header.json`:
 
 **Files:**
 - `sections/group-header.json` (lines 129-230)
+
+---
+
+### ISS-004: Missing Images in Text/Photo Sections
+
+**Severity:** MEDIUM
+**Status:** ⚠️ PENDING
+**Category:** Content
+**Reported:** 2026-01-21
+
+**Problem:**
+Several text/photo sections throughout the site are missing images, showing empty placeholder boxes. These sections have text content but no accompanying visuals.
+
+**Impact:**
+Site looks incomplete and unprofessional. Text/photo layouts appear broken without images.
+
+**Affected Sections (to be identified):**
+
+- Homepage image+text blocks
+- Phase sections
+- Other text/photo combinations
+
+**Resolution:**
+Add images via Shopify Theme Editor (Admin → Themes → Customize):
+
+1. Navigate to each section missing an image
+2. Upload or select appropriate images from media library
+3. Images will be stored in Shopify CDN and persist across theme pushes
+
+**Note:** Images added via Theme Editor are safe and will persist when pushing code changes, as long as `settings_data.json` is pulled from Shopify before making local edits.
 
 ---
 
