@@ -4,6 +4,26 @@
 
 ---
 
+## CURRENT STATUS (v6.0.1 - 2026-01-21)
+
+**Broadcast theme is NOW LIVE** at whitepinemedical.myshopify.com
+
+| Item | Status |
+|------|--------|
+| Homepage | 8 sections (restructured from 11) |
+| Services Page | LIVE - 17 sections with 10 assessment categories |
+| Privacy & Trust Page | LIVE |
+| Urgent Care Page | LIVE |
+| All templates | Deployed and working |
+
+**Recent Changes:**
+- Published Broadcast theme (was dev, now live)
+- Removed `.shopifyignore` (was blocking template pushes)
+- Removed ignore rules from `shopify.theme.toml`
+- Claude Code is now single source of truth for ALL files
+
+---
+
 ## CRITICAL: Three Methods for Changes
 
 | Change Type | Method | Tool | Example |
@@ -199,10 +219,11 @@ node shopify-content.mjs pull sections/group-header.json
 
 **Problem Solved:** Previously, `shopify theme push` would overwrite Customizer changes because JSON files were included in push.
 
-**Solution:**
-1. `.shopifyignore` protects JSON during regular code pushes
+**Solution (Updated v6.0):**
+1. `.shopifyignore` was DELETED - it was blocking template pushes
 2. `shopify-content.mjs` allows targeted pull/push of specific JSON files
-3. No need for Shopify Customizer - everything controlled via CLI
+3. Claude Code is the single source of truth for ALL theme files
+4. No need for Shopify Customizer - everything controlled via CLI
 
 ---
 
@@ -213,8 +234,8 @@ node shopify-content.mjs pull sections/group-header.json
 | Store URL | whitepinemedical.myshopify.com |
 | Live Site | whitepinemedical.ca |
 | Theme | Broadcast 8.0.0 |
-| Dev Theme ID | 182960718119 (Broadcast) - SAFE |
-| Live Theme ID | 178766348583 (TS Media Design) - NEVER PUSH |
+| **LIVE Theme ID** | **182960718119 (Broadcast) - NOW LIVE** |
+| Old Theme ID | 178766348583 (TS Media Design) - DEPRECATED |
 | GitHub Repo | medic8stat/shopifywebsite |
 | Local Path | ~/shopify-themes/broadcast |
 | Shopify CLI | 3.89.0 |
@@ -276,20 +297,18 @@ git push
 
 ---
 
-## File Protection Configuration
+## File Protection Configuration (UPDATED v6.0)
 
-### .shopifyignore
+### .shopifyignore - DELETED
 
-Prevents code push from overwriting:
-- `config/settings_data.json`
-- `templates/*.json`
-- `sections/group-header.json`, `sections/group-footer.json`
+Previously protected JSON files, but was blocking template pushes. Deleted in v6.0.
 
 ### shopify.theme.toml
 
-Defines environments:
-- `broadcast` - Development theme (182960718119) with ignore rules
-- `production` - Live theme (178766348583) - NEVER USE
+Defines environments (no ignore rules):
+
+- `broadcast` - Now the LIVE theme (182960718119) - PRIMARY
+- `production` - Old TS Media Design theme (178766348583) - DEPRECATED
 
 ---
 
@@ -325,9 +344,12 @@ Defines environments:
 
 | Purpose | URL |
 |---------|-----|
-| Preview (Broadcast) | https://whitepinemedical.myshopify.com/?preview_theme_id=182960718119 |
-| Live Site | https://www.whitepinemedical.ca |
+| **Live Site (Broadcast)** | https://whitepinemedical.myshopify.com |
+| Live Site (Domain) | https://www.whitepinemedical.ca |
 | Shopify Admin | https://admin.shopify.com/store/whitepinemedical |
+| Services Page | https://whitepinemedical.myshopify.com/pages/services |
+| Privacy & Trust | https://whitepinemedical.myshopify.com/pages/privacy-trust |
+| Urgent Care | https://whitepinemedical.myshopify.com/pages/urgent-care |
 
 ---
 
@@ -400,6 +422,6 @@ The `shopify-admin-api.mjs` script exists but requires a token. Use `shopify-con
 
 ---
 
-**Version:** 5.0.0
+**Version:** 6.0.1
 **Last Updated:** 2026-01-21
 **Primary Contact:** Dr. James French

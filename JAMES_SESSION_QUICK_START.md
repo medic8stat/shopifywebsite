@@ -1,8 +1,21 @@
 # James Session Quick Start Guide - Shopify Website
 
-> **Gold Standard Workflow v4.0** - Updated 2026-01-21
+> **Gold Standard Workflow v6.0** - Updated 2026-01-21
 
 Copy/paste these prompts when working with Claude on the White Pine Medical Shopify website.
+
+---
+
+## CURRENT STATUS (v6.0.1)
+
+**Broadcast theme is NOW LIVE** - Published 2026-01-21
+
+| Page | Status | URL |
+|------|--------|-----|
+| Homepage | LIVE (8 sections) | whitepinemedical.myshopify.com |
+| Services | LIVE (17 sections) | /pages/services |
+| Privacy & Trust | LIVE | /pages/privacy-trust |
+| Urgent Care | LIVE | /pages/urgent-care |
 
 ---
 
@@ -14,8 +27,8 @@ Copy/paste these prompts when working with Claude on the White Pine Medical Shop
 | **Local Path** | `/Users/jamesfrench/shopify-themes/broadcast` |
 | **Store** | whitepinemedical.myshopify.com |
 | **Theme** | Broadcast 8.0.0 |
-| **Dev Theme ID** | 182960718119 (SAFE) |
-| **Live Theme ID** | 178766348583 (NEVER PUSH) |
+| **LIVE Theme ID** | **182960718119 (Broadcast) - NOW LIVE** |
+| **Old Theme ID** | 178766348583 (TS Media Design) - DEPRECATED |
 
 ---
 
@@ -202,9 +215,12 @@ git push
 
 | Purpose | URL |
 |---------|-----|
-| Preview | https://whitepinemedical.myshopify.com/?preview_theme_id=182960718119 |
-| Live Site | https://www.whitepinemedical.ca |
-| Shopify Admin | https://admin.shopify.com/store/whitepinemedical |
+| Live Site | whitepinemedical.myshopify.com |
+| Domain | whitepinemedical.ca |
+| Services | whitepinemedical.myshopify.com/pages/services |
+| Privacy & Trust | whitepinemedical.myshopify.com/pages/privacy-trust |
+| Urgent Care | whitepinemedical.myshopify.com/pages/urgent-care |
+| Shopify Admin | admin.shopify.com/store/whitepinemedical |
 
 ---
 
@@ -220,12 +236,12 @@ git push
 
 ---
 
-## THEME IDs - CRITICAL SAFETY
+## THEME IDs - UPDATED
 
 | Theme | ID | Status |
 |-------|-----|--------|
-| **Broadcast** | 182960718119 | SAFE - Push here |
-| **TS Media Design** | 178766348583 | FORBIDDEN - Never push |
+| **Broadcast** | 182960718119 | **NOW LIVE** - Primary theme |
+| **TS Media Design** | 178766348583 | DEPRECATED - No longer used |
 
 ---
 
@@ -242,5 +258,5 @@ The `shopify-admin-api.mjs` script exists but requires a token. Use `shopify-con
 
 ---
 
-**Version:** 4.0.0
+**Version:** 6.0.1
 **Last Updated:** 2026-01-21
