@@ -1,0 +1,366 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "section-hero": {
+      "type": "section-slideshow-nested",
+      "blocks": {
+        "slide-hero": {
+          "type": "_slide-image",
+          "settings": {
+            "image": "shopify://shop_images/iStock-1311840964.jpg",
+            "link": "",
+            "flex_align_desktop": "align--middle-center-desktop",
+            "flex_align_mobile": "align--middle-center-mobile",
+            "show_text_background": false,
+            "bg_color": "",
+            "color": "#ffffff",
+            "overlay_type": "text"
+          },
+          "blocks": {
+            "hero-heading": {
+              "type": "heading",
+              "settings": {
+                "text": "Corporate Wellness",
+                "heading_font_size": "heading-large",
+                "heading_tag": "automatic",
+                "padding_bottom": 8
+              },
+              "blocks": {}
+            },
+            "hero-subheading": {
+              "type": "text",
+              "settings": {
+                "text": "Physician-led longevity assessments for your team",
+                "text_font_size": "body-large",
+                "padding_bottom": 8
+              },
+              "blocks": {}
+            },
+            "hero-buttons": {
+              "type": "_group-buttons",
+              "name": "Side by side buttons",
+              "settings": {
+                "button_text": "Contact Us",
+                "button_url": "/pages/contact",
+                "button_type": "btn--white",
+                "button_size": "",
+                "button_style": "btn--solid",
+                "show_arrow": false,
+                "button_secondary_text": "",
+                "button_secondary_url": "",
+                "button_secondary_type": "btn--white",
+                "button_secondary_size": "",
+                "button_secondary_style": "btn--solid",
+                "show_secondary_arrow": false,
+                "padding_bottom": 8
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "hero-heading",
+            "hero-subheading",
+            "hero-buttons"
+          ]
+        }
+      },
+      "block_order": [
+        "slide-hero"
+      ],
+      "name": "Slideshow (Nested)",
+      "settings": {
+        "transition": "slide",
+        "show_arrows": false,
+        "autoplay": false,
+        "autoplay_speed": 5,
+        "width": "wrapper--full",
+        "height": "seven-fifty-height-hero",
+        "mobile_height": "screen-height-full--mobile",
+        "color_scheme": "scheme-2",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "section-intro": {
+      "type": "section-rich-text",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "title": "Invest in Your Team's Health",
+            "heading_font_size": "heading-medium",
+            "padding_bottom": 16,
+            "heading_tag": "automatic"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p>At White Pine Medical, we understand the unique challenges faced by small and medium-sized businesses in Atlantic Canada, particularly when it comes to attracting and retaining top talent. Our corporate wellness programs provide comprehensive, physician-led health assessments that demonstrate your commitment to employee wellbeing.</p>",
+            "text_font_size": "body-medium",
+            "padding_bottom": 24
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "text"
+      ],
+      "settings": {
+        "align_text": "text-center",
+        "width": "wrapper--narrow",
+        "color_scheme": "scheme-1",
+        "overlay_type": "disabled",
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    },
+    "section-benefits": {
+      "type": "section-text-row",
+      "blocks": {
+        "benefit-1": {
+          "type": "icon",
+          "settings": {
+            "icon_name": "icon-heart",
+            "icon_size": 50,
+            "icon_color": "#1E3A5F",
+            "title": "Comprehensive Assessments",
+            "heading_font_size": "heading-x-small",
+            "text": "<p>Full health evaluations including cardiovascular, metabolic, cognitive, and functional assessments for each team member.</p>",
+            "text_font_size": "body-small",
+            "heading_tag": "automatic"
+          }
+        },
+        "benefit-2": {
+          "type": "icon",
+          "settings": {
+            "icon_name": "icon-flare",
+            "icon_size": 50,
+            "icon_color": "#1E3A5F",
+            "title": "Measurable ROI",
+            "heading_font_size": "heading-x-small",
+            "text": "<p>For every dollar invested in preventative health services, organizations save an equivalent amount through reduced absenteeism and improved productivity.</p>",
+            "text_font_size": "body-small",
+            "heading_tag": "automatic"
+          }
+        },
+        "benefit-3": {
+          "type": "icon",
+          "settings": {
+            "icon_name": "icon-check-circle",
+            "icon_size": 50,
+            "icon_color": "#1E3A5F",
+            "title": "Flexible Programs",
+            "heading_font_size": "heading-x-small",
+            "text": "<p>Flexible pricing structures with significant cost savings available for multiple employee enrolments and multi-year commitments.</p>",
+            "text_font_size": "body-small",
+            "heading_tag": "automatic"
+          }
+        }
+      },
+      "block_order": [
+        "benefit-1",
+        "benefit-2",
+        "benefit-3"
+      ],
+      "settings": {
+        "title": "Why Choose White Pine for Corporate Wellness?",
+        "heading_font_size": "heading-medium",
+        "align_heading": "text-center",
+        "align_text": "text-center",
+        "icon_alignment": "icon--top",
+        "width": "wrapper",
+        "align_columns": "flex-align-top",
+        "layout": "grid",
+        "grid": 3,
+        "layout_mobile": "1",
+        "color_scheme": "scheme-3",
+        "padding_top": 60,
+        "padding_bottom": 60,
+        "heading_tag": "automatic"
+      }
+    },
+    "section-how-it-works": {
+      "type": "section-columns",
+      "blocks": {
+        "step-1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/1_d206f190-2839-4fa0-bc61-1861f37b2a39.jpg",
+            "image_width": 80,
+            "image_shape": "rounded",
+            "title": "1. Consultation",
+            "heading_font_size": "heading-small",
+            "text": "<p>We meet with your HR team to understand your organization's needs and design a customized wellness program.</p>",
+            "text_font_size": "body-small",
+            "button_text": "",
+            "button_url": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--text",
+            "show_arrow": false,
+            "image_aspect_ratio": 1.2,
+            "mobile_image_aspect_ratio": 1.2,
+            "heading_tag": "automatic"
+          }
+        },
+        "step-2": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/JR-19-6489-20-1030x687.jpg",
+            "image_width": 80,
+            "image_shape": "rounded",
+            "title": "2. Assessments",
+            "heading_font_size": "heading-small",
+            "text": "<p>Employees receive comprehensive health evaluations at our clinic or through convenient on-site team wellness days.</p>",
+            "text_font_size": "body-small",
+            "button_text": "",
+            "button_url": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--text",
+            "show_arrow": false,
+            "image_aspect_ratio": 1.2,
+            "mobile_image_aspect_ratio": 1.2,
+            "heading_tag": "automatic"
+          }
+        },
+        "step-3": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/portrait_photo_in_gym_less_than_5MG.jpg",
+            "image_width": 80,
+            "image_shape": "rounded",
+            "title": "3. Action Plans",
+            "heading_font_size": "heading-small",
+            "text": "<p>Each employee receives a personalized health action plan with physician-guided recommendations and ongoing support.</p>",
+            "text_font_size": "body-small",
+            "button_text": "",
+            "button_url": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--text",
+            "show_arrow": false,
+            "image_aspect_ratio": 1.2,
+            "mobile_image_aspect_ratio": 1.2,
+            "heading_tag": "automatic"
+          }
+        }
+      },
+      "block_order": [
+        "step-1",
+        "step-2",
+        "step-3"
+      ],
+      "settings": {
+        "title": "How It Works",
+        "heading_font_size": "heading-medium",
+        "align_heading": "text-center",
+        "align_text": "text-center",
+        "width": "wrapper--full-padded",
+        "align_columns": "flex-align-top",
+        "layout": "grid",
+        "grid": 3,
+        "layout_mobile": "1",
+        "color_scheme": "scheme-1",
+        "padding_top": 60,
+        "padding_bottom": 60,
+        "heading_tag": "automatic"
+      }
+    },
+    "section-services": {
+      "type": "section-rich-text",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "title": "Corporate Services",
+            "heading_font_size": "heading-medium",
+            "padding_bottom": 16,
+            "heading_tag": "automatic"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Our corporate wellness programs include:</p><ul><li><strong>Executive Health Assessments</strong> — Comprehensive evaluations for leadership teams</li><li><strong>Team Wellness Days</strong> — On-site or clinic-based group assessments</li><li><strong>Health Risk Stratification</strong> — Identify and address organizational health risks</li><li><strong>Aggregate Reporting</strong> — Anonymized organizational health insights</li><li><strong>Ongoing Support</strong> — Follow-up consultations and progress tracking</li></ul>",
+            "text_font_size": "body-medium",
+            "padding_bottom": 24
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "text"
+      ],
+      "settings": {
+        "align_text": "text-left",
+        "width": "wrapper--narrow",
+        "color_scheme": "scheme-3",
+        "overlay_type": "disabled",
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    },
+    "section-cta": {
+      "type": "section-rich-text",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "title": "Ready to Get Started?",
+            "heading_font_size": "heading-medium",
+            "padding_bottom": 16,
+            "heading_tag": "automatic"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Contact us to discuss how White Pine Medical can support your organization's health and wellness goals.</p>",
+            "text_font_size": "body-medium",
+            "padding_bottom": 24
+          }
+        },
+        "button": {
+          "type": "buttons",
+          "settings": {
+            "button_text": "Contact Us",
+            "button_url": "/pages/contact",
+            "button_type": "btn--primary",
+            "padding_bottom": 8
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "text",
+        "button"
+      ],
+      "settings": {
+        "align_text": "text-center",
+        "width": "wrapper--narrow",
+        "color_scheme": "scheme-2",
+        "overlay_type": "disabled",
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    }
+  },
+  "order": [
+    "section-hero",
+    "section-intro",
+    "section-benefits",
+    "section-how-it-works",
+    "section-services",
+    "section-cta"
+  ]
+}
