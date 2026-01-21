@@ -247,28 +247,15 @@
         "text": {
           "type": "text",
           "settings": {
-            "text": "<p>Our urgent care clinic is coming soon. Leave your contact information and we'll notify you when we open our doors.</p>",
+            "text": "<p>Our urgent care clinic is coming soon. Leave your contact information and we'll notify you when we open our doors.</p><p><a href=\"/pages/contact\" class=\"btn btn--primary btn--large\">Contact Us</a></p>",
             "text_font_size": "body-medium",
-            "padding_bottom": 16
-          }
-        },
-        "buttons": {
-          "type": "buttons",
-          "settings": {
-            "button_text": "Contact Us",
-            "button_link": "/pages/contact",
-            "button_type": "btn--primary",
-            "button_size": "btn--large",
-            "button_style": "btn--solid",
-            "show_arrow": false,
             "padding_bottom": 16
           }
         }
       },
       "block_order": [
         "heading",
-        "text",
-        "buttons"
+        "text"
       ],
       "settings": {
         "align_text": "text-center",
