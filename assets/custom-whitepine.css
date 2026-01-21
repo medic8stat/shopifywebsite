@@ -1,0 +1,106 @@
+/*
+ * White Pine Medical - Custom Styles
+ * Custom CSS overrides for branding
+ */
+
+/* ============================================
+   LOGO / SITE NAME - Make it MUCH larger
+   Match or exceed the hero text size
+   ============================================ */
+
+/* Desktop: Make logo text as large as heading-large (48px+) */
+.header__logo__text {
+  font-size: 36px !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.05em !important;
+  height: auto !important;
+  padding: 0.5em 0 !important;
+  line-height: 1.1 !important;
+}
+
+.header__logo__text span {
+  max-width: none !important;
+}
+
+/* Even larger on desktop for prominence */
+@media only screen and (min-width: 750px) {
+  .header__logo__text {
+    font-size: 42px !important;
+  }
+}
+
+@media only screen and (min-width: 990px) {
+  .header__logo__text {
+    font-size: 48px !important;
+  }
+}
+
+/* Override the --long modifier which makes it smaller */
+.header__logo__text--long {
+  font-size: 36px !important;
+}
+
+@media only screen and (min-width: 750px) {
+  .header__logo__text--long {
+    font-size: 42px !important;
+  }
+}
+
+@media only screen and (min-width: 990px) {
+  .header__logo__text--long {
+    font-size: 48px !important;
+  }
+}
+
+/* Mobile: Still larger than default but responsive */
+@media only screen and (max-width: 749px) {
+  .header__logo__text,
+  .header__logo__text--long {
+    font-size: 24px !important;
+    padding: 0.3em 0 !important;
+  }
+
+  .header__logo__text span {
+    max-width: calc(100vw - 150px) !important;
+  }
+}
+
+/* Drawer/Mobile menu logo */
+.header__logo__link--drawer .header__logo__text {
+  font-size: 28px !important;
+}
+
+/* ============================================
+   PATIENT PORTAL & CLINICIAN EHR BUTTONS
+   Styles for nav buttons
+   ============================================ */
+
+/* Style external portal links as buttons in nav */
+.navlink--portal-btn {
+  background-color: var(--BTN-PRIMARY-BG, #1E3A5F) !important;
+  color: var(--BTN-PRIMARY-TEXT, #ffffff) !important;
+  padding: 8px 16px !important;
+  border-radius: var(--RADIUS, 300px) !important;
+  text-decoration: none !important;
+  font-weight: 600 !important;
+  transition: background-color 0.2s ease !important;
+}
+
+.navlink--portal-btn:hover {
+  background-color: var(--BTN-PRIMARY-BG-BRIGHTER, #2563EB) !important;
+}
+
+/* Secondary button style for Clinician EHR */
+.navlink--ehr-btn {
+  background-color: var(--BTN-SECONDARY-BG, #2563EB) !important;
+  color: var(--BTN-SECONDARY-TEXT, #ffffff) !important;
+  padding: 8px 16px !important;
+  border-radius: var(--RADIUS, 300px) !important;
+  text-decoration: none !important;
+  font-weight: 600 !important;
+  transition: background-color 0.2s ease !important;
+}
+
+.navlink--ehr-btn:hover {
+  background-color: var(--BTN-SECONDARY-BG-BRIGHTER, #1E3A5F) !important;
+}
