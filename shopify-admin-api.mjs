@@ -1,20 +1,33 @@
 #!/usr/bin/env node
 /**
  * Shopify Admin API Client for White Pine Medical
+ * Full control: Pages, Navigation, Theme Files, Settings
  *
  * Usage:
+ *   # Pages
  *   node shopify-admin-api.mjs list-pages
- *   node shopify-admin-api.mjs get-page <id>
  *   node shopify-admin-api.mjs create-page "Title" "handle" "HTML content"
  *   node shopify-admin-api.mjs update-page <id> "New Title" "HTML content"
  *   node shopify-admin-api.mjs delete-page <id>
+ *
+ *   # Navigation
  *   node shopify-admin-api.mjs list-navigation
+ *
+ *   # Themes
+ *   node shopify-admin-api.mjs list-themes
+ *   node shopify-admin-api.mjs get-theme-file <theme-id> <filename>
+ *   node shopify-admin-api.mjs update-theme-file <theme-id> <filename> <content|@file>
+ *
+ *   # Settings (settings_data.json)
+ *   node shopify-admin-api.mjs get-settings [theme-id]
+ *   node shopify-admin-api.mjs update-settings <theme-id> <json-content|@file>
+ *   node shopify-admin-api.mjs set-color <theme-id> <setting-name> <hex-color>
  */
 
 import { config } from 'dotenv';
 import { fileURLToPath } from 'url';
 import { dirname, join } from 'path';
-import { readFileSync, existsSync } from 'fs';
+import { readFileSync, existsSync, writeFileSync } from 'fs';
 
 // Load .env from script directory
 const __dirname = dirname(fileURLToPath(import.meta.url));
@@ -23,6 +36,10 @@ config({ path: join(__dirname, '.env') });
 const STORE = process.env.SHOPIFY_STORE;
 const TOKEN = process.env.SHOPIFY_ADMIN_API_TOKEN;
 const API_VERSION = process.env.SHOPIFY_API_VERSION || '2024-10';
+
+// Default theme IDs from CLAUDE.md
+const DEV_THEME_ID = '182960718119';
+const LIVE_THEME_ID = '178766348583'; // NEVER modify this one
 
 if (!STORE || !TOKEN || TOKEN === 'your_token_here') {
   console.error('Error: Missing Shopify credentials');
@@ -54,6 +71,199 @@ async function graphqlRequest(query, variables = {}) {
   }
 
   return data;
+}
+
+// ============ THEME OPERATIONS ============
+
+async function listThemes() {
+  const query = `
+    query {
+      themes(first: 20) {
+        edges {
+          node {
+            id
+            name
+            role
+            createdAt
+            updatedAt
+          }
+        }
+      }
+    }
+  `;
+
+  const result = await graphqlRequest(query);
+  const themes = result.data.themes.edges.map(e => e.node);
+
+  console.log('\n🎨 Themes:\n');
+  themes.forEach(t => {
+    const roleIcon = t.role === 'MAIN' ? '🟢 LIVE' : t.role === 'UNPUBLISHED' ? '🟡 DEV' : '⚪';
+    const numericId = t.id.split('/').pop();
+    console.log(`${roleIcon} ${t.name}`);
+    console.log(`   ID: ${numericId}`);
+    console.log(`   GID: ${t.id}`);
+    console.log(`   Role: ${t.role}`);
+    console.log(`   Updated: ${t.updatedAt}\n`);
+  });
+
+  return themes;
+}
+
+async function getThemeFile(themeId, filename) {
+  const gid = themeId.startsWith('gid://') ? themeId : `gid://shopify/OnlineStoreTheme/${themeId}`;
+
+  const query = `
+    query getThemeFile($themeId: ID!, $filenames: [String!]!) {
+      theme(id: $themeId) {
+        id
+        name
+        files(filenames: $filenames) {
+          edges {
+            node {
+              filename
+              body {
+                ... on OnlineStoreThemeFileBodyText {
+                  content
+                }
+                ... on OnlineStoreThemeFileBodyBase64 {
+                  contentBase64
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  `;
+
+  const result = await graphqlRequest(query, { themeId: gid, filenames: [filename] });
+
+  if (!result.data.theme) {
+    console.error(`Theme not found: ${themeId}`);
+    return null;
+  }
+
+  const files = result.data.theme.files.edges;
+  if (files.length === 0) {
+    console.error(`File not found: ${filename}`);
+    return null;
+  }
+
+  const file = files[0].node;
+  const content = file.body.content || file.body.contentBase64;
+
+  console.log(`\n📄 ${filename} from ${result.data.theme.name}:\n`);
+  console.log(content);
+
+  return { filename: file.filename, content };
+}
+
+async function updateThemeFile(themeId, filename, content) {
+  // Safety check: never modify live theme
+  const numericId = themeId.startsWith('gid://') ? themeId.split('/').pop() : themeId;
+  if (numericId === LIVE_THEME_ID) {
+    console.error('🚫 BLOCKED: Cannot modify live theme (178766348583)');
+    console.error('Use the dev theme ID: 182960718119');
+    process.exit(1);
+  }
+
+  const gid = themeId.startsWith('gid://') ? themeId : `gid://shopify/OnlineStoreTheme/${themeId}`;
+
+  const query = `
+    mutation themeFilesUpsert($themeId: ID!, $files: [OnlineStoreThemeFilesUpsertFileInput!]!) {
+      themeFilesUpsert(themeId: $themeId, files: $files) {
+        upsertedThemeFiles {
+          filename
+        }
+        userErrors {
+          field
+          message
+        }
+      }
+    }
+  `;
+
+  const variables = {
+    themeId: gid,
+    files: [{
+      filename,
+      body: {
+        type: 'TEXT',
+        value: content,
+      },
+    }],
+  };
+
+  const result = await graphqlRequest(query, variables);
+
+  if (result.data.themeFilesUpsert.userErrors.length > 0) {
+    console.error('Errors:', result.data.themeFilesUpsert.userErrors);
+    return false;
+  }
+
+  console.log(`\n✅ Updated: ${filename}`);
+  return true;
+}
+
+async function getSettings(themeId) {
+  const id = themeId || DEV_THEME_ID;
+  const result = await getThemeFile(id, 'config/settings_data.json');
+
+  if (result && result.content) {
+    // Also save to local file for editing
+    const localPath = join(__dirname, 'config', 'settings_data.json');
+    try {
+      const settings = JSON.parse(result.content);
+      console.log('\n📊 Current Theme Settings (parsed):\n');
+      console.log(JSON.stringify(settings.current, null, 2).slice(0, 2000) + '...\n');
+    } catch (e) {
+      console.log('(Raw content shown above)');
+    }
+  }
+
+  return result;
+}
+
+async function updateSettings(themeId, content) {
+  // Validate JSON
+  try {
+    JSON.parse(content);
+  } catch (e) {
+    console.error('Invalid JSON:', e.message);
+    process.exit(1);
+  }
+
+  return await updateThemeFile(themeId, 'config/settings_data.json', content);
+}
+
+async function setColor(themeId, settingName, hexColor) {
+  // First, get current settings
+  const result = await getThemeFile(themeId, 'config/settings_data.json');
+  if (!result) return false;
+
+  try {
+    const settings = JSON.parse(result.content);
+
+    // Navigate to the current theme's settings
+    const currentPreset = settings.current;
+    if (typeof currentPreset === 'string') {
+      // It's a preset name, need to modify the preset
+      if (settings.presets && settings.presets[currentPreset]) {
+        settings.presets[currentPreset][settingName] = hexColor;
+      }
+    } else {
+      // Direct settings object
+      settings.current[settingName] = hexColor;
+    }
+
+    console.log(`\n🎨 Setting ${settingName} = ${hexColor}`);
+
+    const updatedContent = JSON.stringify(settings, null, 2);
+    return await updateThemeFile(themeId, 'config/settings_data.json', updatedContent);
+  } catch (e) {
+    console.error('Error updating settings:', e.message);
+    return false;
+  }
 }
 
 // ============ PAGE OPERATIONS ============
@@ -92,7 +302,6 @@ async function listPages() {
 }
 
 async function getPage(id) {
-  // Convert numeric ID to GID if needed
   const gid = id.startsWith('gid://') ? id : `gid://shopify/Page/${id}`;
 
   const query = `
@@ -282,12 +491,68 @@ async function listNavigation() {
 
 // ============ CLI HANDLER ============
 
+function readFileArg(arg) {
+  if (arg.startsWith('@')) {
+    const filePath = arg.slice(1);
+    if (!existsSync(filePath)) {
+      console.error(`File not found: ${filePath}`);
+      process.exit(1);
+    }
+    return readFileSync(filePath, 'utf-8');
+  }
+  return arg;
+}
+
 const command = process.argv[2];
 const args = process.argv.slice(3);
 
 async function main() {
   try {
     switch (command) {
+      // Theme commands
+      case 'list-themes':
+        await listThemes();
+        break;
+
+      case 'get-theme-file':
+        if (args.length < 2) {
+          console.error('Usage: get-theme-file <theme-id> <filename>');
+          console.error('Example: get-theme-file 182960718119 config/settings_data.json');
+          process.exit(1);
+        }
+        await getThemeFile(args[0], args[1]);
+        break;
+
+      case 'update-theme-file':
+        if (args.length < 3) {
+          console.error('Usage: update-theme-file <theme-id> <filename> <content|@file>');
+          process.exit(1);
+        }
+        await updateThemeFile(args[0], args[1], readFileArg(args[2]));
+        break;
+
+      case 'get-settings':
+        await getSettings(args[0]);
+        break;
+
+      case 'update-settings':
+        if (args.length < 2) {
+          console.error('Usage: update-settings <theme-id> <json-content|@file>');
+          process.exit(1);
+        }
+        await updateSettings(args[0], readFileArg(args[1]));
+        break;
+
+      case 'set-color':
+        if (args.length < 3) {
+          console.error('Usage: set-color <theme-id> <setting-name> <hex-color>');
+          console.error('Example: set-color 182960718119 colors_accent_1 "#0066CC"');
+          process.exit(1);
+        }
+        await setColor(args[0], args[1], args[2]);
+        break;
+
+      // Page commands
       case 'list-pages':
         await listPages();
         break;
@@ -306,17 +571,7 @@ async function main() {
           console.error('Or:    create-page "Title" "handle" @file.html');
           process.exit(1);
         }
-        let body = args[2];
-        // Support @filename syntax for reading HTML from file
-        if (body.startsWith('@')) {
-          const filePath = body.slice(1);
-          if (!existsSync(filePath)) {
-            console.error(`File not found: ${filePath}`);
-            process.exit(1);
-          }
-          body = readFileSync(filePath, 'utf-8');
-        }
-        await createPage(args[0], args[1], body);
+        await createPage(args[0], args[1], readFileArg(args[2]));
         break;
 
       case 'update-page':
@@ -325,16 +580,7 @@ async function main() {
           console.error('Or:    update-page <id> "Title" @file.html');
           process.exit(1);
         }
-        let updateBody = args[2];
-        if (updateBody.startsWith('@')) {
-          const filePath = updateBody.slice(1);
-          if (!existsSync(filePath)) {
-            console.error(`File not found: ${filePath}`);
-            process.exit(1);
-          }
-          updateBody = readFileSync(filePath, 'utf-8');
-        }
-        await updatePage(args[0], args[1], updateBody);
+        await updatePage(args[0], args[1], readFileArg(args[2]));
         break;
 
       case 'delete-page':
@@ -345,6 +591,7 @@ async function main() {
         await deletePage(args[0]);
         break;
 
+      // Navigation commands
       case 'list-navigation':
         await listNavigation();
         break;
@@ -356,19 +603,33 @@ Shopify Admin API CLI for White Pine Medical
 Usage:
   node shopify-admin-api.mjs <command> [args]
 
-Commands:
-  list-pages                          List all pages
-  get-page <id>                       Get page details
-  create-page "Title" "handle" "HTML" Create new page
-  create-page "Title" "handle" @file  Create page from HTML file
-  update-page <id> "Title" "HTML"     Update existing page
-  delete-page <id>                    Delete a page
-  list-navigation                     List navigation menus
+THEME COMMANDS:
+  list-themes                              List all themes
+  get-theme-file <theme-id> <filename>     Get theme file content
+  update-theme-file <theme-id> <file> <content>  Update theme file
+  get-settings [theme-id]                  Get settings_data.json (default: dev theme)
+  update-settings <theme-id> <json|@file>  Update settings_data.json
+  set-color <theme-id> <name> <hex>        Set a color setting
+
+PAGE COMMANDS:
+  list-pages                               List all pages
+  get-page <id>                            Get page details
+  create-page "Title" "handle" "HTML"      Create new page
+  update-page <id> "Title" "HTML"          Update existing page
+  delete-page <id>                         Delete a page
+
+NAVIGATION COMMANDS:
+  list-navigation                          List navigation menus
+
+THEME IDs:
+  Dev (Broadcast): ${DEV_THEME_ID} - Safe to modify
+  Live (TS Media): ${LIVE_THEME_ID} - NEVER modify
 
 Examples:
-  node shopify-admin-api.mjs list-pages
+  node shopify-admin-api.mjs list-themes
+  node shopify-admin-api.mjs get-settings
+  node shopify-admin-api.mjs set-color ${DEV_THEME_ID} colors_accent_1 "#0066CC"
   node shopify-admin-api.mjs create-page "Urgent Care" "urgent-care" "<h1>Coming Soon</h1>"
-  node shopify-admin-api.mjs create-page "About" "about" @pages/about.html
         `);
     }
   } catch (error) {

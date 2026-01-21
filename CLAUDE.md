@@ -4,13 +4,14 @@
 
 ---
 
-## CRITICAL: The Three Types of Changes
+## CRITICAL: Two Workflows (Both Claude-Controlled)
 
 | Type | Examples | How to Make | Tool |
 |------|----------|-------------|------|
 | **CODE** | Liquid, CSS, JS, section schemas | Edit locally → `shopify theme push -e broadcast` | Shopify CLI |
-| **PAGES** | New pages, page content, navigation | `node shopify-admin-api.mjs` | Admin API |
-| **THEME CONTENT** | Images, colors, fonts, hero text | Shopify Customizer | User (via Admin) |
+| **CONTENT** | Pages, colors, fonts, hero text, settings, navigation | `node shopify-admin-api.mjs` | Admin API |
+
+**No more Shopify Customizer needed.** Claude Code controls everything.
 
 ---
 
@@ -21,7 +22,10 @@
 1. **Create Custom App in Shopify Admin:**
    - Go to: https://whitepinemedical.myshopify.com/admin/settings/apps/development
    - Click "Create an app" → Name: `White Pine Content API`
-   - Configure Admin API scopes: `write_content`, `read_content`, `write_online_store_navigation`, `read_online_store_navigation`
+   - Configure Admin API scopes (look under "Online Store" section):
+     - `read_content`, `write_content` (pages, blogs)
+     - `read_themes`, `write_themes` (theme files, settings)
+     - `read_online_store_navigation`, `write_online_store_navigation` (menus)
    - Install app → Reveal token → Copy immediately (shown once!)
 
 2. **Configure locally:**
