@@ -50,16 +50,20 @@ This is the Shopify storefront for **White Pine Medical**, a health and longevit
 
 ### CRITICAL RULES - READ FIRST
 
-> **NEVER push directly to the live theme (TS Media Design #178766348583)!**
+> **🚨 ABSOLUTE RULE: NEVER PUSH TO THE LIVE THEME 🚨**
+>
+> **Live Theme ID: 182960161063** - DO NOT PUSH TO THIS THEME UNDER ANY CIRCUMSTANCES
 >
 > Always work with the **Broadcast theme (#182960718119)** for development and testing.
+>
+> If you push to the live theme, you WILL break the production website.
 
 **Deployment Process:**
 1. Make changes locally
 2. Test with dev server
 3. Push to GitHub
-4. Push to Broadcast theme (NOT live theme)
-5. When ready to go live: **Publish the Broadcast theme**
+4. Push to Broadcast theme ONLY (ID: 182960718119)
+5. When ready to go live: User will manually publish via Shopify Admin
 
 ### Start Dev Server
 ```bash
@@ -91,11 +95,11 @@ git push
 ```
 
 ### Theme IDs Reference
+
 | Theme | ID | Role |
 |-------|-----|------|
-| Broadcast | 182960718119 | Development/Staging - PUSH HERE |
-| Copy of TS Media Design | 182960324903 | Currently LIVE - DO NOT PUSH DIRECTLY |
-| TS Media Design | 178766348583 | Old live theme (unpublished) |
+| **LIVE - NEVER TOUCH** | 182960161063 | PRODUCTION - NEVER PUSH TO THIS |
+| Broadcast | 182960718119 | Development/Staging - PUSH HERE ONLY |
 
 ### Preview URLs
 
