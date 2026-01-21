@@ -76,7 +76,7 @@
             "aspect_ratio": 1,
             "wide_image": false,
             "overlay_type": "text",
-            "title": "Shop Gemstone Collection",
+            "title": "",
             "heading_font_size": "heading-mini",
             "link_text": "",
             "text_font_size": "body-medium",
@@ -113,8 +113,8 @@
         "show_country_selector": false,
         "show_country_name": false,
         "show_country_flag": false,
-        "highlight_item": "Sale",
-        "highlight_item_color": "#d02e2e",
+        "highlight_item": "",
+        "highlight_item_color": "",
         "transparent_home": true,
         "transparent_collection": false,
         "transparent_article": false,
@@ -132,8 +132,8 @@
           "settings": {
             "mobile_menu_linklist": "main-menu",
             "text_font_size": "body-x-large",
-            "highlight_item": "Sale",
-            "highlight_item_color": "#d02e2e",
+            "highlight_item": "",
+            "highlight_item_color": "",
             "padding": false,
             "padding_bottom": 14
           }
@@ -148,31 +148,9 @@
         "text-1": {
           "type": "text",
           "settings": {
-            "text": "Shop our new arrivals:",
+            "text": "Physician-led health assessments",
             "align_text": "text-left",
             "text_font_size": "body-medium",
-            "padding_bottom": 14
-          }
-        },
-        "product": {
-          "type": "product",
-          "settings": {
-            "image_width": 15,
-            "text_font_size": "body-small",
-            "bg_color": "",
-            "padding": false,
-            "pin_to_bottom": false,
-            "padding_bottom": 14
-          }
-        },
-        "product-0": {
-          "type": "product",
-          "settings": {
-            "image_width": 15,
-            "text_font_size": "body-small",
-            "bg_color": "",
-            "padding": false,
-            "pin_to_bottom": false,
             "padding_bottom": 14
           }
         },
@@ -216,8 +194,6 @@
         "menu",
         "divider",
         "text-1",
-        "product",
-        "product-0",
         "divider-0",
         "socials",
         "divider-1",

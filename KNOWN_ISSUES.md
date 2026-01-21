@@ -15,9 +15,9 @@
 
 | ID | Severity | Status | Title |
 |----|----------|--------|-------|
-| ISS-001 | LOW | ⚠️ PENDING | Privacy & Trust page needs Shopify page creation |
-| ISS-002 | LOW | ⚠️ PENDING | Urgent Care page needs Shopify page creation |
-| ISS-003 | LOW | ⚠️ PENDING | Mobile menu still shows demo content |
+| ISS-001 | LOW | ✅ RESOLVED | Privacy & Trust page needs Shopify page creation |
+| ISS-002 | LOW | ✅ RESOLVED | Urgent Care page needs Shopify page creation |
+| ISS-003 | LOW | ✅ RESOLVED | Mobile menu still shows demo content |
 | ISS-004 | MEDIUM | ⚠️ PENDING | Missing images in text/photo sections |
 
 ---
@@ -79,68 +79,20 @@ Implemented comprehensive file protection and workflow changes:
 
 ---
 
-### ISS-001: Privacy & Trust Page Needs Shopify Setup
-
-**Severity:** LOW
-**Status:** ⚠️ PENDING
-**Category:** Setup
-**Reported:** 2026-01-21
-
-**Problem:**
-The Privacy & Trust page template (`page.privacy-trust.json`) has been created, but the actual page needs to be created in Shopify Admin for it to be accessible.
-
-**Impact:**
-Page is not accessible on the live site until created in Shopify Admin.
-
-**Resolution Steps:**
-1. Go to Shopify Admin → Online Store → Pages
-2. Click "Add page"
-3. Title: "Privacy & Trust"
-4. In Theme template dropdown, select `page.privacy-trust`
-5. Save
-
-**Files:**
-- `templates/page.privacy-trust.json`
-
----
-
-### ISS-002: Urgent Care Page Needs Shopify Setup
-
-**Severity:** LOW
-**Status:** ⚠️ PENDING
-**Category:** Setup
-**Reported:** 2026-01-21
-
-**Problem:**
-The Urgent Care "Coming Soon" page template (`page.urgent-care.json`) has been created, but the actual page needs to be created in Shopify Admin.
-
-**Impact:**
-Page is not accessible on the live site until created in Shopify Admin.
-
-**Resolution Steps:**
-1. Go to Shopify Admin → Online Store → Pages
-2. Click "Add page"
-3. Title: "Urgent Care"
-4. In Theme template dropdown, select `page.urgent-care`
-5. Save
-
-**Files:**
-- `templates/page.urgent-care.json`
-
----
-
 ### ISS-003: Mobile Menu Shows Demo Content
 
 **Severity:** LOW
-**Status:** ⚠️ PENDING
+**Status:** ✅ RESOLVED
 **Category:** Content
 **Reported:** 2026-01-21
+**Resolved:** 2026-01-21
 
 **Problem:**
 The mobile menu in `sections/group-header.json` still contains demo/placeholder content:
 - "Shop our new arrivals:" text
 - Empty product blocks
-- Generic menu configuration
+- "Sale" highlighting
+- "Shop Gemstone Collection" text
 
 **Impact:**
 Mobile users see irrelevant placeholder text in navigation drawer.
@@ -149,13 +101,14 @@ Mobile users see irrelevant placeholder text in navigation drawer.
 This content was inherited from the original Broadcast theme and not yet customized for White Pine Medical.
 
 **Resolution:**
-Update the mobile-menu section in `sections/group-header.json`:
-1. Change "Shop our new arrivals:" to appropriate healthcare text
-2. Configure product blocks with actual services or remove them
-3. Update menu links to match main navigation
+Updated `sections/group-header.json`:
+1. Changed "Shop our new arrivals:" to "Physician-led health assessments"
+2. Removed empty product blocks from mobile menu
+3. Removed "Sale" highlighting from both mobile menu and header
+4. Removed "Shop Gemstone Collection" text from header image block
 
 **Files:**
-- `sections/group-header.json` (lines 129-230)
+- `sections/group-header.json`
 
 ---
 
@@ -190,6 +143,38 @@ Add images via Shopify Theme Editor (Admin → Themes → Customize):
 ---
 
 ## Resolved Issues
+
+### RESOLVED-008: Privacy & Trust Page Created
+
+**Severity:** LOW
+**Status:** ✅ RESOLVED
+**Category:** Setup
+**Reported:** 2026-01-21
+**Resolved:** 2026-01-21
+
+**Problem:**
+The Privacy & Trust page template existed but the page was not created in Shopify Admin.
+
+**Resolution:**
+Page created in Shopify Admin with `page.privacy-trust` template assigned.
+
+---
+
+### RESOLVED-009: Urgent Care Page Created
+
+**Severity:** LOW
+**Status:** ✅ RESOLVED
+**Category:** Setup
+**Reported:** 2026-01-21
+**Resolved:** 2026-01-21
+
+**Problem:**
+The Urgent Care "Coming Soon" page template existed but the page was not created in Shopify Admin.
+
+**Resolution:**
+Page created in Shopify Admin with `page.urgent-care` template assigned.
+
+---
 
 ### RESOLVED-001: AI References Throughout Site
 

@@ -284,6 +284,113 @@ We discovered why hero banners and content changes were disappearing:
 
 ---
 
-**Version:** 3.0.0
+## Website Redesign Requirements (January 2026)
+
+### Design Philosophy
+
+The website should:
+- **Route correctly** - Guide users to the right entry point
+- **Reduce fear** - Calm, professional, not sales-driven
+- **Preserve authority** - Physician-led, evidence-based
+
+The website should NOT:
+- Explain pricing on homepage
+- Explain bundles on homepage
+- Explain every service on homepage
+
+---
+
+### HOMEPAGE - Ideal Section Order
+
+| Order | Section | Purpose | Key Content |
+|-------|---------|---------|-------------|
+| 1 | **Hero Section** | Authority first | Physician-led, longevity/prevention/performance, calm & credible |
+| 2 | **What We Do** | Orientation in <10 seconds | Physician-led assessments, individual testing, coordinated referrals |
+| 3 | **How Care Works** | Prepare for Services page | 3 steps: Assess → Prioritize → Act (no prices/promotions) |
+| 4 | **Why White Pine Is Different** | Differentiate on judgment | Medical oversight, evidence-based, integration with public healthcare |
+| 5 | **Services Preview** | Tease, not overwhelm | 4-6 domains: Cardiovascular, Metabolic, Brain & Cognition, Movement, Mental Health, Genetics |
+| 6 | **About the Physician** | Transfer trust | Role, philosophy, why guidance matters (short form, not full bio) |
+| 7 | **Trust, Safety & Boundaries** | Risk management | Non-diagnostic testing clarity, referral pathways, privacy respect |
+| 8 | **Call to Action** | Respect autonomy | Options: Start with physician, Explore assessments, Contact clinic |
+
+#### Current Homepage Sections (to be reorganized)
+
+| Current Order | Section ID | Type | Status |
+|---------------|-----------|------|--------|
+| 1 | section-slideshow-nested | Hero | KEEP - Update messaging |
+| 2 | section-announcement | Marquee | REMOVE or simplify |
+| 3 | section-rich-text-problem | Problem statement | REWORK → "What We Do" |
+| 4 | section-text-row-features | 3-col features | KEEP → "Why Different" |
+| 5 | section-double-visionary | Physician bio | MOVE → Position 6 |
+| 6 | section-double-solution | Our Solution | REWORK → "How Care Works" |
+| 7 | section-columns-phases | 5-Phase Process | SIMPLIFY → 3 steps |
+| 8 | section-double-coaching | Coaching | MERGE into Services Preview |
+| 9 | section-double-corporate | Corporate | REMOVE from homepage |
+| 10 | section-reviews | Testimonials | MOVE → lower or remove |
+| 11 | section-accordion | FAQ | REWORK → Trust/Safety section |
+
+---
+
+### SERVICES PAGE - Final Structure
+
+| Order | Section | Purpose |
+|-------|---------|---------|
+| 0 | **Page Header** | Context, not selling: "Physician-led assessment with optional individual testing" |
+| 1 | **How Care Works** | Orient before options: Concierge assessment, Individual assessments, Referral-based services |
+| 2 | **Concierge Physician Assessment** | Primary entry point: What it is, Who it's for, What it unlocks |
+| 3 | **Individual Assessments** | À-la-carte options by category (see below) |
+| 4 | **Bundled Assessments** | Concept only (not listed yet): What bundles are, Why they exist |
+| 5 | **Referral-Based Partner Services** | External providers: Psychology, Physio, Chiro, Massage, Nutrition, Imaging |
+| 6 | **Not Sure Where to Start?** | Soft close: Book concierge, Contact clinic, Speak with admin |
+
+#### Individual Assessment Categories (Section 3)
+
+| Category | Tests |
+|----------|-------|
+| **3.1 Cardiopulmonary & Cardiovascular** | VO₂ Max, Submaximal Cardiorespiratory, Resting 12-Lead ECG, Exercise ECG |
+| **3.2 Body Composition & Metabolic** | Body Composition + Nutrition, Resting Metabolic Rate, Metabolic Flexibility |
+| **3.3 Neurological, Cognitive & Sensory** | VR Vision, Hearing, Reaction Time, Balance & Proprioception |
+| **3.4 Strength, Power & Functional** | Grip Strength, Lower-Limb Power, Functional Movement Screen, RunEasi Gait |
+| **3.5 Vascular & Autonomic** | BP & Vascular Screening, HRV Assessment, Ankle-Brachial Index |
+| **3.6 Respiratory** | Spirometry & Lung Age |
+| **3.7 Digital & Algorithmic** | Longevity Risk Snapshot (Clinician), Longevity Risk Snapshot (Physician), Digital Cognitive |
+| **3.8 Mental Health & Psychiatric** | Online Screening + Physician Review, In-Person Screening with Therapist |
+| **3.9 Genetic Testing** | Nutrigenetics, Cancer Genetics, Longevity & Health Genetics |
+| **3.10 Ultrasound-Based** | Limited Screening Ultrasound |
+
+---
+
+### Mobile Menu Fix (ISS-003)
+
+**Current Issues in `sections/group-header.json`:**
+- Text block: "Shop our new arrivals:" → Replace with healthcare messaging
+- Empty product blocks → Remove or populate with services
+- `highlight_item: "Sale"` → Remove e-commerce highlighting
+
+**Required Changes:**
+1. Update `sections.mobile-menu.blocks.text-1.settings.text`
+2. Remove or repurpose product blocks
+3. Remove sale highlighting
+
+---
+
+### Available Sections for Redesign
+
+Key sections in Broadcast theme useful for medical services:
+
+| Section | File | Best Use |
+|---------|------|----------|
+| Hero | section-hero.liquid | Authority banner |
+| Rich Text | section-rich-text.liquid | What We Do, explanatory content |
+| Text Row | section-text-row.liquid | Feature icons, benefits |
+| Multicolumn | section-multicolumn.liquid | Services preview grid |
+| Double | section-double.liquid | Physician bio, side-by-side |
+| Accordion | section-accordion.liquid | FAQ, Trust/Safety |
+| Highlights | section-highlights.liquid | Service category buttons |
+| Tab Collections | section-tab-collections.liquid | Services by category |
+
+---
+
+**Version:** 4.0.0
 **Last Updated:** 2026-01-21
 **Primary Contact:** Dr. James French
