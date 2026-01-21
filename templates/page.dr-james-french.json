@@ -1,0 +1,261 @@
+{
+  "sections": {
+    "hero": {
+      "type": "section-hero",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "title": "Dr. James French, MD",
+            "heading_font_size": "heading-large",
+            "heading_tag": "h1",
+            "padding_bottom": 8
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Emergency Physician | Assistant Professor | Founder, White Pine Medical</p>",
+            "text_font_size": "body-large",
+            "padding_bottom": 8
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "text"
+      ],
+      "settings": {
+        "link": "",
+        "width": "wrapper--full",
+        "height": "four-fifty-height-hero",
+        "flex_align_desktop": "align--middle-center-desktop",
+        "content_width": 70,
+        "mobile_height": "three-fifty-height-hero--mobile",
+        "flex_align_mobile": "align--middle-center-mobile",
+        "color_scheme": "scheme-2",
+        "show_text_background": false,
+        "overlay_type": "full",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "show_placeholder": true
+      }
+    },
+    "intro": {
+      "type": "section-rich-text",
+      "blocks": {
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Dr. James French is an emergency physician, academic, and healthcare innovator with a career spanning frontline acute care, clinical education, trauma systems, and preventive health. He is the founder of White Pine Medical, a physician-led clinic focused on longevity, prevention, and performance-based health decision-making.</p>",
+            "text_font_size": "body-large",
+            "padding_bottom": 0
+          }
+        }
+      },
+      "block_order": [
+        "text"
+      ],
+      "settings": {
+        "align_text": "text-center",
+        "width": "wrapper--narrow",
+        "color_scheme": "scheme-1",
+        "overlay_type": "disabled",
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    },
+    "clinical-journey": {
+      "type": "section-rich-text",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "title": "A Clinical Journey Shaped by Experience",
+            "heading_font_size": "heading-medium",
+            "padding_bottom": 20,
+            "heading_tag": "h2"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Dr. French's approach to medicine has been shaped by decades in emergency departments and trauma systems, where he has cared for patients at their most vulnerable moments. During the COVID-19 pandemic, he witnessed firsthand not only the devastating effects of acute illness, but also the profound consequences of chronic disease, delayed prevention, burnout, and system strain—for patients and healthcare workers alike.</p><p>These experiences crystallized a central insight: many of the outcomes seen in emergency medicine are not sudden or random, but the result of years of unaddressed risk, missed opportunities for early intervention, and fragmented care.</p><p>In January 2024, Dr. French underwent major cardiac surgery himself. Experiencing the healthcare system from the patient's perspective further reinforced his commitment to longevity-focused, anticipatory medicine—care that prioritizes resilience, functional capacity, and informed decision-making long before crisis occurs.</p>",
+            "text_font_size": "body-medium",
+            "padding_bottom": 0
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "text"
+      ],
+      "settings": {
+        "align_text": "text-left",
+        "width": "wrapper--narrow",
+        "color_scheme": "scheme-3",
+        "overlay_type": "disabled",
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    },
+    "academic": {
+      "type": "section-rich-text",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "title": "Medical Education, Academic Leadership & Research",
+            "heading_font_size": "heading-medium",
+            "padding_bottom": 20,
+            "heading_tag": "h2"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Dr. French completed his medical training and went on to become an Assistant Professor of Emergency Medicine at Dalhousie University, where he remains actively involved in teaching and mentorship. He currently practices as an Emergency Physician with Horizon Health Network in Saint John, New Brunswick.</p><p>He has held leadership roles within provincial trauma and concussion programs and has extensive experience in high-fidelity simulation, systems improvement, and physician education. His academic work includes peer-reviewed publications in leading medical journals (including EMJ, BMJ, and CJEM), national presentations, and research awards, including the Queen's Diamond Jubilee Medal and recognition as New Brunswick Researcher of the Month.</p>",
+            "text_font_size": "body-medium",
+            "padding_bottom": 0
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "text"
+      ],
+      "settings": {
+        "align_text": "text-left",
+        "width": "wrapper--narrow",
+        "color_scheme": "scheme-1",
+        "overlay_type": "disabled",
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    },
+    "longevity-medicine": {
+      "type": "section-rich-text",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "title": "From Acute Care to Longevity Medicine",
+            "heading_font_size": "heading-medium",
+            "padding_bottom": 20,
+            "heading_tag": "h2"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p>While emergency medicine remains central to his professional identity, Dr. French's work at White Pine Medical represents a deliberate evolution toward preventive, data-driven care. His practice integrates:</p><ul><li>Cardiovascular and cardiopulmonary fitness testing</li><li>Metabolic and body composition analysis</li><li>Cognitive, neurological, and movement assessment</li><li>Evidence-based risk stratification</li><li>Careful interpretation of advanced diagnostics</li></ul><p>Rather than offering indiscriminate testing, Dr. French emphasizes clinical judgment, prioritization, and context—helping individuals understand which interventions matter most for their health goals, risk profile, and stage of life.</p>",
+            "text_font_size": "body-medium",
+            "padding_bottom": 0
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "text"
+      ],
+      "settings": {
+        "align_text": "text-left",
+        "width": "wrapper--narrow",
+        "color_scheme": "scheme-3",
+        "overlay_type": "disabled",
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    },
+    "philosophy": {
+      "type": "section-rich-text",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "title": "Philosophy of Care",
+            "heading_font_size": "heading-medium",
+            "padding_bottom": 20,
+            "heading_tag": "h2"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Dr. French believes that effective longevity medicine is not about chasing every possible metric, but about clarity, restraint, and intelligent action. His role as a physician is not to sell tests, but to help patients make sense of complex information, reduce unnecessary risk, and build durable health over time.</p><p>White Pine Medical was created to support individuals who want a thoughtful, physician-guided approach to health—whether they are focused on long-term vitality, recovery from illness, optimizing performance, or navigating uncertainty with confidence.</p>",
+            "text_font_size": "body-medium",
+            "padding_bottom": 0
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "text"
+      ],
+      "settings": {
+        "align_text": "text-left",
+        "width": "wrapper--narrow",
+        "color_scheme": "scheme-1",
+        "overlay_type": "disabled",
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    },
+    "cta": {
+      "type": "section-rich-text",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "title": "Ready to Begin?",
+            "heading_font_size": "heading-medium",
+            "padding_bottom": 16,
+            "heading_tag": "h2"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Book a consultation to discuss your health goals and learn how White Pine Medical can support your journey.</p>",
+            "text_font_size": "body-medium",
+            "padding_bottom": 24
+          }
+        },
+        "button": {
+          "type": "buttons",
+          "settings": {
+            "button_text": "Book Consultation",
+            "button_url": "/pages/contact",
+            "button_type": "btn--primary",
+            "button_size": "btn--large",
+            "button_style": "btn--solid",
+            "show_arrow": true,
+            "padding_bottom": 0
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "text",
+        "button"
+      ],
+      "settings": {
+        "align_text": "text-center",
+        "width": "wrapper--narrow",
+        "color_scheme": "scheme-2",
+        "overlay_type": "disabled",
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    }
+  },
+  "order": [
+    "hero",
+    "intro",
+    "clinical-journey",
+    "academic",
+    "longevity-medicine",
+    "philosophy",
+    "cta"
+  ]
+}
