@@ -1,5 +1,7 @@
 # White Pine Medical - Shopify Broadcast Theme
 
+> **For AI Assistants:** This is your entry point. For detailed context, credentials, and commands, see [CLAUDE_CONTEXT.md](CLAUDE_CONTEXT.md).
+
 ## Project Overview
 This is the Shopify storefront for **White Pine Medical**, a health and longevity company offering comprehensive health assessments and personalized wellness coaching powered by our next-generation electronic health system.
 
@@ -100,9 +102,22 @@ git push
 - Block types must match schema definitions in section files
 - Color schemes are defined in `settings_data.json` under `color_schemes`
 
+## Documentation Files
+
+| File | Purpose |
+|------|---------|
+| [CLAUDE.md](CLAUDE.md) | Quick reference (this file) |
+| [CLAUDE_CONTEXT.md](CLAUDE_CONTEXT.md) | Full context, credentials, commands |
+| [PROJECT_STATUS.md](PROJECT_STATUS.md) | Component completion status |
+| [KNOWN_ISSUES.md](KNOWN_ISSUES.md) | Bug tracking and issues |
+| [JAMES_SESSION_QUICK_START.md](JAMES_SESSION_QUICK_START.md) | Session prompts for Claude |
+| [CHANGELOG.md](CHANGELOG.md) | Version history |
+
 ## Related Projects
+
 - **EHR/Dashboard** (`/Users/jamesfrench/clinalytix-ehr-work`) - Uses same brand colors
   - Frontend: `apps/ehr-frontend/tailwind.config.js` contains the color definitions
 
 ## Content Source
+
 Original content migrated from **TS Media Design** theme (Copy of TS Media Design, ID: 180310835495)
