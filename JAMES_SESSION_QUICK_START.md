@@ -13,6 +13,7 @@ Copy/paste these prompts when working with Claude on the White Pine Medical Shop
 | Property | Value |
 |----------|-------|
 | **GitHub Repository** | `medic8stat/shopifywebsite` |
+| **Local Path** | `~/shopify-themes/broadcast` |
 | **Store** | whitepinemedical.myshopify.com |
 | **Theme** | Broadcast 8.0.0 |
 | **Dev Theme ID** | 182960718119 |
@@ -26,6 +27,7 @@ Copy/paste these prompts when working with Claude on the White Pine Medical Shop
 2. **Copy/paste the entire code block** at session start
 3. **The prompt tells Claude exactly what to read** - no guessing
 4. **Each prompt is self-contained** - includes rules and reminders
+5. **IMPORTANT:** Prompts use FULL ABSOLUTE PATHS so Claude finds files regardless of starting directory
 
 ---
 
@@ -35,21 +37,27 @@ Use this for general Shopify website work.
 
 ```
 ⚠️ THIS IS SHOPIFY WEBSITE WORK - NOT EHR!
+
+FIRST: Change to the Shopify website directory:
+cd ~/shopify-themes/broadcast
+
 Repository: medic8stat/shopifywebsite
+Local Path: ~/shopify-themes/broadcast (FULL PATH: /Users/jamesfrench/shopify-themes/broadcast)
 Store: whitepinemedical.myshopify.com
 Dev Theme ID: 182960718119
 
-Read these files from shopify-themes/broadcast:
-1. CLAUDE.md (quick overview)
-2. CLAUDE_CONTEXT.md (credentials, commands, full context)
-3. CHANGELOG.md (recent changes)
-4. KNOWN_ISSUES.md (active issues)
+Read these files using FULL ABSOLUTE PATHS:
+1. /Users/jamesfrench/shopify-themes/broadcast/CLAUDE.md
+2. /Users/jamesfrench/shopify-themes/broadcast/CLAUDE_CONTEXT.md
+3. /Users/jamesfrench/shopify-themes/broadcast/CHANGELOG.md
+4. /Users/jamesfrench/shopify-themes/broadcast/KNOWN_ISSUES.md
 
 CRITICAL RULES:
 - NEVER push to live theme (TS Media Design #178766348583)
 - ALWAYS push to Broadcast theme (#182960718119)
 - COMMIT after every unit of work
 - Test with `shopify theme dev --store whitepinemedical.myshopify.com` before pushing
+- All file operations must use paths under /Users/jamesfrench/shopify-themes/broadcast/
 ```
 
 ---
@@ -62,14 +70,19 @@ Use when updating text, copy, or page content.
 
 ```
 ⚠️ THIS IS SHOPIFY WEBSITE WORK - NOT EHR!
+
+FIRST: Change to the Shopify website directory:
+cd ~/shopify-themes/broadcast
+
 Repository: medic8stat/shopifywebsite
+Local Path: /Users/jamesfrench/shopify-themes/broadcast
 Store: whitepinemedical.myshopify.com
 Dev Theme ID: 182960718119
 
-Read these files from shopify-themes/broadcast:
-1. CLAUDE_CONTEXT.md - Content guidelines (Section 9)
-2. templates/index.json - Homepage content
-3. CHANGELOG.md - What's already been changed
+Read these files using FULL ABSOLUTE PATHS:
+1. /Users/jamesfrench/shopify-themes/broadcast/CLAUDE_CONTEXT.md - Content guidelines (Section 9)
+2. /Users/jamesfrench/shopify-themes/broadcast/templates/index.json - Homepage content
+3. /Users/jamesfrench/shopify-themes/broadcast/CHANGELOG.md - What's already been changed
 
 CONTENT RULES:
 - NO "AI" or "Artificial Intelligence" - use "next-generation electronic health system"
@@ -78,12 +91,12 @@ CONTENT RULES:
 - Coaching is "up to 12 months" (variable)
 - Tone: Professional, physician-led, evidence-based
 
-After changes:
+After changes (run from ~/shopify-themes/broadcast):
 1. TEST: shopify theme dev --store whitepinemedical.myshopify.com
 2. COMMIT: git add -A && git commit -m "content: [description]"
 3. PUSH: git push
 4. DEPLOY: shopify theme push --theme 182960718119 --store whitepinemedical.myshopify.com --allow-live
-5. UPDATE: CHANGELOG.md
+5. UPDATE: /Users/jamesfrench/shopify-themes/broadcast/CHANGELOG.md
 ```
 
 ### 2. STYLING / CSS MODE
@@ -92,14 +105,19 @@ Use when working on colors, fonts, or visual styling.
 
 ```
 ⚠️ THIS IS SHOPIFY WEBSITE WORK - NOT EHR!
+
+FIRST: Change to the Shopify website directory:
+cd ~/shopify-themes/broadcast
+
 Repository: medic8stat/shopifywebsite
+Local Path: /Users/jamesfrench/shopify-themes/broadcast
 Store: whitepinemedical.myshopify.com
 Dev Theme ID: 182960718119
 
-Read these files from shopify-themes/broadcast:
-1. CLAUDE_CONTEXT.md Section 5 - Brand Assets
-2. config/settings_data.json - Theme color settings
-3. assets/custom-whitepine.css - Custom styles
+Read these files using FULL ABSOLUTE PATHS:
+1. /Users/jamesfrench/shopify-themes/broadcast/CLAUDE_CONTEXT.md - Section 5 Brand Assets
+2. /Users/jamesfrench/shopify-themes/broadcast/config/settings_data.json - Theme color settings
+3. /Users/jamesfrench/shopify-themes/broadcast/assets/custom-whitepine.css - Custom styles
 
 BRAND COLORS:
 - Navy: #1E3A5F (primary)
@@ -113,7 +131,7 @@ COLOR SCHEMES:
 - scheme-3: Light blue bg, navy text (highlighted)
 - scheme-4: Blue bg, white text (CTA)
 
-After changes:
+After changes (run from ~/shopify-themes/broadcast):
 1. TEST: shopify theme dev --store whitepinemedical.myshopify.com
 2. COMMIT: git add -A && git commit -m "style: [description]"
 3. PUSH: git push
@@ -126,18 +144,23 @@ Use when creating new page templates or modifying existing ones.
 
 ```
 ⚠️ THIS IS SHOPIFY WEBSITE WORK - NOT EHR!
+
+FIRST: Change to the Shopify website directory:
+cd ~/shopify-themes/broadcast
+
 Repository: medic8stat/shopifywebsite
+Local Path: /Users/jamesfrench/shopify-themes/broadcast
 Store: whitepinemedical.myshopify.com
 Dev Theme ID: 182960718119
 
-Read these files from shopify-themes/broadcast:
-1. CLAUDE_CONTEXT.md Section 7 - File Structure
-2. templates/ - Existing templates for reference
-3. sections/ - Available section types
+Read these files using FULL ABSOLUTE PATHS:
+1. /Users/jamesfrench/shopify-themes/broadcast/CLAUDE_CONTEXT.md - Section 7 File Structure
+2. List files in /Users/jamesfrench/shopify-themes/broadcast/templates/ - Existing templates
+3. List files in /Users/jamesfrench/shopify-themes/broadcast/sections/ - Available section types
 
 TEMPLATE RULES:
-- JSON templates go in templates/ folder
-- Section types must match files in /sections/
+- JSON templates go in /Users/jamesfrench/shopify-themes/broadcast/templates/ folder
+- Section types must match files in /Users/jamesfrench/shopify-themes/broadcast/sections/
 - Block types must match schema in section files
 - Reference images as shopify://shop_images/filename.jpg
 
@@ -147,7 +170,7 @@ EXISTING TEMPLATES:
 - page.privacy-trust.json (privacy page)
 - page.urgent-care.json (urgent care)
 
-After creating template:
+After creating template (run from ~/shopify-themes/broadcast):
 1. TEST: shopify theme dev --store whitepinemedical.myshopify.com
 2. CREATE page in Shopify Admin → Pages
 3. SELECT the new template
@@ -161,13 +184,18 @@ Use when modifying header, menus, or navigation.
 
 ```
 ⚠️ THIS IS SHOPIFY WEBSITE WORK - NOT EHR!
+
+FIRST: Change to the Shopify website directory:
+cd ~/shopify-themes/broadcast
+
 Repository: medic8stat/shopifywebsite
+Local Path: /Users/jamesfrench/shopify-themes/broadcast
 Store: whitepinemedical.myshopify.com
 Dev Theme ID: 182960718119
 
-Read these files from shopify-themes/broadcast:
-1. sections/group-header.json - Header configuration
-2. CLAUDE_CONTEXT.md Section 8 - Page structure
+Read these files using FULL ABSOLUTE PATHS:
+1. /Users/jamesfrench/shopify-themes/broadcast/sections/group-header.json - Header configuration
+2. /Users/jamesfrench/shopify-themes/broadcast/CLAUDE_CONTEXT.md - Section 8 Page structure
 
 HEADER COMPONENTS:
 - Announcement bar (currently disabled)
@@ -181,7 +209,7 @@ CURRENT BUTTONS:
 MENUS (managed in Shopify Admin):
 - Main menu: Shopify Admin → Content → Menus
 
-After changes:
+After changes (run from ~/shopify-themes/broadcast):
 1. TEST: shopify theme dev --store whitepinemedical.myshopify.com (mobile and desktop views)
 2. COMMIT and PUSH: git add -A && git commit -m "nav: [description]" && git push
 3. DEPLOY: shopify theme push --theme 182960718119 --store whitepinemedical.myshopify.com --allow-live
@@ -194,8 +222,10 @@ After changes:
 ### Development
 
 ```bash
-# Start local dev server
+# ALWAYS start by changing to the correct directory
 cd ~/shopify-themes/broadcast
+
+# Start local dev server
 shopify theme dev --store whitepinemedical.myshopify.com
 
 # Preview at: http://127.0.0.1:9292
@@ -204,6 +234,9 @@ shopify theme dev --store whitepinemedical.myshopify.com
 ### Deployment
 
 ```bash
+# ALWAYS run from ~/shopify-themes/broadcast
+cd ~/shopify-themes/broadcast
+
 # Push to staging (Broadcast theme)
 shopify theme push --theme 182960718119 --store whitepinemedical.myshopify.com --allow-live
 
@@ -214,6 +247,9 @@ shopify theme publish --theme 182960718119 --store whitepinemedical.myshopify.co
 ### Git
 
 ```bash
+# ALWAYS run from ~/shopify-themes/broadcast
+cd ~/shopify-themes/broadcast
+
 # Commit
 git add -A && git commit -m "type(scope): description"
 
@@ -241,7 +277,7 @@ git status
 ## END OF SESSION CHECKLIST
 
 ```
-END OF SESSION - Verify:
+END OF SESSION - Verify (run from ~/shopify-themes/broadcast):
 
 1. All changes committed?
    → git status (should show clean)
@@ -253,10 +289,10 @@ END OF SESSION - Verify:
    → shopify theme push --theme 182960718119 --store whitepinemedical.myshopify.com --allow-live
 
 4. CHANGELOG.md updated?
-   → Document what changed
+   → Document what changed in /Users/jamesfrench/shopify-themes/broadcast/CHANGELOG.md
 
 5. KNOWN_ISSUES.md updated (if bug fixed)?
-   → Mark issues as resolved
+   → Mark issues as resolved in /Users/jamesfrench/shopify-themes/broadcast/KNOWN_ISSUES.md
 ```
 
 ---
@@ -267,6 +303,29 @@ END OF SESSION - Verify:
 |-------|-----|--------|
 | **Broadcast** | 182960718119 | ✅ PUSH HERE (dev/staging) |
 | **TS Media Design** | 178766348583 | ❌ NEVER PUSH (live) |
+
+---
+
+## DIRECTORY STRUCTURE
+
+```
+/Users/jamesfrench/
+├── shopify-themes/
+│   └── broadcast/              ← SHOPIFY WEBSITE (this project)
+│       ├── CLAUDE.md
+│       ├── CLAUDE_CONTEXT.md
+│       ├── CHANGELOG.md
+│       ├── KNOWN_ISSUES.md
+│       ├── templates/
+│       ├── sections/
+│       ├── assets/
+│       └── config/
+│
+└── clinalytix-ehr-work/        ← EHR PLATFORM (different project!)
+    ├── CLAUDE.md
+    ├── apps/
+    └── docs/
+```
 
 ---
 
@@ -282,11 +341,11 @@ END OF SESSION - Verify:
 
 ## RELATED SYSTEMS
 
-| System | URL | Repository |
-|--------|-----|------------|
-| Main Website (THIS) | whitepinemedical.ca | medic8stat/shopifywebsite |
-| Patient Portal | portal.whitepinemedical.ca | medic8stat/clinalytix-ehr |
-| Clinician EHR | app.whitepinemedical.ca | medic8stat/clinalytix-ehr |
+| System | URL | Repository | Local Path |
+|--------|-----|------------|------------|
+| Main Website (THIS) | whitepinemedical.ca | medic8stat/shopifywebsite | ~/shopify-themes/broadcast |
+| Patient Portal | portal.whitepinemedical.ca | medic8stat/clinalytix-ehr | ~/clinalytix-ehr-work |
+| Clinician EHR | app.whitepinemedical.ca | medic8stat/clinalytix-ehr | ~/clinalytix-ehr-work |
 
 ---
 
