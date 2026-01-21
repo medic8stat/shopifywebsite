@@ -1,6 +1,10 @@
 /*
  * ------------------------------------------------------------
- * Privacy & Trust Page - White Pine Medical
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
  * ------------------------------------------------------------
  */
 {
@@ -31,7 +35,7 @@
         "text"
       ],
       "settings": {
-        "image": "shopify://shop_images/iStock-1311840964.jpg",
+        "image_1": "shopify://shop_images/iStock-1311840964.jpg",
         "link": "",
         "width": "wrapper--full",
         "height": "four-fifty-height-hero",
@@ -195,9 +199,9 @@
         "block-3"
       ],
       "settings": {
+        "default_open": false,
         "title": "Your Data, Your Control",
         "heading_font_size": "heading-medium",
-        "default_open": false,
         "width": "wrapper",
         "color_scheme": "scheme-1",
         "padding_top": 60,
