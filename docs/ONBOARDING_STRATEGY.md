@@ -101,9 +101,10 @@ What it is NOT:
 | Service | Price | Display Location |
 |---------|-------|------------------|
 | Physician Concierge Appointment | $300 CAD | Dedicated page |
-| Individual à la carte services | Various | Services page |
+| Individual à la carte services | Various (fixed) | Services page |
 
-**Individual services to list (examples):**
+**Individual à la carte services (examples):**
+- VO2 max testing
 - Body composition via DEXA
 - Gait analysis
 - Virtual reality vision testing
@@ -111,11 +112,28 @@ What it is NOT:
 - Bloodwork panels
 - Powerlifting clinic assessment
 
-**NOT displayed publicly:**
-- Comprehensive assessment packages (bespoke, value-based pricing)
-- Corporate wellness packages (50%+ gross margin, negotiated)
+**Pricing model for à la carte:** Cost + 50% gross margin (fixed, transparent)
 
-**Rationale:** Packages are discussed only after the concierge appointment, tailored to individual goals and organizational value.
+**NOT displayed publicly:**
+- Comprehensive assessment packages (bespoke, value-based)
+- Corporate wellness packages
+
+---
+
+### Pricing Philosophy
+
+| Type | Model | Margin | Rationale |
+|------|-------|--------|-----------|
+| **À la carte** | Cost + markup | Fixed 50% | Transparent, predictable |
+| **Individual packages** | Value-based | 50%+ (flexible) | Accessible to those who can't afford more |
+| **Corporate packages** | Value-based | 50%+ (higher) | Reflects value of retaining expensive human assets |
+
+**Value-based pricing allows:**
+- Flexibility to not overcharge individuals who can't afford it
+- Capturing appropriate value from organizations with high-value employees
+- Same service quality regardless of price point
+
+**Packages are discussed only after the concierge appointment**, tailored to individual goals, ability to pay, and organizational value (for corporate clients).
 
 ---
 
