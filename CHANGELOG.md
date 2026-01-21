@@ -4,6 +4,65 @@ All notable changes to the White Pine Medical Shopify website will be documented
 
 ---
 
+## [2026-01-21] - Services Page Restructure & Product CSV (v6.0.9)
+
+### Changed
+
+- **Services page redesigned** with 3 clear entry pathways:
+  - **Option 1: Physician Concierge Assessment** - Recommended first step ($300)
+  - **Option 2: Comprehensive Health & Longevity Assessment** - For those ready to proceed
+  - **Option 3: Publicly Funded Urgent Care** - Links to /pages/urgent-care
+- **Individual assessments** - Prices moved from accordion titles into expanded content for cleaner display
+- **Add to Cart links** - Each assessment now includes a product link for direct purchase (30 products)
+
+### Added
+
+- **`products-import.csv`** (NEW) - Shopify product import CSV with 30 health assessment products:
+  - Physician Concierge Assessment ($300)
+  - VO₂ Max Performance Assessment ($349)
+  - Submaximal Cardiorespiratory Fitness Assessment ($249)
+  - Resting 12-Lead ECG Screening ($129)
+  - Exercise ECG Stress Test ($229)
+  - Body Composition Analysis ($199)
+  - Resting Metabolic Rate Test ($229)
+  - Metabolic Flexibility Assessment ($249)
+  - VR Vision Performance Screening ($179)
+  - Hearing Screening ($179)
+  - Reaction Time & Cognitive Response Test ($149)
+  - Balance & Proprioception Assessment ($179)
+  - Grip Strength Assessment ($99)
+  - Lower Limb Power Assessment ($149)
+  - Functional Movement Screen ($199)
+  - RunEasi Gait & Movement Analysis ($249)
+  - Blood Pressure & Vascular Screening ($79)
+  - Heart Rate Variability Assessment ($189)
+  - Ankle-Brachial Pressure Index ($149)
+  - Spirometry & Lung Age Assessment ($169)
+  - Blood Testing Coordination Service ($50)
+  - Digital Longevity Snapshot – Clinician Review ($350)
+  - Digital Longevity Snapshot – Physician Consultation ($1,000)
+  - Digital Cognitive Screening ($379)
+  - Psychiatric Mental Health Screening – Online ($399)
+  - Psychiatric Mental Health Screening – In-Person ($500)
+  - Genetic Panel – Nutrigenetics ($599)
+  - Genetic Panel – Cancer Genetics ($699)
+  - Genetic Panel – Longevity & Health ($699)
+  - Limited Screening Ultrasound ($499)
+
+### Technical
+
+- Updated `templates/page.services.json` with new 3-option pathway structure
+- Add to Cart links use plain anchor tags (Shopify richtext doesn't support class attributes)
+- Products ready for bulk import via Shopify Admin → Products → Import
+
+### Next Steps
+
+1. Import `products-import.csv` via Shopify Admin → Products → Import
+2. Add product images in Shopify Admin
+3. Test Add to Cart buttons on Services page
+
+---
+
 ## [2026-01-21] - Hero Button Fixes (v6.0.8)
 
 ### Fixed
