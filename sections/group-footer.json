@@ -19,6 +19,7 @@
           "settings": {
             "title": "About the Brand",
             "heading_font_size": "heading-x-small",
+            "text": "",
             "column_width": 25,
             "enable_follow_on_shop": false,
             "enable_accordion": false
@@ -27,7 +28,7 @@
         "linklist": {
           "type": "linklist",
           "settings": {
-            "linklist": "new-clean-footer",
+            "linklist": "",
             "title": "Customer Care",
             "heading_font_size": "heading-x-small",
             "column_width": 20,
@@ -37,8 +38,8 @@
         "linklist-0": {
           "type": "linklist",
           "settings": {
-            "linklist": "resources",
-            "title": "Resources",
+            "linklist": "footer-legal",
+            "title": "Legal",
             "heading_font_size": "heading-x-small",
             "column_width": 20,
             "enable_accordion": false
@@ -70,7 +71,7 @@
       ],
       "settings": {
         "logo_image_width": 150,
-        "color_scheme": "scheme-8",
+        "color_scheme": "scheme-3",
         "border_color": "#212121",
         "padding_top": 75,
         "padding_bottom": 30
@@ -79,7 +80,8 @@
     "section-anchor-logo": {
       "type": "section-anchor-logo",
       "settings": {
-        "color_scheme": "scheme-8",
+        "logo": "shopify://shop_images/white_pine_white_text_transparent_background.png",
+        "color_scheme": "scheme-2",
         "padding_top": 30,
         "padding_bottom": 30
       }
@@ -87,16 +89,17 @@
     "section-supporting-menu": {
       "type": "section-supporting-menu",
       "settings": {
-        "linklist": "policies",
+        "linklist": "",
         "text_font_size": "body-small",
         "footer_payment_enable": false,
         "enable_greyscale": false,
         "show_locale_selector": true,
+        "show_locale_code": false,
         "show_globe_icon": true,
         "show_country_selector": true,
         "show_country_name": false,
         "show_country_flag": true,
-        "color_scheme": "scheme-8",
+        "color_scheme": "scheme-3",
         "padding_top": 30,
         "padding_bottom": 30
       }

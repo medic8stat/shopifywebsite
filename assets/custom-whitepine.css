@@ -126,3 +126,45 @@
 .index-hero:not([class*="color-scheme"]) .hero__content p {
   color: #ffffff !important;
 }
+
+/* ============================================
+   MAIN NAVIGATION - Larger font size
+   Make nav items more prominent
+   ============================================ */
+
+/* Desktop navigation links - larger font */
+.header__desktop__upper .navlink,
+.header__desktop__bar .navlink,
+.header__desktop__bar__l .navlink,
+.header__desktop__bar__r .navlink,
+.header .navlink,
+.header__desktop .navlink {
+  font-size: 16px !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.02em !important;
+}
+
+/* Even larger on wide screens */
+@media only screen and (min-width: 1200px) {
+  .header__desktop__upper .navlink,
+  .header__desktop__bar .navlink,
+  .header__desktop__bar__l .navlink,
+  .header__desktop__bar__r .navlink,
+  .header .navlink,
+  .header__desktop .navlink {
+    font-size: 18px !important;
+  }
+}
+
+/* Maintain spacing between larger nav items */
+.header__desktop__bar__l .navlink,
+.header__desktop .navlink {
+  padding: 10px 16px !important;
+}
+
+@media only screen and (min-width: 1200px) {
+  .header__desktop__bar__l .navlink,
+  .header__desktop .navlink {
+    padding: 10px 20px !important;
+  }
+}
