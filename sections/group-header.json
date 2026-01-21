@@ -13,49 +13,22 @@
   "sections": {
     "announcement": {
       "type": "announcement",
-      "blocks": {
-        "text": {
-          "type": "text",
-          "settings": {
-            "text": "<p>New customers save 10% with code <strong>GET10</strong></p>",
-            "target_url_enabled": false,
-            "target_url": "",
-            "target_referrer_enabled": false,
-            "target_referrer": "",
-            "target_device_enabled": false,
-            "target_device": "mobile"
-          }
-        },
-        "text-0": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Free shipping on orders over $200</p>",
-            "target_url_enabled": false,
-            "target_url": "",
-            "target_referrer_enabled": false,
-            "target_referrer": "",
-            "target_device_enabled": false,
-            "target_device": "mobile"
-          }
-        }
-      },
-      "block_order": [
-        "text",
-        "text-0"
-      ],
+      "disabled": true,
+      "blocks": {},
+      "block_order": [],
       "settings": {
         "show_border": false,
         "layout": "slider",
         "slider_speed": 5,
         "text_alignment": "center",
-        "show_arrows": true,
+        "show_arrows": false,
         "marquee_speed": 100,
         "message_spacing": 10,
         "text_font_size": "body-small",
         "color_scheme": "scheme-2",
         "border_color": "rgba(0,0,0,0)",
-        "padding_top": 5,
-        "padding_bottom": 5
+        "padding_top": 0,
+        "padding_bottom": 0
       }
     },
     "header": {
