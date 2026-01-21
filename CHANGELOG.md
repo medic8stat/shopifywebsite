@@ -8,7 +8,7 @@ All notable changes to the White Pine Medical Shopify website will be documented
 
 ### Changed
 
-- **Navigation layout** - Converted to split layout with logo centered:
+- **Navigation layout** - Created true split navigation with logo centered:
   - **Left menu (Quick Links):** Home, Services, About, Contact, For Business
   - **Center:** White Pine Medical logo
   - **Right menu (header-right):** Urgent Care, Patient Portal, Clinician EHR
@@ -18,10 +18,15 @@ All notable changes to the White Pine Medical Shopify website will be documented
 
 ### Technical
 
-- Updated `assets/custom-whitepine.css` with split nav alignment (left/right)
+- **Modified `sections/header.liquid`** - Added new header style and secondary menu support:
+  - Created `secondary_menu` capture for desktop right-side navigation
+  - Added `logo_center_split` case to render split layout
+  - Added "Logo center with split menus" option to header style schema
 - Updated `sections/group-header.json`:
+  - Changed `header_style` to `logo_center_split`
   - Disabled CTA button
-  - Added `secondary_menu_linklist: "header-right"` for right-side nav
+  - Set `secondary_menu_linklist: "header-right"` for right-side nav
+- Updated `assets/custom-whitepine.css` with split nav alignment (left/right)
 - Created two menus in Shopify Admin → Content → Menus:
   - **Quick Links** (left): Home, Services, About, Contact, For Business
   - **header-right** (right): Urgent Care, Patient Portal, Clinician EHR
