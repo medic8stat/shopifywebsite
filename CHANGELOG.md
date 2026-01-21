@@ -4,6 +4,15 @@ All notable changes to the White Pine Medical Shopify website will be documented
 
 ---
 
+## [2026-01-21] - Transparent Headers & Hero Images (v6.0.3)
+
+### Changed
+
+- **Services page hero** - Removed navy color scheme, image now displays with opacity overlay behind navigation
+- **Header transparency** - Enabled `transparent_page: true` so all pages can have hero images extend behind the navigation bar (like homepage)
+
+---
+
 ## [2026-01-21] - Dr. James French Bio & Navigation Fixes (v6.0.2)
 
 ### Added
