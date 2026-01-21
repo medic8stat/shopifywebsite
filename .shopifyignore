@@ -16,6 +16,7 @@ templates/page.about.json
 templates/page.contact.json
 templates/page.privacy-trust.json
 templates/page.urgent-care.json
+templates/page.for-business.json
 templates/product.json
 
 # Header/footer group configurations

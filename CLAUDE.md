@@ -52,11 +52,18 @@ FORBIDDEN: shopify theme push --theme 178766348583
 FORBIDDEN: shopify theme push -e production
 ```
 
-### 5. Verify at Preview URL (Not Localhost)
+### 5. Always Start Dev Server for Preview
 
+The preview URL often redirects to the live site. **Always start a dev server:**
+
+```bash
+cd ~/shopify-themes/broadcast
+shopify theme dev --theme 182960718119 --store whitepinemedical.myshopify.com
 ```
-https://whitepinemedical.myshopify.com/?preview_theme_id=182960718119
-```
+
+Then view at: **http://127.0.0.1:9292** (or the port shown in output)
+
+This guarantees you see the Broadcast theme, not the live site.
 
 ---
 

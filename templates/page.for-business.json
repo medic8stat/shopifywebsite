@@ -1,0 +1,244 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "section-hero-banner": {
+      "type": "section-hero",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "title": "Corporate Wellness",
+            "heading_font_size": "heading-large",
+            "heading_tag": "automatic",
+            "padding_bottom": 8
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Physician-led health assessments for your team</p>",
+            "text_font_size": "body-large",
+            "padding_bottom": 8
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "text"
+      ],
+      "settings": {
+        "image_1": "shopify://shop_images/iStock-1311840964.jpg",
+        "link": "",
+        "width": "wrapper--full",
+        "height": "four-fifty-height-hero",
+        "flex_align_desktop": "align--middle-center-desktop",
+        "content_width": 60,
+        "mobile_height": "three-fifty-height-hero--mobile",
+        "flex_align_mobile": "align--middle-center-mobile",
+        "color_scheme": "scheme-2",
+        "show_text_background": false,
+        "overlay_type": "full",
+        "bg_color": "#1E3A5F",
+        "overlay_opacity": 50,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "show_placeholder": false
+      }
+    },
+    "section-rich-text-intro": {
+      "type": "section-rich-text",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "title": "Invest in Your Team's Health",
+            "heading_font_size": "heading-medium",
+            "padding_bottom": 16,
+            "heading_tag": "automatic"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p>White Pine Medical offers comprehensive corporate wellness programs designed to optimize team health, reduce absenteeism, and improve productivity. Our physician-led assessments provide actionable insights tailored to each employee.</p>",
+            "text_font_size": "body-medium",
+            "padding_bottom": 24
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "text"
+      ],
+      "settings": {
+        "align_text": "text-center",
+        "width": "wrapper--narrow",
+        "color_scheme": "scheme-1",
+        "overlay_type": "disabled",
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    },
+    "section-text-row-benefits": {
+      "type": "section-text-row",
+      "blocks": {
+        "icon": {
+          "type": "icon",
+          "settings": {
+            "icon_name": "icon-heart",
+            "icon_size": 50,
+            "icon_color": "#1E3A5F",
+            "title": "Comprehensive Assessments",
+            "heading_font_size": "heading-x-small",
+            "text": "<p>Full health evaluations including cardiovascular, metabolic, cognitive, and functional assessments for each team member.</p>",
+            "text_font_size": "body-small",
+            "heading_tag": "automatic"
+          }
+        },
+        "icon-0": {
+          "type": "icon",
+          "settings": {
+            "icon_name": "icon-flare",
+            "icon_size": 50,
+            "icon_color": "#1E3A5F",
+            "title": "Data-Driven Insights",
+            "heading_font_size": "heading-x-small",
+            "text": "<p>Aggregate health analytics (anonymized) to identify organizational health trends and opportunities for improvement.</p>",
+            "text_font_size": "body-small",
+            "heading_tag": "automatic"
+          }
+        },
+        "icon-1": {
+          "type": "icon",
+          "settings": {
+            "icon_name": "icon-check-circle",
+            "icon_size": 50,
+            "icon_color": "#1E3A5F",
+            "title": "Flexible Programs",
+            "heading_font_size": "heading-x-small",
+            "text": "<p>Customizable packages to fit your organization's needs, from executive health programs to company-wide wellness initiatives.</p>",
+            "text_font_size": "body-small",
+            "heading_tag": "automatic"
+          }
+        }
+      },
+      "block_order": [
+        "icon",
+        "icon-0",
+        "icon-1"
+      ],
+      "settings": {
+        "title": "Why Choose White Pine for Corporate Wellness?",
+        "heading_font_size": "heading-medium",
+        "align_heading": "text-center",
+        "align_text": "text-center",
+        "icon_alignment": "icon--top",
+        "width": "wrapper",
+        "align_columns": "flex-align-top",
+        "layout": "grid",
+        "grid": 3,
+        "layout_mobile": "1",
+        "color_scheme": "scheme-3",
+        "padding_top": 60,
+        "padding_bottom": 60,
+        "heading_tag": "automatic"
+      }
+    },
+    "section-rich-text-services": {
+      "type": "section-rich-text",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "title": "Corporate Services",
+            "heading_font_size": "heading-medium",
+            "padding_bottom": 16,
+            "heading_tag": "automatic"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Our corporate wellness programs include:</p><ul><li><strong>Executive Health Assessments</strong> — Comprehensive evaluations for leadership teams</li><li><strong>Team Wellness Days</strong> — On-site or clinic-based group assessments</li><li><strong>Health Risk Stratification</strong> — Identify and address organizational health risks</li><li><strong>Ongoing Support</strong> — Follow-up consultations and progress tracking</li></ul>",
+            "text_font_size": "body-medium",
+            "padding_bottom": 24
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "text"
+      ],
+      "settings": {
+        "align_text": "text-left",
+        "width": "wrapper--narrow",
+        "color_scheme": "scheme-1",
+        "overlay_type": "disabled",
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    },
+    "section-rich-text-cta": {
+      "type": "section-rich-text",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "title": "Ready to Get Started?",
+            "heading_font_size": "heading-medium",
+            "padding_bottom": 16,
+            "heading_tag": "automatic"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Contact us to discuss how White Pine Medical can support your organization's health and wellness goals.</p>",
+            "text_font_size": "body-medium",
+            "padding_bottom": 24
+          }
+        },
+        "button": {
+          "type": "buttons",
+          "settings": {
+            "button_text": "Contact Us",
+            "button_link": "/pages/contact",
+            "button_type": "btn--primary",
+            "button_text_2": "",
+            "button_link_2": "",
+            "button_type_2": "btn--secondary",
+            "padding_bottom": 8
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "text",
+        "button"
+      ],
+      "settings": {
+        "align_text": "text-center",
+        "width": "wrapper--narrow",
+        "color_scheme": "scheme-4",
+        "overlay_type": "disabled",
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    }
+  },
+  "order": [
+    "section-hero-banner",
+    "section-rich-text-intro",
+    "section-text-row-benefits",
+    "section-rich-text-services",
+    "section-rich-text-cta"
+  ]
+}

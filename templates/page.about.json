@@ -45,9 +45,9 @@
         "flex_align_mobile": "align--middle-center-mobile",
         "color_scheme": "scheme-2",
         "show_text_background": false,
-        "overlay_type": "color",
+        "overlay_type": "full",
         "bg_color": "#1E3A5F",
-        "overlay_opacity": 40,
+        "overlay_opacity": 50,
         "padding_top": 0,
         "padding_bottom": 0,
         "show_placeholder": false
