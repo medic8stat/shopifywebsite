@@ -1,6 +1,6 @@
 # James Session Quick Start Guide - Shopify Website
 
-> **Gold Standard Workflow v3.0** - Updated 2026-01-21
+> **Gold Standard Workflow v4.0** - Updated 2026-01-21
 
 Copy/paste these prompts when working with Claude on the White Pine Medical Shopify website.
 
@@ -39,219 +39,140 @@ Also check:
 /Users/jamesfrench/shopify-themes/broadcast/KNOWN_ISSUES.md
 /Users/jamesfrench/shopify-themes/broadcast/CHANGELOG.md
 
-CRITICAL WORKFLOW RULES:
+CRITICAL: THREE METHODS FOR CHANGES
 
-1. TWO TYPES OF CHANGES:
-   - CODE (Liquid, CSS, JS): Claude edits locally → push
-   - CONTENT (images, text, colors): User edits in Shopify Customizer
+1. CODE (Liquid, CSS, JS):
+   - Edit files locally
+   - shopify theme push -e broadcast
+   - Commit and push
 
-2. ALWAYS PULL BEFORE STARTING:
-   cd ~/shopify-themes/broadcast
-   shopify theme pull --theme 182960718119 --store whitepinemedical.myshopify.com
+2. SETTINGS (colors, fonts, global settings):
+   - node shopify-content.mjs pull-settings
+   - Edit config/settings_data.json
+   - node shopify-content.mjs push-settings
+   - Commit and push
 
-3. NEVER EDIT JSON FILES FOR CONTENT CHANGES:
-   - DON'T edit templates/*.json to change images/text
-   - DO tell user to use Shopify Admin → Themes → Customize
+3. SECTION CONTENT (hero text, images, section order):
+   - node shopify-content.mjs pull templates/index.json
+   - Edit the JSON file
+   - node shopify-content.mjs push templates/index.json
+   - Commit and push
 
-4. USE ENVIRONMENT-BASED PUSH (JSON auto-ignored):
-   shopify theme push -e broadcast
+NO SHOPIFY CUSTOMIZER NEEDED - Claude controls everything via scripts.
 
-5. NEVER PUSH TO PRODUCTION:
-   FORBIDDEN: shopify theme push --theme 178766348583
-   FORBIDDEN: shopify theme push -e production
+NEVER PUSH TO PRODUCTION:
+FORBIDDEN: shopify theme push --theme 178766348583
 
-6. VERIFY AT PREVIEW URL (not localhost):
-   https://whitepinemedical.myshopify.com/?preview_theme_id=182960718119
-
-7. COMMIT AFTER EVERY UNIT OF WORK:
-   git add -A && git commit -m "type(scope): description"
-   git push
-
-FILE PROTECTION (already configured):
-- .shopifyignore protects JSON files during push
-- shopify.theme.toml defines safe environments
-```
-
----
-
-## CONTENT/IMAGE CHANGE REQUEST
-
-When user asks to change images, hero banners, text content, colors, or fonts:
-
-```
-THIS IS SHOPIFY WEBSITE WORK - NOT EHR!
-
-Read: /Users/jamesfrench/shopify-themes/broadcast/CLAUDE.md
-
-CONTENT CHANGES require Shopify Customizer - NOT code edits.
-
-When user requests image/text/color changes, respond:
-
-"This change requires Shopify Customizer. Please:
-1. Go to https://admin.shopify.com/store/whitepinemedical/themes
-2. Find the **Broadcast** theme (NOT the live theme)
-3. Click **Customize**
-4. Make your changes and click **Save**
-5. Let me know when done and I'll sync to git."
-
-After user confirms, run:
-cd ~/shopify-themes/broadcast
-shopify theme pull --theme 182960718119 --store whitepinemedical.myshopify.com
-git add -A && git commit -m "content: Update via Customizer"
+COMMIT AFTER EVERY UNIT OF WORK:
+git add -A && git commit -m "type(scope): description"
 git push
 ```
 
 ---
 
-## CODE EDITING MODE
+## THREE CHANGE METHODS - QUICK REFERENCE
 
-For Liquid templates, CSS, JavaScript, section schemas:
-
-```
-THIS IS SHOPIFY WEBSITE WORK - NOT EHR!
-
-Read: /Users/jamesfrench/shopify-themes/broadcast/CLAUDE.md
-
-CODE CHANGES WORKFLOW:
-
-1. PULL FIRST (always):
-   cd ~/shopify-themes/broadcast
-   shopify theme pull --theme 182960718119 --store whitepinemedical.myshopify.com
-
-2. MAKE CODE CHANGES:
-   - Edit .liquid files in /sections/, /snippets/, /layout/
-   - Edit .css/.js files in /assets/
-   - DO NOT edit templates/*.json for content changes
-
-3. PUSH TO SHOPIFY:
-   shopify theme push -e broadcast
-
-4. VERIFY:
-   https://whitepinemedical.myshopify.com/?preview_theme_id=182960718119
-
-5. COMMIT:
-   git add -A && git commit -m "type(scope): description"
-   git push
-
-CONTENT RULES (if editing text in Liquid):
-- NO "AI" or "Artificial Intelligence" - use "next-generation electronic health system"
-- NO "Shop Now" buttons - use "View Services"
-- NO "elite/visionary/unmatched" language
-- Coaching is "up to 12 months" (variable)
-```
-
----
-
-## STYLING / CSS MODE
-
-```
-THIS IS SHOPIFY WEBSITE WORK - NOT EHR!
-
-Read: /Users/jamesfrench/shopify-themes/broadcast/CLAUDE.md
-
-BRAND COLORS:
-- Navy: #1E3A5F (primary - headers, buttons)
-- Blue: #2563EB (accent - links, highlights)
-- Banner Blue: #0066CC (website banner)
-- Light Blue: #f0f7ff (backgrounds)
-- White: #FFFFFF
-
-COLOR SCHEMES (in settings_data.json - edit via Customizer):
-- scheme-1: White bg, navy text (default)
-- scheme-2: Navy bg, white text (dark sections)
-- scheme-3: Light blue bg, navy text (highlighted)
-- scheme-4: Blue bg, white text (CTA)
-
-CSS FILES:
-- /Users/jamesfrench/shopify-themes/broadcast/assets/custom-whitepine.css
-
-WORKFLOW:
-1. Pull first
-2. Edit CSS files (NOT JSON for color scheme changes)
-3. shopify theme push -e broadcast
-4. Verify at preview URL
-5. git add -A && git commit -m "style: description" && git push
-```
-
----
-
-## NEW SECTION/TEMPLATE MODE
-
-```
-THIS IS SHOPIFY WEBSITE WORK - NOT EHR!
-
-Read: /Users/jamesfrench/shopify-themes/broadcast/CLAUDE.md
-
-CREATING NEW SECTIONS (.liquid files):
-1. Create file in /Users/jamesfrench/shopify-themes/broadcast/sections/
-2. Include {% schema %} block defining settings
-3. Push to Shopify: shopify theme push -e broadcast
-4. Section becomes available in Customizer
-
-CREATING NEW PAGE TEMPLATES (.json files):
-1. Create file in /Users/jamesfrench/shopify-themes/broadcast/templates/
-2. Name format: page.[handle].json
-3. Push to Shopify: shopify theme push -e broadcast
-4. Create page in Shopify Admin → Pages
-5. Select the new template
-6. Configure content via Customizer
-
-EXISTING TEMPLATES:
-- index.json (homepage)
-- product.json (product page)
-- page.about.json
-- page.contact.json
-- page.privacy-trust.json
-- page.urgent-care.json
-
-After creating:
-git add -A && git commit -m "template: description" && git push
-```
-
----
-
-## QUICK COMMANDS REFERENCE
-
-### Session Start (ALWAYS DO THIS)
+### Method 1: CODE Changes (Liquid, CSS, JS)
 
 ```bash
 cd ~/shopify-themes/broadcast
-shopify theme pull --theme 182960718119 --store whitepinemedical.myshopify.com
-git status
-```
-
-### Push Code Changes
-
-```bash
+# Edit .liquid, .css, .js files
 shopify theme push -e broadcast
 git add -A && git commit -m "type(scope): description"
 git push
 ```
 
-### Session End
+### Method 2: SETTINGS Changes (Colors, Fonts)
 
 ```bash
-shopify theme pull --theme 182960718119 --store whitepinemedical.myshopify.com
+cd ~/shopify-themes/broadcast
+node shopify-content.mjs pull-settings
+# Edit config/settings_data.json
+node shopify-content.mjs push-settings
+git add -A && git commit -m "style: description"
+git push
+```
+
+### Method 3: SECTION CONTENT Changes (Hero, Text, Images)
+
+```bash
+cd ~/shopify-themes/broadcast
+node shopify-content.mjs pull templates/index.json
+# Edit templates/index.json
+node shopify-content.mjs push templates/index.json
+git add -A && git commit -m "content: description"
+git push
+```
+
+---
+
+## SCRIPT COMMANDS
+
+```bash
+# List all themes
+node shopify-content.mjs list-themes
+
+# Settings (config/settings_data.json)
+node shopify-content.mjs pull-settings
+node shopify-content.mjs push-settings
+
+# Any theme file
+node shopify-content.mjs pull <filename>
+node shopify-content.mjs push <filename>
+
+# Examples
+node shopify-content.mjs pull templates/index.json
+node shopify-content.mjs push templates/page.about.json
+node shopify-content.mjs pull sections/group-header.json
+```
+
+---
+
+## KEY FILES AND HOW TO EDIT THEM
+
+| File | What It Controls | How to Edit |
+|------|------------------|-------------|
+| `config/settings_data.json` | Colors, fonts, global settings | `pull-settings` / `push-settings` |
+| `templates/index.json` | Homepage sections | `pull` / `push` |
+| `templates/page.*.json` | Page sections | `pull` / `push` |
+| `sections/group-header.json` | Header/nav | `pull` / `push` |
+| `sections/group-footer.json` | Footer | `pull` / `push` |
+| `assets/*.css` | Stylesheets | Direct edit + code push |
+| `sections/*.liquid` | Section templates | Direct edit + code push |
+| `snippets/*.liquid` | Reusable code | Direct edit + code push |
+
+---
+
+## SESSION START
+
+```bash
+cd ~/shopify-themes/broadcast
+git pull
+node shopify-content.mjs pull-settings
+git status
+```
+
+---
+
+## SESSION END
+
+```bash
+cd ~/shopify-themes/broadcast
 git add -A && git commit -m "session: End of session sync"
 git push
 ```
 
-### Start Dev Server (Optional)
+---
 
-```bash
-shopify theme dev --store whitepinemedical.myshopify.com
-# Preview at: http://127.0.0.1:9292
-# NOTE: May show stale CDN content - verify at preview URL instead
-```
+## BRAND COLORS
 
-### Fallback Push (if .shopifyignore not working)
-
-```bash
-shopify theme push --theme 182960718119 --store whitepinemedical.myshopify.com \
-  --ignore "config/settings_data.json" \
-  --ignore "templates/*.json" \
-  --ignore "sections/group-*.json"
-```
+| Color | Hex | Usage |
+|-------|-----|-------|
+| Navy | `#1E3A5F` | Primary - headers, buttons |
+| Blue | `#2563EB` | Accent - links, highlights |
+| Banner Blue | `#0066CC` | Website banner |
+| Light Blue | `#f0f7ff` | Backgrounds |
+| White | `#FFFFFF` | Backgrounds |
 
 ---
 
@@ -261,22 +182,29 @@ shopify theme push --theme 182960718119 --store whitepinemedical.myshopify.com \
 
 1. Clear browser cache: Cmd+Shift+R
 2. Use incognito window
-3. Check preview URL (not localhost): `?preview_theme_id=182960718119`
+3. Check preview URL: `?preview_theme_id=182960718119`
 4. Wait for CDN (up to 2 hours)
-5. Verify push succeeded in CLI output
 
-### Hero Image Changes Lost
+### JSON Changes Not Appearing
 
-1. Did you edit JSON locally? DON'T. Use Customizer.
-2. Did you push after Customizer changes? Pull first next time.
-3. CDN caching: Wait or use incognito.
+1. Did you push? Use `node shopify-content.mjs push <filename>`
+2. Did you pull first? Always pull before editing
+3. Check for JSON syntax errors
 
-### Dev Server Shows Wrong Content
+### Script Errors
 
-1. Stop dev server (Ctrl+C)
-2. Pull latest from Shopify
-3. Restart dev server
-4. Hard refresh browser
+1. Ensure authenticated: `shopify theme list --store whitepinemedical.myshopify.com`
+2. If not: `shopify auth login --store whitepinemedical.myshopify.com`
+
+---
+
+## URLS
+
+| Purpose | URL |
+|---------|-----|
+| Preview | https://whitepinemedical.myshopify.com/?preview_theme_id=182960718119 |
+| Live Site | https://www.whitepinemedical.ca |
+| Shopify Admin | https://admin.shopify.com/store/whitepinemedical |
 
 ---
 
@@ -287,33 +215,8 @@ shopify theme push --theme 182960718119 --store whitepinemedical.myshopify.com \
 | `JDI: [task]` | Just Do It - execute without explanation |
 | `EF: [task]` | Explain First - outline plan, wait for approval |
 | `Status check` | Report what's done, pending, blockers |
-| `Session checkpoint` | Commit all, push, verify |
-| `End of session` | Final commit, push, deploy |
-
----
-
-## END OF SESSION CHECKLIST
-
-```
-END OF SESSION - Run from ~/shopify-themes/broadcast:
-
-1. Pull latest from Shopify:
-   shopify theme pull --theme 182960718119 --store whitepinemedical.myshopify.com
-
-2. Check git status:
-   git status (should show clean or have pulled changes)
-
-3. Commit any changes:
-   git add -A && git commit -m "session: End of session sync"
-
-4. Push to GitHub:
-   git push
-
-5. Verify at preview URL:
-   https://whitepinemedical.myshopify.com/?preview_theme_id=182960718119
-
-6. Update CHANGELOG.md if significant changes made
-```
+| `Session checkpoint` | Commit all, sync versions |
+| `End of session` | Final commit, push, verify |
 
 ---
 
@@ -326,56 +229,18 @@ END OF SESSION - Run from ~/shopify-themes/broadcast:
 
 ---
 
-## URLS
+## API TOKEN NOTE
 
-| Purpose | URL |
-|---------|-----|
-| Preview (Dev) | https://whitepinemedical.myshopify.com/?preview_theme_id=182960718119 |
-| Live Site | https://www.whitepinemedical.ca |
-| Shopify Admin | https://admin.shopify.com/store/whitepinemedical |
-| Theme Editor | Shopify Admin → Online Store → Themes → Customize |
+**Not needed.** The `shopify-content.mjs` script uses Shopify CLI's existing authentication.
 
----
+We attempted to create a Shopify Admin API custom app but discovered:
+- Partners Dashboard shows Client ID/Secret, not Admin API tokens
+- Shopify CLI stores auth in macOS Keychain (not extractable)
+- Solution: CLI wrapper script that uses existing auth
 
-## FILE STRUCTURE
-
-```
-/Users/jamesfrench/shopify-themes/broadcast/
-├── CLAUDE.md                 ← Single source of truth
-├── KNOWN_ISSUES.md           ← Bug tracking
-├── CHANGELOG.md              ← Version history
-├── .shopifyignore            ← Protects JSON during push
-├── shopify.theme.toml        ← Environment config
-├── assets/                   ← CSS, JS
-├── config/                   ← settings_data.json (PROTECTED)
-├── layout/                   ← theme.liquid
-├── sections/                 ← Section components
-├── snippets/                 ← Reusable code
-├── templates/                ← Page templates (PROTECTED)
-└── archive/                  ← Archived docs
-```
+The `shopify-admin-api.mjs` script exists but requires a token. Use `shopify-content.mjs` instead.
 
 ---
 
-## RELATED SYSTEMS (Different Projects!)
-
-| System | URL | Local Path |
-|--------|-----|------------|
-| **Shopify Website** | whitepinemedical.ca | ~/shopify-themes/broadcast |
-| Patient Portal | portal.whitepinemedical.ca | ~/clinalytix-ehr-work |
-| Clinician EHR | app.whitepinemedical.ca | ~/clinalytix-ehr-work |
-
----
-
-## CONTACT INFO
-
-| Type | Address |
-|------|---------|
-| General | info@whitepinemedical.ca |
-| Bookings | bookings@whitepinemedical.ca |
-| Privacy | privacy@whitepinemedical.ca |
-
----
-
-**Version:** 3.0.0
+**Version:** 4.0.0
 **Last Updated:** 2026-01-21

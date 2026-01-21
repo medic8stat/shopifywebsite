@@ -4,6 +4,56 @@ All notable changes to the White Pine Medical Shopify website will be documented
 
 ---
 
+## [2026-01-21] - CLI-Based Content Management (v5.0.0)
+
+### Added
+
+- **`shopify-content.mjs`** (NEW) - CLI wrapper script for content management:
+  - `node shopify-content.mjs list-themes` - List all themes
+  - `node shopify-content.mjs pull-settings` - Pull settings_data.json
+  - `node shopify-content.mjs push-settings` - Push settings_data.json
+  - `node shopify-content.mjs pull <file>` - Pull any theme file
+  - `node shopify-content.mjs push <file>` - Push any theme file
+  - Uses Shopify CLI authentication (no separate token needed)
+
+- **`shopify-admin-api.mjs`** (NEW) - GraphQL Admin API script (requires token, not currently usable)
+  - Created for future use if Admin API token becomes available
+  - Supports pages, navigation, theme files via GraphQL
+
+- **`.env.example`** (NEW) - Template for API credentials (for future use)
+
+- **`.gitignore`** (NEW) - Protects .env from being committed
+
+- **`pages/`** (NEW) - Directory for HTML page content files
+
+### Changed
+
+- **`CLAUDE.md`** - Complete rewrite (v5.0.0):
+  - Three methods for changes: CODE, SETTINGS, SECTION CONTENT
+  - Detailed workflows for each method
+  - All changes now Claude-controlled via scripts
+  - No more Shopify Customizer needed
+  - Added API token historical note explaining why CLI approach was chosen
+
+### Fixed
+
+- **Admin API Token Issue** - Resolved by using Shopify CLI wrapper instead:
+  - Partners Dashboard only shows Client ID/Secret, not Admin API tokens
+  - Shopify CLI stores auth in macOS Keychain (not extractable)
+  - Solution: `shopify-content.mjs` wraps CLI commands
+
+### Technical Details
+
+**Three methods for making changes:**
+
+| Change Type | Method | Tool |
+|-------------|--------|------|
+| CODE (Liquid, CSS, JS) | Edit locally → push | `shopify theme push -e broadcast` |
+| SETTINGS (colors, fonts) | Pull → edit → push | `node shopify-content.mjs pull-settings/push-settings` |
+| SECTION CONTENT (hero, text) | Pull → edit → push | `node shopify-content.mjs pull/push <file>` |
+
+---
+
 ## [2026-01-21] - Gold Standard Development Workflow
 
 ### Added

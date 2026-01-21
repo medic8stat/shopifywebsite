@@ -19,10 +19,63 @@
 | ISS-002 | LOW | ✅ RESOLVED | Urgent Care page needs Shopify page creation |
 | ISS-003 | LOW | ✅ RESOLVED | Mobile menu still shows demo content |
 | ISS-004 | MEDIUM | ⚠️ PENDING | Missing images in text/photo sections |
+| ISS-005 | HIGH | ✅ RESOLVED | Shopify Admin API token not accessible via Partners Dashboard |
 
 ---
 
 ## Active Issues
+
+### RESOLVED-010: Shopify Admin API Token Not Accessible
+
+**Severity:** HIGH
+**Status:** ✅ RESOLVED
+**Category:** Setup/Tooling
+**Reported:** 2026-01-21
+**Resolved:** 2026-01-21
+
+**Problem:**
+Attempted to create a Shopify Admin API custom app to get an access token for programmatic content management. The goal was to use GraphQL mutations (pageCreate, themeFilesUpsert) to control pages, settings, and content without using Shopify Customizer.
+
+**What Happened:**
+1. Created custom app "White Pine Content API" in Shopify Admin
+2. Configured scopes: read/write_content, read/write_themes, read/write_online_store_navigation
+3. Released version 1.0.0
+4. App appeared in Partners Dashboard (partners.shopify.com), NOT Store Admin
+5. Partners Dashboard shows **Client ID** and **Client Secret**, NOT Admin API access tokens
+6. The "Reveal token once" button that documentation mentions does not exist in Partners Dashboard
+
+**Root Cause:**
+- Shopify has TWO different app creation flows:
+  1. **Store Admin → Settings → Apps → Develop apps** - Creates store-specific custom apps with Admin API tokens
+  2. **Partners Dashboard** - Creates distributable apps with OAuth credentials (Client ID/Secret)
+- We ended up in the Partners Dashboard flow, which doesn't provide direct API tokens
+- The Shopify CLI stores its auth tokens in macOS Keychain, which cannot be easily extracted
+
+**Resolution:**
+Created `shopify-content.mjs` script that wraps Shopify CLI commands instead of using direct API calls:
+
+```bash
+# Instead of API calls, uses Shopify CLI:
+node shopify-content.mjs pull-settings   # Wraps: shopify theme pull --only config/settings_data.json
+node shopify-content.mjs push-settings   # Wraps: shopify theme push --only config/settings_data.json
+node shopify-content.mjs pull <file>     # Wraps: shopify theme pull --only <file>
+node shopify-content.mjs push <file>     # Wraps: shopify theme push --only <file>
+```
+
+**Benefits of CLI-based approach:**
+- No token management needed
+- Uses existing Shopify CLI authentication
+- Same functionality (pull/push settings, templates, any theme file)
+- Simpler setup
+
+**Files Created:**
+- `shopify-content.mjs` - CLI wrapper script (uses Shopify CLI auth)
+- `shopify-admin-api.mjs` - GraphQL script (requires token, not currently usable)
+
+**Lesson Learned:**
+For store-specific automation, the Shopify CLI approach is simpler than custom apps. Custom apps with Admin API tokens require creating them through Store Admin (not Partners Dashboard) and the UI has changed significantly from documentation.
+
+---
 
 ### RESOLVED-007: Theme Push Overwrites Customizer Changes (Hero Images Lost)
 
