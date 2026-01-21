@@ -165,6 +165,23 @@
             "heading": "Data-Driven Health Insights",
             "heading_font_size": "heading-x-small"
           }
+        },
+        "text-5": {
+          "type": "text",
+          "settings": {
+            "text": "<p>•</p>",
+            "text_font_size": "body-x-large",
+            "color": "",
+            "target_device_enabled": false,
+            "target_device": "mobile"
+          }
+        },
+        "heading-6": {
+          "type": "heading",
+          "settings": {
+            "heading": "Longevity Starts with You",
+            "heading_font_size": "heading-x-small"
+          }
         }
       },
       "block_order": [
@@ -176,7 +193,9 @@
         "text-3",
         "heading-4",
         "text-4",
-        "heading-5"
+        "heading-5",
+        "text-5",
+        "heading-6"
       ],
       "settings": {
         "slider_speed": 7,
@@ -187,8 +206,8 @@
         "show_border": false,
         "layout": "marquee",
         "color_scheme": "scheme-4",
-        "padding_top": 16,
-        "padding_bottom": 16
+        "padding_top": 20,
+        "padding_bottom": 20
       }
     },
     "section-rich-text-problem": {
@@ -312,6 +331,67 @@
         "padding_top": 60,
         "padding_bottom": 60,
         "heading_tag": "automatic"
+      }
+    },
+    "section-double-visionary": {
+      "type": "section-double",
+      "blocks": {
+        "subheading": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "Insight • Innovation • Care",
+            "padding_bottom": 6
+          }
+        },
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "title": "Meet the Man Behind Your Longevity & Preventative Health Assessment",
+            "heading_font_size": "heading-medium",
+            "padding_bottom": 16,
+            "heading_tag": "automatic"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Our holistic health assessment isn't just a process — it's the result of visionary thinking and deep clinical insight. Designed by healthcare innovators and powered by James AI, this unique system brings together the best of both worlds: human experience and artificial intelligence.</p><p>From in-depth virtual assessments to advanced biological testing and elite in-person evaluations, every phase is crafted to deliver unmatched precision, personalization, and long-term results.</p><p>Meet the mind behind this innovation — where science, care, and technology align to guide you toward your most vibrant life.</p>",
+            "text_font_size": "body-medium",
+            "padding_bottom": 24
+          }
+        },
+        "buttons": {
+          "type": "buttons",
+          "settings": {
+            "button_text": "Shop Now",
+            "button_link": "shopify://products/white-pine-medical-longevity-assessment",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "padding_bottom": 16
+          }
+        }
+      },
+      "block_order": [
+        "subheading",
+        "heading",
+        "text",
+        "buttons"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/portrait_photo_in_gym_less_than_5MG.jpg",
+        "image_width": "one-half",
+        "text_alignment": "text-left",
+        "layout": "",
+        "width": "wrapper--full-padded",
+        "height": "sixty-fifty-height-hero",
+        "mobile_height": "four-fifty-height-hero--mobile",
+        "reverse_blocks": false,
+        "color_scheme": "scheme-1",
+        "padding_top": 60,
+        "padding_bottom": 60,
+        "show_placeholder": true
       }
     },
     "section-double-solution": {
@@ -746,6 +826,7 @@
     "section-announcement",
     "section-rich-text-problem",
     "section-text-row-features",
+    "section-double-visionary",
     "section-double-solution",
     "section-columns-phases",
     "section-double-coaching",
