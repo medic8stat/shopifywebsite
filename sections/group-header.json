@@ -116,7 +116,7 @@
         "transparent_home": true,
         "transparent_collection": false,
         "transparent_article": false,
-        "transparent_page": false,
+        "transparent_page": true,
         "transparent_product_page": false,
         "padding_top": 15,
         "padding_bottom": 15

@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "hero": {
@@ -26,6 +35,7 @@
         "text"
       ],
       "settings": {
+        "image_1": "shopify://shop_images/pexels-jakkel-418831.jpg",
         "link": "",
         "width": "wrapper--full",
         "height": "four-fifty-height-hero",
@@ -49,7 +59,7 @@
           "settings": {
             "icon_name": "icon-check-circle",
             "icon_size": 50,
-            "icon_color": "#1E3A5F",
+            "icon_color": "#1e3a5f",
             "title": "Assess",
             "heading_font_size": "heading-small",
             "text": "<p>Comprehensive evaluation of your current health status using advanced diagnostics and clinical assessments.</p>",
@@ -62,7 +72,7 @@
           "settings": {
             "icon_name": "icon-star",
             "icon_size": 50,
-            "icon_color": "#1E3A5F",
+            "icon_color": "#1e3a5f",
             "title": "Prioritize",
             "heading_font_size": "heading-small",
             "text": "<p>Physician-guided focus on the areas that matter most for your health goals and longevity.</p>",
@@ -75,7 +85,7 @@
           "settings": {
             "icon_name": "icon-lightning",
             "icon_size": 50,
-            "icon_color": "#1E3A5F",
+            "icon_color": "#1e3a5f",
             "title": "Act",
             "heading_font_size": "heading-small",
             "text": "<p>Personalized action plan with measurable goals and ongoing support for lasting results.</p>",
@@ -218,7 +228,7 @@
             "show_icon": true,
             "icon_name": "icon-heart",
             "icon_size": 20,
-            "icon_color": "#1E3A5F"
+            "icon_color": "#1e3a5f"
           }
         },
         "submaximal": {
@@ -230,7 +240,7 @@
             "show_icon": true,
             "icon_name": "icon-heart",
             "icon_size": 20,
-            "icon_color": "#1E3A5F"
+            "icon_color": "#1e3a5f"
           }
         },
         "ecg": {
@@ -242,7 +252,7 @@
             "show_icon": true,
             "icon_name": "icon-heart",
             "icon_size": 20,
-            "icon_color": "#1E3A5F"
+            "icon_color": "#1e3a5f"
           }
         },
         "exercise-ecg": {
@@ -254,7 +264,7 @@
             "show_icon": true,
             "icon_name": "icon-heart",
             "icon_size": 20,
-            "icon_color": "#1E3A5F"
+            "icon_color": "#1e3a5f"
           }
         }
       },
@@ -293,7 +303,7 @@
             "show_icon": true,
             "icon_name": "icon-ruler",
             "icon_size": 20,
-            "icon_color": "#1E3A5F"
+            "icon_color": "#1e3a5f"
           }
         },
         "bmr": {
@@ -305,7 +315,7 @@
             "show_icon": true,
             "icon_name": "icon-flare",
             "icon_size": 20,
-            "icon_color": "#1E3A5F"
+            "icon_color": "#1e3a5f"
           }
         },
         "metabolic-flex": {
@@ -317,7 +327,7 @@
             "show_icon": true,
             "icon_name": "icon-flare",
             "icon_size": 20,
-            "icon_color": "#1E3A5F"
+            "icon_color": "#1e3a5f"
           }
         }
       },
@@ -355,7 +365,7 @@
             "show_icon": true,
             "icon_name": "icon-flare",
             "icon_size": 20,
-            "icon_color": "#1E3A5F"
+            "icon_color": "#1e3a5f"
           }
         },
         "hearing": {
@@ -367,7 +377,7 @@
             "show_icon": true,
             "icon_name": "icon-chat",
             "icon_size": 20,
-            "icon_color": "#1E3A5F"
+            "icon_color": "#1e3a5f"
           }
         },
         "reaction-time": {
@@ -379,7 +389,7 @@
             "show_icon": true,
             "icon_name": "icon-lightning",
             "icon_size": 20,
-            "icon_color": "#1E3A5F"
+            "icon_color": "#1e3a5f"
           }
         },
         "balance": {
@@ -391,7 +401,7 @@
             "show_icon": true,
             "icon_name": "icon-check-circle",
             "icon_size": 20,
-            "icon_color": "#1E3A5F"
+            "icon_color": "#1e3a5f"
           }
         }
       },
@@ -430,7 +440,7 @@
             "show_icon": true,
             "icon_name": "icon-award",
             "icon_size": 20,
-            "icon_color": "#1E3A5F"
+            "icon_color": "#1e3a5f"
           }
         },
         "lower-limb": {
@@ -442,7 +452,7 @@
             "show_icon": true,
             "icon_name": "icon-lightning",
             "icon_size": 20,
-            "icon_color": "#1E3A5F"
+            "icon_color": "#1e3a5f"
           }
         },
         "fms": {
@@ -454,7 +464,7 @@
             "show_icon": true,
             "icon_name": "icon-check",
             "icon_size": 20,
-            "icon_color": "#1E3A5F"
+            "icon_color": "#1e3a5f"
           }
         },
         "gait": {
@@ -466,7 +476,7 @@
             "show_icon": true,
             "icon_name": "icon-fast-shipment",
             "icon_size": 20,
-            "icon_color": "#1E3A5F"
+            "icon_color": "#1e3a5f"
           }
         }
       },
@@ -505,7 +515,7 @@
             "show_icon": true,
             "icon_name": "icon-heart",
             "icon_size": 20,
-            "icon_color": "#1E3A5F"
+            "icon_color": "#1e3a5f"
           }
         },
         "hrv": {
@@ -517,7 +527,7 @@
             "show_icon": true,
             "icon_name": "icon-heart",
             "icon_size": 20,
-            "icon_color": "#1E3A5F"
+            "icon_color": "#1e3a5f"
           }
         },
         "abpi": {
@@ -529,7 +539,7 @@
             "show_icon": true,
             "icon_name": "icon-heart",
             "icon_size": 20,
-            "icon_color": "#1E3A5F"
+            "icon_color": "#1e3a5f"
           }
         }
       },
@@ -567,7 +577,7 @@
             "show_icon": true,
             "icon_name": "icon-cloud",
             "icon_size": 20,
-            "icon_color": "#1E3A5F"
+            "icon_color": "#1e3a5f"
           }
         }
       },
@@ -603,7 +613,7 @@
             "show_icon": true,
             "icon_name": "icon-flare",
             "icon_size": 20,
-            "icon_color": "#1E3A5F"
+            "icon_color": "#1e3a5f"
           }
         },
         "digital-cognitive": {
@@ -615,7 +625,7 @@
             "show_icon": true,
             "icon_name": "icon-smile",
             "icon_size": 20,
-            "icon_color": "#1E3A5F"
+            "icon_color": "#1e3a5f"
           }
         }
       },
@@ -652,7 +662,7 @@
             "show_icon": true,
             "icon_name": "icon-chat",
             "icon_size": 20,
-            "icon_color": "#1E3A5F"
+            "icon_color": "#1e3a5f"
           }
         },
         "in-person-therapist": {
@@ -664,7 +674,7 @@
             "show_icon": true,
             "icon_name": "icon-heart",
             "icon_size": 20,
-            "icon_color": "#1E3A5F"
+            "icon_color": "#1e3a5f"
           }
         }
       },
@@ -701,7 +711,7 @@
             "show_icon": true,
             "icon_name": "icon-leaf",
             "icon_size": 20,
-            "icon_color": "#1E3A5F"
+            "icon_color": "#1e3a5f"
           }
         },
         "cancer-genetic": {
@@ -713,7 +723,7 @@
             "show_icon": true,
             "icon_name": "icon-shield",
             "icon_size": 20,
-            "icon_color": "#1E3A5F"
+            "icon_color": "#1e3a5f"
           }
         },
         "longevity-genetic": {
@@ -725,7 +735,7 @@
             "show_icon": true,
             "icon_name": "icon-flare",
             "icon_size": 20,
-            "icon_color": "#1E3A5F"
+            "icon_color": "#1e3a5f"
           }
         }
       },
@@ -763,7 +773,7 @@
             "show_icon": true,
             "icon_name": "icon-flare",
             "icon_size": 20,
-            "icon_color": "#1E3A5F"
+            "icon_color": "#1e3a5f"
           }
         }
       },
@@ -825,7 +835,7 @@
             "icon_name": "icon-award",
             "icon_size": 50,
             "icon_alignment": "icon--top",
-            "icon_color": "#1E3A5F",
+            "icon_color": "#1e3a5f",
             "title": "Specialist Referrals",
             "heading_font_size": "heading-small",
             "text": "<p>Direct access to a network of trusted specialists including cardiologists, endocrinologists, neurologists, and other medical experts when advanced care is needed.</p>",
@@ -840,7 +850,7 @@
             "icon_name": "icon-droplet",
             "icon_size": 50,
             "icon_alignment": "icon--top",
-            "icon_color": "#1E3A5F",
+            "icon_color": "#1e3a5f",
             "title": "Lab Partners",
             "heading_font_size": "heading-small",
             "text": "<p>Partnerships with leading diagnostic laboratories for comprehensive blood work, genetic testing, and specialized biomarker analysis with expedited results.</p>",
@@ -855,7 +865,7 @@
             "icon_name": "icon-flare",
             "icon_size": 50,
             "icon_alignment": "icon--top",
-            "icon_color": "#1E3A5F",
+            "icon_color": "#1e3a5f",
             "title": "Imaging Services",
             "heading_font_size": "heading-small",
             "text": "<p>Coordinated access to advanced imaging including MRI, CT, DEXA scans, and cardiac imaging when detailed visualization is required for your care.</p>",
@@ -872,6 +882,7 @@
       "settings": {
         "title": "Referral Partners",
         "heading_font_size": "heading-medium",
+        "description": "",
         "align_heading": "text-center",
         "align_text": "text-center",
         "width": "wrapper",
