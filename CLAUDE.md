@@ -32,7 +32,7 @@ This is the Shopify storefront for **White Pine Medical**, a health and longevit
 1. **Hero Slideshow** - "Live Better Longer" main banner
 2. **Marquee Announcement** - Scrolling taglines
 3. **Problem Statement** - "The Problem Most People Face"
-4. **Feature Icons** - Built by Visionaries, AI-Driven Insight, Personalized Support
+4. **Feature Icons** - Built by Physicians, AI-Driven Insight, Personalized Support
 5. **Our Solution** - Image + text with product link
 6. **5-Phase Assessment** - All 5 phases with images
 7. **Turn Insights Into Action** - Coaching section

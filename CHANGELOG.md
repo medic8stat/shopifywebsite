@@ -2,7 +2,14 @@
 
 All notable changes to the White Pine Medical Shopify website will be documented in this file.
 
+---
+
 ## [Unreleased]
+
+### Changed
+- **Feature Icons** - Changed "Built by Visionaries" to "Built by Physicians" (more professional)
+
+---
 
 ## [2026-01-20] - Website Branding & Navigation Updates
 
@@ -22,7 +29,10 @@ All notable changes to the White Pine Medical Shopify website will be documented
 - **Patient Registration Page** - Deleted `templates/customers/register.liquid` (redirects handled externally)
 - **Patient Login/Registration Menu Items** - Removed from navigation (done in Shopify admin)
 
-### Notes
-- Patient Portal: `https://portal.whitepinemedical.ca`
-- Clinician EHR: `https://app.whitepinemedical.ca`
+---
+
+## Notes
+
+- **Patient Portal:** https://portal.whitepinemedical.ca
+- **Clinician EHR:** https://app.whitepinemedical.ca
 - Navigation menus are managed in Shopify Admin → Content → Menus
