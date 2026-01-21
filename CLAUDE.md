@@ -4,7 +4,7 @@
 
 ---
 
-## CURRENT STATUS (v6.0.1 - 2026-01-21)
+## CURRENT STATUS (v6.0.2 - 2026-01-21)
 
 **Broadcast theme is NOW LIVE** at whitepinemedical.myshopify.com
 
@@ -12,11 +12,15 @@
 |------|--------|
 | Homepage | 8 sections (restructured from 11) |
 | Services Page | LIVE - 17 sections with 10 assessment categories |
+| Dr. James French Page | LIVE - Full physician bio with 7 sections |
 | Privacy & Trust Page | LIVE |
 | Urgent Care Page | LIVE |
 | All templates | Deployed and working |
 
 **Recent Changes:**
+
+- Added Dr. James French bio page template with complete physician background
+- Fixed Services navigation link (was pointing to old product page)
 - Published Broadcast theme (was dev, now live)
 - Removed `.shopifyignore` (was blocking template pushes)
 - Removed ignore rules from `shopify.theme.toml`

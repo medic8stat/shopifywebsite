@@ -161,8 +161,8 @@
           "type": "image",
           "settings": {
             "image": "shopify://shop_images/1_d206f190-2839-4fa0-bc61-1861f37b2a39.jpg",
-            "image_width": 100,
-            "image_shape": "normal",
+            "image_width": 80,
+            "image_shape": "rounded",
             "title": "1. Assess",
             "heading_font_size": "heading-small",
             "text": "<p>Comprehensive health evaluation combining your medical history, advanced diagnostics, and clinical testing to understand your complete health picture.</p>",
@@ -182,8 +182,8 @@
           "type": "image",
           "settings": {
             "image": "shopify://shop_images/JR-19-6489-20-1030x687.jpg",
-            "image_width": 100,
-            "image_shape": "normal",
+            "image_width": 80,
+            "image_shape": "rounded",
             "title": "2. Prioritize",
             "heading_font_size": "heading-small",
             "text": "<p>Physician-guided identification of your most important focus areas—what matters most for your health, ranked by clinical significance.</p>",
@@ -203,8 +203,8 @@
           "type": "image",
           "settings": {
             "image": "shopify://shop_images/portrait_photo_in_gym_less_than_5MG.jpg",
-            "image_width": 100,
-            "image_shape": "normal",
+            "image_width": 80,
+            "image_shape": "rounded",
             "title": "3. Act",
             "heading_font_size": "heading-small",
             "text": "<p>Personalized action plan with clear next steps, timelines, and ongoing support to turn insights into lasting health improvements.</p>",
@@ -318,7 +318,7 @@
           "settings": {
             "column_width": 33,
             "image": "shopify://shop_images/unnamed.jpg",
-            "image_width": 100,
+            "image_width": 80,
             "image_aspect_ratio": 1,
             "mobile_image_aspect_ratio": 1,
             "image_shape": "rounded",
@@ -339,7 +339,7 @@
           "settings": {
             "column_width": 33,
             "image": "shopify://shop_images/fos-research-chem-bio-2.jpg",
-            "image_width": 100,
+            "image_width": 80,
             "image_aspect_ratio": 1,
             "mobile_image_aspect_ratio": 1,
             "image_shape": "rounded",
@@ -360,7 +360,7 @@
           "settings": {
             "column_width": 33,
             "image": "shopify://shop_images/pexels-shvetsa-4226264.jpg",
-            "image_width": 100,
+            "image_width": 80,
             "image_aspect_ratio": 1,
             "mobile_image_aspect_ratio": 1,
             "image_shape": "rounded",
@@ -381,7 +381,7 @@
           "settings": {
             "column_width": 33,
             "image": "shopify://shop_images/Screenshot_2025-02-23_170926.png",
-            "image_width": 100,
+            "image_width": 80,
             "image_aspect_ratio": 1,
             "mobile_image_aspect_ratio": 1,
             "image_shape": "rounded",
@@ -402,7 +402,7 @@
           "settings": {
             "column_width": 33,
             "image": "shopify://shop_images/4.jpg",
-            "image_width": 100,
+            "image_width": 80,
             "image_aspect_ratio": 1,
             "mobile_image_aspect_ratio": 1,
             "image_shape": "rounded",
@@ -423,7 +423,7 @@
           "settings": {
             "column_width": 33,
             "image": "shopify://shop_images/pexels-tara-winstead-8386440.jpg",
-            "image_width": 100,
+            "image_width": 80,
             "image_aspect_ratio": 1,
             "mobile_image_aspect_ratio": 1,
             "image_shape": "rounded",
@@ -515,12 +515,12 @@
         "text_alignment": "text-left",
         "layout": "",
         "width": "wrapper--full-padded",
-        "height": "sixty-fifty-height-hero",
+        "height": "seven-fifty-height-hero",
         "mobile_height": "four-fifty-height-hero--mobile",
         "reverse_blocks": false,
         "color_scheme": "scheme-1",
-        "padding_top": 60,
-        "padding_bottom": 60,
+        "padding_top": 74,
+        "padding_bottom": 80,
         "show_placeholder": true
       }
     },

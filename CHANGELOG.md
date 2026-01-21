@@ -4,6 +4,31 @@ All notable changes to the White Pine Medical Shopify website will be documented
 
 ---
 
+## [2026-01-21] - Dr. James French Bio & Navigation Fixes (v6.0.2)
+
+### Added
+
+- **`templates/page.dr-james-french.json`** (NEW) - Complete physician bio page with 7 sections:
+  - Hero with name and credentials
+  - Introduction paragraph
+  - "A Clinical Journey Shaped by Experience" - career background, COVID insights, personal cardiac surgery experience
+  - "Medical Education, Academic Leadership & Research" - Dalhousie, publications, awards
+  - "From Acute Care to Longevity Medicine" - practice integration details
+  - "Philosophy of Care" - approach to longevity medicine
+  - CTA to book consultation
+  - Hero image added via Shopify Admin
+
+### Fixed
+
+- **Services navigation link** - Changed from `/products/white-pine-medical-longevity-assessment` to `/pages/services` in Shopify Admin menus
+- **Dr. James French page** - Now uses dedicated template instead of default page template
+
+### Changed
+
+- **Navigation menu** - "Services" now correctly links to the comprehensive services page with all assessment categories
+
+---
+
 ## [2026-01-21] - Website Restructure & Theme Publishing (v6.0.0)
 
 ### Added
