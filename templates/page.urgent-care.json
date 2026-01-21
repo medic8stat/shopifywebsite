@@ -18,10 +18,11 @@
     "section-hero": {
       "type": "section-hero",
       "blocks": {
-        "subheading": {
-          "type": "subheading",
+        "subheading-text": {
+          "type": "text",
           "settings": {
-            "subheading": "Coming Soon to Rothesay, New Brunswick",
+            "text": "<p>Coming Soon to Rothesay, New Brunswick</p>",
+            "text_font_size": "body-medium",
             "padding_bottom": 8
           }
         },
@@ -44,7 +45,7 @@
         }
       },
       "block_order": [
-        "subheading",
+        "subheading-text",
         "heading",
         "text"
       ],
