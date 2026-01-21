@@ -43,7 +43,7 @@
         "content_width": 70,
         "mobile_height": "four-fifty-height-hero--mobile",
         "flex_align_mobile": "align--middle-center-mobile",
-        "color_scheme": "",
+        "color_scheme": "scheme-2",
         "show_text_background": false,
         "overlay_type": "opacity",
         "padding_top": 0,
