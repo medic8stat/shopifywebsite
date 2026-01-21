@@ -41,7 +41,7 @@
         "formHeading": {
           "type": "formHeading",
           "settings": {
-            "title": "All products in this store are for demo purposes only. No orders can be placed on this store."
+            "title": "Contact White Pine Medical"
           }
         },
         "text": {
@@ -81,14 +81,14 @@
         "select": {
           "type": "select",
           "settings": {
-            "title": "Select an option",
+            "title": "Inquiry Type",
             "required": false,
-            "label-one": "- Pick an option -",
-            "label-two": "Option one",
-            "label-three": "Option two",
-            "label-four": "Option three",
-            "label-five": "Option four",
-            "label-six": "Option five"
+            "label-one": "- Select inquiry type -",
+            "label-two": "Longevity Assessment",
+            "label-three": "Urgent Care",
+            "label-four": "Corporate Wellness",
+            "label-five": "General Inquiry",
+            "label-six": "Other"
           }
         }
       },
@@ -118,15 +118,15 @@
         "heading": {
           "type": "heading",
           "settings": {
-            "title": "FAQ"
+            "title": "Contact Information"
           }
         },
         "question": {
           "type": "question",
           "settings": {
-            "default_open": false,
-            "title": "Frequently asked question",
-            "content": "<p>Share details about your shipping policies, item returns, or customer service.</p>",
+            "default_open": true,
+            "title": "Email",
+            "content": "<p><strong>General Inquiries:</strong> info@whitepinemedical.ca</p><p><strong>Bookings:</strong> bookings@whitepinemedical.ca</p>",
             "show_icon": false,
             "icon_name": "icon-award",
             "icon_size": 20,
@@ -136,9 +136,9 @@
         "question-0": {
           "type": "question",
           "settings": {
-            "default_open": false,
-            "title": "Frequently asked question",
-            "content": "<p>Share details about your shipping policies, item returns, or customer service.</p>",
+            "default_open": true,
+            "title": "Location",
+            "content": "<p>Rothesay, New Brunswick, Canada</p>",
             "show_icon": false,
             "icon_name": "icon-award",
             "icon_size": 20,
@@ -148,9 +148,9 @@
         "question-1": {
           "type": "question",
           "settings": {
-            "default_open": false,
-            "title": "Frequently asked question",
-            "content": "<p>Share details about your shipping policies, item returns, or customer service.</p>",
+            "default_open": true,
+            "title": "Hours",
+            "content": "<p>Monday - Friday: 9:00 AM - 5:00 PM AST</p>",
             "show_icon": false,
             "icon_name": "icon-award",
             "icon_size": 20,
@@ -164,7 +164,7 @@
         "question-0",
         "question-1"
       ],
-      "disabled": true,
+      "disabled": false,
       "settings": {
         "heading_font_size": "heading-medium",
         "question_font_size": "heading-small",

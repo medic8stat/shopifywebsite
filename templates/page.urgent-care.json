@@ -1,0 +1,291 @@
+/*
+ * ------------------------------------------------------------
+ * Urgent Care Page - White Pine Medical (Coming Soon)
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "section-divider": {
+      "type": "section-divider",
+      "settings": {
+        "show_line": true,
+        "width": "wrapper--full",
+        "color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "section-hero": {
+      "type": "section-hero",
+      "blocks": {
+        "subheading": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "Coming Soon to Rothesay, New Brunswick",
+            "padding_bottom": 8
+          }
+        },
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "title": "Walk-In Urgent Care",
+            "heading_font_size": "heading-large",
+            "heading_tag": "automatic",
+            "padding_bottom": 16
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Professional healthcare when you need it most. No appointment necessary.</p>",
+            "text_font_size": "body-large",
+            "padding_bottom": 24
+          }
+        },
+        "buttons": {
+          "type": "buttons",
+          "settings": {
+            "button_text": "Get Notified When We Open",
+            "button_link": "/pages/contact",
+            "button_type": "btn--white",
+            "button_size": "btn--large",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "padding_bottom": 8
+          }
+        }
+      },
+      "block_order": [
+        "subheading",
+        "heading",
+        "text",
+        "buttons"
+      ],
+      "settings": {
+        "link": "",
+        "width": "wrapper--full",
+        "height": "five-fifty-height-hero",
+        "flex_align_desktop": "align--middle-center-desktop",
+        "content_width": 60,
+        "mobile_height": "screen-height-three-quarters--mobile",
+        "flex_align_mobile": "align--middle-center-mobile",
+        "color_scheme": "scheme-2",
+        "show_text_background": false,
+        "overlay_type": "disabled",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "show_placeholder": true
+      }
+    },
+    "section-text-row-features": {
+      "type": "section-text-row",
+      "blocks": {
+        "icon": {
+          "type": "icon",
+          "settings": {
+            "icon_name": "icon-clock",
+            "icon_size": 50,
+            "icon_color": "#1E3A5F",
+            "title": "Walk-In, No Appointment",
+            "heading_font_size": "heading-x-small",
+            "text": "<p>Simply walk in during clinic hours. Our team will see you as quickly as possible — no appointment needed for urgent care visits.</p>",
+            "text_font_size": "body-small",
+            "heading_tag": "automatic"
+          }
+        },
+        "icon-0": {
+          "type": "icon",
+          "settings": {
+            "icon_name": "icon-heart",
+            "icon_size": 50,
+            "icon_color": "#1E3A5F",
+            "title": "Covered by NB Medicare",
+            "heading_font_size": "heading-x-small",
+            "text": "<p>New Brunswick residents can access urgent care services covered by Medicare. No out-of-pocket costs for eligible visits.</p>",
+            "text_font_size": "body-small",
+            "heading_tag": "automatic"
+          }
+        },
+        "icon-1": {
+          "type": "icon",
+          "settings": {
+            "icon_name": "icon-award",
+            "icon_size": 50,
+            "icon_color": "#1E3A5F",
+            "title": "Physician-Led Care",
+            "heading_font_size": "heading-x-small",
+            "text": "<p>All urgent care visits are led by experienced physicians who provide thorough, professional care for your acute health needs.</p>",
+            "text_font_size": "body-small",
+            "heading_tag": "automatic"
+          }
+        }
+      },
+      "block_order": [
+        "icon",
+        "icon-0",
+        "icon-1"
+      ],
+      "settings": {
+        "title": "What to Expect",
+        "heading_font_size": "heading-medium",
+        "align_heading": "text-center",
+        "align_text": "text-center",
+        "icon_alignment": "icon--top",
+        "width": "wrapper",
+        "align_columns": "flex-align-top",
+        "layout": "grid",
+        "grid": 3,
+        "layout_mobile": "1",
+        "color_scheme": "scheme-3",
+        "padding_top": 60,
+        "padding_bottom": 60,
+        "heading_tag": "automatic"
+      }
+    },
+    "section-rich-text-services": {
+      "type": "section-rich-text",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "title": "Services We'll Offer",
+            "heading_font_size": "heading-medium",
+            "padding_bottom": 16,
+            "heading_tag": "automatic"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Our urgent care clinic will provide care for non-life-threatening conditions that need prompt attention:</p><ul><li>Minor injuries and cuts requiring stitches</li><li>Sprains and strains</li><li>Infections (ear, throat, urinary, skin)</li><li>Cold and flu symptoms</li><li>Allergic reactions (non-severe)</li><li>Minor burns</li><li>Rashes and skin conditions</li><li>Eye infections and irritations</li><li>Stomach pain and digestive issues</li><li>Headaches and migraines</li></ul><p><strong>For life-threatening emergencies, please call 911 or go to your nearest emergency department.</strong></p>",
+            "text_font_size": "body-medium",
+            "padding_bottom": 24
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "text"
+      ],
+      "settings": {
+        "align_text": "text-left",
+        "width": "wrapper--narrow",
+        "color_scheme": "scheme-1",
+        "overlay_type": "disabled",
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    },
+    "section-accordion": {
+      "type": "section-accordion",
+      "blocks": {
+        "block": {
+          "type": "text",
+          "settings": {
+            "title": "When will urgent care open?",
+            "text": "<p>We're currently preparing our urgent care clinic and will announce our opening date soon. Sign up for notifications through our contact page to be the first to know.</p>"
+          }
+        },
+        "block-0": {
+          "type": "text",
+          "settings": {
+            "title": "Is urgent care covered by Medicare?",
+            "text": "<p>Yes! For New Brunswick residents with valid Medicare coverage, urgent care physician services are covered at no cost. Some additional services or supplies may have fees — our staff will inform you before providing any services with associated costs.</p>"
+          }
+        },
+        "block-1": {
+          "type": "text",
+          "settings": {
+            "title": "What should I bring to my visit?",
+            "text": "<p>Please bring your NB Medicare card, a list of current medications, and any relevant medical information. If you don't have your Medicare card, we can still see you — we'll help you sort out billing afterward.</p>"
+          }
+        },
+        "block-2": {
+          "type": "text",
+          "settings": {
+            "title": "How long is the typical wait?",
+            "text": "<p>Wait times vary depending on patient volume and the severity of cases. We see patients based on medical urgency, not arrival time. Our goal is to minimize your wait while ensuring everyone receives appropriate care.</p>"
+          }
+        },
+        "block-3": {
+          "type": "text",
+          "settings": {
+            "title": "Can out-of-province visitors use urgent care?",
+            "text": "<p>Yes, we welcome patients from outside New Brunswick. You may need to pay at the time of service and submit a claim to your home province for reimbursement. We'll provide all necessary documentation.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "block",
+        "block-0",
+        "block-1",
+        "block-2",
+        "block-3"
+      ],
+      "settings": {
+        "title": "Frequently Asked Questions",
+        "heading_font_size": "heading-medium",
+        "default_open": true,
+        "width": "wrapper",
+        "color_scheme": "scheme-1",
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    },
+    "section-rich-text-notify": {
+      "type": "section-rich-text",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "title": "Be the First to Know",
+            "heading_font_size": "heading-medium",
+            "padding_bottom": 16,
+            "heading_tag": "automatic"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Our urgent care clinic is coming soon. Leave your contact information and we'll notify you when we open our doors.</p>",
+            "text_font_size": "body-medium",
+            "padding_bottom": 16
+          }
+        },
+        "buttons": {
+          "type": "buttons",
+          "settings": {
+            "button_text": "Contact Us",
+            "button_link": "/pages/contact",
+            "button_type": "btn--primary",
+            "button_size": "btn--large",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "padding_bottom": 16
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "text",
+        "buttons"
+      ],
+      "settings": {
+        "align_text": "text-center",
+        "width": "wrapper--narrow",
+        "color_scheme": "scheme-4",
+        "overlay_type": "disabled",
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    }
+  },
+  "order": [
+    "section-divider",
+    "section-hero",
+    "section-text-row-features",
+    "section-rich-text-services",
+    "section-accordion",
+    "section-rich-text-notify"
+  ]
+}

@@ -1,0 +1,232 @@
+/*
+ * ------------------------------------------------------------
+ * Privacy & Trust Page - White Pine Medical
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "section-divider": {
+      "type": "section-divider",
+      "settings": {
+        "show_line": true,
+        "width": "wrapper--full",
+        "color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "main-page": {
+      "type": "main-page",
+      "settings": {
+        "subheading": "Your Privacy & Security Are Our Priority",
+        "show_title": true,
+        "heading_font_size": "heading-large",
+        "show_content": true,
+        "text_font_size": "body-medium",
+        "align_text": "text-center",
+        "width": "wrapper",
+        "color_scheme": "",
+        "padding_top": 50,
+        "padding_bottom": 30,
+        "heading_tag": "automatic"
+      }
+    },
+    "section-text-row-compliance": {
+      "type": "section-text-row",
+      "blocks": {
+        "icon": {
+          "type": "icon",
+          "settings": {
+            "icon_name": "icon-flare",
+            "icon_size": 50,
+            "icon_color": "#1E3A5F",
+            "title": "Multi-Standard Compliance",
+            "heading_font_size": "heading-x-small",
+            "text": "<p>We comply with HIPAA (US), PHIPA (Ontario), and PIPEDA (Canada) — the strictest healthcare privacy laws in North America.</p>",
+            "text_font_size": "body-small",
+            "heading_tag": "automatic"
+          }
+        },
+        "icon-0": {
+          "type": "icon",
+          "settings": {
+            "icon_name": "icon-lock",
+            "icon_size": 50,
+            "icon_color": "#1E3A5F",
+            "title": "Military-Grade Encryption",
+            "heading_font_size": "heading-x-small",
+            "text": "<p>All sensitive patient information is protected with AES-256-GCM encryption, the same standard used by governments and financial institutions.</p>",
+            "text_font_size": "body-small",
+            "heading_tag": "automatic"
+          }
+        },
+        "icon-1": {
+          "type": "icon",
+          "settings": {
+            "icon_name": "icon-award",
+            "icon_size": 50,
+            "icon_color": "#1E3A5F",
+            "title": "Canadian Data Storage",
+            "heading_font_size": "heading-x-small",
+            "text": "<p>Your data is stored exclusively in Microsoft Azure data centers located in Canada, with 24/7 monitoring and redundancy.</p>",
+            "text_font_size": "body-small",
+            "heading_tag": "automatic"
+          }
+        }
+      },
+      "block_order": [
+        "icon",
+        "icon-0",
+        "icon-1"
+      ],
+      "settings": {
+        "title": "How We Protect Your Information",
+        "heading_font_size": "heading-medium",
+        "align_heading": "text-center",
+        "align_text": "text-center",
+        "icon_alignment": "icon--top",
+        "width": "wrapper",
+        "align_columns": "flex-align-top",
+        "layout": "grid",
+        "grid": 3,
+        "layout_mobile": "1",
+        "color_scheme": "scheme-3",
+        "padding_top": 60,
+        "padding_bottom": 60,
+        "heading_tag": "automatic"
+      }
+    },
+    "section-rich-text-data": {
+      "type": "section-rich-text",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "title": "Our Data Protection Approach",
+            "heading_font_size": "heading-medium",
+            "padding_bottom": 16,
+            "heading_tag": "automatic"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Role-Based Access Control</strong></p><p>Your information is compartmentalized. Only clinicians who need clinical information can access it. Your billing information is separate from your medical records. Administrative staff can only see what's necessary for their role.</p><p><strong>Comprehensive Audit Trail</strong></p><p>Every access to your information is logged. If you want to know who viewed your records, we can tell you. Our system tracks all data access for complete accountability.</p><p><strong>Rapid Breach Response</strong></p><p>If a security incident occurs, we notify you and regulators within 72 hours (as required by PIPEDA) and provide guidance on protecting yourself. We maintain detailed procedures for all jurisdictions.</p>",
+            "text_font_size": "body-medium",
+            "padding_bottom": 24
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "text"
+      ],
+      "settings": {
+        "align_text": "text-left",
+        "width": "wrapper--narrow",
+        "color_scheme": "scheme-1",
+        "overlay_type": "disabled",
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    },
+    "section-accordion-rights": {
+      "type": "section-accordion",
+      "blocks": {
+        "block": {
+          "type": "text",
+          "settings": {
+            "title": "Right to Access Your Records",
+            "text": "<p>You have the right to request access to your personal health information. We will respond to your request within 30 days and provide copies of your records in a readable format.</p>"
+          }
+        },
+        "block-0": {
+          "type": "text",
+          "settings": {
+            "title": "Right to Correction",
+            "text": "<p>If you believe any information in your record is inaccurate or incomplete, you can request a correction. We will review your request and make appropriate updates.</p>"
+          }
+        },
+        "block-1": {
+          "type": "text",
+          "settings": {
+            "title": "Right to Restrict Use",
+            "text": "<p>You can request restrictions on how we use or disclose your information for treatment, payment, or healthcare operations, though we may not be able to agree to all requests.</p>"
+          }
+        },
+        "block-2": {
+          "type": "text",
+          "settings": {
+            "title": "Right to Withdraw Consent",
+            "text": "<p>You may withdraw your consent for us to collect, use, or disclose your personal health information at any time, subject to legal or contractual restrictions.</p>"
+          }
+        },
+        "block-3": {
+          "type": "text",
+          "settings": {
+            "title": "Right to File a Complaint",
+            "text": "<p>If you believe your privacy rights have been violated, you may file a complaint with us, or directly with the Office of the Privacy Commissioner of Canada, or the applicable provincial privacy commissioner.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "block",
+        "block-0",
+        "block-1",
+        "block-2",
+        "block-3"
+      ],
+      "settings": {
+        "title": "Your Privacy Rights",
+        "heading_font_size": "heading-medium",
+        "default_open": false,
+        "width": "wrapper",
+        "color_scheme": "scheme-1",
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    },
+    "section-rich-text-contact": {
+      "type": "section-rich-text",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "title": "Contact Our Privacy Officer",
+            "heading_font_size": "heading-medium",
+            "padding_bottom": 16,
+            "heading_tag": "automatic"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p>If you have questions about our privacy practices or wish to exercise any of your privacy rights, please contact us:</p><p><strong>Email:</strong> privacy@whitepinemedical.ca</p><p><strong>General Support:</strong> info@whitepinemedical.ca</p><p>We are committed to addressing your privacy concerns promptly and thoroughly.</p>",
+            "text_font_size": "body-medium",
+            "padding_bottom": 24
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "text"
+      ],
+      "settings": {
+        "align_text": "text-center",
+        "width": "wrapper--narrow",
+        "color_scheme": "scheme-3",
+        "overlay_type": "disabled",
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    }
+  },
+  "order": [
+    "section-divider",
+    "main-page",
+    "section-text-row-compliance",
+    "section-rich-text-data",
+    "section-accordion-rights",
+    "section-rich-text-contact"
+  ]
+}

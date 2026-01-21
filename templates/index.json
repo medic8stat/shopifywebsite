@@ -38,7 +38,7 @@
             "text": {
               "type": "text",
               "settings": {
-                "text": "Unlock A Revolutionary Approach to Health, Longevity, and You",
+                "text": "Transform Your Health with AI-Powered Precision Assessment",
                 "text_font_size": "body-large",
                 "padding_bottom": 8
               },
@@ -48,7 +48,7 @@
               "type": "_group-buttons",
               "name": "Side by side buttons",
               "settings": {
-                "button_text": "Shop Now",
+                "button_text": "View Services",
                 "button_link": "shopify://products/white-pine-medical-longevity-assessment",
                 "button_type": "btn--white",
                 "button_size": "",
@@ -240,7 +240,7 @@
         "buttons": {
           "type": "buttons",
           "settings": {
-            "button_text": "Invest in Your Future Today",
+            "button_text": "Discover Your Health Blueprint",
             "button_link": "shopify://products/white-pine-medical-longevity-assessment",
             "button_type": "btn--primary",
             "button_size": "",
@@ -305,7 +305,7 @@
             "icon_color": "#1E3A5F",
             "title": "Personalized Support",
             "heading_font_size": "heading-x-small",
-            "text": "<p>With six months of expert-led health coaching, you'll turn knowledge into daily wellness — supported by dietitians, coaches, and concierge care.</p>",
+            "text": "<p>With up to 12 months of expert-led health coaching, you'll turn knowledge into daily wellness — supported by dietitians, coaches, and concierge care.</p>",
             "text_font_size": "body-small",
             "heading_tag": "automatic"
           }
@@ -355,7 +355,7 @@
         "text": {
           "type": "text",
           "settings": {
-            "text": "<p>Our holistic health assessment isn't just a process — it's the result of visionary thinking and deep clinical insight. Designed by healthcare innovators and powered by James AI, this unique system brings together the best of both worlds: human experience and artificial intelligence.</p><p>From in-depth virtual assessments to advanced biological testing and elite in-person evaluations, every phase is crafted to deliver unmatched precision, personalization, and long-term results.</p><p>Meet the mind behind this innovation — where science, care, and technology align to guide you toward your most vibrant life.</p>",
+            "text": "<p>Our holistic health assessment isn't just a process — it's the result of deep clinical insight and physician expertise. Designed by healthcare innovators and powered by our next-generation electronic health record, this unique system brings together the best of both worlds: human experience and artificial intelligence.</p><p>From in-depth virtual assessments to advanced biological testing and comprehensive in-person evaluations, every phase is crafted to deliver research-backed precision, personalization, and long-term results.</p><p>Meet the mind behind this innovation — where science, care, and technology align to guide you toward your healthiest, most capable self.</p>",
             "text_font_size": "body-medium",
             "padding_bottom": 24
           }
@@ -363,7 +363,7 @@
         "buttons": {
           "type": "buttons",
           "settings": {
-            "button_text": "Shop Now",
+            "button_text": "View Services",
             "button_link": "shopify://products/white-pine-medical-longevity-assessment",
             "button_type": "btn--primary",
             "button_size": "",
@@ -424,7 +424,7 @@
         "buttons": {
           "type": "buttons",
           "settings": {
-            "button_text": "Shop Now",
+            "button_text": "View Services",
             "button_link": "shopify://products/white-pine-medical-longevity-assessment",
             "button_type": "btn--primary",
             "button_size": "",
@@ -464,7 +464,7 @@
             "image": "shopify://shop_images/1_d206f190-2839-4fa0-bc61-1861f37b2a39.jpg",
             "image_width": 100,
             "image_shape": "normal",
-            "title": "Phase 1: James AI Health Analysis",
+            "title": "Phase 1: AI Health Analysis",
             "heading_font_size": "heading-small",
             "text": "<p>Our proprietary AI gathers your complete health history—medical background, lifestyle factors, psychological patterns, and risk assessments for major diseases.</p>",
             "text_font_size": "body-small",
@@ -612,7 +612,7 @@
         "buttons": {
           "type": "buttons",
           "settings": {
-            "button_text": "Shop Now",
+            "button_text": "View Services",
             "button_link": "shopify://products/white-pine-medical-longevity-assessment",
             "button_type": "btn--primary",
             "button_size": "",
@@ -769,8 +769,8 @@
         "block-0": {
           "type": "text",
           "settings": {
-            "title": "Who is James AI, and how does it work?",
-            "text": "<p>James is our intelligent AI system that conducts a comprehensive 2-hour health analysis, collecting detailed data about your lifestyle, sleep, medical history, and more — creating a personalized foundation for your wellness journey.</p>"
+            "title": "How does the AI health analysis work?",
+            "text": "<p>Our next-generation electronic health record conducts a comprehensive 2-hour health analysis, collecting detailed data about your lifestyle, sleep, medical history, and more — creating a personalized foundation for your wellness journey.</p>"
           }
         },
         "block-1": {
@@ -784,7 +784,7 @@
           "type": "text",
           "settings": {
             "title": "What kind of support will I receive after the assessment?",
-            "text": "<p>You'll receive six months of personalized coaching from a Gut Health Dietitian and a certified Health Coach, covering nutrition, exercise, sleep, and emotional wellness.</p>"
+            "text": "<p>You'll receive up to 12 months of personalized coaching from a Gut Health Dietitian and a certified Health Coach, covering nutrition, exercise, sleep, and emotional wellness.</p>"
           }
         },
         "block-3": {
