@@ -4,12 +4,29 @@ All notable changes to the White Pine Medical Shopify website will be documented
 
 ---
 
+## [2026-01-21] - Services Page Hero Redesign (v6.0.5)
+
+### Changed
+
+- **Services page hero** - Redesigned layout to avoid text color issues:
+  - Hero section now image-only (woodland photo with opacity overlay, no text)
+  - Added new navy banner section below hero with "Our Services" heading and subtitle in white text
+  - Clean separation: image at top, text on navy background below
+- **Color scheme-2** - Restored original navy background (`#1E3A5F`) for proper banner display
+
+### Technical
+
+- Added `services-banner` section (type: `section-rich-text`) using scheme-2
+- Removed heading/text blocks from hero section
+- Updated section order to: hero → services-banner → how-care-works
+
+---
+
 ## [2026-01-21] - Hero Image Transparency Fix (v6.0.4)
 
 ### Fixed
 
-- **Services page hero image** - Changed scheme-2 background from opaque navy (`#1E3A5F`) to transparent (`rgba(0,0,0,0)`) so woodland image now shows through with white text overlay
-- **Color scheme-2** - Now has transparent background, allowing hero images to display properly while maintaining white text for readability
+- **Services page hero image** - Attempted transparent background approach (superseded by v6.0.5 redesign)
 
 ---
 

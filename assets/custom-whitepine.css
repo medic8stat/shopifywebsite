@@ -104,3 +104,25 @@
 .navlink--ehr-btn:hover {
   background-color: var(--BTN-SECONDARY-BG-BRIGHTER, #1E3A5F) !important;
 }
+
+/* ============================================
+   SERVICES PAGE HERO - White text on image
+   Force white text when no color scheme is set
+   ============================================ */
+
+/* Target Services page hero section without color scheme */
+.index-hero.color- .hero__content,
+.index-hero:not([class*="color-scheme"]) .hero__content {
+  --text: #ffffff !important;
+  --text-light: rgba(255,255,255,0.8) !important;
+  color: #ffffff !important;
+}
+
+.index-hero.color- .hero__title,
+.index-hero.color- .hero__text,
+.index-hero.color- .hero__content p,
+.index-hero:not([class*="color-scheme"]) .hero__title,
+.index-hero:not([class*="color-scheme"]) .hero__text,
+.index-hero:not([class*="color-scheme"]) .hero__content p {
+  color: #ffffff !important;
+}

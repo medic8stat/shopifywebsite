@@ -11,29 +11,8 @@
   "sections": {
     "hero": {
       "type": "section-hero",
-      "blocks": {
-        "heading": {
-          "type": "heading",
-          "settings": {
-            "title": "Our Services",
-            "heading_font_size": "heading-x-large",
-            "heading_tag": "h1",
-            "padding_bottom": 12
-          }
-        },
-        "text": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Physician-led assessment with optional individual testing</p>",
-            "text_font_size": "body-large",
-            "padding_bottom": 8
-          }
-        }
-      },
-      "block_order": [
-        "heading",
-        "text"
-      ],
+      "blocks": {},
+      "block_order": [],
       "settings": {
         "image_1": "shopify://shop_images/pexels-jakkel-418831.jpg",
         "link": "",
@@ -43,12 +22,46 @@
         "content_width": 70,
         "mobile_height": "four-fifty-height-hero--mobile",
         "flex_align_mobile": "align--middle-center-mobile",
-        "color_scheme": "scheme-2",
+        "color_scheme": "",
         "show_text_background": false,
         "overlay_type": "opacity",
         "padding_top": 0,
         "padding_bottom": 0,
         "show_placeholder": true
+      }
+    },
+    "services-banner": {
+      "type": "section-rich-text",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "title": "Our Services",
+            "heading_font_size": "heading-x-large",
+            "padding_bottom": 8,
+            "heading_tag": "h1"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Physician-led assessment with optional individual testing</p>",
+            "text_font_size": "body-large",
+            "padding_bottom": 0
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "text"
+      ],
+      "settings": {
+        "align_text": "text-center",
+        "width": "wrapper--full",
+        "color_scheme": "scheme-2",
+        "overlay_type": "disabled",
+        "padding_top": 40,
+        "padding_bottom": 40
       }
     },
     "how-care-works": {
@@ -945,6 +958,7 @@
   },
   "order": [
     "hero",
+    "services-banner",
     "how-care-works",
     "concierge-assessment",
     "individual-assessments-intro",
