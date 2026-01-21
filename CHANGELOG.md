@@ -4,6 +4,32 @@ All notable changes to the White Pine Medical Shopify website will be documented
 
 ---
 
+## [2026-01-21] - Corporate Wellness Page & Navigation Updates (v6.0.6)
+
+### Added
+
+- **`templates/page.corporate-wellness-longevity-services.json`** (NEW) - Dedicated template for corporate wellness page:
+  - Full-width hero with image background (slideshow-nested format like homepage)
+  - "Corporate Wellness" heading with "Physician-led longevity assessments for your team" subtitle
+  - 3-column benefits section (Comprehensive Assessments, Measurable ROI, Flexible Programs)
+  - 3-step "How It Works" process with images
+  - Corporate Services list
+  - CTA section
+
+### Changed
+
+- **Corporate wellness ROI messaging** - Updated to: "For every dollar invested in preventative health and longevity wellness services, organizations save approximately four dollars in recruitment, retention, and absenteeism costs."
+- **Main navigation font size** - Increased from default to 16px (18px on wide screens) with bolder weight for better visibility
+- **Footer** - Added "Legal" section pointing to `footer-legal` menu for Privacy & Trust link
+- **Privacy & Trust** - Moved from main navigation to footer (via Shopify Admin menu changes)
+
+### Technical
+
+- Updated `assets/custom-whitepine.css` with navigation font styling
+- Updated `sections/group-footer.json` with Legal linklist block
+
+---
+
 ## [2026-01-21] - Services Page Hero Redesign (v6.0.5)
 
 ### Changed
