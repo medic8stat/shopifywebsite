@@ -94,7 +94,23 @@ git push
 | Theme | ID | Role |
 |-------|-----|------|
 | Broadcast | 182960718119 | Development/Staging - PUSH HERE |
-| TS Media Design | 178766348583 | Live - NEVER PUSH DIRECTLY |
+| Copy of TS Media Design | 182960324903 | Currently LIVE - DO NOT PUSH DIRECTLY |
+| TS Media Design | 178766348583 | Old live theme (unpublished) |
+
+### Preview URLs
+
+- **Broadcast (dev) preview:** <https://whitepinemedical.myshopify.com/?preview_theme_id=182960718119>
+- **Live site:** <https://www.whitepinemedical.ca>
+
+### Verification After Deploy
+
+After pushing to Broadcast, always verify changes at the preview URL:
+
+```text
+https://whitepinemedical.myshopify.com/?preview_theme_id=182960718119
+```
+
+The live site (whitepinemedical.ca) will NOT show changes until you publish the Broadcast theme.
 
 ## Important Notes
 - Images are stored in Shopify CDN, referenced as `shopify://shop_images/filename.jpg`
