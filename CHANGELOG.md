@@ -9,6 +9,7 @@ All notable changes to the White Pine Medical Shopify website will be documented
 ### Added
 - **Privacy & Trust Page** (`page.privacy-trust.json`) - New page explaining data protection, compliance (HIPAA, PHIPA, PIPEDA), and patient rights
 - **Urgent Care Page** (`page.urgent-care.json`) - Coming Soon page for walk-in urgent care services with Medicare coverage info
+- **CLAUDE.md Development Rules** - Added critical workflow rules: NEVER push to live theme, always use Broadcast theme for development
 
 ### Changed
 - **Hero Subheadline** - Changed from "Unlock A Revolutionary Approach..." to "Transform Your Health with AI-Powered Precision Assessment"

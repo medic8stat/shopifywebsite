@@ -46,6 +46,19 @@ This is the Shopify storefront for **White Pine Medical**, a health and longevit
 
 ## Development Workflow
 
+### CRITICAL RULES - READ FIRST
+
+> **NEVER push directly to the live theme (TS Media Design #178766348583)!**
+>
+> Always work with the **Broadcast theme (#182960718119)** for development and testing.
+
+**Deployment Process:**
+1. Make changes locally
+2. Test with dev server
+3. Push to GitHub
+4. Push to Broadcast theme (NOT live theme)
+5. When ready to go live: **Publish the Broadcast theme**
+
 ### Start Dev Server
 ```bash
 cd ~/shopify-themes/broadcast
@@ -55,9 +68,16 @@ This provides:
 - Local preview: http://127.0.0.1:9292
 - Auto-sync on file changes
 
-### Push to Shopify (without dev server)
+### Push to Broadcast Theme (Development/Staging)
 ```bash
-shopify theme push --store whitepinemedical.myshopify.com
+# ALWAYS use the Broadcast theme ID - NEVER the live theme
+shopify theme push --theme 182960718119 --store whitepinemedical.myshopify.com
+```
+
+### Publish Broadcast Theme (Make it Live)
+```bash
+# Only when ready to deploy to production
+shopify theme publish --theme 182960718119 --store whitepinemedical.myshopify.com
 ```
 
 ### Git Workflow
@@ -67,6 +87,12 @@ git add .
 git commit -m "Description of changes"
 git push
 ```
+
+### Theme IDs Reference
+| Theme | ID | Role |
+|-------|-----|------|
+| Broadcast | 182960718119 | Development/Staging - PUSH HERE |
+| TS Media Design | 178766348583 | Live - NEVER PUSH DIRECTLY |
 
 ## Important Notes
 - Images are stored in Shopify CDN, referenced as `shopify://shop_images/filename.jpg`
