@@ -128,9 +128,26 @@
 }
 
 /* ============================================
-   MAIN NAVIGATION - Larger font size
-   Make nav items more prominent
+   MAIN NAVIGATION - Two-row layout with larger font
+   Make nav items more prominent and easier to read
    ============================================ */
+
+/* Allow nav to wrap onto multiple lines */
+.header__desktop__bar__l,
+.header__desktop__bar nav,
+.header__desktop nav {
+  flex-wrap: wrap !important;
+  justify-content: center !important;
+  max-width: 100% !important;
+}
+
+/* Nav container - allow wrapping */
+.header__desktop__bar__l ul,
+.header__desktop nav ul {
+  flex-wrap: wrap !important;
+  justify-content: center !important;
+  gap: 0 !important;
+}
 
 /* Desktop navigation links - larger font */
 .header__desktop__upper .navlink,
@@ -139,7 +156,7 @@
 .header__desktop__bar__r .navlink,
 .header .navlink,
 .header__desktop .navlink {
-  font-size: 16px !important;
+  font-size: 17px !important;
   font-weight: 600 !important;
   letter-spacing: 0.02em !important;
 }
@@ -152,19 +169,26 @@
   .header__desktop__bar__r .navlink,
   .header .navlink,
   .header__desktop .navlink {
-    font-size: 18px !important;
+    font-size: 19px !important;
   }
 }
 
-/* Maintain spacing between larger nav items */
+/* Spacing between nav items */
 .header__desktop__bar__l .navlink,
 .header__desktop .navlink {
-  padding: 10px 16px !important;
+  padding: 8px 14px !important;
 }
 
 @media only screen and (min-width: 1200px) {
   .header__desktop__bar__l .navlink,
   .header__desktop .navlink {
-    padding: 10px 20px !important;
+    padding: 8px 18px !important;
   }
+}
+
+/* Give nav area more vertical space for two rows */
+.header__desktop__bar__l,
+.header__desktop__bar {
+  padding-top: 10px !important;
+  padding-bottom: 10px !important;
 }
