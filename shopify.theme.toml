@@ -5,18 +5,13 @@
 # CRITICAL RULES:
 # - NEVER push to production theme (TS Media Design #178766348583)
 # - ALWAYS use the broadcast environment for development
-# - JSON files are ignored to protect customizer settings
+# - Claude Code manages ALL content via shopify-content.mjs
 
 [environments.broadcast]
 # Development/Staging theme - SAFE TO PUSH
 store = "whitepinemedical.myshopify.com"
 theme = "182960718119"
-ignore = [
-  "config/settings_data.json",
-  "templates/*.json",
-  "sections/group-header.json",
-  "sections/group-footer.json"
-]
+# No ignore rules - Claude Code is the source of truth for all files
 
 [environments.production]
 # DANGER: Live theme - DO NOT USE FOR DEVELOPMENT
