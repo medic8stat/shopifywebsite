@@ -258,9 +258,12 @@
 
 {%- capture cta -%}
   {%- if section.settings.enable_call_to_action and section.settings.button_text != blank -%}
-    <div class="header__desktop__button header__desktop__button--cta">
+    <div class="header__desktop__button header__desktop__button--cta" style="display: flex; gap: 10px;">
       <a class="btn btn--small btn--solid {{ section.settings.button_type }}" href="{{ section.settings.button_link }}">
         <span>{{ section.settings.button_text | escape }}</span>
+      </a>
+      <a class="btn btn--small btn--solid btn--secondary" href="https://app.whitepinemedical.ca">
+        <span>Clinician EHR</span>
       </a>
     </div>
   {%- endif -%}

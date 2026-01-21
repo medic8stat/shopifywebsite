@@ -131,7 +131,7 @@
         "main_menu_linklist": "new-clean-menu",
         "enable_call_to_action": true,
         "button_text": "Patient Portal",
-        "button_link": "https://ehr.whitepinemedical.com/patient",
+        "button_link": "https://portal.whitepinemedical.ca",
         "button_type": "btn--primary",
         "show_social_icons": false,
         "secondary_menu_linklist": "",
