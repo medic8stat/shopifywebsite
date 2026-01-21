@@ -120,7 +120,7 @@
           "type": "buttons",
           "settings": {
             "button_text": "Book a Physician Concierge Assessment",
-            "button_url": "/pages/contact",
+            "button_url": "/products/physician-concierge-assessment",
             "button_type": "btn--primary",
             "button_size": "btn--large",
             "button_style": "btn--solid",
@@ -384,8 +384,8 @@
           "type": "question",
           "settings": {
             "default_open": false,
-            "title": "VO2 Max Testing",
-            "content": "<p>Gold-standard assessment of aerobic fitness and cardiovascular capacity. This test measures your body's maximum oxygen uptake during intense exercise, providing critical insights into your cardiovascular health and endurance potential.</p>",
+            "title": "VO₂ Max Performance Assessment — $349",
+            "content": "<p><strong>Why it matters:</strong> VO₂ max is one of the strongest functional biomarkers of healthspan; higher values are associated with greater vitality, resilience, and long-term survival.</p><p><strong>What it is:</strong> A gold-standard assessment of aerobic fitness that measures how efficiently your body uses oxygen during exercise. Ideal for longevity planning, cardiovascular fitness benchmarking, and performance optimization.</p><p><strong>Duration:</strong> 60 minutes | Delivered by Kinesiologist / Exercise Physiologist</p>",
             "show_icon": true,
             "icon_name": "icon-heart",
             "icon_size": 20,
@@ -396,8 +396,8 @@
           "type": "question",
           "settings": {
             "default_open": false,
-            "title": "Submaximal Fitness Testing",
-            "content": "<p>A less intensive alternative to VO2 max testing that estimates cardiovascular fitness without pushing to maximum exertion. Ideal for those new to fitness testing or with certain health considerations.</p>",
+            "title": "Submaximal Cardiorespiratory Fitness Assessment — $249",
+            "content": "<p><strong>Why it matters:</strong> Helps you improve energy, confidence, and cardiovascular health without pushing to maximal limits — ideal for safer fitness benchmarking.</p><p><strong>What it is:</strong> A lower-intensity alternative to VO₂ max testing that estimates aerobic fitness without requiring maximal effort. Suitable for individuals returning to exercise or preferring a gentler assessment.</p><p><strong>Duration:</strong> 45 minutes | Delivered by Kinesiologist / Exercise Physiologist</p>",
             "show_icon": true,
             "icon_name": "icon-heart",
             "icon_size": 20,
@@ -408,8 +408,8 @@
           "type": "question",
           "settings": {
             "default_open": false,
-            "title": "Resting ECG",
-            "content": "<p>Electrocardiogram recording of your heart's electrical activity at rest. Screens for arrhythmias, conduction abnormalities, and other cardiac conditions that may require attention.</p>",
+            "title": "Resting 12-Lead ECG Screening — $129",
+            "content": "<p><strong>Why it matters:</strong> Provides reassurance and early detection — particularly with palpitations, family history of heart disease, or before starting structured exercise.</p><p><strong>What it is:</strong> A resting heart rhythm and electrical activity screen. This assessment is non-diagnostic and may be used as part of broader cardiovascular screening or prior to exercise testing.</p><p><strong>Duration:</strong> 15 minutes | Delivered by LPN</p>",
             "show_icon": true,
             "icon_name": "icon-heart",
             "icon_size": 20,
@@ -420,8 +420,8 @@
           "type": "question",
           "settings": {
             "default_open": false,
-            "title": "Exercise ECG (Stress Test)",
-            "content": "<p>Monitors heart rhythm and function during physical exertion. Reveals how your heart responds to stress and can identify issues not apparent at rest, including exercise-induced arrhythmias.</p>",
+            "title": "Exercise ECG (Non-Imaging Stress Test) — $229",
+            "content": "<p><strong>Why it matters:</strong> Gives you confidence exercising safely by evaluating rhythm response under exertion when symptoms or risk factors warrant reassurance.</p><p><strong>What it is:</strong> Evaluates how your heart responds to physical exertion using continuous ECG and blood-pressure monitoring. Does not include cardiac imaging.</p><p><strong>Duration:</strong> 30 minutes | Delivered by LPN</p>",
             "show_icon": true,
             "icon_name": "icon-heart",
             "icon_size": 20,
@@ -459,8 +459,8 @@
           "type": "question",
           "settings": {
             "default_open": false,
-            "title": "Body Composition Analysis",
-            "content": "<p>Detailed analysis of muscle mass, fat mass, bone density, and body water distribution using advanced scanning technology. Essential for understanding your baseline and tracking progress.</p>",
+            "title": "Body Composition Analysis with Nutrition Interpretation — $199",
+            "content": "<p><strong>Why it matters:</strong> For real progress tracking — especially during weight loss, GLP-1 therapy, or recomposition — so you know whether changes reflect fat loss, muscle preservation, or hydration shifts.</p><p><strong>What it is:</strong> Measures fat mass, lean mass, hydration, and body composition patterns, followed by a personalized interpretation from a nutrition professional to help contextualize results.</p><p><strong>Duration:</strong> 15 min testing + 30 min interpretation | Delivered by LPN/Kinesiologist + Nutritionist</p>",
             "show_icon": true,
             "icon_name": "icon-ruler",
             "icon_size": 20,
@@ -471,8 +471,8 @@
           "type": "question",
           "settings": {
             "default_open": false,
-            "title": "Basal Metabolic Rate (BMR)",
-            "content": "<p>Precise measurement of your resting metabolism - the calories your body burns at rest. Critical data for optimizing nutrition and achieving body composition goals.</p>",
+            "title": "Resting Metabolic Rate (BMR) Test — $229",
+            "content": "<p><strong>Why it matters:</strong> For precision nutrition. Removes guesswork and helps set realistic calorie targets aligned with your actual metabolism.</p><p><strong>What it is:</strong> Measures how many calories your body burns at rest using indirect calorimetry. Useful for weight management, metabolic health, and personalized nutrition planning.</p><p><strong>Duration:</strong> 30 minutes | Delivered by LPN or Kinesiologist</p>",
             "show_icon": true,
             "icon_name": "icon-flare",
             "icon_size": 20,
@@ -483,8 +483,8 @@
           "type": "question",
           "settings": {
             "default_open": false,
-            "title": "Metabolic Flexibility Testing",
-            "content": "<p>Assesses your body's ability to switch between burning carbohydrates and fats for fuel. Key indicator of metabolic health and efficiency, with implications for weight management and energy levels.</p>",
+            "title": "Metabolic Flexibility Assessment — $249",
+            "content": "<p><strong>Why it matters:</strong> For metabolic health and stable energy. Identifies whether your body efficiently uses fat — relevant for insulin resistance risk and energy crashes.</p><p><strong>What it is:</strong> Assesses how efficiently your body switches between fat and carbohydrate fuel sources — an early marker of metabolic health.</p><p><strong>Duration:</strong> 45 minutes | Delivered by LPN or Kinesiologist</p>",
             "show_icon": true,
             "icon_name": "icon-flare",
             "icon_size": 20,
@@ -521,8 +521,8 @@
           "type": "question",
           "settings": {
             "default_open": false,
-            "title": "VR Vision Assessment",
-            "content": "<p>Advanced virtual reality-based vision testing that goes beyond standard eye exams. Evaluates visual processing, peripheral vision, depth perception, and visual-motor integration.</p>",
+            "title": "Virtual Reality Vision Performance Screening — $179",
+            "content": "<p><strong>Why it matters:</strong> For safety, confidence, and performance — particularly for driving, sport, or concussion history.</p><p><strong>What it is:</strong> A functional vision assessment evaluating depth perception, peripheral awareness, and reaction speed using virtual-reality technology.</p><p><strong>Duration:</strong> 30 minutes | Delivered by LPN</p>",
             "show_icon": true,
             "icon_name": "icon-flare",
             "icon_size": 20,
@@ -533,8 +533,8 @@
           "type": "question",
           "settings": {
             "default_open": false,
-            "title": "Hearing Assessment",
-            "content": "<p>Comprehensive audiometric testing to evaluate hearing across all frequencies. Early detection of hearing changes allows for intervention before significant impact on quality of life.</p>",
+            "title": "Hearing Screening (Non-Diagnostic) — $179",
+            "content": "<p><strong>Why it matters:</strong> For communication, work performance, and brain health. Early hearing changes often go unnoticed but carry long-term cognitive load.</p><p><strong>What it is:</strong> Screens hearing clarity and speech-in-noise perception. This test does not replace formal audiology but can identify early changes.</p><p><strong>Duration:</strong> 30 minutes | Delivered by LPN or Kinesiologist</p>",
             "show_icon": true,
             "icon_name": "icon-chat",
             "icon_size": 20,
@@ -545,8 +545,8 @@
           "type": "question",
           "settings": {
             "default_open": false,
-            "title": "Reaction Time Testing",
-            "content": "<p>Measures cognitive processing speed and neuromuscular response time. Important indicator of brain health and nervous system function, with implications for safety and performance.</p>",
+            "title": "Reaction Time & Cognitive Response Test — $149",
+            "content": "<p><strong>Why it matters:</strong> For performance, safety, and recovery monitoring in sport, work, and aging.</p><p><strong>What it is:</strong> Measures visual and auditory reaction speed and cognitive-motor coordination — important for aging, sport, and performance.</p><p><strong>Duration:</strong> 30 minutes | Delivered by Kinesiologist</p>",
             "show_icon": true,
             "icon_name": "icon-lightning",
             "icon_size": 20,
@@ -557,8 +557,8 @@
           "type": "question",
           "settings": {
             "default_open": false,
-            "title": "Balance Assessment",
-            "content": "<p>Evaluates vestibular function, proprioception, and postural stability. Critical for fall prevention and maintaining independence, especially as we age.</p>",
+            "title": "Balance & Proprioception Assessment — $179",
+            "content": "<p><strong>Why it matters:</strong> For fall-risk prevention and athletic readiness. Balance declines quietly; measuring it enables targeted improvement.</p><p><strong>What it is:</strong> Evaluates balance, coordination, and fall-risk indicators using structured movement tasks.</p><p><strong>Duration:</strong> 30 minutes | Delivered by Kinesiologist</p>",
             "show_icon": true,
             "icon_name": "icon-check-circle",
             "icon_size": 20,
@@ -596,8 +596,8 @@
           "type": "question",
           "settings": {
             "default_open": false,
-            "title": "Grip Strength Testing",
-            "content": "<p>Simple yet powerful biomarker of overall health and longevity. Grip strength correlates strongly with cardiovascular health, cognitive function, and mortality risk.</p>",
+            "title": "Grip Strength Assessment — $99",
+            "content": "<p><strong>Why it matters:</strong> For functional aging and resilience. Grip strength correlates with independence and overall strength.</p><p><strong>What it is:</strong> A quick, evidence-based measure of muscular strength associated with functional health and aging.</p><p><strong>Duration:</strong> 15 minutes | Delivered by Kinesiologist</p>",
             "show_icon": true,
             "icon_name": "icon-award",
             "icon_size": 20,
@@ -608,8 +608,8 @@
           "type": "question",
           "settings": {
             "default_open": false,
-            "title": "Lower-Limb Power Assessment",
-            "content": "<p>Measures explosive strength and power generation in the legs. Critical for mobility, fall prevention, and maintaining functional independence throughout life.</p>",
+            "title": "Lower-Limb Power Assessment — $149",
+            "content": "<p><strong>Why it matters:</strong> For strength, speed, and prevention of functional decline.</p><p><strong>What it is:</strong> Assesses lower-body power using structured movement tasks with appropriate warm-up. Useful for performance and functional aging.</p><p><strong>Duration:</strong> 20 minutes | Delivered by Kinesiologist</p>",
             "show_icon": true,
             "icon_name": "icon-lightning",
             "icon_size": 20,
@@ -620,8 +620,8 @@
           "type": "question",
           "settings": {
             "default_open": false,
-            "title": "Functional Movement Screen (FMS)",
-            "content": "<p>Systematic evaluation of movement patterns to identify asymmetries, limitations, and injury risk. Foundation for developing safe, effective exercise programming.</p>",
+            "title": "Functional Movement Screen — $199",
+            "content": "<p><strong>Why it matters:</strong> For injury prevention and better training outcomes.</p><p><strong>What it is:</strong> A detailed screen of mobility, stability, and movement quality to identify limitations and asymmetries.</p><p><strong>Duration:</strong> 45 minutes | Delivered by Kinesiologist</p>",
             "show_icon": true,
             "icon_name": "icon-check",
             "icon_size": 20,
@@ -632,8 +632,8 @@
           "type": "question",
           "settings": {
             "default_open": false,
-            "title": "RunEasi Gait Analysis",
-            "content": "<p>Advanced biomechanical analysis of walking and running patterns. Identifies inefficiencies and injury risk factors, with personalized recommendations for improvement.</p>",
+            "title": "RunEasi AI Gait & Movement Analysis — $249",
+            "content": "<p><strong>Why it matters:</strong> For movement efficiency, pain reduction, and injury prevention.</p><p><strong>What it is:</strong> AI-assisted analysis of walking, running, and jumping mechanics to identify efficiency patterns and movement risks.</p><p><strong>Duration:</strong> 45 minutes | Delivered by Kinesiologist</p>",
             "show_icon": true,
             "icon_name": "icon-fast-shipment",
             "icon_size": 20,
@@ -671,8 +671,8 @@
           "type": "question",
           "settings": {
             "default_open": false,
-            "title": "Blood Pressure Screening",
-            "content": "<p>Comprehensive blood pressure evaluation including resting, orthostatic, and ambulatory monitoring options. Identifies hypertension patterns that standard office readings may miss.</p>",
+            "title": "Blood Pressure & Vascular Screening — $79",
+            "content": "<p><strong>Why it matters:</strong> For early prevention. High blood pressure is common and often silent.</p><p><strong>What it is:</strong> Standardized blood-pressure assessment with optional postural testing to assess cardiovascular regulation.</p><p><strong>Duration:</strong> 10 minutes | Delivered by LPN</p>",
             "show_icon": true,
             "icon_name": "icon-heart",
             "icon_size": 20,
@@ -683,8 +683,8 @@
           "type": "question",
           "settings": {
             "default_open": false,
-            "title": "Heart Rate Variability (HRV)",
-            "content": "<p>Analysis of beat-to-beat heart rate variations to assess autonomic nervous system function. Key indicator of stress resilience, recovery capacity, and overall health.</p>",
+            "title": "Heart Rate Variability (HRV) Assessment — $189",
+            "content": "<p><strong>Why it matters:</strong> For stress and recovery management.</p><p><strong>What it is:</strong> Analyzes autonomic nervous system balance using wearable data uploads and clinical interpretation.</p><p><strong>Duration:</strong> 20 minutes | Delivered by Clinician review</p>",
             "show_icon": true,
             "icon_name": "icon-heart",
             "icon_size": 20,
@@ -695,8 +695,8 @@
           "type": "question",
           "settings": {
             "default_open": false,
-            "title": "Ankle-Brachial Pressure Index (ABPI)",
-            "content": "<p>Non-invasive screening for peripheral arterial disease by comparing blood pressure in arms and ankles. Early indicator of cardiovascular risk and arterial health.</p>",
+            "title": "Ankle-Brachial Pressure Index (ABPI) — $149",
+            "content": "<p><strong>Why it matters:</strong> For vascular aging insight and prevention planning.</p><p><strong>What it is:</strong> Screens circulation in the legs using blood-pressure comparisons between arms and ankles.</p><p><strong>Duration:</strong> 20 minutes | Delivered by LPN</p>",
             "show_icon": true,
             "icon_name": "icon-heart",
             "icon_size": 20,
@@ -733,8 +733,8 @@
           "type": "question",
           "settings": {
             "default_open": false,
-            "title": "Spirometry & Lung Age",
-            "content": "<p>Comprehensive pulmonary function testing measuring lung capacity, airflow, and respiratory efficiency. Calculates your 'lung age' compared to healthy populations, identifying early changes in respiratory health.</p>",
+            "title": "Spirometry & Lung Age Assessment — $169",
+            "content": "<p><strong>Why it matters:</strong> For breathing capacity and early detection of airflow limitation.</p><p><strong>What it is:</strong> Measures lung airflow and estimates lung age using standardized breathing tests.</p><p><strong>Duration:</strong> 30 minutes | Delivered by LPN or Respiratory Therapist</p>",
             "show_icon": true,
             "icon_name": "icon-cloud",
             "icon_size": 20,
@@ -756,35 +756,23 @@
         "padding_bottom": 20
       }
     },
-    "assessments-digital": {
+    "assessments-blood": {
       "type": "section-accordion-group",
       "blocks": {
         "heading": {
           "type": "heading",
           "settings": {
-            "title": "Digital & Algorithmic"
+            "title": "Blood & Laboratory Services"
           }
         },
-        "longevity-snapshots": {
+        "blood-coordination": {
           "type": "question",
           "settings": {
             "default_open": false,
-            "title": "Longevity Snapshots",
-            "content": "<p>Advanced analysis combining multiple biomarkers and health data to estimate biological age and predict healthspan. Provides actionable insights for longevity optimization.</p>",
+            "title": "Blood Testing — Administrative & Coordination Service — $50",
+            "content": "<p><strong>Why it matters:</strong> For convenience and speed when results are needed to guide decisions.</p><p><strong>What it is:</strong> Administrative coordination for next-day blood testing appointments, including requisition handling.</p><p><strong>Duration:</strong> 10 minutes | Delivered by LPN / Admin</p>",
             "show_icon": true,
-            "icon_name": "icon-flare",
-            "icon_size": 20,
-            "icon_color": "#1e3a5f"
-          }
-        },
-        "digital-cognitive": {
-          "type": "question",
-          "settings": {
-            "default_open": false,
-            "title": "Digital Cognitive Assessment",
-            "content": "<p>Validated digital tools measuring memory, attention, processing speed, and executive function. Establishes baseline cognitive performance and tracks changes over time.</p>",
-            "show_icon": true,
-            "icon_name": "icon-smile",
+            "icon_name": "icon-droplet",
             "icon_size": 20,
             "icon_color": "#1e3a5f"
           }
@@ -792,8 +780,7 @@
       },
       "block_order": [
         "heading",
-        "longevity-snapshots",
-        "digital-cognitive"
+        "blood-coordination"
       ],
       "settings": {
         "heading_font_size": "heading-small",
@@ -805,21 +792,83 @@
         "padding_bottom": 20
       }
     },
+    "assessments-digital": {
+      "type": "section-accordion-group",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "title": "Digital & Algorithmic"
+          }
+        },
+        "longevity-snapshot-review": {
+          "type": "question",
+          "settings": {
+            "default_open": false,
+            "title": "Digital Longevity Risk Snapshot — Clinician Review — $350",
+            "content": "<p><strong>Why it matters:</strong> Converts complex health inputs into a clear, actionable snapshot.</p><p><strong>What it is:</strong> An online health and lifestyle questionnaire reviewed by a clinician, resulting in a written summary and risk snapshot.</p><p><strong>Duration:</strong> 15 minutes | Delivered by Physician / Senior Clinician</p>",
+            "show_icon": true,
+            "icon_name": "icon-flare",
+            "icon_size": 20,
+            "icon_color": "#1e3a5f"
+          }
+        },
+        "longevity-snapshot-consult": {
+          "type": "question",
+          "settings": {
+            "default_open": false,
+            "title": "Digital Longevity Risk Snapshot — Physician Consultation — $1,000",
+            "content": "<p><strong>Why it matters:</strong> Translates data into decisions, priorities, and next steps.</p><p><strong>What it is:</strong> Includes the digital assessment plus a one-hour physician consultation to review results and next steps.</p><p><strong>Duration:</strong> 60 minutes | Delivered by Physician</p>",
+            "show_icon": true,
+            "icon_name": "icon-flare",
+            "icon_size": 20,
+            "icon_color": "#1e3a5f"
+          }
+        },
+        "digital-cognitive": {
+          "type": "question",
+          "settings": {
+            "default_open": false,
+            "title": "Digital Cognitive Screening — $379",
+            "content": "<p><strong>Why it matters:</strong> For brain-health tracking and early change detection.</p><p><strong>What it is:</strong> Screening of memory, attention, and executive function with clinician interpretation.</p><p><strong>Duration:</strong> 30 minutes | Delivered by Physician / Senior Clinician</p>",
+            "show_icon": true,
+            "icon_name": "icon-smile",
+            "icon_size": 20,
+            "icon_color": "#1e3a5f"
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "longevity-snapshot-review",
+        "longevity-snapshot-consult",
+        "digital-cognitive"
+      ],
+      "settings": {
+        "heading_font_size": "heading-small",
+        "question_font_size": "heading-x-small",
+        "width": "wrapper",
+        "columns": "1",
+        "color_scheme": "scheme-3",
+        "padding_top": 20,
+        "padding_bottom": 20
+      }
+    },
     "assessments-mental-health": {
       "type": "section-accordion-group",
       "blocks": {
         "heading": {
           "type": "heading",
           "settings": {
-            "title": "Mental Health & Psychiatric"
+            "title": "Psychiatric & Mental Health"
           }
         },
         "online-physician": {
           "type": "question",
           "settings": {
             "default_open": false,
-            "title": "Online Assessment + Physician Review",
-            "content": "<p>Validated mental health screening tools with comprehensive physician interpretation. Covers anxiety, depression, stress, and other common mental health concerns with evidence-based recommendations.</p>",
+            "title": "Psychiatric & Mental Health Screening — Online Review — $399",
+            "content": "<p><strong>Why it matters:</strong> Provides clarity on symptoms and guides next-step support.</p><p><strong>What it is:</strong> Online mental-health screening tools reviewed by a physician, with a written summary report.</p><p><strong>Duration:</strong> Online + 30 minutes | Delivered by Physician</p>",
             "show_icon": true,
             "icon_name": "icon-chat",
             "icon_size": 20,
@@ -830,8 +879,8 @@
           "type": "question",
           "settings": {
             "default_open": false,
-            "title": "In-Person Assessment + Therapist",
-            "content": "<p>Face-to-face mental health evaluation with a licensed therapist. Comprehensive assessment of psychological wellbeing with personalized treatment planning and ongoing support options.</p>",
+            "title": "Psychiatric & Mental Health Screening — In-Person — $500",
+            "content": "<p><strong>Why it matters:</strong> Converts screening into therapeutic support and behaviour change.</p><p><strong>What it is:</strong> Includes online screening tools followed by an in-person session with a psychologist or psychotherapist.</p><p><strong>Duration:</strong> 60 minutes | Delivered by Psychologist / Psychotherapist</p>",
             "show_icon": true,
             "icon_name": "icon-heart",
             "icon_size": 20,
@@ -849,7 +898,7 @@
         "question_font_size": "heading-x-small",
         "width": "wrapper",
         "columns": "1",
-        "color_scheme": "scheme-3",
+        "color_scheme": "scheme-1",
         "padding_top": 20,
         "padding_bottom": 20
       }
@@ -867,8 +916,8 @@
           "type": "question",
           "settings": {
             "default_open": false,
-            "title": "Nutrigenetics Panel",
-            "content": "<p>DNA analysis revealing how your genetics influence nutrient metabolism, food sensitivities, and dietary responses. Enables truly personalized nutrition recommendations based on your unique genetic profile.</p>",
+            "title": "Genetic Panel — Nutrigenetics — $599",
+            "content": "<p><strong>Why it matters:</strong> Helps tailor nutrition strategies where standard advice may not fit.</p><p><strong>What it is:</strong> Kit-based genetic testing focused on nutrition and metabolism, with clinician review.</p>",
             "show_icon": true,
             "icon_name": "icon-leaf",
             "icon_size": 20,
@@ -879,8 +928,8 @@
           "type": "question",
           "settings": {
             "default_open": false,
-            "title": "Cancer Predisposition Screening",
-            "content": "<p>Genetic testing for hereditary cancer syndromes including BRCA and other high-risk variants. Includes genetic counseling to understand results and appropriate screening recommendations.</p>",
+            "title": "Genetic Panel — Cancer Genetics — $699",
+            "content": "<p><strong>Why it matters:</strong> Supports informed screening discussions and prevention planning.</p><p><strong>What it is:</strong> Kit-based genetic testing for targeted cancer-risk screening, with clinician review.</p>",
             "show_icon": true,
             "icon_name": "icon-shield",
             "icon_size": 20,
@@ -891,8 +940,8 @@
           "type": "question",
           "settings": {
             "default_open": false,
-            "title": "Longevity Genetics Panel",
-            "content": "<p>Analysis of genetic variants associated with aging, disease risk, and lifespan. Provides insights into your genetic predispositions with actionable interventions to optimize healthspan.</p>",
+            "title": "Genetic Panel — Longevity & Health Genetics — $699",
+            "content": "<p><strong>Why it matters:</strong> Helps prioritize prevention and lifestyle focus areas.</p><p><strong>What it is:</strong> Kit-based genetic testing for markers related to aging and cardiometabolic health, with clinician review.</p>",
             "show_icon": true,
             "icon_name": "icon-flare",
             "icon_size": 20,
@@ -911,7 +960,7 @@
         "question_font_size": "heading-x-small",
         "width": "wrapper",
         "columns": "1",
-        "color_scheme": "scheme-1",
+        "color_scheme": "scheme-3",
         "padding_top": 20,
         "padding_bottom": 20
       }
@@ -929,8 +978,8 @@
           "type": "question",
           "settings": {
             "default_open": false,
-            "title": "Limited Screening Ultrasound",
-            "content": "<p>Targeted ultrasound examinations for specific screening purposes including carotid artery imaging, abdominal aorta screening, and thyroid evaluation. Non-invasive imaging to detect early changes.</p>",
+            "title": "Limited Screening Ultrasound — $499",
+            "content": "<p><strong>Why it matters:</strong> Provides reassurance and faster decision-making when screening questions arise.</p><p><strong>What it is:</strong> Basic, non-diagnostic ultrasound screening performed for educational and screening purposes.</p><p><strong>Duration:</strong> 30 minutes | Delivered by Physician / Radiographer</p>",
             "show_icon": true,
             "icon_name": "icon-flare",
             "icon_size": 20,
@@ -947,7 +996,7 @@
         "question_font_size": "heading-x-small",
         "width": "wrapper",
         "columns": "1",
-        "color_scheme": "scheme-3",
+        "color_scheme": "scheme-1",
         "padding_top": 20,
         "padding_bottom": 40
       }
@@ -975,8 +1024,8 @@
         "button": {
           "type": "buttons",
           "settings": {
-            "button_text": "Book a Physician Concierge Assessment",
-            "button_url": "/pages/contact",
+            "button_text": "Book a Physician Concierge Assessment — $300",
+            "button_url": "/products/physician-concierge-assessment",
             "button_type": "btn--primary",
             "button_size": "btn--large",
             "button_style": "btn--solid",
@@ -1015,6 +1064,7 @@
     "assessments-strength",
     "assessments-vascular",
     "assessments-respiratory",
+    "assessments-blood",
     "assessments-digital",
     "assessments-mental-health",
     "assessments-genetic",
