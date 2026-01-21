@@ -1,350 +1,227 @@
-# Industry-Leading Patient Onboarding Strategy
+# Website Onboarding Implementation Guide
 
-> **Purpose:** Transform the patient onboarding experience from "good clinical process" to "industry-leading customer journey that maximizes both patient outcomes and revenue."
-
----
-
-## The Gap: Clinical Excellence vs. Customer Experience
-
-**What White Pine Has:**
-- Excellent clinical onboarding (needs assessment, health history, questionnaires)
-- Strong privacy and trust positioning
-- Quality assessment protocol
-
-**What's Missing:**
-- Sales-focused touchpoints
-- Financing options prominently offered
-- Systematic follow-up sequences
-- Urgency and commitment psychology
-- Referral program integration
-- Upsell pathways
+> **Source of Truth:** The master onboarding architecture lives in the EHR repository.
+> This document covers **website-specific implementations only**.
 
 ---
 
-## Industry-Leading Onboarding Framework
+## Relationship to Master Architecture
 
-### The 7-Touch Onboarding Model
+The comprehensive 7-Phase White Pine Onboarding Model is documented in:
+- **EHR Repository:** `docs/PATIENT_ONBOARDING_ARCHITECTURE.md`
+
+This document covers only what needs to be implemented on the **Shopify website**.
+
+---
+
+## What the Website Must Do
+
+The website is responsible for:
+1. **Phase 0 (Pre-Visit Framing):** Welcome email automation
+2. **Lead capture:** Contact form with appropriate routing
+3. **Service explanation:** Concierge appointment page
+4. **Payment processing:** $300 concierge fee + à la carte services
+
+The website is **NOT** responsible for:
+- Clinical onboarding (EHR)
+- Questionnaire reminders (EHR)
+- Results delivery (Patient Portal)
+- Long-term relationship automation (EHR)
+
+---
+
+## Website Implementation Checklist
+
+### 1. Contact Form Updates
+
+**Current:** Generic contact form
+**Required:** Intent-based routing
 
 ```
-AWARENESS → INTEREST → DECISION → PURCHASE → ONBOARD → ENGAGE → ADVOCATE
-    ↓           ↓          ↓          ↓          ↓         ↓         ↓
-  Website    Consult    Payment    Welcome   Clinical   Results   Referral
+Contact Form Fields:
+- Name
+- Email
+- Message
+- Purpose of inquiry (dropdown):
+  - General question
+  - Preventive / longevity care interest
+  - Urgent / unscheduled care question
+  - Media / partnership inquiry
 ```
+
+**Rules:**
+- No health history questions on website
+- No symptom triage
+- Auto-response explaining next steps based on selection
 
 ---
 
-## Phase 1: AWARENESS (Website)
+### 2. Automated Welcome Email (Phase 0)
 
-**Current:** Basic service pages
-**Industry-Leading:**
+**Trigger:** When someone books a Physician Concierge Appointment
 
-| Element | Implementation | Purpose |
-|---------|----------------|---------|
-| **Social Proof Banner** | "Join 500+ patients optimizing their health" | Trust signal |
-| **Urgency Messaging** | "Limited assessment slots available this month" | Scarcity |
-| **Exit Intent Popup** | "Book a free 15-min discovery call" | Lead capture |
-| **Chat Widget** | Live chat or chatbot for questions | Engagement |
-| **Video Testimonials** | Real patient stories (with consent) | Emotional connection |
+**Email must include:**
+- Personal welcome from Dr. French
+- Explanation of dual care streams (private preventive vs. public urgent care)
+- What the concierge session is and is NOT
+- Link to patient portal questionnaire
+- Reassurance about privacy and choice
+- Contact information
 
----
-
-## Phase 2: INTEREST (Discovery/Consultation)
-
-**Current:** $300 concierge call (optional)
-**Industry-Leading:**
-
-### Pre-Consultation Sequence
-```
-Day 0: Booking confirmation email
-  └─ "What to expect on your call"
-  └─ Link to short intake form (5 questions max)
-  └─ Calendar reminder with Zoom link
-
-Day -1: Reminder email
-  └─ "Your call is tomorrow"
-  └─ Brief bio of the physician
-  └─ 1 patient testimonial
-
-Day 0 (2 hours before): SMS reminder
-  └─ "Looking forward to speaking in 2 hours"
-```
-
-### During Consultation
-| Element | Script/Action | Purpose |
-|---------|---------------|---------|
-| **Rapport Building** | 3-5 min personal connection | Trust |
-| **Pain Discovery** | "What brought you here today?" | Emotional anchor |
-| **Future Pacing** | "Imagine 6 months from now..." | Visualization |
-| **Package Presentation** | Present options (Good/Better/Best) | Choice architecture |
-| **Objection Handling** | "What questions do you have?" | Address concerns |
-| **Financing Mention** | "We also offer monthly payments..." | Remove price barrier |
-| **Next Step Close** | "Are you ready to get started today?" | Commitment |
+**Canonical email content** is defined in the EHR onboarding document, Section 15.
 
 ---
 
-## Phase 3: DECISION (Payment Options)
+### 3. Physician Concierge Appointment Page
 
-**Current:** Single price point ($6,995)
-**Industry-Leading:**
+**Price:** $300 CAD
+**Duration:** 60-90 minutes
 
-### Pricing Psychology
+**Page must clearly explain:**
 
-| Package | Price | Positioning |
-|---------|-------|-------------|
-| **Essential Assessment** | $4,995 | Entry point (anchor) |
-| **Complete Longevity** | $6,995 | "Most Popular" (target) |
-| **Premium Concierge** | $9,995 | Aspirational (makes $6,995 feel reasonable) |
+What it IS:
+- One-on-one session to clarify health goals
+- High-level review of current situation
+- Determination of fit with White Pine
+- Value even if patient does not continue
 
-### Payment Options
+What it is NOT:
+- A treatment visit
+- A shortcut to diagnoses or prescriptions
+- A requirement to enroll in ongoing care
 
-| Option | Terms | Psychology |
-|--------|-------|------------|
-| **Pay in Full** | $6,995 | 5% discount ($6,645) |
-| **Two Payments** | $3,600 x 2 | Manageable chunks |
-| **PayBright/Affirm** | $583/mo x 12 | "Less than $20/day" |
-| **Corporate/HSA** | Invoice for reimbursement | B2B friendly |
-
-### Urgency Tactics (Ethical)
-- "Book within 7 days and receive complimentary [bonus]"
-- "Current pricing valid until [date]"
-- "Only 3 assessment slots remaining this month"
+**Canonical copy** is defined in the EHR onboarding document, Section 20.
 
 ---
 
-## Phase 4: PURCHASE (Welcome Sequence)
+### 4. Pricing Strategy (Website-Visible)
 
-**Current:** Manual account creation → Portal invite
-**Industry-Leading:**
+**Publicly displayed prices:**
 
-### Immediate Post-Purchase (0-24 hours)
+| Service | Price | Display Location |
+|---------|-------|------------------|
+| Physician Concierge Appointment | $300 CAD | Dedicated page |
+| Individual à la carte services | Various | Services page |
 
-```
-MINUTE 0: Payment confirmation
-  └─ "Welcome to White Pine Medical!"
-  └─ Receipt with what's included
-  └─ "Here's what happens next" timeline
+**Individual services to list (examples):**
+- Body composition via DEXA
+- Gait analysis
+- Virtual reality vision testing
+- Spirometry
+- Bloodwork panels
+- Powerlifting clinic assessment
 
-MINUTE 5: Account creation email
-  └─ Portal login credentials
-  └─ Link to start onboarding questionnaires
+**NOT displayed publicly:**
+- Comprehensive assessment packages (bespoke, value-based pricing)
+- Corporate wellness packages (50%+ gross margin, negotiated)
 
-HOUR 1: Personal welcome video (from Dr. French)
-  └─ 60-second video: "Thank you for trusting us..."
-  └─ Sets tone for relationship
-
-HOUR 24: Check-in email
-  └─ "Have you started your questionnaires?"
-  └─ Direct link to portal
-  └─ Support contact if issues
-```
-
-### Welcome Package (Physical Mail)
-| Item | Purpose |
-|------|---------|
-| **Welcome Letter** | Personal touch, signed by physician |
-| **Program Guide** | What to expect, timeline, contacts |
-| **Lab Kit** | If applicable, with clear instructions |
-| **Branded Item** | Water bottle, journal, etc. (brand reinforcement) |
+**Rationale:** Packages are discussed only after the concierge appointment, tailored to individual goals and organizational value.
 
 ---
 
-## Phase 5: ONBOARD (Pre-Visit Preparation)
+### 5. Dual Care Stream Messaging
 
-**Current:** Needs assessment questionnaire
-**Industry-Leading:**
+The website must clearly distinguish:
 
-### Questionnaire Completion Sequence
+| Stream | Description | Payment |
+|--------|-------------|---------|
+| **Private Preventive/Longevity** | Structured, goal-based, time-intensive | Private pay |
+| **Public Urgent Care** | Non-life-threatening, unscheduled | Medicare-covered |
 
-```
-Day 1: Initial invite
-  └─ "Start your health journey"
-  └─ Estimated time: 45 minutes
-  └─ Can save and return
-
-Day 3: Progress check (if incomplete)
-  └─ "You're 40% complete!"
-  └─ Link to continue
-
-Day 5: Gentle nudge
-  └─ "Complete by [date] for your upcoming visit"
-  └─ Phone number for assistance
-
-Day 7: Personal outreach (if still incomplete)
-  └─ Phone call or text from staff
-  └─ Offer to complete over phone
-```
-
-### Completion Incentives
-- Progress bar showing completion percentage
-- "Unlock your personalized health insights" messaging
-- Gamification: badges for completing sections
+**Key messaging:**
+> "White Pine Medical operates two connected services. We provide publicly funded urgent care for non-life-threatening problems, and we also offer private, structured preventive and longevity-focused care."
 
 ---
 
-## Phase 6: ENGAGE (Visit & Results)
+### 6. Lead Capture Automation
 
-**Current:** Clinical visit, results review
-**Industry-Leading:**
+**When someone submits contact form with "Preventive / longevity care interest":**
 
-### Pre-Visit (48 hours before)
-```
-Email: "Preparing for Your Assessment"
-  └─ What to wear
-  └─ What to bring
-  └─ Fasting requirements
-  └─ Parking/directions
-  └─ What to expect during the visit
-```
+1. **Immediate auto-response email:**
+   - Thank you for your interest
+   - Brief explanation of concierge model
+   - Link to book Physician Concierge Appointment
+   - Link to FAQ
 
-### Day of Visit
-| Touchpoint | Action | Purpose |
-|------------|--------|---------|
-| **Arrival** | Warm greeting by name | VIP treatment |
-| **Environment** | Calming, non-clinical feel | Reduce anxiety |
-| **During** | Explain each step | Transparency |
-| **After** | Summary of next steps | Clarity |
+2. **If they book concierge appointment:**
+   - Welcome email (Section 2 above)
+   - Portal link for pre-visit questionnaire
 
-### Post-Visit Sequence
-```
-Day 0: Thank you email
-  └─ "Great meeting you today"
-  └─ Timeline for results
-
-Day 7-14: Results ready notification
-  └─ "Your results are in"
-  └─ Book results review call
-
-Post-Review: Action plan email
-  └─ PDF of recommendations
-  └─ Links to resources
-  └─ Coaching schedule
-```
+**Technology options:**
+- Shopify Flow (if available on plan)
+- Klaviyo or similar email automation
+- Azure Communication Services (if integrated with EHR)
 
 ---
 
-## Phase 7: ADVOCATE (Referrals & Retention)
+## What NOT to Build on Website
 
-**Current:** None documented
-**Industry-Leading:**
+Per the master architecture, these belong in the EHR/Portal:
 
-### Referral Program
-
-| Referral Tier | Reward |
-|---------------|--------|
-| **1st Referral** | $500 credit toward coaching/services |
-| **3rd Referral** | Free follow-up assessment ($1,000 value) |
-| **5th Referral** | VIP status + exclusive perks |
-
-### Referral Request Timing
-- After positive results review (emotional high)
-- At 3-month coaching milestone
-- At 6-month check-in
-- On anniversary of enrollment
-
-### Referral Scripts
-```
-Email: "Know someone who could benefit?"
-  └─ "You've seen the results. Who else in your life deserves this?"
-  └─ Easy share link
-  └─ Referral tracking
-
-In-Person: "Who else?"
-  └─ "Many of our patients come from referrals..."
-  └─ "Is there anyone you think would benefit?"
-```
-
-### Retention/Upsell Pathways
-
-| Milestone | Offer |
-|-----------|-------|
-| **3 Months** | "Upgrade to extended coaching" |
-| **6 Months** | "Add corporate wellness for your team" |
-| **12 Months** | "Annual reassessment at 20% loyalty discount" |
+| Feature | Owner | Why Not Website |
+|---------|-------|-----------------|
+| Questionnaire reminders | EHR | Requires portal authentication |
+| Results delivery | Patient Portal | HIPAA/PHIPA compliance |
+| Appointment reminders | EHR | Clinical scheduling system |
+| Long-term check-ins | EHR | Part of clinical relationship |
+| AI health assistant | Patient Portal | Requires authenticated patient context |
 
 ---
 
-## Technology Requirements
+## Epistemic Boundaries (Critical)
 
-### Website (Shopify)
-- [ ] Exit intent popup (lead capture)
-- [ ] Live chat widget
-- [ ] Urgency messaging (limited slots)
-- [ ] Payment plan display on product page
-- [ ] Testimonial videos
+The website must respect preclinical boundaries:
 
-### EHR/Portal Integration
-- [ ] Automated email sequences (Azure Communication Services)
-- [ ] SMS reminders (Twilio or similar)
-- [ ] Questionnaire progress tracking
-- [ ] Referral tracking system
-- [ ] Payment plan integration (PayBright/Affirm)
+**Website CAN:**
+- Explain services
+- Capture contact information
+- Process payments
+- Send welcome materials
+- Route inquiries appropriately
 
-### CRM/Marketing
-- [ ] Lead scoring
-- [ ] Automated follow-up sequences
-- [ ] Referral attribution tracking
-- [ ] NPS surveys at key milestones
+**Website CANNOT:**
+- Collect health history
+- Triage symptoms
+- Suggest diagnoses
+- Recommend tests or treatments
+- Make clinical claims
+
+All preclinical data captured on website is `unverified` and `binding=false` until processed through clinical workflow.
 
 ---
 
-## Quick Wins (Implement This Week)
+## Quick Implementation Tasks
 
-1. **Add financing messaging to website** - "From $583/month" on product page
-2. **Create welcome email sequence** - 3 emails over first 24 hours
-3. **Add urgency to booking** - "Limited slots available"
-4. **Implement questionnaire reminders** - Day 3, 5, 7 nudges
-5. **Ask for referrals** - After every positive results review
+### This Week
+- [ ] Update contact form with purpose dropdown
+- [ ] Create/update Physician Concierge Appointment page with canonical copy
+- [ ] Set up auto-response for contact form submissions
+- [ ] Add dual care stream explanation to homepage or About page
 
----
+### Next Sprint
+- [ ] Implement welcome email automation on booking
+- [ ] Add à la carte services pricing page
+- [ ] Update FAQ with onboarding questions (from EHR doc Section 17)
 
-## Metrics to Track
-
-| Metric | Target | Current |
-|--------|--------|---------|
-| **Lead → Consultation Rate** | 40% | ? |
-| **Consultation → Purchase Rate** | 60% | ? |
-| **Questionnaire Completion Rate** | 95% | ? |
-| **Time to Complete Questionnaires** | <3 days | ? |
-| **Referral Rate** | 30% of patients | ? |
-| **NPS Score** | >70 | ? |
+### Future
+- [ ] Integrate email automation with EHR (Azure Communication Services)
+- [ ] Add physician welcome video to website
+- [ ] Implement lead tracking for conversion analytics
 
 ---
 
-## Dentist Best Practices to Adopt
+## Reference: EHR Onboarding Document Sections
 
-Based on successful dental practice models:
-
-| Dental Practice | White Pine Equivalent |
-|-----------------|----------------------|
-| Treatment plan presentation with visuals | Health assessment results with graphics |
-| Good/Better/Best treatment options | Tiered assessment packages |
-| In-house financing (CareCredit) | PayBright/Affirm integration |
-| Recall system (6-month cleaning) | Annual reassessment reminder |
-| Morning huddle (daily patient review) | Weekly patient journey review |
-| Treatment coordinator role | Patient success coordinator |
-| Case acceptance tracking | Conversion rate tracking |
+| Section | Content | Website Relevance |
+|---------|---------|-------------------|
+| 15 | Welcome Email Template | Copy for automation |
+| 17 | Patient FAQ | Add to website FAQ page |
+| 18 | Physician Video Script | Record and embed on website |
+| 19 | Contact Form Architecture | Implement on website |
+| 20 | Concierge Appointment Copy | Use for booking page |
 
 ---
 
-## Implementation Priority
-
-### Phase 1 (Week 1-2): Foundation
-- [ ] Payment options on website
-- [ ] Welcome email sequence
-- [ ] Questionnaire reminder sequence
-
-### Phase 2 (Week 3-4): Optimization
-- [ ] Tiered pricing structure
-- [ ] Exit intent popup
-- [ ] Referral program launch
-
-### Phase 3 (Month 2): Scale
-- [ ] Full CRM integration
-- [ ] SMS reminders
-- [ ] NPS automation
-
----
-
-**Document Version:** 1.0.0
-**Created:** 2026-01-21
-**Author:** Claude Code + Dr. James French
+**Document Version:** 2.0.0
+**Last Updated:** 2026-01-21
+**Source of Truth:** EHR Repository - PATIENT_ONBOARDING_ARCHITECTURE.md
