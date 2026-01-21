@@ -20,10 +20,65 @@
 | ISS-003 | LOW | ✅ RESOLVED | Mobile menu still shows demo content |
 | ISS-004 | MEDIUM | ⚠️ PENDING | Missing images in text/photo sections |
 | ISS-005 | HIGH | ✅ RESOLVED | Shopify Admin API token not accessible via Partners Dashboard |
+| ISS-006 | HIGH | ✅ RESOLVED | .shopifyignore and shopify.theme.toml blocking template pushes |
+| ISS-007 | MEDIUM | ⚠️ PENDING | Services, Privacy & Trust, Urgent Care pages need creation in Shopify Admin |
 
 ---
 
 ## Active Issues
+
+### ISS-007: Pages Need Creation in Shopify Admin
+
+**Severity:** MEDIUM
+**Status:** ⚠️ PENDING
+**Category:** Setup
+**Reported:** 2026-01-21
+
+**Problem:**
+The following page templates exist on the theme but the actual pages need to be created in Shopify Admin:
+- Services (`page.services`)
+- Privacy & Trust (`page.privacy-trust`)
+- Urgent Care (`page.urgent-care`)
+
+**Impact:**
+Users cannot access these pages until they are created in Shopify Admin → Pages.
+
+**Resolution:**
+Create pages in Shopify Admin → Online Store → Pages:
+1. Add page "Services" → assign template `page.services`
+2. Add page "Privacy & Trust" → assign template `page.privacy-trust`
+3. Add page "Urgent Care" → assign template `page.urgent-care`
+
+**Note:** Broadcast theme was published to make templates available in the dropdown.
+
+---
+
+### RESOLVED-011: .shopifyignore and shopify.theme.toml Blocking Template Pushes
+
+**Severity:** HIGH
+**Status:** ✅ RESOLVED
+**Category:** Bug/Workflow
+**Reported:** 2026-01-21
+**Resolved:** 2026-01-21
+
+**Problem:**
+Template JSON files were not being pushed to Shopify because:
+1. `.shopifyignore` contained `templates/*.json` pattern
+2. `shopify.theme.toml` had ignore rules in the broadcast environment
+
+**Root Cause:**
+These files were originally created to protect Customizer changes, but since Claude Code now manages all content via `shopify-content.mjs`, they were blocking legitimate template pushes.
+
+**Resolution:**
+1. Deleted `.shopifyignore` entirely
+2. Removed ignore rules from `shopify.theme.toml`
+3. Claude Code is now the single source of truth for all theme files
+
+**Files Changed:**
+- `.shopifyignore` (DELETED)
+- `shopify.theme.toml` (ignore rules removed)
+
+---
 
 ### RESOLVED-010: Shopify Admin API Token Not Accessible
 

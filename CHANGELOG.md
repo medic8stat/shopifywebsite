@@ -4,6 +4,66 @@ All notable changes to the White Pine Medical Shopify website will be documented
 
 ---
 
+## [2026-01-21] - Website Restructure & Theme Publishing (v6.0.0)
+
+### Added
+
+- **`templates/page.services.json`** (NEW) - Comprehensive Services page with 17 sections:
+  - Hero with "Our Services" title
+  - 3-step "How Care Works" process (Assess, Prioritize, Act)
+  - Concierge Assessment primary entry point
+  - 10 individual assessment categories with accordion groups:
+    - Cardiopulmonary & Cardiovascular (VO2 Max, ECG, etc.)
+    - Body Composition & Metabolic (BMR, Body Comp, etc.)
+    - Neurological, Cognitive & Sensory (VR Vision, Balance, etc.)
+    - Strength, Power & Functional (Grip, FMS, Gait, etc.)
+    - Vascular & Autonomic (BP, HRV, ABPI)
+    - Respiratory (Spirometry & Lung Age)
+    - Digital & Algorithmic (Longevity Snapshots, Cognitive)
+    - Mental Health & Psychiatric
+    - Genetic Testing (Nutrigenetics, Cancer, Longevity)
+    - Ultrasound-Based (Limited Screening)
+  - Bundled Assessments teaser
+  - Referral Partners section
+  - "Not Sure?" CTA
+
+### Changed
+
+- **`templates/index.json`** - Complete homepage restructure (11 → 8 sections):
+  - Hero: Updated to "Physician-Led Health Assessment" messaging
+  - NEW: "What We Do" section (Medical Oversight, Evidence-Based, Integrated Care)
+  - SIMPLIFIED: "How Care Works" from 5 phases to 3 steps (Assess, Prioritize, Act)
+  - UPDATED: "Why White Pine Is Different" with clinical differentiators
+  - NEW: "Services Preview" with 6 domain cards
+  - SIMPLIFIED: "About Physician" - concise Dr. James French bio
+  - REWORKED: "Trust & Safety" FAQ focused on risk management
+  - NEW: "Ready to Begin?" CTA with 3 clear pathways
+
+- **Broadcast theme published** - Now live at whitepinemedical.myshopify.com
+  - Templates now available in Shopify Admin page dropdown
+  - Previous live theme: TS Media Design (#178766348583)
+  - New live theme: Broadcast (#182960718119)
+
+### Removed
+
+- **Homepage sections removed:**
+  - Announcement marquee
+  - "The Problem Most People Face" rich text
+  - "Our Solution" double section
+  - Coaching upsell
+  - Corporate wellness
+  - Reviews/testimonials
+
+- **`.shopifyignore`** (DELETED) - Was blocking template pushes
+- **`shopify.theme.toml` ignore rules** (REMOVED) - Claude Code now manages all files
+
+### Fixed
+
+- **Template push failures** - Removed ignore rules that were blocking JSON template deployment
+- **Workflow simplified** - Single source of truth is now Claude Code, not Shopify Customizer
+
+---
+
 ## [2026-01-21] - CLI-Based Content Management (v5.0.0)
 
 ### Added
