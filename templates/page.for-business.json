@@ -10,45 +10,83 @@
 {
   "sections": {
     "section-hero-banner": {
-      "type": "section-hero",
+      "type": "section-slideshow-nested",
       "blocks": {
-        "heading": {
-          "type": "heading",
+        "slide-hero": {
+          "type": "_slide-image",
           "settings": {
-            "title": "Corporate Wellness",
-            "heading_font_size": "heading-large",
-            "heading_tag": "automatic",
-            "padding_bottom": 8
-          }
-        },
-        "text": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Physician-led health assessments for your team</p>",
-            "text_font_size": "body-large",
-            "padding_bottom": 8
-          }
+            "image": "shopify://shop_images/iStock-1311840964.jpg",
+            "link": "",
+            "flex_align_desktop": "align--middle-center-desktop",
+            "flex_align_mobile": "align--middle-center-mobile",
+            "show_text_background": false,
+            "bg_color": "",
+            "color": "#ffffff",
+            "overlay_type": "text"
+          },
+          "blocks": {
+            "hero-heading": {
+              "type": "heading",
+              "settings": {
+                "text": "Corporate Wellness",
+                "heading_font_size": "heading-large",
+                "heading_tag": "automatic",
+                "padding_bottom": 8
+              },
+              "blocks": {}
+            },
+            "hero-subheading": {
+              "type": "text",
+              "settings": {
+                "text": "Physician-led health assessments for your team",
+                "text_font_size": "body-large",
+                "padding_bottom": 8
+              },
+              "blocks": {}
+            },
+            "hero-buttons": {
+              "type": "_group-buttons",
+              "name": "Side by side buttons",
+              "settings": {
+                "button_text": "Contact Us",
+                "button_url": "/pages/contact",
+                "button_type": "btn--white",
+                "button_size": "",
+                "button_style": "btn--solid",
+                "show_arrow": false,
+                "button_secondary_text": "",
+                "button_secondary_url": "",
+                "button_secondary_type": "btn--white",
+                "button_secondary_size": "",
+                "button_secondary_style": "btn--solid",
+                "show_secondary_arrow": false,
+                "padding_bottom": 8
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "hero-heading",
+            "hero-subheading",
+            "hero-buttons"
+          ]
         }
       },
       "block_order": [
-        "heading",
-        "text"
+        "slide-hero"
       ],
+      "name": "Slideshow (Nested)",
       "settings": {
-        "image_1": "shopify://shop_images/iStock-1311840964.jpg",
-        "link": "",
+        "transition": "slide",
+        "show_arrows": false,
+        "autoplay": false,
+        "autoplay_speed": 5,
         "width": "wrapper--full",
-        "height": "four-fifty-height-hero",
-        "flex_align_desktop": "align--middle-center-desktop",
-        "content_width": 60,
-        "mobile_height": "three-fifty-height-hero--mobile",
-        "flex_align_mobile": "align--middle-center-mobile",
+        "height": "seven-fifty-height-hero",
+        "mobile_height": "screen-height-full--mobile",
         "color_scheme": "scheme-2",
-        "show_text_background": false,
-        "overlay_type": "full",
         "padding_top": 0,
-        "padding_bottom": 0,
-        "show_placeholder": false
+        "padding_bottom": 0
       }
     },
     "section-rich-text-intro": {
