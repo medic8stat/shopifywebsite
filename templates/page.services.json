@@ -1,12 +1,3 @@
-/*
- * ------------------------------------------------------------
- * IMPORTANT: The contents of this file are auto-generated.
- *
- * This file may be updated by the Shopify admin theme editor
- * or related systems. Please exercise caution as any changes
- * made to this file may be overwritten.
- * ------------------------------------------------------------
- */
 {
   "sections": {
     "hero": {
@@ -36,16 +27,16 @@
         "heading": {
           "type": "heading",
           "settings": {
-            "title": "Our Services",
+            "title": "Services at White Pine Medical",
             "heading_font_size": "heading-x-large",
-            "padding_bottom": 8,
+            "padding_bottom": 16,
             "heading_tag": "h1"
           }
         },
         "text": {
           "type": "text",
           "settings": {
-            "text": "<p>Physician-led assessment with optional individual testing</p>",
+            "text": "<p>White Pine Medical provides physician-led care pathways designed to complement New Brunswick's publicly funded healthcare system.</p><p>Some people arrive with a specific health concern. Others are seeking clarity, prevention, or a long-term plan for healthy aging. This page is designed to help you choose the right starting point.</p>",
             "text_font_size": "body-large",
             "padding_bottom": 0
           }
@@ -57,92 +48,61 @@
       ],
       "settings": {
         "align_text": "text-center",
-        "width": "wrapper--full",
+        "width": "wrapper",
         "color_scheme": "scheme-2",
         "overlay_type": "disabled",
-        "padding_top": 40,
-        "padding_bottom": 40
+        "padding_top": 60,
+        "padding_bottom": 60
       }
     },
-    "how-care-works": {
-      "type": "section-text-row",
+    "start-right-path": {
+      "type": "section-rich-text",
       "blocks": {
-        "step-assess": {
-          "type": "icon",
+        "heading": {
+          "type": "heading",
           "settings": {
-            "icon_name": "icon-check-circle",
-            "icon_size": 50,
-            "icon_color": "#1e3a5f",
-            "title": "Assess",
-            "heading_font_size": "heading-small",
-            "text": "<p>Comprehensive evaluation of your current health status using advanced diagnostics and clinical assessments.</p>",
-            "text_font_size": "body-medium",
-            "heading_tag": "h3"
+            "title": "Start With the Right Path",
+            "heading_font_size": "heading-large",
+            "padding_bottom": 16,
+            "heading_tag": "h2"
           }
         },
-        "step-prioritize": {
-          "type": "icon",
+        "text": {
+          "type": "text",
           "settings": {
-            "icon_name": "icon-star",
-            "icon_size": 50,
-            "icon_color": "#1e3a5f",
-            "title": "Prioritize",
-            "heading_font_size": "heading-small",
-            "text": "<p>Physician-guided focus on the areas that matter most for your health goals and longevity.</p>",
-            "text_font_size": "body-medium",
-            "heading_tag": "h3"
-          }
-        },
-        "step-act": {
-          "type": "icon",
-          "settings": {
-            "icon_name": "icon-lightning",
-            "icon_size": 50,
-            "icon_color": "#1e3a5f",
-            "title": "Act",
-            "heading_font_size": "heading-small",
-            "text": "<p>Personalized action plan with measurable goals and ongoing support for lasting results.</p>",
-            "text_font_size": "body-medium",
-            "heading_tag": "h3"
+            "text": "<p>Not everyone needs the same entry point. Choose the option that best reflects what you're looking for right now.</p>",
+            "text_font_size": "body-large",
+            "padding_bottom": 0
           }
         }
       },
       "block_order": [
-        "step-assess",
-        "step-prioritize",
-        "step-act"
+        "heading",
+        "text"
       ],
       "settings": {
-        "title": "How Care Works",
-        "heading_font_size": "heading-medium",
-        "align_heading": "text-center",
         "align_text": "text-center",
-        "icon_alignment": "icon--top",
         "width": "wrapper",
-        "align_columns": "flex-align-top",
-        "layout": "grid",
-        "grid": 3,
-        "layout_mobile": "1",
-        "color_scheme": "scheme-3",
+        "color_scheme": "scheme-1",
+        "overlay_type": "disabled",
         "padding_top": 80,
-        "padding_bottom": 80,
-        "heading_tag": "h2"
+        "padding_bottom": 40
       }
     },
-    "concierge-assessment": {
+    "option-1-concierge": {
       "type": "section-double",
       "blocks": {
         "subheading": {
           "type": "subheading",
           "settings": {
-            "subheading": "Our Flagship Service",
+            "subheading": "Option 1 — Recommended First Step",
             "padding_bottom": 12
           }
         },
         "heading": {
           "type": "heading",
           "settings": {
-            "title": "Complete Health Assessment",
+            "title": "Physician Concierge Assessment",
             "heading_font_size": "heading-medium",
             "padding_bottom": 16,
             "heading_tag": "h2"
@@ -151,7 +111,7 @@
         "text": {
           "type": "text",
           "settings": {
-            "text": "<p>Our comprehensive physician-led assessment covers cardiovascular, metabolic, cognitive, and functional health. This thorough evaluation provides a complete picture of your current health status and serves as the foundation for your personalized wellness journey.</p><p>Includes detailed review of:</p><ul><li>Cardiovascular fitness and heart health</li><li>Metabolic function and body composition</li><li>Cognitive performance and brain health</li><li>Functional movement and strength</li><li>Comprehensive blood work and biomarkers</li></ul>",
+            "text": "<p><strong>Best for:</strong></p><ul><li>People seeking clarity, prevention, or long-term planning</li><li>Those unsure which assessments or services they need</li><li>Individuals who want physician guidance before committing to testing</li></ul><p><strong>What you'll get:</strong></p><p>A 60–90 minute, one-on-one appointment with Dr. James French focused on understanding your goals, reviewing your health at a high level, identifying areas of risk, and mapping appropriate next steps.</p><p>This appointment helps you decide whether further assessment, testing, or ongoing care is appropriate — and if so, which path fits you best.</p><p><strong>What it is not:</strong> Not urgent or emergency care. Not a treatment visit. Not a requirement to enroll in any program.</p><p><strong>Fee:</strong> $300 CAD (not covered by Medicare)</p>",
             "text_font_size": "body-medium",
             "padding_bottom": 20
           }
@@ -159,8 +119,8 @@
         "button": {
           "type": "buttons",
           "settings": {
-            "button_text": "Learn More",
-            "button_url": "",
+            "button_text": "Book a Physician Concierge Assessment",
+            "button_url": "/pages/contact",
             "button_type": "btn--primary",
             "button_size": "btn--large",
             "button_style": "btn--solid",
@@ -185,9 +145,196 @@
         "mobile_height": "image-height--mobile",
         "reverse_blocks": false,
         "color_scheme": "scheme-1",
-        "padding_top": 0,
-        "padding_bottom": 0,
+        "padding_top": 40,
+        "padding_bottom": 40,
         "show_placeholder": true
+      }
+    },
+    "option-2-comprehensive": {
+      "type": "section-double",
+      "blocks": {
+        "subheading": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "Option 2 — For Those Ready to Proceed",
+            "padding_bottom": 12
+          }
+        },
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "title": "Comprehensive Health & Longevity Assessment",
+            "heading_font_size": "heading-medium",
+            "padding_bottom": 16,
+            "heading_tag": "h2"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Best for:</strong></p><ul><li>Individuals ready to proceed with in-depth assessment</li><li>Those seeking a full picture of health, performance, and future risk</li></ul><p><strong>What it includes:</strong></p><p>A structured, multi-phase evaluation that may include (when appropriate):</p><ul><li>In-depth medical and psychological assessments</li><li>Review of existing electronic health records</li><li>Full-spectrum bloodwork and hormone evaluation</li><li>Genetic testing related to nutrition and medication tolerance</li><li>Advanced body composition, metabolic, and cardiorespiratory fitness testing</li><li>Personalized dietary and lifestyle planning</li></ul><p>This pathway is typically discussed after a concierge assessment, once goals and priorities are clear.</p>",
+            "text_font_size": "body-medium",
+            "padding_bottom": 20
+          }
+        },
+        "button": {
+          "type": "buttons",
+          "settings": {
+            "button_text": "Learn More About the Comprehensive Assessment",
+            "button_url": "/pages/contact",
+            "button_type": "btn--primary",
+            "button_size": "btn--large",
+            "button_style": "btn--solid",
+            "show_arrow": true,
+            "padding_bottom": 0
+          }
+        }
+      },
+      "block_order": [
+        "subheading",
+        "heading",
+        "text",
+        "button"
+      ],
+      "settings": {
+        "image_1": "",
+        "image_width": "one-half",
+        "text_alignment": "text-left",
+        "layout": "",
+        "width": "wrapper--full-padded",
+        "height": "five-fifty-height-hero",
+        "mobile_height": "image-height--mobile",
+        "reverse_blocks": true,
+        "color_scheme": "scheme-3",
+        "padding_top": 40,
+        "padding_bottom": 40,
+        "show_placeholder": true
+      }
+    },
+    "option-3-urgent-care": {
+      "type": "section-double",
+      "blocks": {
+        "subheading": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "Option 3 — Publicly Funded Care",
+            "padding_bottom": 12
+          }
+        },
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "title": "Publicly Funded Unscheduled / Urgent Care",
+            "heading_font_size": "heading-medium",
+            "padding_bottom": 16,
+            "heading_tag": "h2"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Best for:</strong></p><ul><li>New or worsening symptoms</li><li>Acute, non-life-threatening medical concerns</li></ul><p>White Pine Medical also operates (and is expanding) a publicly funded unscheduled / urgent care clinic for non-life-threatening conditions covered by Medicare.</p><p>These services are separate by design from private concierge and preventive care, though they share systems and learning so innovations can benefit both environments.</p>",
+            "text_font_size": "body-medium",
+            "padding_bottom": 20
+          }
+        },
+        "button": {
+          "type": "buttons",
+          "settings": {
+            "button_text": "Learn More About Urgent Care",
+            "button_url": "/pages/urgent-care",
+            "button_type": "btn--primary",
+            "button_size": "btn--large",
+            "button_style": "btn--solid",
+            "show_arrow": true,
+            "padding_bottom": 0
+          }
+        }
+      },
+      "block_order": [
+        "subheading",
+        "heading",
+        "text",
+        "button"
+      ],
+      "settings": {
+        "image_1": "",
+        "image_width": "one-half",
+        "text_alignment": "text-left",
+        "layout": "",
+        "width": "wrapper--full-padded",
+        "height": "five-fifty-height-hero",
+        "mobile_height": "image-height--mobile",
+        "reverse_blocks": false,
+        "color_scheme": "scheme-1",
+        "padding_top": 40,
+        "padding_bottom": 40,
+        "show_placeholder": true
+      }
+    },
+    "how-care-works": {
+      "type": "section-text-row",
+      "blocks": {
+        "step-assess": {
+          "type": "icon",
+          "settings": {
+            "icon_name": "icon-check-circle",
+            "icon_size": 50,
+            "icon_color": "#1e3a5f",
+            "title": "Assess",
+            "heading_font_size": "heading-small",
+            "text": "<p>We start by understanding your current health, goals, and risk factors — not just symptoms.</p>",
+            "text_font_size": "body-medium",
+            "heading_tag": "h3"
+          }
+        },
+        "step-prioritize": {
+          "type": "icon",
+          "settings": {
+            "icon_name": "icon-star",
+            "icon_size": 50,
+            "icon_color": "#1e3a5f",
+            "title": "Prioritize",
+            "heading_font_size": "heading-small",
+            "text": "<p>We identify what matters most now versus later, helping avoid unnecessary tests or interventions.</p>",
+            "text_font_size": "body-medium",
+            "heading_tag": "h3"
+          }
+        },
+        "step-act": {
+          "type": "icon",
+          "settings": {
+            "icon_name": "icon-lightning",
+            "icon_size": 50,
+            "icon_color": "#1e3a5f",
+            "title": "Act",
+            "heading_font_size": "heading-small",
+            "text": "<p>We create a clear, personalized plan — which may involve public system referrals, preventive care, targeted testing, or ongoing support.</p>",
+            "text_font_size": "body-medium",
+            "heading_tag": "h3"
+          }
+        }
+      },
+      "block_order": [
+        "step-assess",
+        "step-prioritize",
+        "step-act"
+      ],
+      "settings": {
+        "title": "How Care Works",
+        "heading_font_size": "heading-medium",
+        "align_heading": "text-center",
+        "align_text": "text-center",
+        "icon_alignment": "icon--top",
+        "width": "wrapper",
+        "align_columns": "flex-align-top",
+        "layout": "grid",
+        "grid": 3,
+        "layout_mobile": "1",
+        "color_scheme": "scheme-2",
+        "padding_top": 80,
+        "padding_bottom": 80,
+        "heading_tag": "h2"
       }
     },
     "individual-assessments-intro": {
@@ -196,7 +343,7 @@
         "heading": {
           "type": "heading",
           "settings": {
-            "title": "Individual Assessments",
+            "title": "Individual Assessments & Testing Options",
             "heading_font_size": "heading-large",
             "padding_bottom": 16,
             "heading_tag": "h2"
@@ -205,7 +352,7 @@
         "text": {
           "type": "text",
           "settings": {
-            "text": "<p>Choose from our comprehensive range of specialized assessments. Each test is designed to provide specific insights into different aspects of your health.</p>",
+            "text": "<p>For individuals who already know what they are looking for, White Pine Medical offers a range of targeted assessments. These assessments are often most effective when guided by a physician through the concierge or comprehensive pathway.</p>",
             "text_font_size": "body-medium",
             "padding_bottom": 0
           }
@@ -623,7 +770,7 @@
           "settings": {
             "default_open": false,
             "title": "Longevity Snapshots",
-            "content": "<p>AI-powered analysis combining multiple biomarkers and health data to estimate biological age and predict healthspan. Provides actionable insights for longevity optimization.</p>",
+            "content": "<p>Advanced analysis combining multiple biomarkers and health data to estimate biological age and predict healthspan. Provides actionable insights for longevity optimization.</p>",
             "show_icon": true,
             "icon_name": "icon-flare",
             "icon_size": 20,
@@ -805,109 +952,6 @@
         "padding_bottom": 40
       }
     },
-    "bundled-assessments": {
-      "type": "section-rich-text",
-      "blocks": {
-        "heading": {
-          "type": "heading",
-          "settings": {
-            "title": "Custom Assessment Bundles",
-            "heading_font_size": "heading-medium",
-            "padding_bottom": 16,
-            "heading_tag": "h2"
-          }
-        },
-        "text": {
-          "type": "text",
-          "settings": {
-            "text": "<p><strong>Coming soon:</strong> Build your own assessment package combining tests from multiple categories. Work with our physician to design a customized testing protocol tailored to your specific health goals and concerns.</p>",
-            "text_font_size": "body-medium",
-            "padding_bottom": 0
-          }
-        }
-      },
-      "block_order": [
-        "heading",
-        "text"
-      ],
-      "settings": {
-        "align_text": "text-center",
-        "width": "wrapper--narrow",
-        "color_scheme": "scheme-1",
-        "overlay_type": "disabled",
-        "padding_top": 60,
-        "padding_bottom": 60
-      }
-    },
-    "referral-partners": {
-      "type": "section-multicolumn",
-      "blocks": {
-        "specialists": {
-          "type": "icon",
-          "settings": {
-            "column_width": 33,
-            "icon_name": "icon-award",
-            "icon_size": 50,
-            "icon_alignment": "icon--top",
-            "icon_color": "#1e3a5f",
-            "title": "Specialist Referrals",
-            "heading_font_size": "heading-small",
-            "text": "<p>Direct access to a network of trusted specialists including cardiologists, endocrinologists, neurologists, and other medical experts when advanced care is needed.</p>",
-            "text_font_size": "body-medium",
-            "heading_tag": "h3"
-          }
-        },
-        "lab-partners": {
-          "type": "icon",
-          "settings": {
-            "column_width": 33,
-            "icon_name": "icon-droplet",
-            "icon_size": 50,
-            "icon_alignment": "icon--top",
-            "icon_color": "#1e3a5f",
-            "title": "Lab Partners",
-            "heading_font_size": "heading-small",
-            "text": "<p>Partnerships with leading diagnostic laboratories for comprehensive blood work, genetic testing, and specialized biomarker analysis with expedited results.</p>",
-            "text_font_size": "body-medium",
-            "heading_tag": "h3"
-          }
-        },
-        "imaging": {
-          "type": "icon",
-          "settings": {
-            "column_width": 33,
-            "icon_name": "icon-flare",
-            "icon_size": 50,
-            "icon_alignment": "icon--top",
-            "icon_color": "#1e3a5f",
-            "title": "Imaging Services",
-            "heading_font_size": "heading-small",
-            "text": "<p>Coordinated access to advanced imaging including MRI, CT, DEXA scans, and cardiac imaging when detailed visualization is required for your care.</p>",
-            "text_font_size": "body-medium",
-            "heading_tag": "h3"
-          }
-        }
-      },
-      "block_order": [
-        "specialists",
-        "lab-partners",
-        "imaging"
-      ],
-      "settings": {
-        "title": "Referral Partners",
-        "heading_font_size": "heading-medium",
-        "description": "",
-        "align_heading": "text-center",
-        "align_text": "text-center",
-        "width": "wrapper",
-        "align_columns": "flex-align-top",
-        "layout_mobile": "1",
-        "color_scheme": "scheme-3",
-        "padding_top": 60,
-        "padding_bottom": 60,
-        "heading_tag": "h2"
-      }
-    },
     "not-sure-cta": {
       "type": "section-rich-text",
       "blocks": {
@@ -923,7 +967,7 @@
         "text": {
           "type": "text",
           "settings": {
-            "text": "<p>Book a consultation with our physician to discuss your health goals, concerns, and determine which assessments are right for you. We'll help you design a personalized health evaluation plan.</p>",
+            "text": "<p>Book a Physician Concierge Assessment to discuss your health goals and determine which path is right for you.</p>",
             "text_font_size": "body-large",
             "padding_bottom": 24
           }
@@ -931,7 +975,7 @@
         "button": {
           "type": "buttons",
           "settings": {
-            "button_text": "Book Consultation",
+            "button_text": "Book a Physician Concierge Assessment",
             "button_url": "/pages/contact",
             "button_type": "btn--primary",
             "button_size": "btn--large",
@@ -959,8 +1003,11 @@
   "order": [
     "hero",
     "services-banner",
+    "start-right-path",
+    "option-1-concierge",
+    "option-2-comprehensive",
+    "option-3-urgent-care",
     "how-care-works",
-    "concierge-assessment",
     "individual-assessments-intro",
     "assessments-cardiopulmonary",
     "assessments-body-composition",
@@ -972,8 +1019,6 @@
     "assessments-mental-health",
     "assessments-genetic",
     "assessments-ultrasound",
-    "bundled-assessments",
-    "referral-partners",
     "not-sure-cta"
   ]
 }
