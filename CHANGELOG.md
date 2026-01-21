@@ -4,9 +4,67 @@ All notable changes to the White Pine Medical Shopify website will be documented
 
 ---
 
+## [2026-01-21] - Gold Standard Development Workflow
+
+### Added
+
+- **`.shopifyignore`** (NEW) - Protects JSON files from being overwritten during push:
+  - `config/settings_data.json`
+  - `templates/index.json`, `templates/page.about.json`, `templates/page.contact.json`
+  - `templates/page.privacy-trust.json`, `templates/page.urgent-care.json`, `templates/product.json`
+  - `sections/group-header.json`, `sections/group-footer.json`
+
+- **`shopify.theme.toml`** (NEW) - Environment-based configuration:
+  - `broadcast` environment (182960718119) - Development/staging with ignore rules
+  - `production` environment (178766348583) - Defined but marked NEVER USE
+
+- **`SHOPIFY_DEVELOPMENT_WORKFLOW.md`** (NEW) - Complete gold-standard workflow guide:
+  - Root cause analysis of why changes were being lost
+  - Two types of changes: CODE vs CONTENT
+  - Golden rules for safe development
+  - Complete session workflows (start, code changes, content changes, end)
+  - Troubleshooting guide
+
+### Changed
+
+- **`CLAUDE.md`** - Complete rewrite (v2.0.0):
+  - Added critical workflow rules at top
+  - Clear separation of CODE vs CONTENT changes
+  - Golden rules with specific commands
+  - Instructions for Claude Code to NOT edit JSON for content changes
+  - File protection configuration documentation
+
+- **`CLAUDE_CONTEXT.md`** - Complete rewrite (v2.0.0):
+  - Root cause analysis section explaining why changes were lost
+  - Detailed workflow for both code and content changes
+  - Troubleshooting section
+  - Quick commands reference
+
+### Fixed
+
+- **CRITICAL: Hero images and content changes being lost** - Root cause identified and resolved:
+  - Theme 2.0 stores content in JSON files
+  - `shopify theme push` was overwriting remote JSON with stale local JSON
+  - Solution: `.shopifyignore` protects JSON files, clear workflow separation
+
+### Technical Details
+
+The issue was caused by Shopify Theme 2.0 architecture:
+1. Content (images, text) is stored in `templates/*.json` and `config/settings_data.json`
+2. `shopify theme push` performs one-way sync: local → remote (overwrites)
+3. Without protection, local (stale) JSON overwrites remote (fresh) JSON
+4. Result: Customizer changes (hero images, text) are destroyed
+
+**New safe workflow:**
+- CODE changes: Edit locally → `shopify theme push -e broadcast` (JSON ignored)
+- CONTENT changes: User edits in Shopify Customizer → Claude pulls and commits
+
+---
+
 ## [Unreleased]
 
 ### Added
+
 - **Privacy & Trust Page** (`page.privacy-trust.json`) - New page explaining data protection, compliance (HIPAA, PHIPA, PIPEDA), and patient rights
 - **Urgent Care Page** (`page.urgent-care.json`) - Coming Soon page for walk-in urgent care services with Medicare coverage info
 - **CLAUDE.md Development Rules** - Added critical workflow rules: NEVER push to live theme, always use Broadcast theme for development

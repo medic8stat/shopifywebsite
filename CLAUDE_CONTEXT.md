@@ -1,14 +1,31 @@
 # CLAUDE_CONTEXT.md - Shopify Website Development Context
 
-> ⚠️ **WARNING: THIS IS SHOPIFY WEBSITE DOCUMENTATION**
->
-> This documentation is for the **Shopify Website** (`medic8stat/shopifywebsite`).
->
-> **NOT** the EHR Platform (`medic8stat/clinalytix-ehr`).
->
-> These are completely different repositories and projects.
+> **For AI Assistants:** This is your comprehensive context file. Read this for all Shopify website work.
 
-> **For AI Assistants:** This is your comprehensive context file. Read this first for any Shopify website work.
+---
+
+## CRITICAL: Why Changes Were Being Lost
+
+### Root Cause Analysis (January 2026)
+
+We discovered why hero banners and other content changes were disappearing:
+
+1. **Theme 2.0 Architecture**: Content is stored in JSON files, NOT just settings_data.json
+   - `config/settings_data.json` - Global theme settings
+   - `templates/*.json` - Page-specific sections (hero images, text blocks)
+   - `sections/group-*.json` - Header/footer configurations
+
+2. **One-Way Sync**: `shopify theme push` OVERWRITES remote with local
+   - Customizer changes (images, text) are stored in JSON on Shopify
+   - Local push destroys those changes with stale local JSON
+
+3. **Missing Protection**: No `.shopifyignore` or `shopify.theme.toml` existed
+
+### Solution Implemented
+
+- Created `.shopifyignore` to protect JSON files during push
+- Created `shopify.theme.toml` for environment-based deployments
+- Established clear workflow separating CODE vs CONTENT changes
 
 ---
 
@@ -18,97 +35,279 @@
 
 | Property | Value |
 |----------|-------|
-| **Store URL** | whitepinemedical.myshopify.com |
-| **Live Site** | whitepinemedical.ca |
-| **Theme** | Broadcast 8.0.0 |
-| **Dev Theme ID** | 182960718119 (Broadcast) |
-| **Live Theme ID** | 178766348583 (TS Media Design) - NEVER PUSH DIRECTLY |
-| **GitHub Repo** | medic8stat/shopifywebsite |
-| **Local Path** | ~/shopify-themes/broadcast |
+| Store URL | whitepinemedical.myshopify.com |
+| Live Site | whitepinemedical.ca |
+| Theme | Broadcast 8.0.0 |
+| Dev Theme ID | 182960718119 (Broadcast) |
+| Live Theme ID | 178766348583 (TS Media Design) - NEVER PUSH |
+| GitHub Repo | medic8stat/shopifywebsite |
+| Local Path | ~/shopify-themes/broadcast |
+| Shopify CLI | 3.89.0 |
 
 ---
 
-## 2. Critical Development Rules
+## 2. The Two Types of Changes
+
+### Type A: CODE CHANGES (Claude Code handles these)
+
+| What | Examples | Files |
+|------|----------|-------|
+| Templates | Layout structure, section schemas | `.liquid` files |
+| Styles | CSS, SCSS | `/assets/*.css` |
+| Scripts | JavaScript | `/assets/*.js` |
+| Snippets | Reusable code | `/snippets/*.liquid` |
+| New sections | Section schemas | `/sections/*.liquid` |
+
+**Workflow:**
+```bash
+# 1. Pull first (ALWAYS)
+shopify theme pull --theme 182960718119 --store whitepinemedical.myshopify.com
+
+# 2. Make code changes locally
+
+# 3. Push (JSON files auto-ignored via .shopifyignore)
+shopify theme push -e broadcast
+
+# 4. Commit
+git add -A && git commit -m "type(scope): description"
+git push
+```
+
+### Type B: CONTENT CHANGES (User handles via Shopify Customizer)
+
+| What | Examples | Where Stored |
+|------|----------|--------------|
+| Images | Hero banners, photos | `templates/*.json` |
+| Text | Headings, paragraphs | `templates/*.json` |
+| Colors | Theme colors | `config/settings_data.json` |
+| Fonts | Typography | `config/settings_data.json` |
+| Logo | Site logo | `config/settings_data.json` |
+| Blocks | Section arrangements | `templates/*.json` |
+
+**Workflow:**
+1. User goes to Shopify Admin → Themes → Customize (on Broadcast theme)
+2. Makes changes in visual editor
+3. Clicks Save
+4. Claude pulls and commits:
+   ```bash
+   shopify theme pull --theme 182960718119 --store whitepinemedical.myshopify.com
+   git add -A && git commit -m "content: Update via Customizer"
+   git push
+   ```
+
+---
+
+## 3. Critical Development Rules
 
 ### NEVER PUSH TO LIVE THEME
 
 ```
-⚠️ CRITICAL: NEVER push directly to the live theme (TS Media Design #178766348583)!
-
-Always work with the Broadcast theme (#182960718119) for development.
+FORBIDDEN: shopify theme push --theme 178766348583
+FORBIDDEN: shopify theme push -e production
 ```
 
-### Deployment Process
-
-1. Make changes locally
-2. Test with dev server: `shopify theme dev`
-3. Push to GitHub: `git push`
-4. Push to Broadcast theme (staging): `shopify theme push --theme 182960718119`
-5. When ready to go live: Publish Broadcast theme
-
-### Commit After Every Unit of Work
+### ALWAYS Pull Before Starting
 
 ```bash
-git add -A && git commit -m "type(scope): Description"
+cd ~/shopify-themes/broadcast
+shopify theme pull --theme 182960718119 --store whitepinemedical.myshopify.com
+```
+
+### Use Environment-Based Push
+
+```bash
+# This automatically ignores JSON files per shopify.theme.toml
+shopify theme push -e broadcast
+```
+
+### Verify at Preview URL (Not Localhost)
+
+```
+https://whitepinemedical.myshopify.com/?preview_theme_id=182960718119
+```
+
+The dev server (localhost:9292) may show stale CDN content.
+
+---
+
+## 4. File Protection Configuration
+
+### .shopifyignore
+
+Located at: `/Users/jamesfrench/shopify-themes/broadcast/.shopifyignore`
+
+Prevents push from overwriting:
+- `config/settings_data.json`
+- `templates/index.json`
+- `templates/page.about.json`
+- `templates/page.contact.json`
+- `templates/page.privacy-trust.json`
+- `templates/page.urgent-care.json`
+- `templates/product.json`
+- `sections/group-header.json`
+- `sections/group-footer.json`
+
+### shopify.theme.toml
+
+Located at: `/Users/jamesfrench/shopify-themes/broadcast/shopify.theme.toml`
+
+Defines environments:
+- `broadcast` - Development theme (182960718119) with ignore rules
+- `production` - Live theme (178766348583) - NEVER USE
+
+---
+
+## 5. Complete Session Workflows
+
+### Starting a Session
+
+```bash
+# 1. Navigate to theme directory
+cd ~/shopify-themes/broadcast
+
+# 2. ALWAYS pull latest from Shopify first
+shopify theme pull --theme 182960718119 --store whitepinemedical.myshopify.com
+
+# 3. Check for any uncommitted changes
+git status
+
+# 4. (Optional) Start dev server for hot reloading
+shopify theme dev --store whitepinemedical.myshopify.com
+```
+
+### Making Code Changes
+
+```bash
+# 1. Make changes to .liquid, .css, .js files (NOT JSON!)
+
+# 2. Push to Broadcast theme
+shopify theme push -e broadcast
+
+# 3. Verify at preview URL
+# https://whitepinemedical.myshopify.com/?preview_theme_id=182960718119
+
+# 4. Commit and push to GitHub
+git add -A && git commit -m "type(scope): description"
 git push
 ```
 
----
+### When User Requests Content/Image Changes
 
-## 3. Credentials & Access
+**DO NOT edit JSON files.** Instead, respond:
 
-### Shopify Store Access
+> "This change requires Shopify Customizer. Please:
+> 1. Go to https://admin.shopify.com/store/whitepinemedical/themes
+> 2. Find the **Broadcast** theme (NOT the live theme)
+> 3. Click **Customize**
+> 4. Make your changes and click **Save**
+> 5. Let me know when done and I'll sync to git."
 
-| Property | Value |
-|----------|-------|
-| **Store** | whitepinemedical.myshopify.com |
-| **Admin URL** | https://admin.shopify.com/store/whitepinemedical |
-| **Theme Editor** | Shopify Admin → Online Store → Themes |
-| **Pages** | Shopify Admin → Online Store → Pages |
-| **Menus** | Shopify Admin → Content → Menus |
+Then after user confirms:
+```bash
+shopify theme pull --theme 182960718119 --store whitepinemedical.myshopify.com
+git add -A && git commit -m "content: Update via Customizer"
+git push
+```
 
-> **TODO:** Add Shopify admin credentials when provided
-
-### GitHub Repository
-
-| Property | Value |
-|----------|-------|
-| **Repo** | medic8stat/shopifywebsite |
-| **Branch** | main |
-| **Clone URL** | https://github.com/medic8stat/shopifywebsite.git |
-
-### Shopify CLI Authentication
+### Ending a Session
 
 ```bash
-# Login to Shopify (if needed)
-shopify auth login --store whitepinemedical.myshopify.com
+# 1. Stop dev server if running (Ctrl+C)
 
-# Verify connection
-shopify theme list --store whitepinemedical.myshopify.com
+# 2. Pull latest from Shopify (capture Customizer changes)
+shopify theme pull --theme 182960718119 --store whitepinemedical.myshopify.com
+
+# 3. Commit all changes
+git add -A && git commit -m "session: End of session sync"
+git push
+
+# 4. Verify at preview URL
+# https://whitepinemedical.myshopify.com/?preview_theme_id=182960718119
 ```
 
 ---
 
-## 4. Theme IDs Reference
+## 6. Troubleshooting
 
-| Theme | ID | Role | Safe to Push? |
-|-------|-----|------|---------------|
-| **Broadcast** | 182960718119 | Development/Staging | ✅ YES |
-| **TS Media Design** | 178766348583 | Live Production | ❌ NEVER |
+### Changes Not Appearing After Push
+
+1. **Clear browser cache**: Cmd+Shift+R (Mac) or Ctrl+Shift+R (Windows)
+2. **Use incognito window**: Test in private browsing
+3. **Check preview URL**: Use `?preview_theme_id=182960718119` not localhost
+4. **Wait for CDN**: Changes can take up to 2 hours to propagate globally
+5. **Verify push succeeded**: Check CLI output for errors
+
+### Hero Image Changes Not Appearing
+
+1. **Did you edit JSON locally?** DON'T. Use Shopify Customizer.
+2. **Did you push after Customizer changes?** That overwrote them. Pull first.
+3. **CDN caching**: Wait up to 2 hours or try incognito mode.
+
+### Dev Server Shows Wrong Content
+
+1. Stop dev server (Ctrl+C)
+2. Pull latest: `shopify theme pull --theme 182960718119`
+3. Restart dev server: `shopify theme dev`
+4. Hard refresh browser: Cmd+Shift+R
+
+### .shopifyignore Not Working
+
+Known Shopify CLI bug. Use explicit ignore in push command:
+```bash
+shopify theme push --theme 182960718119 --store whitepinemedical.myshopify.com \
+  --ignore "config/settings_data.json" \
+  --ignore "templates/*.json" \
+  --ignore "sections/group-*.json"
+```
 
 ---
 
-## 5. Brand Assets
+## 7. Quick Commands Reference
+
+| Action | Command |
+|--------|---------|
+| Pull from Shopify | `shopify theme pull --theme 182960718119 --store whitepinemedical.myshopify.com` |
+| Push to Broadcast | `shopify theme push -e broadcast` |
+| Push with explicit ignore | `shopify theme push --theme 182960718119 --store whitepinemedical.myshopify.com --ignore "config/*.json" --ignore "templates/*.json"` |
+| Start dev server | `shopify theme dev --store whitepinemedical.myshopify.com` |
+| List themes | `shopify theme list --store whitepinemedical.myshopify.com` |
+| Check CLI version | `shopify version` |
+| Git commit | `git add -A && git commit -m "type(scope): description"` |
+| Git push | `git push` |
+
+---
+
+## 8. Theme IDs Reference
+
+| Theme | ID | Role | Safe to Push? |
+|-------|-----|------|---------------|
+| Broadcast | 182960718119 | Development/Staging | YES |
+| TS Media Design | 178766348583 | Live Production | NEVER |
+
+---
+
+## 9. URLs Reference
+
+| Purpose | URL |
+|---------|-----|
+| Preview (Broadcast) | https://whitepinemedical.myshopify.com/?preview_theme_id=182960718119 |
+| Live Site | https://www.whitepinemedical.ca |
+| Shopify Admin | https://admin.shopify.com/store/whitepinemedical |
+| Theme Editor | Shopify Admin → Online Store → Themes → Customize |
+
+---
+
+## 10. Brand Assets
 
 ### Brand Colors
 
-| Color | Hex | CSS Variable | Usage |
-|-------|-----|--------------|-------|
-| White Pine Navy | `#1E3A5F` | `--color-navy` | Primary - headers, buttons, dark backgrounds |
-| White Pine Blue | `#2563EB` | `--color-blue` | Accent - links, secondary buttons, highlights |
-| Banner Blue | `#0066CC` | `--color-banner` | Website banner (planned) |
-| White | `#FFFFFF` | `--color-white` | Backgrounds |
-| Light Blue | `#f0f7ff` | `--color-light-blue` | Light background accents |
+| Color | Hex | Usage |
+|-------|-----|-------|
+| White Pine Navy | `#1E3A5F` | Primary - headers, buttons, dark backgrounds |
+| White Pine Blue | `#2563EB` | Accent - links, secondary buttons, highlights |
+| Banner Blue | `#0066CC` | Website banner |
+| White | `#FFFFFF` | Backgrounds |
+| Light Blue | `#f0f7ff` | Light background accents |
 
 ### Color Schemes (in settings_data.json)
 
@@ -119,311 +318,44 @@ shopify theme list --store whitepinemedical.myshopify.com
 | scheme-3 | Light Blue | Navy | Highlighted sections |
 | scheme-4 | Blue | White | CTA sections |
 
-### Logo Locations
-
-| Asset | Location | Notes |
-|-------|----------|-------|
-| Main Logo | Shopify CDN | Set in theme settings |
-| Favicon | Shopify CDN | Set in theme settings |
-
-> **TODO:** Add specific logo file paths when provided
-
-### Image Management
-
-**Images added via Shopify Theme Editor persist across code pushes.** They're stored on Shopify's CDN and referenced by URL in `settings_data.json`.
-
-**Best Practice:** Before making local edits to `settings_data.json`, pull the latest from Shopify to preserve any images added via the editor:
-
-```bash
-shopify theme pull --theme 182960718119 --store whitepinemedical.myshopify.com
-```
-
-This ensures you don't accidentally overwrite image references when pushing code changes.
-
 ---
 
-## 6. Quick Commands
-
-### Standard Development Workflow
-
-```bash
-# 1. Start dev server (live preview with hot reload)
-cd ~/shopify-themes/broadcast
-shopify theme dev --store whitepinemedical.myshopify.com
-# Preview at http://127.0.0.1:9292 - changes sync automatically
-
-# 2. When ready, deploy to Broadcast theme (staging)
-shopify theme push --theme 182960718119 --store whitepinemedical.myshopify.com --allow-live
-
-# 3. Commit and push to GitHub
-git add -A && git commit -m "type(scope): description"
-git push
-```
-
-### Development Server (Local Preview)
-
-```bash
-cd ~/shopify-themes/broadcast
-shopify theme dev --store whitepinemedical.myshopify.com
-# Preview at http://127.0.0.1:9292
-# Changes sync automatically as you save files
-# Press Ctrl+C to stop
-```
-
-**Important:** The dev server previews code changes in real-time, but **CDN images may not display** until pushed to Shopify. To see all images properly:
-
-1. Push to Broadcast theme: `shopify theme push --theme 182960718119 --store whitepinemedical.myshopify.com --allow-live`
-2. Preview at: `https://whitepinemedical.myshopify.com/?preview_theme_id=182960718119`
-
-### Push to Staging (Broadcast Theme)
-
-```bash
-cd ~/shopify-themes/broadcast
-shopify theme push --theme 182960718119 --store whitepinemedical.myshopify.com --allow-live
-```
-
-### Publish to Production
-
-```bash
-# Only when changes are tested and approved!
-shopify theme publish --theme 182960718119 --store whitepinemedical.myshopify.com
-```
-
-### Git Workflow
-
-```bash
-cd ~/shopify-themes/broadcast
-git add -A
-git commit -m "type(scope): Description of changes"
-git push
-```
-
-### Theme List (Verify Theme IDs)
-
-```bash
-shopify theme list --store whitepinemedical.myshopify.com
-```
-
----
-
-## 7. File Structure
+## 11. File Structure
 
 ```
 broadcast/
+├── .shopifyignore           # Protects JSON during push (NEW)
+├── shopify.theme.toml       # Environment config (NEW)
 ├── assets/                  # CSS, JS, images
 │   └── custom-whitepine.css # Custom White Pine styles
 ├── config/
-│   └── settings_data.json   # Theme settings, colors, typography
+│   ├── settings_data.json   # Theme settings (PROTECTED)
+│   └── settings_schema.json # Settings definitions
 ├── layout/
 │   └── theme.liquid         # Main layout wrapper
 ├── sections/                # Reusable section components
-│   ├── group-header.json    # Header configuration
-│   └── ...
+│   ├── group-header.json    # Header config (PROTECTED)
+│   └── group-footer.json    # Footer config (PROTECTED)
 ├── snippets/                # Reusable code snippets
-├── templates/               # Page templates
+├── templates/               # Page templates (PROTECTED)
 │   ├── index.json           # Homepage
-│   ├── page.privacy-trust.json  # Privacy & Trust page
-│   ├── page.urgent-care.json    # Urgent Care page
-│   └── product.json         # Product page
-├── CLAUDE.md                # Quick reference (entry point)
-├── CLAUDE_CONTEXT.md        # This file - full context
-├── CHANGELOG.md             # Version history
-├── KNOWN_ISSUES.md          # Bug tracking
-└── PROJECT_STATUS.md        # Current status
+│   ├── page.about.json      # About page
+│   └── ...
+└── Documentation files...
 ```
 
 ---
 
-## 8. Key Pages & Templates
+## 12. Documentation Files
 
-### Homepage (index.json)
-
-Sections in order:
-1. Hero Slideshow - "Live Better Longer" banner
-2. Marquee Announcement - Scrolling taglines
-3. Problem Statement - "The Problem Most People Face"
-4. Feature Icons - Built by Physicians, Technology-Driven Insight, Personalized Support
-5. Our Solution - Image + text with product link
-6. 5-Phase Assessment - All 5 phases with images
-7. Turn Insights Into Action - Coaching section
-8. Corporate Wellness - Team health optimization
-9. Testimonials - Client reviews
-10. FAQ - Frequently asked questions
-
-### Privacy & Trust Page (page.privacy-trust.json)
-
-- Template: `page.privacy-trust`
-- Status: Created, needs Shopify page setup
-- Sections: Privacy icons, data protection approach, FAQ accordion, contact info
-
-### Urgent Care Page (page.urgent-care.json)
-
-- Template: `page.urgent-care`
-- Status: "Coming Soon" page created, needs Shopify page setup
-
-### Product Page (product.json)
-
-- Main product: White Pine Medical Longevity Assessment
-- Link: `shopify://products/white-pine-medical-longevity-assessment`
-
----
-
-## 9. Content Guidelines
-
-### Language Rules
-
-| ❌ Don't Use | ✅ Use Instead |
-|-------------|----------------|
-| AI / Artificial Intelligence | Next-generation electronic health system |
-| AI-powered | Comprehensive / Technology-driven |
-| Shop Now | View Services |
-| Elite / Visionary / Unmatched | Physician-led / Evidence-based |
-| 6 months coaching | Up to 12 months coaching |
-
-### Tone
-
-- Professional but approachable
-- Physician-led, evidence-based
-- No hype or marketing clichés
-- Focus on patient outcomes, not technology buzzwords
-
----
-
-## 10. Patient Journey & System Boundaries
-
-### Entry Points (Website → EHR)
-
-Patients enter the EHR system via one of these paths:
-
-```
-PATH 1: Direct Purchase (Self-Service)
-───────────────────────────────────────
-Website → View Services → Purchase Package → Entra ID Signup (automated) → Patient Portal
-
-PATH 2: Concierge Discovery Call ($300)
-───────────────────────────────────────
-Website → Contact → Book Discovery Call → Pay $300 → Phone Consultation →
-  └─ If enrolling: Purchase Package → Entra ID Signup → Patient Portal
-  └─ If not enrolling: End
-
-PATH 3: Manual Enrollment (Clinic Staff)
-───────────────────────────────────────
-Patient contacts clinic → Staff creates account in EHR → Patient receives portal invite
-```
-
-### System Responsibilities
-
-| System | Responsibility | What Happens Here |
-|--------|----------------|-------------------|
-| **Website (Shopify)** | Marketing & Sales | Service discovery, education, payment processing |
-| **Patient Portal** | Patient Self-Service | Questionnaires, results viewing, form downloads, educational materials |
-| **EHR (Clinician App)** | Clinical Workflow | Patient records, assessments, clinical documentation |
-
-### The Needs Assessment
-
-**Purpose:** Understand the patient holistically before the consultation
-- Medical goals and health concerns
-- Life goals (6 months, 1 year, 5 years)
-- What age they're comfortable living to
-- Major life goals they want to achieve
-
-**When:** After enrollment, before clinical visit
-**How:**
-- Sent as email link, OR
-- Completed in Patient Portal after login
-- Can be done by phone for accessibility
-
-**Why:** Maximize clinician time and consultation thoroughness by gathering information upfront.
-
-### Patient Portal Features (Current & Future)
-
-| Feature | Status | Description |
-|---------|--------|-------------|
-| Online Questionnaires | ✅ Current | Needs assessment, health history forms |
-| Results Viewing | ✅ Current | View assessment results |
-| Form Downloads | ✅ Current | Lab requisitions, referral forms |
-| Educational Materials | 🔜 Planned | Health education content |
-| AI Health Assistant | 🔜 Future | Canadian-hosted LLM for health questions |
-
-### Future AI Health Assistant Architecture
-
-```
-Patient Question
-      ↓
-Canadian-Hosted LLM
-      ↓
-┌─────────────────────────────────────────┐
-│ Knowledge Sources:                       │
-│ ├─ General Health Knowledge Graph (Blob) │
-│ ├─ Patient's Structured Data (Cosmos DB) │
-│ └─ Patient's Assessment Results          │
-└─────────────────────────────────────────┘
-      ↓
-Personalized Health Guidance
-```
-
-### Integration Points
-
-| System | URL | Purpose |
-|--------|-----|---------|
-| Patient Portal | portal.whitepinemedical.ca | Patient self-service (questionnaires, results, forms) |
-| Clinician EHR | app.whitepinemedical.ca | Staff dashboard, clinical workflow |
-| Main Website | whitepinemedical.ca | This Shopify site (marketing, sales) |
-
-### Contact Information
-
-| Type | Address |
+| File | Purpose |
 |------|---------|
-| General | info@whitepinemedical.ca |
-| Bookings | bookings@whitepinemedical.ca |
-| Privacy | privacy@whitepinemedical.ca |
-
----
-
-## 11. Sources of Truth
-
-| Topic | File | Notes |
-|-------|------|-------|
-| Quick reference | CLAUDE.md | Entry point, overview |
-| Full context | CLAUDE_CONTEXT.md | This file |
-| Version history | CHANGELOG.md | All changes documented |
-| Bug tracking | KNOWN_ISSUES.md | Active issues |
-| Project status | PROJECT_STATUS.md | Component completion |
-| Onboarding strategy | docs/ONBOARDING_STRATEGY.md | Customer journey & sales optimization |
-| Theme settings | config/settings_data.json | Colors, typography |
-| Header config | sections/group-header.json | Navigation, buttons |
-| Homepage | templates/index.json | All homepage sections |
-
----
-
-## 12. Session Workflow
-
-### Session Start
-
-```
-Read these files from shopify-themes/broadcast:
-1. CLAUDE.md (quick overview)
-2. CLAUDE_CONTEXT.md (this file - credentials, commands)
-3. CHANGELOG.md (recent changes)
-4. KNOWN_ISSUES.md (active bugs)
-
-CRITICAL RULES:
-- NEVER push to live theme (TS Media Design #178766348583)
-- ALWAYS push to Broadcast theme (#182960718119)
-- COMMIT after every unit of work
-- Test locally before pushing to Shopify
-```
-
-### Session End
-
-```
-END OF SESSION - Verify:
-1. All changes committed? → git status
-2. Pushed to GitHub? → git push
-3. Pushed to Broadcast theme? → shopify theme push --theme 182960718119
-4. CHANGELOG.md updated?
-5. KNOWN_ISSUES.md updated (if bug fixed)?
-```
+| CLAUDE.md | Quick reference entry point |
+| SHOPIFY_DEVELOPMENT_WORKFLOW.md | Complete workflow guide |
+| CLAUDE_CONTEXT.md | This file - full context |
+| KNOWN_ISSUES.md | Bug tracking |
+| CHANGELOG.md | Version history |
+| PROJECT_STATUS.md | Component completion |
 
 ---
 
@@ -439,6 +371,6 @@ END OF SESSION - Verify:
 
 ---
 
-**Version:** 1.0.0
+**Version:** 2.0.0
 **Last Updated:** 2026-01-21
 **Primary Contact:** Dr. James French

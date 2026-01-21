@@ -1,0 +1,23 @@
+# White Pine Medical - Shopify Theme Ignore Rules
+# ================================================
+# This file prevents local pushes from overwriting remote customizer settings.
+#
+# CRITICAL: These files contain image URLs and section configurations
+# that are managed via Shopify Admin Theme Customizer.
+# Pushing local versions will DESTROY customizer changes (hero images, etc.)
+
+# Global theme settings (colors, typography, logo, favicon)
+config/settings_data.json
+
+# Template-specific section configurations (hero banners, page content)
+# These store image URLs and block configurations set via Customizer
+templates/index.json
+templates/page.about.json
+templates/page.contact.json
+templates/page.privacy-trust.json
+templates/page.urgent-care.json
+templates/product.json
+
+# Header/footer group configurations
+sections/group-header.json
+sections/group-footer.json

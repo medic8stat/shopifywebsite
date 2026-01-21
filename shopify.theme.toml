@@ -1,0 +1,26 @@
+# White Pine Medical - Shopify Theme Configuration
+# =================================================
+# This file configures the Shopify CLI for safe theme development.
+#
+# CRITICAL RULES:
+# - NEVER push to production theme (TS Media Design #178766348583)
+# - ALWAYS use the broadcast environment for development
+# - JSON files are ignored to protect customizer settings
+
+[environments.broadcast]
+# Development/Staging theme - SAFE TO PUSH
+store = "whitepinemedical.myshopify.com"
+theme = "182960718119"
+ignore = [
+  "config/settings_data.json",
+  "templates/*.json",
+  "sections/group-header.json",
+  "sections/group-footer.json"
+]
+
+[environments.production]
+# DANGER: Live theme - DO NOT USE FOR DEVELOPMENT
+# This is here only for reference - NEVER push to this theme
+store = "whitepinemedical.myshopify.com"
+theme = "178766348583"
+# No ignore rules - this environment should NEVER be used for pushes

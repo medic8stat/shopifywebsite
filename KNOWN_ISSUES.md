@@ -24,6 +24,61 @@
 
 ## Active Issues
 
+### RESOLVED-007: Theme Push Overwrites Customizer Changes (Hero Images Lost)
+
+**Severity:** CRITICAL
+**Status:** ✅ RESOLVED
+**Category:** Bug/Workflow
+**Reported:** 2026-01-21
+**Resolved:** 2026-01-21
+
+**Problem:**
+Hero banner images and other content changes made via Shopify Customizer were being lost after code pushes. Changes appeared to work initially but disappeared after subsequent `shopify theme push` commands.
+
+**Root Cause:**
+Theme 2.0 stores content in JSON files (`templates/*.json`, `config/settings_data.json`). When running `shopify theme push`, local JSON files overwrite remote JSON files, destroying any Customizer changes (images, text, settings).
+
+The workflow was:
+1. User makes image change in Customizer → saved to Shopify JSON
+2. Developer runs `shopify theme push` → local (stale) JSON overwrites Shopify JSON
+3. Image change is lost
+
+**Resolution:**
+Implemented comprehensive file protection and workflow changes:
+
+1. **Created `.shopifyignore`** - Prevents push from overwriting:
+   - `config/settings_data.json`
+   - `templates/*.json` (index, about, contact, privacy-trust, urgent-care, product)
+   - `sections/group-header.json`, `sections/group-footer.json`
+
+2. **Created `shopify.theme.toml`** - Environment-based configuration:
+   - `broadcast` environment with ignore rules for safe development
+   - `production` environment defined but marked as NEVER USE
+
+3. **Established clear workflow separation:**
+   - CODE changes (Liquid, CSS, JS) → Claude Code edits locally → push
+   - CONTENT changes (images, text) → User edits in Customizer → Claude pulls and commits
+
+4. **Updated all documentation:**
+   - CLAUDE.md - Quick reference with critical rules
+   - CLAUDE_CONTEXT.md - Full workflow details
+   - SHOPIFY_DEVELOPMENT_WORKFLOW.md - Complete guide (NEW)
+
+**Files Created/Modified:**
+- `.shopifyignore` (NEW)
+- `shopify.theme.toml` (NEW)
+- `SHOPIFY_DEVELOPMENT_WORKFLOW.md` (NEW)
+- `CLAUDE.md` (updated)
+- `CLAUDE_CONTEXT.md` (updated)
+
+**Prevention:**
+- Always run `shopify theme pull` before starting work
+- Use `shopify theme push -e broadcast` (respects ignore rules)
+- Never edit JSON files locally for content changes
+- Content changes must go through Shopify Customizer
+
+---
+
 ### ISS-001: Privacy & Trust Page Needs Shopify Setup
 
 **Severity:** LOW
