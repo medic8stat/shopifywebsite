@@ -88,7 +88,7 @@ async function pushSettings() {
   console.log('\nPushing settings_data.json to dev theme...\n');
   try {
     execSync(
-      `cd "${__dirname}" && shopify theme push --store ${STORE} --theme ${DEV_THEME_ID} --only "config/settings_data.json"`,
+      `cd "${__dirname}" && shopify theme push --store ${STORE} --theme ${DEV_THEME_ID} --allow-live --only "config/settings_data.json"`,
       { encoding: 'utf-8', stdio: 'inherit' }
     );
     console.log('\n✅ Settings pushed to Shopify\n');
@@ -114,7 +114,7 @@ async function pushFile(filename) {
   console.log(`\nPushing ${filename} to dev theme...\n`);
   try {
     execSync(
-      `cd "${__dirname}" && shopify theme push --store ${STORE} --theme ${DEV_THEME_ID} --only "${filename}"`,
+      `cd "${__dirname}" && shopify theme push --store ${STORE} --theme ${DEV_THEME_ID} --allow-live --only "${filename}"`,
       { encoding: 'utf-8', stdio: 'inherit' }
     );
     console.log(`\n✅ File pushed: ${filename}\n`);

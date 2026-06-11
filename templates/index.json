@@ -7,7 +7,7 @@
           "type": "_slide-image",
           "settings": {
             "image": "shopify://shop_images/iStock-1311840964.jpg",
-            "link": "shopify://products/white-pine-medical-longevity-assessment",
+            "link": "/pages/services",
             "flex_align_desktop": "align--middle-center-desktop",
             "flex_align_mobile": "align--middle-center-mobile",
             "show_text_background": false,

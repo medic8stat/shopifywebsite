@@ -41,7 +41,7 @@
             "border_color": "",
             "border_opacity": 20,
             "show_social_links": true,
-            "show_gift_card": true,
+            "show_gift_card": false,
             "show_locale_selector": true,
             "show_globe_icon": true,
             "show_country_selector": true,
