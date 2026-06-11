@@ -1,12 +1,3 @@
-/*
- * ------------------------------------------------------------
- * IMPORTANT: The contents of this file are auto-generated.
- *
- * This file may be updated by the Shopify admin theme editor
- * or related systems. Please exercise caution as any changes
- * made to this file may be overwritten.
- * ------------------------------------------------------------
- */
 {
   "sections": {
     "section-divider": {
@@ -25,7 +16,7 @@
         "subheading-text": {
           "type": "text",
           "settings": {
-            "text": "<p>Coming Soon to Rothesay, New Brunswick</p>",
+            "text": "<p>Opening 9th June 2026!  2 Hampton Road, Rothesay, New Brunswick. </p>",
             "text_font_size": "body-medium",
             "padding_bottom": 8
           }
@@ -33,7 +24,7 @@
         "heading": {
           "type": "heading",
           "settings": {
-            "title": "Walk-In Urgent Care",
+            "title": "Urgent Care",
             "heading_font_size": "heading-large",
             "heading_tag": "automatic",
             "padding_bottom": 16
@@ -42,8 +33,8 @@
         "text": {
           "type": "text",
           "settings": {
-            "text": "<p>Professional healthcare when you need it most. No appointment necessary.</p>",
-            "text_font_size": "body-large",
+            "text": "<p>Professional healthcare when you need it most. Holistic care every time! </p>",
+            "text_font_size": "body-x-large",
             "padding_bottom": 24
           }
         }
@@ -54,17 +45,17 @@
         "text"
       ],
       "settings": {
-        "image_1": "shopify://shop_images/iStock-1311840964.jpg",
+        "image_1": "shopify://shop_images/ahmed-OjlYsOIq-TQ-unsplash_094f2eb3-b0d6-4297-8ce8-50f9a93b3b3c.jpg",
         "link": "",
         "width": "wrapper--full",
         "height": "four-fifty-height-hero",
         "flex_align_desktop": "align--middle-center-desktop",
-        "content_width": 60,
+        "content_width": 100,
         "mobile_height": "three-fifty-height-hero--mobile",
         "flex_align_mobile": "align--middle-center-mobile",
-        "color_scheme": "scheme-2",
-        "show_text_background": false,
-        "overlay_type": "color",
+        "color_scheme": "scheme-4",
+        "show_text_background": true,
+        "overlay_type": "text",
         "padding_top": 0,
         "padding_bottom": 0,
         "show_placeholder": false
@@ -78,10 +69,10 @@
           "settings": {
             "icon_name": "icon-clock",
             "icon_size": 50,
-            "icon_color": "#1E3A5F",
-            "title": "Walk-In, No Appointment",
+            "icon_color": "#1e3a5f",
+            "title": "Same Week Appointments",
             "heading_font_size": "heading-x-small",
-            "text": "<p>Simply walk in during clinic hours. Our team will see you as quickly as possible — no appointment needed for urgent care visits.</p>",
+            "text": "<p>Call the clinic to make an appointment.</p><p>         <strong>    506 847 7263 . </strong></p><p><strong>The clinic is located at 2 Hampton Road in Rothesay, NB E2E 5K9. </strong></p>",
             "text_font_size": "body-small",
             "heading_tag": "automatic"
           }
@@ -91,7 +82,7 @@
           "settings": {
             "icon_name": "icon-heart",
             "icon_size": 50,
-            "icon_color": "#1E3A5F",
+            "icon_color": "#1e3a5f",
             "title": "Covered by NB Medicare",
             "heading_font_size": "heading-x-small",
             "text": "<p>New Brunswick residents can access urgent care services covered by Medicare. No out-of-pocket costs for eligible visits.</p>",
@@ -104,7 +95,7 @@
           "settings": {
             "icon_name": "icon-award",
             "icon_size": 50,
-            "icon_color": "#1E3A5F",
+            "icon_color": "#1e3a5f",
             "title": "Physician-Led Care",
             "heading_font_size": "heading-x-small",
             "text": "<p>All urgent care visits are led by experienced physicians who provide thorough, professional care for your acute health needs.</p>",
@@ -150,7 +141,7 @@
         "text": {
           "type": "text",
           "settings": {
-            "text": "<p>Our urgent care clinic will provide care for non-life-threatening conditions that need prompt attention:</p><ul><li>Minor injuries and cuts requiring stitches</li><li>Sprains and strains</li><li>Infections (ear, throat, urinary, skin)</li><li>Cold and flu symptoms</li><li>Allergic reactions (non-severe)</li><li>Minor burns</li><li>Rashes and skin conditions</li><li>Eye infections and irritations</li><li>Stomach pain and digestive issues</li><li>Headaches and migraines</li></ul><p><strong>For life-threatening emergencies, please call 911 or go to your nearest emergency department.</strong></p>",
+            "text": "<p>Our urgent care clinic will provide care for non-life-threatening conditions that need prompt attention:</p><ul><li>Minor injuries and cuts requiring stitches</li><li>Sprains and strains</li><li>Infections (ear, throat, urinary, skin)</li><li>Cold and flu symptoms. </li><li>Allergic reactions (non-severe)</li><li>Minor burns</li><li>Rashes and skin conditions</li><li>Eye infections and irritations</li><li>Stomach pain and digestive issues</li><li>Headaches and migraines</li></ul><p>For life-threatening emergencies, please call 911 or go to your nearest emergency department.</p>",
             "text_font_size": "body-medium",
             "padding_bottom": 24
           }
@@ -176,34 +167,39 @@
           "type": "text",
           "settings": {
             "title": "When will urgent care open?",
-            "text": "<p>We're currently preparing our urgent care clinic and will announce our opening date soon. Sign up for notifications through our contact page to be the first to know.</p>"
+            "heading_font_size": "heading-small",
+            "text": "<p>We open for same week appointments the 9th of June 2026! </p>"
           }
         },
         "block-0": {
           "type": "text",
           "settings": {
             "title": "Is urgent care covered by Medicare?",
-            "text": "<p>Yes! For New Brunswick residents with valid Medicare coverage, urgent care physician services are covered at no cost. Some additional services or supplies may have fees — our staff will inform you before providing any services with associated costs.</p>"
+            "heading_font_size": "heading-small",
+            "text": "<p>Yes! For New Brunswick residents with valid Medicare coverage, urgent care physician services are covered at no cost. Some additional services or supplies may have fees. Our staff will inform you before providing any services with associated costs.</p>"
           }
         },
         "block-1": {
           "type": "text",
           "settings": {
             "title": "What should I bring to my visit?",
-            "text": "<p>Please bring your NB Medicare card, a list of current medications, and any relevant medical information. If you don't have your Medicare card, we can still see you — we'll help you sort out billing afterward.</p>"
+            "heading_font_size": "heading-small",
+            "text": "<p>Please bring your NB Medicare card, a list of current medications, and any relevant medical information. If you don't have your Medicare card, we can still see you. We'll help you sort out billing afterward.</p>"
           }
         },
         "block-2": {
           "type": "text",
           "settings": {
             "title": "How long is the typical wait?",
-            "text": "<p>Wait times vary depending on patient volume and the severity of cases. We see patients based on medical urgency, not arrival time. Our goal is to minimize your wait while ensuring everyone receives appropriate care.</p>"
+            "heading_font_size": "heading-small",
+            "text": "<p>Once you've contacted the clinic, you'll be sent some questionnaires to fill in online, then you will be booked based on clinical urgency. </p>"
           }
         },
         "block-3": {
           "type": "text",
           "settings": {
             "title": "Can out-of-province visitors use urgent care?",
+            "heading_font_size": "heading-small",
             "text": "<p>Yes, we welcome patients from outside New Brunswick. You may need to pay at the time of service and submit a claim to your home province for reimbursement. We'll provide all necessary documentation.</p>"
           }
         }
@@ -219,8 +215,12 @@
         "default_open": true,
         "title": "Frequently Asked Questions",
         "heading_font_size": "heading-medium",
+        "show_icon": false,
+        "icon_name": "icon-award",
+        "icon_size": 20,
         "width": "wrapper",
         "color_scheme": "scheme-1",
+        "icon_color": "",
         "padding_top": 60,
         "padding_bottom": 60
       }

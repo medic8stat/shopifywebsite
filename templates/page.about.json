@@ -1,12 +1,3 @@
-/*
- * ------------------------------------------------------------
- * IMPORTANT: The contents of this file are auto-generated.
- *
- * This file may be updated by the Shopify admin theme editor
- * or related systems. Please exercise caution as any changes
- * made to this file may be overwritten.
- * ------------------------------------------------------------
- */
 {
   "sections": {
     "section-hero-banner": {
@@ -122,7 +113,7 @@
             "icon_color": "#1E3A5F",
             "title": "Progress That Lasts",
             "heading_font_size": "heading-x-small",
-            "text": "<p>We emphasize improvement over perfection, sustainability over quick gains. Our science-based approach delivers measurable, lasting results — not temporary solutions.</p>",
+            "text": "<p>We emphasize improvement over perfection, sustainability over quick gains. Our science-based approach delivers measurable, lasting results, not temporary solutions.</p>",
             "text_font_size": "body-small",
             "heading_tag": "automatic"
           }
@@ -165,7 +156,7 @@
         "text": {
           "type": "text",
           "settings": {
-            "text": "<p>At White Pine Medical, we empower you to own your health through personalized diagnostics and a focus on movement, strength, and lasting wellness.</p><ul><li>Gain deep understanding of your unique health</li><li>Access comprehensive diagnostics and insights</li><li>Focus on movement, strength, and stability</li><li>Learn to manage your health confidently</li></ul><p>\"Doctor\" means \"teacher\" — we're here to guide you on your health journey.</p>",
+            "text": "<p>At White Pine Medical, we empower you to own your health through personalized diagnostics and a focus on movement, strength, and lasting wellness.</p><ul><li>Gain deep understanding of your unique health</li><li>Access comprehensive diagnostics and insights</li><li>Focus on movement, strength, and stability</li><li>Learn to manage your health confidently</li></ul><p>\"Doctor\" means \"teacher.\" We're here to guide you on your health journey.</p>",
             "text_font_size": "body-medium",
             "padding_bottom": 24
           }
@@ -256,7 +247,7 @@
           "type": "text",
           "settings": {
             "title": "Why is the clinic at a fitness centre?",
-            "text": "<p>ForFitness and Athletics Performance Centre offers a science-based approach with a purpose-built facility. We have multidisciplinary support including physiotherapy, chiropractic, massage therapy, psychology, and naturopathy — all aligned with our philosophy of movement, strength, and lasting wellness.</p>"
+            "text": "<p>ForFitness and Athletics Performance Centre offers a science-based approach with a purpose-built facility. We have multidisciplinary support including physiotherapy, chiropractic, massage therapy, psychology, and naturopathy, all aligned with our philosophy of movement, strength, and lasting wellness.</p>"
           }
         },
         "block-0": {

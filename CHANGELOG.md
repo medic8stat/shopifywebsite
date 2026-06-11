@@ -4,6 +4,32 @@ All notable changes to the White Pine Medical Shopify website will be documented
 
 ---
 
+## [2026-06-11] - Customer Feedback Fixes (v6.1.0)
+
+Source: customer feedback (Janice MacPherson, Wallace McCain Institute) + James's audit. Full plan: `docs/plans/2026-06-11-customer-feedback-fix-plan.md`. All changes pushed live to Broadcast theme 182960718119 and verified on whitepinemedical.ca.
+
+### Fixed
+
+- **Mobile title wrapping (Assessment Domains)** - `layout_mobile` 2 → 1 in `templates/index.json`; tiles now render one per row on phones (verified live: `--COLUMNS-MOBILE: 1`)
+- **Dead "View Services" button** (Dr. James French section) - `button_url` was empty (rendered `href="#!"`); now `/pages/services`
+- **"Ready to Begin?" columns had no links** - added inline links to all three: Start here → `/products/physician-concierge-assessment`, View all services → `/pages/services`, Contact the concierge team → `/pages/contact`
+- **Em-dashes removed site-wide** - 57 across 8 page templates (homepage 10, services 23, about 3, corporate-wellness 5, dr-james-french 4, for-business 4, privacy-trust 6, urgent-care 2) → commas/periods/colons; product-name separators now colons ("Genetic Panel: Nutrigenetics"). Verified 0 visible em-dashes on live homepage + services
+- **`products-import.csv`** - 9 em-dashes in product descriptions replaced (live product descriptions still need admin edit - see Pending)
+
+### Changed
+
+- **Footer newsletter copy** ("Stay in Touch") - replaced Shopify default ("special offers, free giveaways, and once-in-a-lifetime deals") with brand-appropriate copy
+
+### Pending (need James / admin access)
+
+- Instagram + TikTok links still point at Shopify defaults (`config/settings_data.json` → `instagram_link`/`tiktok_link`) - need real handles or hide icons
+- "Customer Care" footer column points at empty menu (`linklist: ""`) - create menu in admin (Online Store → Navigation), then set handle in `sections/group-footer.json`
+- 4 live product descriptions contain em-dashes (Metabolic Flexibility, Reaction Time, Lower Limb Power, Psychiatric Screening Online) - edit in admin; CSV already cleaned
+- Deep Dive service page/section - copy draft awaiting James input (price, positioning)
+- Photo swaps - awaiting James's list + replacement files
+
+---
+
 ## [2026-01-21] - Services Page Restructure & Product CSV (v6.0.9)
 
 ### Changed

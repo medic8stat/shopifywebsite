@@ -1,12 +1,3 @@
-/*
- * ------------------------------------------------------------
- * IMPORTANT: The contents of this file are auto-generated.
- *
- * This file may be updated by the Shopify admin theme editor
- * or related systems. Please exercise caution as any changes
- * made to this file may be overwritten.
- * ------------------------------------------------------------
- */
 {
   "sections": {
     "hero": {
@@ -90,7 +81,7 @@
         "text": {
           "type": "text",
           "settings": {
-            "text": "<p>Dr. French's approach to medicine has been shaped by decades in emergency departments and trauma systems, where he has cared for patients at their most vulnerable moments. During the COVID-19 pandemic, he witnessed firsthand not only the devastating effects of acute illness, but also the profound consequences of chronic disease, delayed prevention, burnout, and system strain—for patients and healthcare workers alike.</p><p>These experiences crystallized a central insight: many of the outcomes seen in emergency medicine are not sudden or random, but the result of years of unaddressed risk, missed opportunities for early intervention, and fragmented care.</p><p>In January 2024, Dr. French underwent major cardiac surgery himself. Experiencing the healthcare system from the patient's perspective further reinforced his commitment to longevity-focused, anticipatory medicine—care that prioritizes resilience, functional capacity, and informed decision-making long before crisis occurs.</p>",
+            "text": "<p>Dr. French's approach to medicine has been shaped by decades in emergency departments and trauma systems, where he has cared for patients at their most vulnerable moments. During the COVID-19 pandemic, he witnessed firsthand not only the devastating effects of acute illness, but also the profound consequences of chronic disease, delayed prevention, burnout, and system strain, for patients and healthcare workers alike.</p><p>These experiences crystallized a central insight: many of the outcomes seen in emergency medicine are not sudden or random, but the result of years of unaddressed risk, missed opportunities for early intervention, and fragmented care.</p><p>In January 2024, Dr. French underwent major cardiac surgery himself. Experiencing the healthcare system from the patient's perspective further reinforced his commitment to longevity-focused, anticipatory medicine: care that prioritizes resilience, functional capacity, and informed decision-making long before crisis occurs.</p>",
             "text_font_size": "body-medium",
             "padding_bottom": 0
           }
@@ -158,7 +149,7 @@
         "text": {
           "type": "text",
           "settings": {
-            "text": "<p>While emergency medicine remains central to his professional identity, Dr. French's work at White Pine Medical represents a deliberate evolution toward preventive, data-driven care. His practice integrates:</p><ul><li>Cardiovascular and cardiopulmonary fitness testing</li><li>Metabolic and body composition analysis</li><li>Cognitive, neurological, and movement assessment</li><li>Evidence-based risk stratification</li><li>Careful interpretation of advanced diagnostics</li></ul><p>Rather than offering indiscriminate testing, Dr. French emphasizes clinical judgment, prioritization, and context—helping individuals understand which interventions matter most for their health goals, risk profile, and stage of life.</p>",
+            "text": "<p>While emergency medicine remains central to his professional identity, Dr. French's work at White Pine Medical represents a deliberate evolution toward preventive, data-driven care. His practice integrates:</p><ul><li>Cardiovascular and cardiopulmonary fitness testing</li><li>Metabolic and body composition analysis</li><li>Cognitive, neurological, and movement assessment</li><li>Evidence-based risk stratification</li><li>Careful interpretation of advanced diagnostics</li></ul><p>Rather than offering indiscriminate testing, Dr. French emphasizes clinical judgment, prioritization, and context, helping individuals understand which interventions matter most for their health goals, risk profile, and stage of life.</p>",
             "text_font_size": "body-medium",
             "padding_bottom": 0
           }
@@ -192,7 +183,7 @@
         "text": {
           "type": "text",
           "settings": {
-            "text": "<p>Dr. French believes that effective longevity medicine is not about chasing every possible metric, but about clarity, restraint, and intelligent action. His role as a physician is not to sell tests, but to help patients make sense of complex information, reduce unnecessary risk, and build durable health over time.</p><p>White Pine Medical was created to support individuals who want a thoughtful, physician-guided approach to health—whether they are focused on long-term vitality, recovery from illness, optimizing performance, or navigating uncertainty with confidence.</p>",
+            "text": "<p>Dr. French believes that effective longevity medicine is not about chasing every possible metric, but about clarity, restraint, and intelligent action. His role as a physician is not to sell tests, but to help patients make sense of complex information, reduce unnecessary risk, and build durable health over time.</p><p>White Pine Medical was created to support individuals who want a thoughtful, physician-guided approach to health, whether they are focused on long-term vitality, recovery from illness, optimizing performance, or navigating uncertainty with confidence.</p>",
             "text_font_size": "body-medium",
             "padding_bottom": 0
           }

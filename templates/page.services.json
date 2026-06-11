@@ -2,8 +2,6 @@
   "sections": {
     "hero": {
       "type": "section-hero",
-      "blocks": {},
-      "block_order": [],
       "settings": {
         "image_1": "shopify://shop_images/pexels-jakkel-418831.jpg",
         "link": "",
@@ -95,7 +93,7 @@
         "subheading": {
           "type": "subheading",
           "settings": {
-            "subheading": "Option 1 — Recommended First Step",
+            "subheading": "Option 1: Recommended First Step",
             "padding_bottom": 12
           }
         },
@@ -111,7 +109,7 @@
         "text": {
           "type": "text",
           "settings": {
-            "text": "<p><strong>Best for:</strong></p><ul><li>People seeking clarity, prevention, or long-term planning</li><li>Those unsure which assessments or services they need</li><li>Individuals who want physician guidance before committing to testing</li></ul><p><strong>What you'll get:</strong></p><p>A 60–90 minute, one-on-one appointment with Dr. James French focused on understanding your goals, reviewing your health at a high level, identifying areas of risk, and mapping appropriate next steps.</p><p>This appointment helps you decide whether further assessment, testing, or ongoing care is appropriate — and if so, which path fits you best.</p><p><strong>What it is not:</strong> Not urgent or emergency care. Not a treatment visit. Not a requirement to enroll in any program.</p><p><strong>Fee:</strong> $300 CAD (not covered by Medicare)</p>",
+            "text": "<p><strong>Best for:</strong></p><ul><li>People seeking clarity, prevention, or long-term planning</li><li>Those unsure which assessments or services they need</li><li>Individuals who want physician guidance before committing to testing</li></ul><p><strong>What you'll get:</strong></p><p>A 60–90 minute, one-on-one appointment with Dr. James French focused on understanding your goals, reviewing your health at a high level, identifying areas of risk, and mapping appropriate next steps.</p><p>This appointment helps you decide whether further assessment, testing, or ongoing care is appropriate, and if so, which path fits you best.</p><p><strong>What it is not:</strong> Not urgent or emergency care. Not a treatment visit. Not a requirement to enroll in any program.</p><p><strong>Fee:</strong> $300 CAD (not covered by Medicare)</p>",
             "text_font_size": "body-medium",
             "padding_bottom": 20
           }
@@ -156,7 +154,7 @@
         "subheading": {
           "type": "subheading",
           "settings": {
-            "subheading": "Option 2 — For Those Ready to Proceed",
+            "subheading": "Option 2: For Those Ready to Proceed",
             "padding_bottom": 12
           }
         },
@@ -197,7 +195,7 @@
         "button"
       ],
       "settings": {
-        "image_1": "",
+        "image_1": "shopify://shop_images/allen-taylor-FXX0djgGRLI-unsplash.jpg",
         "image_width": "one-half",
         "text_alignment": "text-left",
         "layout": "",
@@ -217,7 +215,7 @@
         "subheading": {
           "type": "subheading",
           "settings": {
-            "subheading": "Option 3 — Publicly Funded Care",
+            "subheading": "Option 3: Publicly Funded Care",
             "padding_bottom": 12
           }
         },
@@ -258,7 +256,7 @@
         "button"
       ],
       "settings": {
-        "image_1": "",
+        "image_1": "shopify://shop_images/ahmed-OjlYsOIq-TQ-unsplash_094f2eb3-b0d6-4297-8ce8-50f9a93b3b3c.jpg",
         "image_width": "one-half",
         "text_alignment": "text-left",
         "layout": "",
@@ -283,7 +281,7 @@
             "icon_color": "#1e3a5f",
             "title": "Assess",
             "heading_font_size": "heading-small",
-            "text": "<p>We start by understanding your current health, goals, and risk factors — not just symptoms.</p>",
+            "text": "<p>We start by understanding your current health, goals, and risk factors, not just symptoms.</p>",
             "text_font_size": "body-medium",
             "heading_tag": "h3"
           }
@@ -309,7 +307,7 @@
             "icon_color": "#1e3a5f",
             "title": "Act",
             "heading_font_size": "heading-small",
-            "text": "<p>We create a clear, personalized plan — which may involve public system referrals, preventive care, targeted testing, or ongoing support.</p>",
+            "text": "<p>We create a clear, personalized plan, which may involve public system referrals, preventive care, targeted testing, or ongoing support.</p>",
             "text_font_size": "body-medium",
             "heading_tag": "h3"
           }
@@ -397,7 +395,7 @@
           "settings": {
             "default_open": false,
             "title": "Submaximal Cardiorespiratory Fitness Assessment",
-            "content": "<p><strong>Why it matters:</strong> Helps you improve energy, confidence, and cardiovascular health without pushing to maximal limits — ideal for safer fitness benchmarking.</p><p><strong>What it is:</strong> A lower-intensity alternative to VO₂ max testing that estimates aerobic fitness without requiring maximal effort. Suitable for individuals returning to exercise or preferring a gentler assessment.</p><p><strong>Duration:</strong> 45 minutes | Delivered by Kinesiologist / Exercise Physiologist</p><p><strong>Price:</strong> $249 CAD</p><p><a href=\"/products/submaximal-cardiorespiratory-fitness-assessment\" >Add to Cart</a></p>",
+            "content": "<p><strong>Why it matters:</strong> Helps you improve energy, confidence, and cardiovascular health without pushing to maximal limits, ideal for safer fitness benchmarking.</p><p><strong>What it is:</strong> A lower-intensity alternative to VO₂ max testing that estimates aerobic fitness without requiring maximal effort. Suitable for individuals returning to exercise or preferring a gentler assessment.</p><p><strong>Duration:</strong> 45 minutes | Delivered by Kinesiologist / Exercise Physiologist</p><p><strong>Price:</strong> $249 CAD</p><p><a href=\"/products/submaximal-cardiorespiratory-fitness-assessment\" >Add to Cart</a></p>",
             "show_icon": true,
             "icon_name": "icon-heart",
             "icon_size": 20,
@@ -409,7 +407,7 @@
           "settings": {
             "default_open": false,
             "title": "Resting 12-Lead ECG Screening",
-            "content": "<p><strong>Why it matters:</strong> Provides reassurance and early detection — particularly with palpitations, family history of heart disease, or before starting structured exercise.</p><p><strong>What it is:</strong> A resting heart rhythm and electrical activity screen. This assessment is non-diagnostic and may be used as part of broader cardiovascular screening or prior to exercise testing.</p><p><strong>Duration:</strong> 15 minutes | Delivered by LPN</p><p><strong>Price:</strong> $129 CAD</p><p><a href=\"/products/resting-12-lead-ecg-screening\" >Add to Cart</a></p>",
+            "content": "<p><strong>Why it matters:</strong> Provides reassurance and early detection, particularly with palpitations, family history of heart disease, or before starting structured exercise.</p><p><strong>What it is:</strong> A resting heart rhythm and electrical activity screen. This assessment is non-diagnostic and may be used as part of broader cardiovascular screening or prior to exercise testing.</p><p><strong>Duration:</strong> 15 minutes | Delivered by LPN</p><p><strong>Price:</strong> $129 CAD</p><p><a href=\"/products/resting-12-lead-ecg-screening\" >Add to Cart</a></p>",
             "show_icon": true,
             "icon_name": "icon-heart",
             "icon_size": 20,
@@ -460,7 +458,7 @@
           "settings": {
             "default_open": false,
             "title": "Body Composition Analysis with Nutrition Interpretation",
-            "content": "<p><strong>Why it matters:</strong> For real progress tracking — especially during weight loss, GLP-1 therapy, or recomposition — so you know whether changes reflect fat loss, muscle preservation, or hydration shifts.</p><p><strong>What it is:</strong> Measures fat mass, lean mass, hydration, and body composition patterns, followed by a personalized interpretation from a nutrition professional to help contextualize results.</p><p><strong>Duration:</strong> 15 min testing + 30 min interpretation | Delivered by LPN/Kinesiologist + Nutritionist</p><p><strong>Price:</strong> $199 CAD</p><p><a href=\"/products/body-composition-analysis\" >Add to Cart</a></p>",
+            "content": "<p><strong>Why it matters:</strong> For real progress tracking, especially during weight loss, GLP-1 therapy, or recomposition, so you know whether changes reflect fat loss, muscle preservation, or hydration shifts.</p><p><strong>What it is:</strong> Measures fat mass, lean mass, hydration, and body composition patterns, followed by a personalized interpretation from a nutrition professional to help contextualize results.</p><p><strong>Duration:</strong> 15 min testing + 30 min interpretation | Delivered by LPN/Kinesiologist + Nutritionist</p><p><strong>Price:</strong> $199 CAD</p><p><a href=\"/products/body-composition-analysis\" >Add to Cart</a></p>",
             "show_icon": true,
             "icon_name": "icon-ruler",
             "icon_size": 20,
@@ -484,7 +482,7 @@
           "settings": {
             "default_open": false,
             "title": "Metabolic Flexibility Assessment",
-            "content": "<p><strong>Why it matters:</strong> For metabolic health and stable energy. Identifies whether your body efficiently uses fat — relevant for insulin resistance risk and energy crashes.</p><p><strong>What it is:</strong> Assesses how efficiently your body switches between fat and carbohydrate fuel sources — an early marker of metabolic health.</p><p><strong>Duration:</strong> 45 minutes | Delivered by LPN or Kinesiologist</p><p><strong>Price:</strong> $249 CAD</p><p><a href=\"/products/metabolic-flexibility-assessment\" >Add to Cart</a></p>",
+            "content": "<p><strong>Why it matters:</strong> For metabolic health and stable energy. Identifies whether your body efficiently uses fat, relevant for insulin resistance risk and energy crashes.</p><p><strong>What it is:</strong> Assesses how efficiently your body switches between fat and carbohydrate fuel sources, an early marker of metabolic health.</p><p><strong>Duration:</strong> 45 minutes | Delivered by LPN or Kinesiologist</p><p><strong>Price:</strong> $249 CAD</p><p><a href=\"/products/metabolic-flexibility-assessment\" >Add to Cart</a></p>",
             "show_icon": true,
             "icon_name": "icon-flare",
             "icon_size": 20,
@@ -522,7 +520,7 @@
           "settings": {
             "default_open": false,
             "title": "Virtual Reality Vision Performance Screening",
-            "content": "<p><strong>Why it matters:</strong> For safety, confidence, and performance — particularly for driving, sport, or concussion history.</p><p><strong>What it is:</strong> A functional vision assessment evaluating depth perception, peripheral awareness, and reaction speed using virtual-reality technology.</p><p><strong>Duration:</strong> 30 minutes | Delivered by LPN</p><p><strong>Price:</strong> $179 CAD</p><p><a href=\"/products/vr-vision-performance-screening\" >Add to Cart</a></p>",
+            "content": "<p><strong>Why it matters:</strong> For safety, confidence, and performance, particularly for driving, sport, or concussion history.</p><p><strong>What it is:</strong> A functional vision assessment evaluating depth perception, peripheral awareness, and reaction speed using virtual-reality technology.</p><p><strong>Duration:</strong> 30 minutes | Delivered by LPN</p><p><strong>Price:</strong> $179 CAD</p><p><a href=\"/products/vr-vision-performance-screening\" >Add to Cart</a></p>",
             "show_icon": true,
             "icon_name": "icon-flare",
             "icon_size": 20,
@@ -546,7 +544,7 @@
           "settings": {
             "default_open": false,
             "title": "Reaction Time & Cognitive Response Test",
-            "content": "<p><strong>Why it matters:</strong> For performance, safety, and recovery monitoring in sport, work, and aging.</p><p><strong>What it is:</strong> Measures visual and auditory reaction speed and cognitive-motor coordination — important for aging, sport, and performance.</p><p><strong>Duration:</strong> 30 minutes | Delivered by Kinesiologist</p><p><strong>Price:</strong> $149 CAD</p><p><a href=\"/products/reaction-time-cognitive-response-test\" >Add to Cart</a></p>",
+            "content": "<p><strong>Why it matters:</strong> For performance, safety, and recovery monitoring in sport, work, and aging.</p><p><strong>What it is:</strong> Measures visual and auditory reaction speed and cognitive-motor coordination, important for aging, sport, and performance.</p><p><strong>Duration:</strong> 30 minutes | Delivered by Kinesiologist</p><p><strong>Price:</strong> $149 CAD</p><p><a href=\"/products/reaction-time-cognitive-response-test\" >Add to Cart</a></p>",
             "show_icon": true,
             "icon_name": "icon-lightning",
             "icon_size": 20,
@@ -769,7 +767,7 @@
           "type": "question",
           "settings": {
             "default_open": false,
-            "title": "Blood Testing — Administrative & Coordination Service",
+            "title": "Blood Testing: Administrative & Coordination Service",
             "content": "<p><strong>Why it matters:</strong> For convenience and speed when results are needed to guide decisions.</p><p><strong>What it is:</strong> Administrative coordination for next-day blood testing appointments, including requisition handling.</p><p><strong>Duration:</strong> 10 minutes | Delivered by LPN / Admin</p><p><strong>Price:</strong> $50 CAD</p><p><a href=\"/products/blood-testing-coordination-service\" >Add to Cart</a></p>",
             "show_icon": true,
             "icon_name": "icon-droplet",
@@ -805,7 +803,7 @@
           "type": "question",
           "settings": {
             "default_open": false,
-            "title": "Digital Longevity Risk Snapshot — Clinician Review",
+            "title": "Digital Longevity Risk Snapshot: Clinician Review",
             "content": "<p><strong>Why it matters:</strong> Converts complex health inputs into a clear, actionable snapshot.</p><p><strong>What it is:</strong> An online health and lifestyle questionnaire reviewed by a clinician, resulting in a written summary and risk snapshot.</p><p><strong>Duration:</strong> 15 minutes | Delivered by Physician / Senior Clinician</p><p><strong>Price:</strong> $350 CAD</p><p><a href=\"/products/digital-longevity-snapshot-clinician-review\" >Add to Cart</a></p>",
             "show_icon": true,
             "icon_name": "icon-flare",
@@ -817,7 +815,7 @@
           "type": "question",
           "settings": {
             "default_open": false,
-            "title": "Digital Longevity Risk Snapshot — Physician Consultation",
+            "title": "Digital Longevity Risk Snapshot: Physician Consultation",
             "content": "<p><strong>Why it matters:</strong> Translates data into decisions, priorities, and next steps.</p><p><strong>What it is:</strong> Includes the digital assessment plus a one-hour physician consultation to review results and next steps.</p><p><strong>Duration:</strong> 60 minutes | Delivered by Physician</p><p><strong>Price:</strong> $1,000 CAD</p><p><a href=\"/products/digital-longevity-snapshot-physician-consultation\" >Add to Cart</a></p>",
             "show_icon": true,
             "icon_name": "icon-flare",
@@ -867,7 +865,7 @@
           "type": "question",
           "settings": {
             "default_open": false,
-            "title": "Psychiatric & Mental Health Screening — Online Review",
+            "title": "Psychiatric & Mental Health Screening: Online Review",
             "content": "<p><strong>Why it matters:</strong> Provides clarity on symptoms and guides next-step support.</p><p><strong>What it is:</strong> Online mental-health screening tools reviewed by a physician, with a written summary report.</p><p><strong>Duration:</strong> Online + 30 minutes | Delivered by Physician</p><p><strong>Price:</strong> $399 CAD</p><p><a href=\"/products/psychiatric-mental-health-screening-online\" >Add to Cart</a></p>",
             "show_icon": true,
             "icon_name": "icon-chat",
@@ -879,7 +877,7 @@
           "type": "question",
           "settings": {
             "default_open": false,
-            "title": "Psychiatric & Mental Health Screening — In-Person",
+            "title": "Psychiatric & Mental Health Screening: In-Person",
             "content": "<p><strong>Why it matters:</strong> Converts screening into therapeutic support and behaviour change.</p><p><strong>What it is:</strong> Includes online screening tools followed by an in-person session with a psychologist or psychotherapist.</p><p><strong>Duration:</strong> 60 minutes | Delivered by Psychologist / Psychotherapist</p><p><strong>Price:</strong> $500 CAD</p><p><a href=\"/products/psychiatric-mental-health-screening-in-person\" >Add to Cart</a></p>",
             "show_icon": true,
             "icon_name": "icon-heart",
@@ -916,7 +914,7 @@
           "type": "question",
           "settings": {
             "default_open": false,
-            "title": "Genetic Panel — Nutrigenetics",
+            "title": "Genetic Panel: Nutrigenetics",
             "content": "<p><strong>Why it matters:</strong> Helps tailor nutrition strategies where standard advice may not fit.</p><p><strong>What it is:</strong> Kit-based genetic testing focused on nutrition and metabolism, with clinician review.</p><p><strong>Price:</strong> $599 CAD</p><p><a href=\"/products/genetic-panel-nutrigenetics\" >Add to Cart</a></p>",
             "show_icon": true,
             "icon_name": "icon-leaf",
@@ -928,7 +926,7 @@
           "type": "question",
           "settings": {
             "default_open": false,
-            "title": "Genetic Panel — Cancer Genetics",
+            "title": "Genetic Panel: Cancer Genetics",
             "content": "<p><strong>Why it matters:</strong> Supports informed screening discussions and prevention planning.</p><p><strong>What it is:</strong> Kit-based genetic testing for targeted cancer-risk screening, with clinician review.</p><p><strong>Price:</strong> $699 CAD</p><p><a href=\"/products/genetic-panel-cancer-genetics\" >Add to Cart</a></p>",
             "show_icon": true,
             "icon_name": "icon-shield",
@@ -940,7 +938,7 @@
           "type": "question",
           "settings": {
             "default_open": false,
-            "title": "Genetic Panel — Longevity & Health Genetics",
+            "title": "Genetic Panel: Longevity & Health Genetics",
             "content": "<p><strong>Why it matters:</strong> Helps prioritize prevention and lifestyle focus areas.</p><p><strong>What it is:</strong> Kit-based genetic testing for markers related to aging and cardiometabolic health, with clinician review.</p><p><strong>Price:</strong> $699 CAD</p><p><a href=\"/products/genetic-panel-longevity-health\" >Add to Cart</a></p>",
             "show_icon": true,
             "icon_name": "icon-flare",
@@ -1024,7 +1022,7 @@
         "button": {
           "type": "buttons",
           "settings": {
-            "button_text": "Book a Physician Concierge Assessment — $300",
+            "button_text": "Book a Physician Concierge Assessment ($300)",
             "button_url": "/products/physician-concierge-assessment",
             "button_type": "btn--primary",
             "button_size": "btn--large",
