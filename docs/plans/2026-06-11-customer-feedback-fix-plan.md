@@ -46,7 +46,9 @@ Upload replacement images to Shopify admin Files, re-point JSON references; fix 
 ## Open items / inputs needed
 - [x] Shopify CLI auth on this machine (2026-06-11)
 - [x] **Phase 1 SHIPPED 2026-06-11** — all text/link/layout fixes live and verified (0 em-dashes on homepage + services, dead button fixed, 3 CTA links added, mobile 1-per-row, newsletter copy). 57 em-dashes removed across 8 templates; products-import.csv cleaned (9 more)
-- [x] Social links round 1 (2026-06-11): Instagram + TikTok icons HIDDEN (no professional accounts yet); X/Twitter added → https://x.com/grade1view (verified live). PENDING: Facebook page URL + YouTube channel URL from James (`facebook_link` / `youtube_link` in the Broadcast preset). Note: theme renders the old Twitter bird icon, not the X logo
+- [x] **Social links DONE (2026-06-11):** Instagram + TikTok icons hidden (no professional accounts yet); live icons now Facebook (profile.php?id=61588985084710), X (@grade1view), YouTube (@JamesFrenchmedic8). Verified rendering on both domains. Note: theme shows the old Twitter bird icon, not the X logo.
+  - ⚠️ **Discovered:** `config/settings_data.json` is MALFORMED — ~67 stray top-level settings keys (incl. the real White Pine colors) alongside `current`(string)+`presets`. **The renderer reads the TOP-LEVEL keys**, not the preset. Any future settings change must be made at top level (preset kept in sync as belt-and-braces). Follow-up: normalize to canonical current-as-dict format in a supervised pass.
+  - When James gets a professional Instagram: set `instagram_link` (top level + preset) and the icon returns.
 - [ ] Customer Care menu created in admin → then set `linklist` handle in `sections/group-footer.json` + push
 - [ ] 4 live product descriptions still have em-dashes (admin edit): Metabolic Flexibility, Reaction Time, Lower Limb Power, Psychiatric Screening Online
 - [ ] Deep Dive: price, bookable-vs-inquiry, copy sign-off

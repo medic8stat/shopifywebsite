@@ -154,6 +154,8 @@ git push
 
 ## Method 2: SETTINGS Changes (Colors, Fonts, Global Settings)
 
+> ⚠️ **CRITICAL GOTCHA (discovered 2026-06-11):** `config/settings_data.json` is MALFORMED in this store. The canonical Shopify format is `{current, presets}` only, but this file carries ~67 stray top-level settings keys (instagram_link, all brand colors, etc.) alongside `current` (a preset-name string) and `presets`. **The live renderer reads the TOP-LEVEL keys — edits made inside `presets.Broadcast` are IGNORED** (proof: top-level holds the real White Pine navy `#1E3A5F`; the preset holds Broadcast factory gold `#ab8c52`). When changing any global setting: edit the TOP-LEVEL key, and mirror it in `presets.Broadcast` for consistency. Follow-up task: normalize the file to canonical current-as-dict format in a supervised pass — until then, do not "clean up" the stray keys; they ARE the live settings.
+
 Uses `shopify-content.mjs` script - no API token needed, uses Shopify CLI auth.
 
 ```bash
