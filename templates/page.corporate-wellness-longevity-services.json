@@ -227,7 +227,7 @@
         "step-3": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/portrait_photo_in_gym_less_than_5MG.jpg",
+            "image": "shopify://shop_images/dr-james-french-seated.jpg",
             "image_width": 80,
             "image_shape": "rounded",
             "title": "3. Action Plans",
