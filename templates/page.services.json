@@ -154,7 +154,7 @@
         "subheading": {
           "type": "subheading",
           "settings": {
-            "subheading": "Option 2: For Those Ready to Proceed",
+            "subheading": "Option 3: For Those Ready to Proceed",
             "padding_bottom": 12
           }
         },
@@ -202,8 +202,8 @@
         "width": "wrapper--full-padded",
         "height": "five-fifty-height-hero",
         "mobile_height": "image-height--mobile",
-        "reverse_blocks": true,
-        "color_scheme": "scheme-3",
+        "reverse_blocks": false,
+        "color_scheme": "scheme-1",
         "padding_top": 40,
         "padding_bottom": 40,
         "show_placeholder": true
@@ -215,7 +215,7 @@
         "subheading": {
           "type": "subheading",
           "settings": {
-            "subheading": "Option 3: Publicly Funded Care",
+            "subheading": "Option 4: Publicly Funded Care",
             "padding_bottom": 12
           }
         },
@@ -263,8 +263,8 @@
         "width": "wrapper--full-padded",
         "height": "five-fifty-height-hero",
         "mobile_height": "image-height--mobile",
-        "reverse_blocks": false,
-        "color_scheme": "scheme-1",
+        "reverse_blocks": true,
+        "color_scheme": "scheme-3",
         "padding_top": 40,
         "padding_bottom": 40,
         "show_placeholder": true
@@ -1045,6 +1045,67 @@
         "padding_top": 80,
         "padding_bottom": 80
       }
+    },
+    "option-2-deep-dive": {
+      "type": "section-double",
+      "blocks": {
+        "subheading": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "Option 2: For Complex Histories",
+            "padding_bottom": 12
+          }
+        },
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "title": "The Physician Deep Dive",
+            "heading_font_size": "heading-medium",
+            "padding_bottom": 16,
+            "heading_tag": "h2"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Most people who ask for a Deep Dive have been carrying the same questions for years. Older adults with complex medical histories who want their vitality and quality of life back. People with fatigue or pain that has never been fully explained. People whose physical health and mental health have become tangled together, and who want one physician to sit down and untangle the whole story.</p><p><strong>This is not a criticism of the system.</strong> Family physicians work incredibly hard and do remarkable work with the time they are given. But standard practice rarely allows more than thirty minutes on a single case in a session. Some files genuinely need more than that. The Deep Dive exists for those files.</p><p><strong>How it works.</strong> Before you ever sit down in person, the work is already underway:</p><ul><li>Dr. French spends roughly two hours going through your complete medical history, building a chronology and forming a real understanding of your file</li><li>You complete up to three hours of structured online assessments</li><li>Blood work is ordered and reviewed</li><li>Throughout, you and Dr. French go back and forth: clarifying details, testing working theories, correcting assumptions as the picture forms</li></ul><p>By the time you meet in person, you are already far down the road together. The appointment is spent where it counts: on findings, priorities, and a plan. No wasted time, no starting from zero.</p><p>The entire process is supported by White Pine's next-generation health platform, which brings your history, assessments, and results into one coherent picture.</p><p><strong>Not sure which stream fits?</strong> Some people know from the start that they want a Deep Dive and ask for it directly. Others begin with the <a href=\"/products/physician-concierge-assessment\">Physician Concierge Assessment</a> and decide from there. Either door works.</p><p><strong>What it is not:</strong> Not urgent or emergency care. Not a replacement for your family physician or your specialists. Not a commitment to ongoing programs or further testing.</p><p><strong>Fee:</strong> Billed privately by the hour (not covered by Medicare)</p>",
+            "text_font_size": "body-medium",
+            "padding_bottom": 20
+          }
+        },
+        "button": {
+          "type": "buttons",
+          "settings": {
+            "button_text": "Enquire about a Deep Dive",
+            "button_url": "/pages/contact",
+            "button_type": "btn--primary",
+            "button_size": "btn--large",
+            "button_style": "btn--solid",
+            "show_arrow": true,
+            "padding_bottom": 0
+          }
+        }
+      },
+      "block_order": [
+        "subheading",
+        "heading",
+        "text",
+        "button"
+      ],
+      "settings": {
+        "image_1": "shopify://shop_images/dr-james-french-headshot-2.jpg",
+        "image_width": "one-half",
+        "text_alignment": "text-left",
+        "layout": "",
+        "width": "wrapper--full-padded",
+        "height": "five-fifty-height-hero",
+        "mobile_height": "image-height--mobile",
+        "reverse_blocks": true,
+        "color_scheme": "scheme-3",
+        "padding_top": 40,
+        "padding_bottom": 40,
+        "show_placeholder": true
+      }
     }
   },
   "order": [
@@ -1052,6 +1113,7 @@
     "services-banner",
     "start-right-path",
     "option-1-concierge",
+    "option-2-deep-dive",
     "option-2-comprehensive",
     "option-3-urgent-care",
     "how-care-works",
