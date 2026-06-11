@@ -4,7 +4,9 @@
 
 ---
 
-## CURRENT STATUS (v6.0.2 - 2026-01-21)
+## CURRENT STATUS (v6.1.1 - 2026-06-11)
+
+> ⚠️ **PUSHES GO LIVE IMMEDIATELY.** Broadcast (182960718119) is the PUBLISHED theme. `shopify-content.mjs` push commands carry `--allow-live` (added 2026-06-11 — without it, non-interactive pushes die on a CLI confirmation prompt). There is no staging layer: verify content before pushing, verify live after.
 
 **Broadcast theme is NOW LIVE** at whitepinemedical.myshopify.com
 
@@ -46,7 +48,7 @@
 
 ### Step 1: Open Terminal and Navigate
 ```bash
-cd ~/shopify-themes/broadcast
+cd /Users/jamesfrench/shopifywebsite-work
 ```
 
 ### Step 2: Pull the Current Template
@@ -107,7 +109,7 @@ git push
 
 ### Step 1: Pull Settings
 ```bash
-cd ~/shopify-themes/broadcast
+cd /Users/jamesfrench/shopifywebsite-work
 node shopify-content.mjs pull-settings
 ```
 
@@ -136,7 +138,7 @@ git push
 ## Method 1: CODE Changes (Liquid, CSS, JS)
 
 ```bash
-cd ~/shopify-themes/broadcast
+cd /Users/jamesfrench/shopifywebsite-work
 
 # 1. Make changes to .liquid, .css, .js files
 # 2. Push to Shopify
@@ -159,7 +161,7 @@ git push
 Uses `shopify-content.mjs` script - no API token needed, uses Shopify CLI auth.
 
 ```bash
-cd ~/shopify-themes/broadcast
+cd /Users/jamesfrench/shopifywebsite-work
 
 # 1. Pull current settings from Shopify
 node shopify-content.mjs pull-settings
@@ -181,7 +183,7 @@ git push
 ## Method 3: SECTION CONTENT Changes (Hero Text, Images, Section Order)
 
 ```bash
-cd ~/shopify-themes/broadcast
+cd /Users/jamesfrench/shopifywebsite-work
 
 # 1. Pull the template file
 node shopify-content.mjs pull templates/index.json
@@ -243,7 +245,7 @@ node shopify-content.mjs pull sections/group-header.json
 | **LIVE Theme ID** | **182960718119 (Broadcast) - NOW LIVE** |
 | Old Theme ID | 178766348583 (TS Media Design) - DEPRECATED |
 | GitHub Repo | medic8stat/shopifywebsite |
-| Local Path | ~/shopify-themes/broadcast |
+| Local Path | /Users/jamesfrench/shopifywebsite-work |
 | Shopify CLI | 3.89.0 |
 
 ---
@@ -253,7 +255,7 @@ node shopify-content.mjs pull sections/group-header.json
 ### Starting a Session
 
 ```bash
-cd ~/shopify-themes/broadcast
+cd /Users/jamesfrench/shopifywebsite-work
 git pull
 node shopify-content.mjs pull-settings
 git status
@@ -262,7 +264,7 @@ git status
 ### Ending a Session
 
 ```bash
-cd ~/shopify-themes/broadcast
+cd /Users/jamesfrench/shopifywebsite-work
 git add -A && git commit -m "session: End of session sync"
 git push
 ```
@@ -354,8 +356,11 @@ Defines environments (no ignore rules):
 | Live Site (Domain) | https://www.whitepinemedical.ca |
 | Shopify Admin | https://admin.shopify.com/store/whitepinemedical |
 | Services Page | https://whitepinemedical.myshopify.com/pages/services |
-| Privacy & Trust | https://whitepinemedical.myshopify.com/pages/privacy-trust |
+| Privacy & Trust | https://whitepinemedical.myshopify.com/pages/privacy-and-trust |
 | Urgent Care | https://whitepinemedical.myshopify.com/pages/urgent-care |
+| Dr. James French | https://whitepinemedical.myshopify.com/pages/about-dr-james-french |
+
+> ⚠️ **Page handles ≠ template names.** Live handles: `about-dr-james-french`, `privacy-and-trust`. The template-name guesses (`/pages/dr-james-french`, `/pages/privacy-trust`) 404. `page.for-business` and `page.faq` templates exist but have NO published pages.
 
 ---
 

@@ -7,7 +7,7 @@
 > **NOT** the EHR Platform (`medic8stat/clinalytix-ehr`)
 
 > **Purpose:** Track active bugs, issues, and technical debt for the Shopify website.
-> **Last Updated:** 2026-01-21
+> **Last Updated:** 2026-06-11
 
 ---
 
@@ -18,11 +18,20 @@
 | ISS-001 | LOW | ✅ RESOLVED | Privacy & Trust page needs Shopify page creation |
 | ISS-002 | LOW | ✅ RESOLVED | Urgent Care page needs Shopify page creation |
 | ISS-003 | LOW | ✅ RESOLVED | Mobile menu still shows demo content |
-| ISS-004 | MEDIUM | ⚠️ PENDING | Missing images in text/photo sections |
+| ISS-004 | MEDIUM | ✅ RESOLVED | Missing images in text/photo sections (audit 2026-06-11: superseded by ISS-009/ISS-013) |
 | ISS-005 | HIGH | ✅ RESOLVED | Shopify Admin API token not accessible via Partners Dashboard |
 | ISS-008 | HIGH | ✅ RESOLVED | Services nav link pointing to old product page instead of /pages/services |
 | ISS-006 | HIGH | ✅ RESOLVED | .shopifyignore and shopify.theme.toml blocking template pushes |
 | ISS-007 | MEDIUM | ✅ RESOLVED | Services, Privacy & Trust, Urgent Care pages need creation in Shopify Admin |
+| ISS-009 | MEDIUM | ⚠️ PENDING | All 30 products have no product images (og:image falls back to logo) — conversion drag |
+| ISS-010 | LOW | ⚠️ PENDING | 4 live product descriptions contain em-dashes (Metabolic Flexibility, Reaction Time, Lower Limb Power, Psychiatric Screening Online) — admin edit, CSV already clean |
+| ISS-011 | LOW | ⚠️ PENDING | Stray duplicate page "Contact us - new client enquiry" still published + in sitemap — unpublish in admin |
+| ISS-012 | LOW | ⚠️ PENDING | Old longevity-assessment product still shows green "Live Better Longer" card (old brand, old logo) — replace or remove in admin |
+| ISS-013 | MEDIUM | ⚠️ PENDING | 4 off-brand tile images: Genetics = AI robot hand, Metabolic = chemistry stock, Mental Health = stock couple, services Option 1 = sci-fi hologram tablet. Brand brief agreed (premium clinic, real people, navy accents); needs replacement files |
+| ISS-014 | LOW | ✅ RESOLVED 2026-06-11 | Sitewide dead gift-card link (header toolbar show_gift_card) + hero linking to deprecated product — both fixed, verified live |
+| ISS-015 | LOW | ✅ RESOLVED 2026-06-11 | shopify-content.mjs pushes died non-interactively after Broadcast became live theme — `--allow-live` added |
+
+**Audit note (2026-06-11):** all 22 site images visually inspected — **zero watermarks**. Pages live at `/pages/about-dr-james-french` and `/pages/privacy-and-trust` (template-name handles 404). `page.for-business` + `page.faq` templates exist but no pages were ever created. Cross-repo: the Shopify→EHR CRM webhook chain was broken from birth — fixed in praxis_ehr ISS-361/362/363 (API v2.64.37→40).
 
 ---
 

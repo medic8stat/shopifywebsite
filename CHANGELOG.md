@@ -4,6 +4,42 @@ All notable changes to the White Pine Medical Shopify website will be documented
 
 ---
 
+## [2026-06-11 PM] - Audit Round 2: Dead Links, Headshots, Deep Dive, Customer Care (v6.1.1)
+
+Second session of the day. Full site audit (links, social, images), then fixes. All pushed live to Broadcast 182960718119 and verified on whitepinemedical.ca. Commits: d680a75, 6b778da, 9a2b69a, c1cc8b4.
+
+### Added
+
+- **Physician Deep Dive — Option 2 on /pages/services** - story-led pathway card per James's dictation (complex histories, unresolved fatigue/pain, "not a criticism of the system" front and center, 2h records review + up to 3h assessments + blood work before the in-person visit). Fee: billed privately by the hour, not covered by Medicare. CTA: "Enquire about a Deep Dive" -> /pages/contact, with inline concierge-assessment path for the undecided. Comprehensive renumbered to Option 3, Urgent Care to Option 4; layout alternation preserved
+- **Customer Care footer column now links somewhere** - converted the empty linklist block (no admin menu assigned) to a text block with direct links: Contact, Services, Urgent Care, Privacy & Trust. Closes Janice item 6 — her list is now 6/6 verified live
+
+### Changed
+
+- **All four Dr. French photo slots upgraded to studio headshots** (uploaded to Shopify Files as dr-james-french-*.jpg, web-optimized 2048px): homepage About the Physician -> standing; How Care Works "Prioritize" tile -> headshot-2 (was a low-res screenshot); bio page hero -> headshot (was a screenshot); corporate wellness step 3 -> seated
+- **Hero slide link** re-pointed from the deprecated longevity-assessment product to /pages/services
+
+### Fixed
+
+- **Sitewide dead gift-card link** - header toolbar `show_gift_card: true` (Broadcast demo leftover) rendered a 404 link on every page; now false
+- **shopify-content.mjs pushes were broken non-interactively** - Broadcast became the LIVE theme, so the CLI prompts "Push to live theme?" and dies in scripts; added `--allow-live` to both push commands
+
+### Audit results (no action needed)
+
+- **Zero watermarked images** across all 22 site images + product pages (visually inspected). The "needs changing" feeling = off-brand stock: genetics tile is an AI robot hand, metabolic tile is a chemistry lab, mental-health tile is a stock couple, services Option 1 is a sci-fi hologram tablet
+- Social links verified: YouTube (@JamesFrenchmedic8) live, X (@grade1view) confirmed real via oEmbed, Facebook needs one logged-in click to confirm
+- Pages live at /pages/about-dr-james-french and /pages/privacy-and-trust (NOT the template-name handles); for-business + faq templates exist but were never published as pages
+- Found via this session's Shopify order incident: webhook + CRM fixes shipped in praxis_ehr (ISS-361/362/363, v2.64.37-40) — see that repo's CHANGELOG
+
+### Pending (carried forward)
+
+- Janice reply draft + 3 apology drafts (Geoffrey/Tidal/Ester) awaiting James approval; Geoffrey's email needed from the Shopify order page
+- Shelley Wood (15d) + Hilary Alward (76d) qualified leads: handled offline or missed? (James to confirm)
+- Photo swaps for the 4 off-brand tiles + 30 product images (GPT brand brief exists)
+- Old product's green "Live Better Longer" card; stray "Contact us - new client enquiry" page; empty News blog (admin-side)
+- 4 live product descriptions still have em-dashes (admin edit)
+
+---
+
 ## [2026-06-11] - Customer Feedback Fixes (v6.1.0)
 
 Source: customer feedback (Janice MacPherson, Wallace McCain Institute) + James's audit. Full plan: `docs/plans/2026-06-11-customer-feedback-fix-plan.md`. All changes pushed live to Broadcast theme 182960718119 and verified on whitepinemedical.ca.

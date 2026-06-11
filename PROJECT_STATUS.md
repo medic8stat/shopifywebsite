@@ -4,11 +4,12 @@
 >
 > Repository: `medic8stat/shopifywebsite` | Store: whitepinemedical.myshopify.com
 >
-> **NOT** the EHR Platform (`medic8stat/clinalytix-ehr`)
+> **NOT** the EHR Platform (`medic8stat/praxis_ehr`)
 
-> **Current Status:** Active Development
-> **Last Updated:** 2026-01-21
-> **Theme:** Broadcast 8.0.0
+> **Current Status:** Live and actively maintained
+> **Last Updated:** 2026-06-11
+> **Version:** 6.1.1
+> **Theme:** Broadcast 8.0.0 — **ID 182960718119 is the PUBLISHED LIVE theme** (TS Media Design 178766348583 is deprecated)
 
 ---
 
@@ -16,139 +17,47 @@
 
 | Area | Status | Notes |
 |------|--------|-------|
-| **Homepage** | ✅ Complete | All sections configured |
-| **Product Page** | ✅ Complete | Healthcare-focused content |
-| **Privacy & Trust** | ⚠️ Template Ready | Needs Shopify page creation |
-| **Urgent Care** | ⚠️ Template Ready | "Coming Soon" - needs page creation |
-| **Contact Page** | ✅ Complete | Updated with real contact info |
-| **Header/Navigation** | ✅ Complete | Patient Portal + Clinician EHR buttons |
-| **Branding** | ✅ Complete | Navy/blue color scheme applied |
-| **AI References** | ✅ Removed | Replaced with "next-gen health system" |
+| Homepage | ✅ Live | Hero links to /pages/services; studio headshots in About Physician + Prioritize tile |
+| Services Page | ✅ Live | 4 pathway options incl. **Physician Deep Dive (Option 2)**; 10 assessment categories; 0 em-dashes |
+| Dr. James French Page | ✅ Live | **at /pages/about-dr-james-french** (NOT /pages/dr-james-french); studio headshot hero |
+| Privacy & Trust | ✅ Live | **at /pages/privacy-and-trust** (NOT /pages/privacy-trust) |
+| Urgent Care | ✅ Live | /pages/urgent-care |
+| Corporate Wellness | ✅ Live | /pages/corporate-wellness-longevity-services; seated headshot |
+| Contact | ✅ Live | Emails plain text (mailto links = nice-to-have) |
+| Footer | ✅ Live | Customer Care column has real links (text block, not admin menu); newsletter copy on-brand |
+| Social icons | ✅ Live | FB / X (@grade1view) / YouTube (@JamesFrenchmedic8); IG+TikTok hidden until accounts exist |
+| Products | ⚠️ Partial | 30 products live, **no product images**; 4 descriptions still carry em-dashes (admin edit) |
+| Janice MacPherson feedback (2026-06-11) | ✅ 6/6 closed | All items verified live |
+
+## Last Session (2026-06-11, session 2)
+
+Full site audit (dead links, social, watermark hunt across all 22 images) then fixes: killed the sitewide gift-card 404 and the hero's link to the deprecated product, swapped all four Dr. French photo slots to the new studio headshots, shipped the Physician Deep Dive as Option 2 on the services page (story-led copy, hourly private billing, enquiry CTA), and gave the Customer Care footer column real links. The session also caught a live Shopify order that never reached the EHR CRM — root-caused and fixed in praxis_ehr (ISS-361/362/363, API v2.64.37→40): webhook registered + two payload parsing bugs fixed, info@ added to lead-email search, SLA-breach sweep + overdue UI built. `shopify-content.mjs` push commands gained `--allow-live` (Broadcast is now the live theme; non-interactive pushes were dying on a CLI prompt).
+
+## Next Actions
+
+1. **James approvals pending:** Janice reply draft; apology drafts for Geoffrey (need his email from the Shopify order page), Tidal Hearing + Balance (sharpen after reading their email in the CRM, now possible), and Ester. All drafted 2026-06-11, in chat transcript.
+2. **James to confirm:** Shelley Wood (15d) and Hilary Alward (76d) qualified leads — handled offline or genuinely missed?
+3. **Photo system:** replacements for the 4 off-brand tiles (genetics robot hand, metabolic chem lab, mental-health couple, Option 1 hologram) + 30 product images. GPT brand brief exists (premium clinic, real people, navy accents, no sci-fi).
+4. **Admin-side cleanups:** delete/replace old product's green "Live Better Longer" image; unpublish stray "Contact us - new client enquiry" page; 4 product descriptions with em-dashes; optionally unpublish empty News blog.
+5. **Verify Facebook icon** lands on the right page (one logged-in click).
+6. praxis_ehr: ISS-364 redesign batch (task system); 15-min overdue-task triage with James now that the Overdue tile is live.
+
+## Blockers
+
+- Apology/Janice emails: waiting on James approval (hard rule: nothing sends unapproved)
+- Product images: waiting on photo decisions (shoot vs licensed vs generated set)
+
+## Key References
+
+| Item | Value |
+|------|-------|
+| LIVE theme ID | 182960718119 (Broadcast) — pushes go live immediately; script uses `--allow-live` |
+| Preview URL trick | not needed; Broadcast IS live |
+| Page handles | about-dr-james-french, privacy-and-trust, corporate-wellness-longevity-services, services, urgent-care, contact, about |
+| Unpublished templates | page.for-business, page.faq (exist in repo, no pages created) |
+| Social | FB profile.php?id=61588985084710 · x.com/grade1view · youtube.com/@JamesFrenchmedic8 |
+| Settings gotcha | settings_data.json TOP-LEVEL keys are live; presets.Broadcast is mirrored only (see CLAUDE.md) |
 
 ---
 
-## Component Status
-
-### Pages & Templates
-
-| Page | Template | Status | Notes |
-|------|----------|--------|-------|
-| Homepage | `index.json` | ✅ Complete | 10 sections, fully configured |
-| Product | `product.json` | ✅ Complete | Longevity Assessment product |
-| Privacy & Trust | `page.privacy-trust.json` | ⚠️ Template Ready | Create page in Shopify Admin |
-| Urgent Care | `page.urgent-care.json` | ⚠️ Template Ready | "Coming Soon" page |
-| Contact | Default | ✅ Complete | Real contact info added |
-
-### Header & Navigation
-
-| Component | Status | Notes |
-|-----------|--------|-------|
-| Logo | ✅ Complete | Increased size (36-48px desktop) |
-| Patient Portal Button | ✅ Complete | Links to portal.whitepinemedical.ca |
-| Clinician EHR Button | ✅ Complete | Links to app.whitepinemedical.ca |
-| Menu: Services | ✅ Complete | Renamed from "Shop" |
-| Announcement Banner | ✅ Disabled | Removed "10% off" banner |
-
-### Content Updates
-
-| Content Area | Status | Notes |
-|--------------|--------|-------|
-| Hero Section | ✅ Complete | "Transform Your Health with Precision Assessment" |
-| Feature Icons | ✅ Complete | "Built by Physicians", "Technology-Driven Insight" |
-| 5-Phase Assessment | ✅ Complete | "Comprehensive Health Analysis" (not AI) |
-| FAQ | ✅ Complete | Rewritten without AI references |
-| Testimonials | ✅ Complete | Updated language |
-| Coaching Duration | ✅ Complete | "Up to 12 months" (variable) |
-| All Buttons | ✅ Complete | "View Services" (not "Shop Now") |
-
-### Removed Content
-
-| Item | Status | Notes |
-|------|--------|-------|
-| AI/Artificial Intelligence | ✅ Removed | All references replaced |
-| "Elite/Visionary" language | ✅ Removed | Professional tone |
-| Jewelry template content | ✅ Removed | Cleaned product page |
-| Demo disclaimers | ✅ Removed | Contact page cleaned |
-| Login/Register pages | ✅ Removed | Redirects handled externally |
-
----
-
-## Pending Tasks
-
-### Shopify Admin Setup Required
-
-These templates exist but need pages created in Shopify Admin:
-
-1. **Privacy & Trust Page**
-   - Go to: Shopify Admin → Pages → Add page
-   - Title: "Privacy & Trust"
-   - Template: Select `page.privacy-trust`
-
-2. **Urgent Care Page**
-   - Go to: Shopify Admin → Pages → Add page
-   - Title: "Urgent Care"
-   - Template: Select `page.urgent-care`
-
-### Planned Enhancements (from DOC-041)
-
-| Task | Priority | Status |
-|------|----------|--------|
-| Change banner color to blue (#0066CC) | Medium | Not Started |
-| Add blue gradient fading colors | Low | Not Started |
-| Add Clinician EHR access page | Medium | Not Started |
-
----
-
-## Theme Information
-
-| Property | Value |
-|----------|-------|
-| Theme Name | Broadcast |
-| Version | 8.0.0 |
-| Theme ID | 182960718119 |
-| Base Theme | TS Media Design (migrated content) |
-
----
-
-## Version History
-
-| Version | Date | Changes |
-|---------|------|---------|
-| 1.0.0 | 2026-01-21 | Initial documentation created |
-| - | 2026-01-20 | Website branding & navigation updates |
-| - | 2026-01-20 | AI references removed sitewide |
-| - | 2026-01-20 | Privacy & Trust page created |
-| - | 2026-01-20 | Urgent Care "Coming Soon" page created |
-
----
-
-## Related Repositories
-
-| System | Repo | Status |
-|--------|------|--------|
-| EHR Platform | medic8stat/clinalytix-ehr | Active |
-| Shopify Website | medic8stat/shopifywebsite | Active (this) |
-
----
-
-## Infrastructure
-
-| Service | Details |
-|---------|---------|
-| Hosting | Shopify |
-| CDN | Shopify CDN (images) |
-| Domain | whitepinemedical.ca |
-| Theme Editor | Shopify Admin |
-| Version Control | GitHub (medic8stat/shopifywebsite) |
-
----
-
-## Notes
-
-- **Development Theme:** Always use Broadcast (#182960718119) for development
-- **Live Theme:** TS Media Design (#178766348583) - publish Broadcast to make it live
-- **Content Source:** Original content migrated from Copy of TS Media Design (#180310835495)
-
----
-
-**Last Updated:** 2026-01-21
+**Version history:** 6.1.1 (2026-06-11 session 2) · 6.1.0 (2026-06-11 Janice fixes) · 6.0.x (2026-01 restructure) — full detail in CHANGELOG.md
