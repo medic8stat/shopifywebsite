@@ -276,7 +276,9 @@
           }
         }
       },
-      "twitter_link": "https://x.com/grade1view"
+      "twitter_link": "https://x.com/grade1view",
+      "facebook_link": "https://www.facebook.com/profile.php?id=61588985084710",
+      "youtube_link": "https://www.youtube.com/@JamesFrenchmedic8"
     },
     "Relay": {
       "menu_bg_color": "#faf3e8",
@@ -1397,8 +1399,8 @@
   "parallax_enable": true,
   "product_grid_outline": false,
   "enable_superscript": true,
-  "instagram_link": "https://instagram.com/shopify",
-  "tiktok_link": "https://tiktok.com/@shopify",
+  "instagram_link": "",
+  "tiktok_link": "",
   "product_grid_aspect_ratio": 1.2,
   "form_style": "modern",
   "final_sale": true,
@@ -1630,5 +1632,8 @@
         "links": "#282c2e"
       }
     }
-  }
+  },
+  "twitter_link": "https://x.com/grade1view",
+  "facebook_link": "https://www.facebook.com/profile.php?id=61588985084710",
+  "youtube_link": "https://www.youtube.com/@JamesFrenchmedic8"
 }
