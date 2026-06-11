@@ -17,11 +17,11 @@
           }
         },
         "linklist": {
-          "type": "linklist",
+          "type": "text",
           "settings": {
-            "linklist": "",
             "title": "Customer Care",
             "heading_font_size": "heading-x-small",
+            "text": "<p><a href=\"/pages/contact\">Contact</a><br/><a href=\"/pages/services\">Services</a><br/><a href=\"/pages/urgent-care\">Urgent Care</a><br/><a href=\"/pages/privacy-and-trust\">Privacy &amp; Trust</a></p>",
             "column_width": 20,
             "enable_accordion": false
           }
