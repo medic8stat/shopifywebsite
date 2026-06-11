@@ -46,7 +46,7 @@ Upload replacement images to Shopify admin Files, re-point JSON references; fix 
 ## Open items / inputs needed
 - [x] Shopify CLI auth on this machine (2026-06-11)
 - [x] **Phase 1 SHIPPED 2026-06-11** — all text/link/layout fixes live and verified (0 em-dashes on homepage + services, dead button fixed, 3 CTA links added, mobile 1-per-row, newsletter copy). 57 em-dashes removed across 8 templates; products-import.csv cleaned (9 more)
-- [ ] Instagram / TikTok URLs (or hide) → then edit `config/settings_data.json` current block + push-settings
+- [x] Social links round 1 (2026-06-11): Instagram + TikTok icons HIDDEN (no professional accounts yet); X/Twitter added → https://x.com/grade1view (verified live). PENDING: Facebook page URL + YouTube channel URL from James (`facebook_link` / `youtube_link` in the Broadcast preset). Note: theme renders the old Twitter bird icon, not the X logo
 - [ ] Customer Care menu created in admin → then set `linklist` handle in `sections/group-footer.json` + push
 - [ ] 4 live product descriptions still have em-dashes (admin edit): Metabolic Flexibility, Reaction Time, Lower Limb Power, Psychiatric Screening Online
 - [ ] Deep Dive: price, bookable-vs-inquiry, copy sign-off
