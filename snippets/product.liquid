@@ -273,11 +273,32 @@
               </template>
             {%- endif -%}
           {%- elsif onboarding_product == false -%}
+            {%- comment -%}
+              White Pine: products with no media normally show a blank box here.
+              For the physician concierge assessment, render Dr. French's headshot
+              from the Files library instead. Falls back to the original blank box
+              if the image can't be found, so nothing breaks.
+            {%- endcomment -%}
+            {%- assign wp_fallback_photo = blank -%}
+            {%- if product.handle == 'physician-concierge-assessment' -%}
+              {%- assign wp_fallback_photo = images['dr-james-french-headshot.jpg'] -%}
+            {%- endif -%}
             <div class="product__slides product__slides--{{ image_size }} product-single__photos">
               <div
-                class="product__photo product__slide product__photo--blank"
+                class="product__photo product__slide{% if wp_fallback_photo == blank %} product__photo--blank{% endif %}"
               >
-                {%- if onboarding_product -%}
+                {%- if wp_fallback_photo != blank -%}
+                  <img
+                    class="product-single__photo"
+                    src="{{ wp_fallback_photo | image_url: width: 1200 }}"
+                    srcset="{{ wp_fallback_photo | image_url: width: 600 }} 600w, {{ wp_fallback_photo | image_url: width: 900 }} 900w, {{ wp_fallback_photo | image_url: width: 1200 }} 1200w, {{ wp_fallback_photo | image_url: width: 1600 }} 1600w"
+                    sizes="(min-width: 990px) calc(50vw - 200px), (min-width: 750px) calc(50vw - 100px), calc(100vw - 100px)"
+                    alt="Dr. James French"
+                    width="{{ wp_fallback_photo.width }}"
+                    height="{{ wp_fallback_photo.height }}"
+                    loading="lazy"
+                  >
+                {%- elsif onboarding_product -%}
                   {{ 'product-1' | placeholder_svg_tag: 'svg-placeholder' }}
                 {%- endif -%}
               </div>
