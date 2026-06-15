@@ -1,0 +1,322 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "section-hero-banner": {
+      "type": "section-hero",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "title": "Our Services",
+            "heading_font_size": "heading-large",
+            "heading_tag": "automatic",
+            "padding_bottom": 8
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Comprehensive longevity and preventive health assessments</p>",
+            "text_font_size": "body-large",
+            "padding_bottom": 8
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "text"
+      ],
+      "settings": {
+        "image_1": "shopify://shop_images/dr-james-french-headshot.jpg",
+        "link": "",
+        "width": "wrapper--full",
+        "height": "four-fifty-height-hero",
+        "flex_align_desktop": "align--middle-center-desktop",
+        "content_width": 60,
+        "mobile_height": "three-fifty-height-hero--mobile",
+        "flex_align_mobile": "align--middle-center-mobile",
+        "color_scheme": "scheme-2",
+        "show_text_background": false,
+        "overlay_type": "color",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "show_placeholder": false
+      }
+    },
+    "product": {
+      "type": "product",
+      "blocks": {
+        "badges": {
+          "type": "badges",
+          "settings": {
+            "sale_badge": true,
+            "product_badges": true,
+            "padding_bottom": 8
+          }
+        },
+        "title": {
+          "type": "title",
+          "settings": {
+            "subheading_option": "none",
+            "heading_font_size": "heading-small",
+            "padding_bottom": 8
+          }
+        },
+        "price": {
+          "type": "price",
+          "settings": {
+            "text_font_size": "body-medium",
+            "padding_bottom": 8
+          }
+        },
+        "variants": {
+          "type": "variants",
+          "settings": {
+            "info_page": "",
+            "size_chart_style": "question",
+            "option_font_size": "body-medium",
+            "value_font_size": "body-x-small",
+            "padding_bottom": 16
+          }
+        },
+        "accordion": {
+          "type": "accordion",
+          "settings": {
+            "style": "drawer",
+            "show_description": true,
+            "show_read_more": false,
+            "default_open": false,
+            "heading": "Description",
+            "heading_font_size": "body-medium",
+            "text": "",
+            "text_font_size": "body-medium",
+            "show_icon": false,
+            "icon_name": "icon-award",
+            "icon_size": 20,
+            "icon_color": "",
+            "padding_bottom": 8
+          }
+        },
+        "accordion-0": {
+          "type": "accordion",
+          "settings": {
+            "style": "drawer",
+            "show_description": false,
+            "show_read_more": false,
+            "default_open": false,
+            "heading": "What's Included",
+            "heading_font_size": "body-medium",
+            "text": "<p>Your comprehensive longevity assessment includes:</p><ul><li>Comprehensive health analysis (2 hours)</li><li>At-home genetic and biological testing kits</li><li>In-person precision assessment at our Rothesay facility</li><li>Personalized health optimization roadmap</li><li>Up to 12 months of expert coaching support</li></ul>",
+            "text_font_size": "body-medium",
+            "show_icon": false,
+            "icon_name": "icon-award",
+            "icon_size": 20,
+            "icon_color": "",
+            "padding_bottom": 24
+          }
+        },
+        "buttons": {
+          "type": "buttons",
+          "settings": {
+            "show_quantity": false,
+            "button_type": "btn--black",
+            "button_size": "btn--large",
+            "button_style": "btn--solid",
+            "button_type_dynamic": "btn--secondary",
+            "button_size_dynamic": "btn--large",
+            "button_style_dynamic": "btn--solid",
+            "show_gift_card_recipient": false,
+            "padding_bottom": 32
+          }
+        },
+        "icon": {
+          "type": "icon",
+          "settings": {
+            "icon_name": "icon-chat",
+            "icon_size": 20,
+            "icon_color": "",
+            "text": "<p>Questions? Contact us at info@whitepinemedical.ca</p>",
+            "text_font_size": "body-small",
+            "width": "full",
+            "padding_bottom": 8
+          }
+        },
+        "icon-0": {
+          "type": "icon",
+          "settings": {
+            "icon_name": "icon-heart",
+            "icon_size": 20,
+            "icon_color": "",
+            "text": "<p>Physician-led care throughout your journey</p>",
+            "text_font_size": "body-small",
+            "width": "full",
+            "padding_bottom": 8
+          }
+        },
+        "icon-1": {
+          "type": "icon",
+          "settings": {
+            "icon_name": "icon-flare",
+            "icon_size": 20,
+            "icon_color": "",
+            "text": "<p>HIPAA, PHIPA & PIPEDA compliant</p>",
+            "text_font_size": "body-small",
+            "width": "full",
+            "padding_bottom": 16
+          }
+        },
+        "divider": {
+          "type": "divider",
+          "settings": {
+            "show_line": true,
+            "padding_bottom": 20
+          }
+        },
+        "features": {
+          "type": "features",
+          "settings": {
+            "icon_name": "icon-chat",
+            "icon_size": 20,
+            "title": "Have questions?",
+            "text_font_size": "body-medium",
+            "text": "<p>Book a free consultation to learn more about our assessment. <a href=\"/pages/contact\" title=\"Contact\">Contact us</a></p>",
+            "bg_color": "#f0f7ff",
+            "color": "",
+            "padding_bottom": 16
+          }
+        }
+      },
+      "block_order": [
+        "badges",
+        "title",
+        "price",
+        "variants",
+        "accordion",
+        "accordion-0",
+        "buttons",
+        "icon",
+        "icon-0",
+        "icon-1",
+        "divider",
+        "features"
+      ],
+      "settings": {
+        "product_sticky_enable": true,
+        "variant_image_scroll": true,
+        "show_cart_bar": true,
+        "enable_zoom": true,
+        "enable_video_looping": false,
+        "image_layout": "stacked",
+        "image_size": "normal",
+        "mobile_image_style": "slider",
+        "color_scheme": "scheme-1",
+        "padding_top": 40,
+        "padding_bottom": 80
+      }
+    },
+    "section-accordion": {
+      "type": "section-accordion",
+      "blocks": {
+        "text-1": {
+          "type": "text",
+          "settings": {
+            "title": "How long does the assessment take?",
+            "heading_font_size": "heading-x-small",
+            "text": "<p>The complete 5-phase assessment typically takes 4-6 weeks from start to finish. This includes your comprehensive health analysis, at-home testing, lab work processing, and your in-person visit at our Rothesay facility.</p>"
+          }
+        },
+        "text-2": {
+          "type": "text",
+          "settings": {
+            "title": "What happens after my assessment?",
+            "heading_font_size": "heading-x-small",
+            "text": "<p>You'll receive a comprehensive health optimization roadmap with specific targets, timelines, and strategies. You'll also have access to up to 12 months of personalized coaching from our team of dietitians and certified health coaches.</p>"
+          }
+        },
+        "text-3": {
+          "type": "text",
+          "settings": {
+            "title": "Is my health information secure?",
+            "heading_font_size": "heading-x-small",
+            "text": "<p>Absolutely. We comply with HIPAA (US), PHIPA (Ontario), and PIPEDA (Canada) privacy regulations. Your data is protected with military-grade AES-256 encryption and stored securely in Canadian data centers.</p>"
+          }
+        },
+        "text-4": {
+          "type": "text",
+          "settings": {
+            "title": "Are medical services covered by Medicare?",
+            "heading_font_size": "heading-x-small",
+            "text": "<p>For New Brunswick residents, if our team identifies a medical issue requiring physician care, those services are covered through NB Medicare. Additional fees may apply for residents outside New Brunswick.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "text-1",
+        "text-2",
+        "text-3",
+        "text-4"
+      ],
+      "settings": {
+        "default_open": false,
+        "title": "Frequently Asked Questions",
+        "heading_font_size": "heading-small",
+        "show_icon": false,
+        "icon_name": "icon-award",
+        "icon_size": 20,
+        "width": "wrapper",
+        "color_scheme": "",
+        "icon_color": "",
+        "padding_top": 80,
+        "padding_bottom": 80
+      }
+    },
+    "related": {
+      "type": "related",
+      "blocks": {
+        "related-0": {
+          "type": "related",
+          "settings": {
+            "product_recommendations_heading": "Related services"
+          }
+        },
+        "recent": {
+          "type": "recent",
+          "settings": {
+            "product_recently_heading": "Recently viewed"
+          }
+        }
+      },
+      "block_order": [
+        "related-0",
+        "recent"
+      ],
+      "settings": {
+        "enable_tabs": true,
+        "heading_alignment": "text-center",
+        "heading_font_size": "heading-small",
+        "limit": 4,
+        "layout_desktop": "slider",
+        "grid": 4,
+        "rows": 3,
+        "layout_mobile": "slider",
+        "color_scheme": "",
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    }
+  },
+  "order": [
+    "section-hero-banner",
+    "product",
+    "section-accordion",
+    "related"
+  ]
+}
